@@ -2,7 +2,8 @@
 
 This repository holds **proofs, not code**: campaign reports, their `SHA256SUMS`, journal
 verdicts, Kani logs, fuzzing logs, SBOMs, and the specifications they refer to. The code lives
-in `SO2304/oasis` (AGPL-3.0-or-later after tag `v0-mit-final`). No key, seed, client
+in `SO2304/oasis`, a **private** repository since 11 October 2026 (proprietary; access under NDA
+or commercial licence). This corpus stays public so that the evidence can be checked without the code. No key, seed, client
 configuration, serial number or real network address is in this repository.
 
 Licence of this corpus: **CC BY 4.0** (see `RELICENSING.md`).
