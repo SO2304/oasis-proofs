@@ -1,0 +1,10 @@
+# 2026-10-06T21:48:49Z after flashing C_first_flash.uf2 (bootloader with embassy default crystal+PLL clocks + v1 app, stamp 23f97b2): C never re-enumerated.
+# serial ports:
+/dev/ttyS2
+/dev/ttyS3
+/dev/ttyS8
+/dev/ttyS9
+# RPI-RP2 volumes (none = not in BOOTSEL):
+# USB devices VID_16C0 (OASIS firmware) / VID_2E8A (RP2 bootrom):
+USB\VID_16C0&PID_27DD\A
+USB\VID_16C0&PID_27DD\B

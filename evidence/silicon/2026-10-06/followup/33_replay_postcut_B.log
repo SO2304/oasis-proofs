@@ -1,0 +1,3 @@
+OASIS|B|UART|MODE|strict_v0b=true|mesh|3a67e6e
+OASIS|B|UART|RXF|n=1,len=111,ctr=153,seq=-T8|mesh|3a67e6e
+OASIS|B|UART|DROP|stale counter|mesh|3a67e6e

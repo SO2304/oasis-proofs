@@ -1,0 +1,12 @@
+two-machine link facts  2026-10-09T22:57:41.8659304+02:00
+== this PC ethernet IPv6 link-local ==
+  fe80::1601:70df:35b:73c0%19
+== PC2 on the ethernet link ==
+  fe80::a6bb:6dff:fexx:xxxx  MAC A4-BB-6D-xx-xx-xx
+== PC2 reachability (IPv6 ping) ==
+  reply from PC2: time=1 ms
+  reply from PC2: time=10 ms
+  reply from PC2: time=6 ms
+  3 sent, 3 received, 0% loss
+== PC2 remote-management ports (the only legitimate exec path) ==
+  none open across 10 management ports

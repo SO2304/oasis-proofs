@@ -1,0 +1,960 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on artifact directory
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\branching.rs:107:7
+    |
+107 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: expected names are: `docsrs`, `feature`, and `test` and 31 more
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+    = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\dreams.rs:211:7
+    |
+211 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\efference.rs:176:7
+    |
+176 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\emotion.rs:439:7
+    |
+439 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\federation.rs:618:7
+    |
+618 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\hal.rs:235:7
+    |
+235 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\hyper_state.rs:378:7
+    |
+378 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\morpho.rs:195:7
+    |
+195 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unused import: `crate::vec::*`
+ --> C:\dev\oasis\oasis-rt\src\morpho.rs:6:5
+  |
+6 | use crate::vec::*;
+  |     ^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\reflex.rs:108:7
+    |
+108 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\spinal.rs:395:7
+    |
+395 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\actions.rs:188:7
+    |
+188 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\actuation.rs:225:7
+    |
+225 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\authority.rs:335:7
+    |
+335 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\enrollment.rs:247:7
+    |
+247 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\firmware.rs:143:7
+    |
+143 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\fragment.rs:214:7
+    |
+214 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+    --> C:\dev\oasis\oasis-rt\src\mesh.rs:1491:7
+     |
+1491 | #[cfg(kani)]
+     |       ^^^^
+     |
+     = help: consider using a Cargo feature instead
+     = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+              [lints.rust]
+              unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+     = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+     = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\mesh_revocation.rs:377:7
+    |
+377 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\modbus_gateway.rs:298:7
+    |
+298 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\ownership.rs:282:7
+    |
+282 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\parameters.rs:364:7
+    |
+364 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\services.rs:175:7
+    |
+175 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unused import: `crate::vec::*`
+  --> C:\dev\oasis\oasis-rt\src\spore.rs:13:5
+   |
+13 | use crate::vec::*;
+   |     ^^^^^^^^^^^^^
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\timers.rs:270:7
+    |
+270 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\topics.rs:155:7
+    |
+155 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\transforms.rs:185:7
+    |
+185 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\tx_lease.rs:204:7
+    |
+204 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\synapse.rs:418:7
+    |
+418 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\tension.rs:244:7
+    |
+244 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\world_model.rs:241:7
+    |
+241 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unused variable: `persistence`
+   --> C:\dev\oasis\oasis-rt\src\efference.rs:109:13
+    |
+109 |         let persistence = if severity != Severity::Nominal {
+    |             ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_persistence`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `agent_count`
+   --> C:\dev\oasis\oasis-rt\src\federation.rs:116:59
+    |
+116 |     pub fn propagate(&mut self, synapses: &mut [Synapse], agent_count: usize, entropies: &[f64]) -> u32 {
+    |                                                           ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_agent_count`
+
+warning: unused variable: `before`
+   --> C:\dev\oasis\oasis-rt\src\federation.rs:567:13
+    |
+567 |         let before = self.digest_count();
+    |             ^^^^^^ help: if this is intentional, prefix it with an underscore: `_before`
+
+warning: unused variable: `handlers`
+   --> C:\dev\oasis\oasis-rt\src\spinal.rs:152:17
+    |
+152 |             let handlers = block.lines().find(|l| l.starts_with("H: Handlers=")).unwrap_or("");
+    |                 ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_handlers`
+
+warning: `oasis-rt` (lib) generated 35 warnings (run `cargo fix --lib -p oasis-rt` to apply 6 suggestions)
+   Compiling oasis-rt-fuzz v0.0.0 (C:\dev\oasis\oasis-rt\fuzz)
+    Finished `release` profile [optimized + debuginfo] target(s) in 5.75s
+    Blocking waiting for file lock on artifact directory
+    Blocking waiting for file lock on artifact directory
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\branching.rs:107:7
+    |
+107 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: expected names are: `docsrs`, `feature`, and `test` and 31 more
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+    = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\dreams.rs:211:7
+    |
+211 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\efference.rs:176:7
+    |
+176 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\emotion.rs:439:7
+    |
+439 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\federation.rs:618:7
+    |
+618 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\hal.rs:235:7
+    |
+235 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\hyper_state.rs:378:7
+    |
+378 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\morpho.rs:195:7
+    |
+195 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unused import: `crate::vec::*`
+ --> C:\dev\oasis\oasis-rt\src\morpho.rs:6:5
+  |
+6 | use crate::vec::*;
+  |     ^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\reflex.rs:108:7
+    |
+108 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\spinal.rs:395:7
+    |
+395 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\actions.rs:188:7
+    |
+188 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\actuation.rs:225:7
+    |
+225 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\authority.rs:335:7
+    |
+335 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\enrollment.rs:247:7
+    |
+247 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\firmware.rs:143:7
+    |
+143 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\fragment.rs:214:7
+    |
+214 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+    --> C:\dev\oasis\oasis-rt\src\mesh.rs:1491:7
+     |
+1491 | #[cfg(kani)]
+     |       ^^^^
+     |
+     = help: consider using a Cargo feature instead
+     = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+              [lints.rust]
+              unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+     = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+     = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\mesh_revocation.rs:377:7
+    |
+377 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\modbus_gateway.rs:298:7
+    |
+298 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\ownership.rs:282:7
+    |
+282 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\parameters.rs:364:7
+    |
+364 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\services.rs:175:7
+    |
+175 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unused import: `crate::vec::*`
+  --> C:\dev\oasis\oasis-rt\src\spore.rs:13:5
+   |
+13 | use crate::vec::*;
+   |     ^^^^^^^^^^^^^
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\timers.rs:270:7
+    |
+270 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\topics.rs:155:7
+    |
+155 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\transforms.rs:185:7
+    |
+185 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\tx_lease.rs:204:7
+    |
+204 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\synapse.rs:418:7
+    |
+418 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\tension.rs:244:7
+    |
+244 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\world_model.rs:241:7
+    |
+241 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unused variable: `persistence`
+   --> C:\dev\oasis\oasis-rt\src\efference.rs:109:13
+    |
+109 |         let persistence = if severity != Severity::Nominal {
+    |             ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_persistence`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `agent_count`
+   --> C:\dev\oasis\oasis-rt\src\federation.rs:116:59
+    |
+116 |     pub fn propagate(&mut self, synapses: &mut [Synapse], agent_count: usize, entropies: &[f64]) -> u32 {
+    |                                                           ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_agent_count`
+
+warning: unused variable: `before`
+   --> C:\dev\oasis\oasis-rt\src\federation.rs:567:13
+    |
+567 |         let before = self.digest_count();
+    |             ^^^^^^ help: if this is intentional, prefix it with an underscore: `_before`
+
+warning: unused variable: `handlers`
+   --> C:\dev\oasis\oasis-rt\src\spinal.rs:152:17
+    |
+152 |             let handlers = block.lines().find(|l| l.starts_with("H: Handlers=")).unwrap_or("");
+    |                 ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_handlers`
+
+warning: `oasis-rt` (lib) generated 35 warnings (run `cargo fix --lib -p oasis-rt` to apply 6 suggestions)
+    Finished `release` profile [optimized + debuginfo] target(s) in 1.53s
+     Running `fuzz\target\x86_64-pc-windows-msvc\release\modbus.exe '-artifact_prefix=C:\dev\oasis\oasis-rt\fuzz\artifacts\modbus\' -max_total_time=3600 -print_final_stats=1 'C:\dev\oasis\oasis-rt\fuzz\corpus\modbus'`
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 2566948702
+INFO: Loaded 1 modules   (1115 inline 8-bit counters): 1115 [00007FF7909B2D08, 00007FF7909B3163), 
+INFO: Loaded 1 PC tables (1115 PCs): 1115 [00007FF79098FC88,00007FF790994238), 
+INFO:        0 files found in C:\dev\oasis\oasis-rt\fuzz\corpus\modbus
+INFO: -max_len is not provided; libFuzzer will not generate inputs larger than 4096 bytes
+INFO: A corpus is not provided, starting from an empty corpus
+#2	INITED cov: 69 ft: 69 corp: 1/1b exec/s: 0 rss: 39Mb
+#3	NEW    cov: 70 ft: 70 corp: 2/2b lim: 4 exec/s: 0 rss: 39Mb L: 1/1 MS: 1 CrossOver-
+#209	NEW    cov: 79 ft: 79 corp: 3/7b lim: 6 exec/s: 0 rss: 39Mb L: 5/5 MS: 1 InsertRepeatedBytes-
+#221	NEW    cov: 81 ft: 85 corp: 4/13b lim: 6 exec/s: 0 rss: 39Mb L: 6/6 MS: 2 InsertRepeatedBytes-InsertByte-
+#451	NEW    cov: 85 ft: 92 corp: 5/21b lim: 8 exec/s: 0 rss: 39Mb L: 8/8 MS: 5 CopyPart-ChangeBit-ChangeASCIIInt-InsertByte-CopyPart-
+#763	NEW    cov: 87 ft: 94 corp: 6/30b lim: 11 exec/s: 0 rss: 39Mb L: 9/9 MS: 2 ChangeByte-InsertByte-
+#770	NEW    cov: 87 ft: 99 corp: 7/41b lim: 11 exec/s: 0 rss: 39Mb L: 11/11 MS: 2 CrossOver-CrossOver-
+#1086	NEW    cov: 87 ft: 100 corp: 8/54b lim: 14 exec/s: 0 rss: 39Mb L: 13/13 MS: 1 InsertRepeatedBytes-
+#1087	REDUCE cov: 87 ft: 100 corp: 8/53b lim: 14 exec/s: 0 rss: 39Mb L: 12/12 MS: 1 EraseBytes-
+#1108	REDUCE cov: 87 ft: 100 corp: 8/52b lim: 14 exec/s: 0 rss: 39Mb L: 10/12 MS: 1 EraseBytes-
+#1828	REDUCE cov: 87 ft: 104 corp: 9/71b lim: 21 exec/s: 0 rss: 40Mb L: 19/19 MS: 5 EraseBytes-CrossOver-ChangeBinInt-InsertByte-InsertRepeatedBytes-
+#1893	REDUCE cov: 87 ft: 105 corp: 10/92b lim: 21 exec/s: 0 rss: 40Mb L: 21/21 MS: 5 CrossOver-ShuffleBytes-ChangeBinInt-ChangeBit-CopyPart-
+#2192	REDUCE cov: 87 ft: 105 corp: 10/91b lim: 21 exec/s: 0 rss: 40Mb L: 18/21 MS: 4 EraseBytes-ChangeByte-CrossOver-InsertByte-
+#3127	REDUCE cov: 87 ft: 105 corp: 10/90b lim: 29 exec/s: 0 rss: 40Mb L: 20/20 MS: 5 ChangeBinInt-EraseBytes-ChangeBit-CMP-CrossOver- DE: "\377\377"-
+#3541	NEW    cov: 90 ft: 108 corp: 11/122b lim: 33 exec/s: 0 rss: 41Mb L: 32/32 MS: 4 ChangeASCIIInt-ChangeASCIIInt-PersAutoDict-InsertRepeatedBytes- DE: "\377\377"-
+#3823	REDUCE cov: 90 ft: 108 corp: 11/121b lim: 33 exec/s: 0 rss: 41Mb L: 31/31 MS: 2 ShuffleBytes-EraseBytes-
+#4394	NEW    cov: 90 ft: 112 corp: 12/155b lim: 38 exec/s: 0 rss: 41Mb L: 34/34 MS: 1 InsertRepeatedBytes-
+#4400	NEW    cov: 90 ft: 113 corp: 13/193b lim: 38 exec/s: 0 rss: 41Mb L: 38/38 MS: 1 InsertRepeatedBytes-
+#7601	NEW    cov: 90 ft: 117 corp: 14/259b lim: 68 exec/s: 0 rss: 41Mb L: 66/66 MS: 1 InsertRepeatedBytes-
+#7686	NEW    cov: 90 ft: 118 corp: 15/327b lim: 68 exec/s: 0 rss: 41Mb L: 68/68 MS: 5 InsertRepeatedBytes-ChangeASCIIInt-ShuffleBytes-ChangeByte-InsertRepeatedBytes-
+#21768	REDUCE cov: 90 ft: 118 corp: 15/325b lim: 205 exec/s: 0 rss: 42Mb L: 36/68 MS: 2 CrossOver-EraseBytes-
+#23531	NEW    cov: 93 ft: 121 corp: 16/401b lim: 219 exec/s: 0 rss: 42Mb L: 76/76 MS: 3 ChangeBit-CopyPart-CMP- DE: "OMB1"-
+#23858	REDUCE cov: 95 ft: 123 corp: 17/432b lim: 219 exec/s: 23858 rss: 43Mb L: 31/76 MS: 2 ChangeASCIIInt-PersAutoDict- DE: "OMB1"-
+#24654	REDUCE cov: 95 ft: 123 corp: 17/408b lim: 226 exec/s: 24654 rss: 43Mb L: 52/68 MS: 1 EraseBytes-
+#29194	NEW    cov: 95 ft: 128 corp: 18/672b lim: 269 exec/s: 29194 rss: 43Mb L: 264/264 MS: 5 CrossOver-CrossOver-CopyPart-CopyPart-InsertRepeatedBytes-
+#30671	REDUCE cov: 95 ft: 128 corp: 18/671b lim: 277 exec/s: 30671 rss: 43Mb L: 51/264 MS: 2 ChangeByte-CrossOver-
+#31747	REDUCE cov: 95 ft: 128 corp: 18/656b lim: 285 exec/s: 31747 rss: 43Mb L: 36/264 MS: 1 EraseBytes-
+#31857	REDUCE cov: 95 ft: 128 corp: 18/652b lim: 285 exec/s: 31857 rss: 43Mb L: 32/264 MS: 5 ShuffleBytes-CrossOver-InsertByte-ChangeASCIIInt-EraseBytes-
+#42884	REDUCE cov: 96 ft: 129 corp: 19/772b lim: 389 exec/s: 42884 rss: 45Mb L: 120/264 MS: 2 InsertRepeatedBytes-PersAutoDict- DE: "OMB1"-
+#43645	REDUCE cov: 96 ft: 129 corp: 19/737b lim: 389 exec/s: 43645 rss: 45Mb L: 85/264 MS: 1 EraseBytes-
+#44117	REDUCE cov: 96 ft: 129 corp: 19/710b lim: 389 exec/s: 44117 rss: 45Mb L: 58/264 MS: 2 ChangeBit-EraseBytes-
+#51045	REDUCE cov: 96 ft: 129 corp: 19/707b lim: 453 exec/s: 25522 rss: 45Mb L: 55/264 MS: 3 ChangeBinInt-ChangeByte-EraseBytes-
+#55101	REDUCE cov: 96 ft: 129 corp: 19/701b lim: 493 exec/s: 27550 rss: 46Mb L: 49/264 MS: 1 EraseBytes-
+#55545	REDUCE cov: 97 ft: 130 corp: 20/797b lim: 493 exec/s: 27772 rss: 46Mb L: 96/264 MS: 4 PersAutoDict-ChangeByte-InsertRepeatedBytes-PersAutoDict- DE: "OMB1"-"OMB1"-
+#56239	REDUCE cov: 97 ft: 130 corp: 20/793b lim: 493 exec/s: 28119 rss: 46Mb L: 92/264 MS: 4 CopyPart-InsertByte-CrossOver-EraseBytes-
+#59131	REDUCE cov: 97 ft: 130 corp: 20/784b lim: 517 exec/s: 29565 rss: 46Mb L: 40/264 MS: 2 CrossOver-EraseBytes-
+#59901	NEW    cov: 98 ft: 131 corp: 21/792b lim: 517 exec/s: 29950 rss: 47Mb L: 8/264 MS: 5 InsertByte-ChangeByte-InsertRepeatedBytes-EraseBytes-ChangeBinInt-
+#60507	REDUCE cov: 98 ft: 131 corp: 21/763b lim: 517 exec/s: 30253 rss: 47Mb L: 63/264 MS: 1 EraseBytes-
+#61223	REDUCE cov: 99 ft: 132 corp: 22/832b lim: 517 exec/s: 30611 rss: 47Mb L: 69/264 MS: 1 CrossOver-
+#65536	pulse  cov: 99 ft: 132 corp: 22/832b lim: 553 exec/s: 32768 rss: 47Mb
+#66500	REDUCE cov: 99 ft: 132 corp: 22/827b lim: 562 exec/s: 33250 rss: 47Mb L: 35/264 MS: 2 PersAutoDict-EraseBytes- DE: "\377\377"-
+#66811	REDUCE cov: 99 ft: 132 corp: 22/813b lim: 562 exec/s: 33405 rss: 47Mb L: 49/264 MS: 1 EraseBytes-
+#69491	REDUCE cov: 99 ft: 132 corp: 22/804b lim: 580 exec/s: 34745 rss: 48Mb L: 40/264 MS: 5 PersAutoDict-PersAutoDict-ChangeASCIIInt-ChangeBinInt-EraseBytes- DE: "OMB1"-"OMB1"-
+#69567	REDUCE cov: 99 ft: 132 corp: 22/801b lim: 580 exec/s: 34783 rss: 48Mb L: 37/264 MS: 1 EraseBytes-
+#69873	REDUCE cov: 99 ft: 132 corp: 22/784b lim: 580 exec/s: 34936 rss: 48Mb L: 52/264 MS: 1 EraseBytes-
+#80119	REDUCE cov: 99 ft: 132 corp: 22/779b lim: 679 exec/s: 26706 rss: 49Mb L: 32/264 MS: 1 EraseBytes-
+#82253	NEW    cov: 100 ft: 133 corp: 23/785b lim: 697 exec/s: 27417 rss: 49Mb L: 6/264 MS: 4 CrossOver-CrossOver-EraseBytes-PersAutoDict- DE: "\377\377"-
+#84088	REDUCE cov: 102 ft: 135 corp: 24/839b lim: 715 exec/s: 28029 rss: 49Mb L: 54/264 MS: 5 ChangeBit-PersAutoDict-CMP-ChangeBinInt-ChangeBinInt- DE: "\377\377"-"\007\000\000\000\000\000\000\000"-
+#94789	NEW    cov: 105 ft: 138 corp: 25/844b lim: 814 exec/s: 31596 rss: 50Mb L: 5/264 MS: 1 EraseBytes-
+#102985	REDUCE cov: 105 ft: 138 corp: 25/842b lim: 895 exec/s: 25746 rss: 51Mb L: 33/264 MS: 1 EraseBytes-
+#104021	REDUCE cov: 105 ft: 138 corp: 25/832b lim: 904 exec/s: 26005 rss: 52Mb L: 44/264 MS: 1 EraseBytes-
+#107223	REDUCE cov: 105 ft: 138 corp: 25/830b lim: 931 exec/s: 26805 rss: 52Mb L: 31/264 MS: 2 ChangeBinInt-EraseBytes-
+#107316	REDUCE cov: 105 ft: 138 corp: 25/827b lim: 931 exec/s: 26829 rss: 52Mb L: 49/264 MS: 3 CrossOver-PersAutoDict-EraseBytes- DE: "\377\377"-
+#124171	REDUCE cov: 105 ft: 138 corp: 25/826b lim: 1090 exec/s: 31042 rss: 54Mb L: 48/264 MS: 5 CrossOver-ChangeASCIIInt-ChangeASCIIInt-PersAutoDict-EraseBytes- DE: "OMB1"-
+#131072	pulse  cov: 105 ft: 138 corp: 25/826b lim: 1150 exec/s: 26214 rss: 54Mb
+#135797	REDUCE cov: 105 ft: 138 corp: 25/825b lim: 1200 exec/s: 27159 rss: 55Mb L: 263/263 MS: 1 EraseBytes-
+#140243	REDUCE cov: 105 ft: 138 corp: 25/823b lim: 1240 exec/s: 28048 rss: 55Mb L: 46/263 MS: 1 EraseBytes-
+#160179	REDUCE cov: 105 ft: 138 corp: 25/820b lim: 1430 exec/s: 32035 rss: 57Mb L: 260/260 MS: 1 EraseBytes-
+#160576	REDUCE cov: 105 ft: 138 corp: 25/817b lim: 1430 exec/s: 32115 rss: 57Mb L: 41/260 MS: 2 ChangeByte-EraseBytes-
+#209523	REDUCE cov: 105 ft: 138 corp: 25/816b lim: 1910 exec/s: 34920 rss: 63Mb L: 40/260 MS: 2 ChangeByte-EraseBytes-
+#210704	REDUCE cov: 105 ft: 138 corp: 25/803b lim: 1920 exec/s: 35117 rss: 63Mb L: 33/260 MS: 1 EraseBytes-
+#226129	REDUCE cov: 105 ft: 138 corp: 25/800b lim: 2072 exec/s: 32304 rss: 64Mb L: 37/260 MS: 5 InsertByte-ChangeBinInt-ShuffleBytes-ChangeByte-EraseBytes-
+#260125	REDUCE cov: 105 ft: 138 corp: 25/798b lim: 2402 exec/s: 37160 rss: 68Mb L: 35/260 MS: 1 EraseBytes-
+#262144	pulse  cov: 105 ft: 138 corp: 25/798b lim: 2413 exec/s: 37449 rss: 68Mb
+#325426	REDUCE cov: 105 ft: 138 corp: 25/796b lim: 3051 exec/s: 36158 rss: 75Mb L: 31/260 MS: 1 EraseBytes-
+#524288	pulse  cov: 105 ft: 138 corp: 25/796b lim: 4096 exec/s: 40329 rss: 95Mb
+#717108	REDUCE cov: 106 ft: 139 corp: 26/827b lim: 4096 exec/s: 44819 rss: 116Mb L: 31/260 MS: 2 ShuffleBytes-ChangeBit-
+#824810	REDUCE cov: 106 ft: 139 corp: 26/824b lim: 4096 exec/s: 45822 rss: 127Mb L: 32/260 MS: 2 ChangeByte-EraseBytes-
+#833066	REDUCE cov: 106 ft: 139 corp: 26/823b lim: 4096 exec/s: 46281 rss: 128Mb L: 31/260 MS: 1 EraseBytes-
+#1048576	pulse  cov: 106 ft: 139 corp: 26/823b lim: 4096 exec/s: 47662 rss: 152Mb
+	NEW_FUNC[1/1]: 0x7ff790937e90 in oasis_rt::modbus_gateway::encode_omb1 C:\dev\oasis\oasis-rt\src\modbus_gateway.rs:60
+#1129719	REDUCE cov: 189 ft: 222 corp: 27/868b lim: 4096 exec/s: 47071 rss: 162Mb L: 45/260 MS: 3 PersAutoDict-InsertByte-CopyPart- DE: "\007\000\000\000\000\000\000\000"-
+#1561968	REDUCE cov: 192 ft: 225 corp: 28/901b lim: 4096 exec/s: 48811 rss: 207Mb L: 33/260 MS: 4 ShuffleBytes-InsertByte-ShuffleBytes-CrossOver-
+#1575935	NEW    cov: 194 ft: 227 corp: 29/942b lim: 4096 exec/s: 47755 rss: 209Mb L: 41/260 MS: 2 ChangeBinInt-EraseBytes-
+#1809538	NEW    cov: 196 ft: 229 corp: 30/985b lim: 4096 exec/s: 47619 rss: 234Mb L: 43/260 MS: 3 CopyPart-InsertByte-InsertByte-
+#1983240	NEW    cov: 202 ft: 235 corp: 31/1022b lim: 4096 exec/s: 46121 rss: 253Mb L: 37/260 MS: 2 EraseBytes-ChangeBit-
+#2097152	pulse  cov: 202 ft: 235 corp: 31/1022b lim: 4096 exec/s: 45590 rss: 266Mb
+#2347998	NEW    cov: 204 ft: 237 corp: 32/1057b lim: 4096 exec/s: 46959 rss: 295Mb L: 35/260 MS: 3 ShuffleBytes-ChangeBit-EraseBytes-
+#2394338	NEW    cov: 205 ft: 238 corp: 33/1090b lim: 4096 exec/s: 46947 rss: 301Mb L: 33/260 MS: 5 ChangeBit-CopyPart-ShuffleBytes-CMP-CrossOver- DE: "0BMO"-
+#4194304	pulse  cov: 205 ft: 238 corp: 33/1090b lim: 4096 exec/s: 49344 rss: 517Mb
+#4262782	NEW    cov: 209 ft: 242 corp: 34/1129b lim: 4096 exec/s: 49567 rss: 526Mb L: 39/260 MS: 4 ChangeBit-CopyPart-EraseBytes-CMP- DE: "\004\000\000\000\000\000\000\000"-
+#8388608	pulse  cov: 209 ft: 242 corp: 34/1129b lim: 4096 exec/s: 52103 rss: 563Mb
+#9345467	NEW    cov: 212 ft: 245 corp: 35/1176b lim: 4096 exec/s: 52502 rss: 569Mb L: 47/260 MS: 5 InsertByte-PersAutoDict-InsertByte-PersAutoDict-CMP- DE: "0BMO"-"0BMO"-"\000\010\000\000\000\000\000\000"-
+#16777216	pulse  cov: 212 ft: 245 corp: 35/1176b lim: 4096 exec/s: 54120 rss: 571Mb
+#33554432	pulse  cov: 212 ft: 245 corp: 35/1176b lim: 4096 exec/s: 48419 rss: 571Mb
+#61247874	REDUCE cov: 212 ft: 245 corp: 35/1175b lim: 4096 exec/s: 51468 rss: 571Mb L: 31/260 MS: 5 CrossOver-ChangeByte-ChangeBit-EraseBytes-CMP- DE: "2BMO"-
+#67108864	pulse  cov: 212 ft: 245 corp: 35/1175b lim: 4096 exec/s: 51781 rss: 571Mb
+#134217728	pulse  cov: 212 ft: 245 corp: 35/1175b lim: 4096 exec/s: 54537 rss: 571Mb
+#207277840	DONE   cov: 212 ft: 245 corp: 35/1175b lim: 4096 exec/s: 57561 rss: 571Mb
+###### Recommended dictionary. ######
+"\377\377" # Uses: 2847188
+"OMB1" # Uses: 2797459
+"\007\000\000\000\000\000\000\000" # Uses: 2777298
+"0BMO" # Uses: 2735841
+"\004\000\000\000\000\000\000\000" # Uses: 2674701
+"\000\010\000\000\000\000\000\000" # Uses: 2586165
+"2BMO" # Uses: 1842542
+###### End of recommended dictionary. ######
+Done 207277840 runs in 3601 second(s)
+stat::number_of_executed_units: 207277840
+stat::average_exec_per_sec:     57561
+stat::new_units_added:          74
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              571

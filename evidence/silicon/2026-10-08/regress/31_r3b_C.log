@@ -1,0 +1,4 @@
+OASIS|C|UART|RXF|n=7,len=153,ctr=30914,seq=???|mesh|ad8f24a
+OASIS|C|UART|ARRIVED|msg_id=9834836200920743524,hops=0,sig=verified,forward=true|mesh|ad8f24a
+OASIS|C|UART|ACT|decision=Reject(Stopped),seq=2003,origin=f6,entropy=0.361,pin25=0,jseq=Some(6)|mesh|ad8f24a
+OASIS|A|MODBUS|MB_DEV_STATUS|rx_bytes=57,rx_errors=0,overflow=0,frames=8,parse_errors=0,writes=7,local_frames=0|device|a39d5fe

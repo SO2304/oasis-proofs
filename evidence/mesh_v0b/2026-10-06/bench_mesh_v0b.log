@@ -1,0 +1,19 @@
+╔════════════════════════════════════════════════════════════╗
+║ OASIS — v0A vs v0B mesh cost  (K=10 repeats, median ± spread)   ║
+╚════════════════════════════════════════════════════════════╝
+
+payload = 15 bytes:
+  v0A origin_wrap (Ed25519, header only)          252881 ns/op  (   246531-   264419)  ± 3.5%        3954 ops/s
+  v0B origin_wrap (SHA-256 + Ed25519)             253143 ns/op  (   245909-   314702)  ±13.6%        3950 ops/s
+  v0A verify (Ed25519, header only)               123834 ns/op  (   123465-   127607)  ± 1.7%        8075 ops/s
+  v0B verify (SHA-256 + Ed25519)                  124306 ns/op  (   122622-   127542)  ± 2.0%        8045 ops/s
+
+payload = 1024 bytes:
+  v0A origin_wrap (Ed25519, header only)          247736 ns/op  (   245302-   251569)  ± 1.3%        4037 ops/s
+  v0B origin_wrap (SHA-256 + Ed25519)             249703 ns/op  (   245654-   255557)  ± 2.0%        4005 ops/s
+  v0A verify (Ed25519, header only)               124582 ns/op  (   121246-   127118)  ± 2.4%        8027 ops/s
+  v0B verify (SHA-256 + Ed25519)                  126483 ns/op  (   123986-   127703)  ± 1.5%        7906 ops/s
+
+Note: v0B > v0A by one SHA-256 of the payload (grows with size);
+Ed25519 dominates and is payload-independent. Not optimised.
+K=10 per measurement. Numbers include min-max + half-spread %.

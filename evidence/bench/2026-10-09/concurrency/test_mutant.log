@@ -1,0 +1,6 @@
+run 1: 5 of 300 concurrent writes were refused: [(134, 10), (134, 10), (134, 10), (134, 10), (134, 10)] — a legitimate write refused because another HMI's order overtook it
+run 1: test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 4 filtered out; finished in 0.09s
+run 2: 15 of 300 concurrent writes were refused: [(134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10)] — a legitimate write refused because another HMI's order overtook it
+run 2: test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 4 filtered out; finished in 0.08s
+run 3: 18 of 300 concurrent writes were refused: [(134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10), (134, 10)] — a legitimate write refused because another HMI's order overtook it
+run 3: test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 4 filtered out; finished in 0.08s

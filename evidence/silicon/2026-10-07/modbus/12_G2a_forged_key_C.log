@@ -1,0 +1,3 @@
+OASIS|C|UART|RXF|n=3,len=132,ctr=2000001,seq=?,?|mesh|a39d5fe
+OASIS|C|UART|DROP|bad mesh signature|mesh|a39d5fe
+OASIS|C|UART|MB_GW|decision=Reject(NotVerified),rules=Ok,v0b_drop=bad mesh signature,seq=2,origin=f6,unit=0x11,fc=6,start=0x0010,count=1,v0=300,entropy=0.361|mesh|a39d5fe

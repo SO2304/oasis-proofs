@@ -1,0 +1,4 @@
+flashing /c/Users/pc/AppData/Local/Temp/claude/c--dev-oasis/3b644d8a-d030-4382-a054-af7fa383b4ab/scratchpad/fw14a/A_modbus_device.uf2 -> D: (UF2 Bootloader v3.0 Model: Raspberry Pi RP2 )
+done: /dev/ttyS8 back=yes
+OASIS|A|MODBUS|MB_DEV_STATUS|rx_bytes=0,rx_errors=0,overflow=0,frames=0,parse_errors=0,writes=0,local_frames=0|device|a39d5fe
+OASIS|A|MODBUS|MB_DEV_REGS|r10=0,r11=0,r12=0,r20=0|device|a39d5fe

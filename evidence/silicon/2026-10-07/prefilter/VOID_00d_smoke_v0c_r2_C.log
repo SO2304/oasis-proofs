@@ -1,0 +1,4 @@
+OASIS|C|UART|PF_MODE|v0c=true,next_hop=-,tokens=24|mesh|a8d97a2
+OASIS|C|UART|PF_QUIET|quiet=true|mesh|a8d97a2
+OASIS|C|UART|PF_STATUS|v0c=true,accepted=6,drop_tag=3,drop_budget=0,drop_sig=0,drop_other=0,busy_us=1266328,max_us=190141,tokens=23,rx_bytes=2180,frames=9,crc_fails=6,dh_derivations=1|mesh|a8d97a2
+OASIS|C|UART|PF_QUIET|quiet=false|mesh|a8d97a2

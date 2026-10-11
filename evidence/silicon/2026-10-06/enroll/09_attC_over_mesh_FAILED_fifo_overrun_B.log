@@ -1,0 +1,20 @@
+OASIS|B|UART|RXF|n=2,len=297,ctr=1281,seq=??n|mesh|5c4bd96
+OASIS|B|UART|ARRIVED|msg_id=15061956533635597714,hops=0,sig=verified,forward=true|mesh|5c4bd96
+OASIS|B|UART|FRAG_RX|origin=822460d254200275,idx=0,count=14,outcome=incomplete|mesh|5c4bd96
+OASIS|B|UART|RXF|n=3,len=297,ctr=1283,seq=w%.|mesh|5c4bd96
+OASIS|B|UART|ARRIVED|msg_id=659718110471378908,hops=0,sig=verified,forward=true|mesh|5c4bd96
+OASIS|B|UART|FRAG_RX|origin=822460d254200275,idx=2,count=14,outcome=incomplete|mesh|5c4bd96
+OASIS|B|UART|FRAMER_CRC_FAIL|count=1|mesh|5c4bd96
+OASIS|B|UART|RXF|n=4,len=297,ctr=1286,seq=??8|mesh|5c4bd96
+OASIS|B|UART|ARRIVED|msg_id=8743585284749947719,hops=0,sig=verified,forward=true|mesh|5c4bd96
+OASIS|B|UART|FRAG_RX|origin=822460d254200275,idx=5,count=14,outcome=incomplete|mesh|5c4bd96
+OASIS|B|UART|RXF|n=5,len=297,ctr=14361697736707802375,seq=???|mesh|5c4bd96
+OASIS|B|UART|DROP|ttl/hops out of range|mesh|5c4bd96
+OASIS|B|UART|RXF|n=6,len=297,ctr=1289,seq=}??|mesh|5c4bd96
+OASIS|B|UART|ARRIVED|msg_id=10476396684744832194,hops=0,sig=verified,forward=true|mesh|5c4bd96
+OASIS|B|UART|FRAG_RX|origin=822460d254200275,idx=8,count=14,outcome=incomplete|mesh|5c4bd96
+OASIS|B|UART|FRAMER_CRC_FAIL|count=2|mesh|5c4bd96
+OASIS|B|UART|RXF|n=7,len=297,ctr=1292,seq=???|mesh|5c4bd96
+OASIS|B|UART|ARRIVED|msg_id=15522674458309907186,hops=0,sig=verified,forward=true|mesh|5c4bd96
+OASIS|B|UART|FRAG_RX|origin=822460d254200275,idx=11,count=14,outcome=incomplete|mesh|5c4bd96
+OASIS|B|UART|FRAMER_CRC_FAIL|count=3|mesh|5c4bd96

@@ -1,0 +1,18 @@
+run1: tx=50 rx=50
+run2: tx=50 rx=50
+run3: tx=50 rx=50
+
+flipped field -> decision at B (150 packets):
+  magic    {'DROP|legacy envelope rejected by strict v0B router': 9}
+  network  {'DROP|foreign network': 9}
+  origin   {'DROP|unknown sender': 13}
+  counter  {'DROP|bad mesh signature': 8}
+  ttl      {'DROP|ttl/hops out of range': 3}
+  hops     {'DROP|ttl/hops out of range': 2}
+  plen     {'DROP|length mismatch': 2}
+  sig      {'DROP|bad mesh signature': 83}
+  payload  {'DROP|bad mesh signature': 21}
+
+totals: {'DROP|bad mesh signature': 112, 'DROP|unknown sender': 13, 'DROP|ttl/hops out of range': 5, 'DROP|legacy envelope rejected by strict v0B router': 9, 'DROP|foreign network': 9, 'DROP|length mismatch': 2}
+accepted (ARRIVED): 0
+correlation problems: 0

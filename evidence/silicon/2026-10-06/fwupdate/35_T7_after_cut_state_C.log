@@ -1,0 +1,15 @@
+# T7 port transitions (port_watch.sh, 100 ms sampling). Manifest sent 23:13:38Z; reset for the swap at the 'absent' line; the operator then cut USB power during the swap and restored it.
+2026-10-06T23:13:38.446Z /dev/ttyS10 present
+2026-10-06T23:13:42.885Z /dev/ttyS10 absent
+2026-10-06T23:14:26.133Z /dev/ttyS10 present
+# breadcrumbs 0x1F0180.. : last v2 record (A1..A6), then the reset-for-swap record (C1 s3=100 s2=0 C2 B1 -- ends at B1: no state crumb, power lost inside prepare_boot), then a power-on record (C1 s3=0 s2=0 C2 B1 B3 = swap resumed, code word 0xffd8f00b = v3, B9 A1..A6)
+# floor slots 0x1F2000 (TXL1 3) / 0x1F3000 (TXL1 2) -> floor 3; state 0x7000 = 0xD0 (BOOT_MAGIC, marked booted)
+OASIS|C|UART|FW_STATUS|version=3,floor=3,boot=ConfirmedAfterSwap,bootloader_state=Boot,fp=a7089677a10b7fb0,guard_failed_before=0|mesh|200d96b
+OASIS|C|UART|FLASH|off=1f0180,bytes=e4e0e8e0e0e1e0e0d2e0e0e2e0e0e4e2e0e0e1e8e1e0e0e1e0e0ebefe0edeaefefb9a1a2a3a4a5a6c1e6e4e0e0e0e0e0e0e0e0c2e0e0e0e0e0e0e0e0b1c1e0e0|mesh|200d96b
+OASIS|C|UART|FLASH|off=1f01c0,bytes=e0e0e0e0e0e0e0e0c2e0e0e0e0e0e0e0e0b1b3d1e0e0e2e0e0e0e0e0e4e0e8e0e0e1e0e0d2e0e0e2e0e0e4e2e0e0e1e8e1e0e0e1e0e0ebefe0ede8efefb9a1a2|mesh|200d96b
+OASIS|C|UART|FLASH|off=1f0200,bytes=a3a4a5a6ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff|mesh|200d96b
+OASIS|C|UART|FLASH|off=1f0240,bytes=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff|mesh|200d96b
+OASIS|C|UART|FLASH|off=1f0280,bytes=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff|mesh|200d96b
+OASIS|C|UART|FLASH|off=1f2000,bytes=54584c31030000000000000045be3083ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff|mesh|200d96b
+OASIS|C|UART|FLASH|off=1f3000,bytes=54584c310200000000000000779aecf3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff|mesh|200d96b
+OASIS|C|UART|FLASH|off=007000,bytes=d0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff|mesh|200d96b

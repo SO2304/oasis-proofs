@@ -1,0 +1,4 @@
+VEHICLE listen=127.0.0.1:14560 px4=127.0.0.1:18570 bind=0.0.0.0:14550 revoked=true boot_id=4242
+VEHICLE fp=0201..  trusts commander fp=0101..  network=[79, 65, 83, 73, 83, 110, 101, 116]
+GATE Reject(Revoked) seq=1 -> no ARM frame
+VEHICLE done: executed=0 rejects=[0, 0, 1, 0, 0, 0, 0, 0, 0, 0] px4_heartbeats=0 armed=false

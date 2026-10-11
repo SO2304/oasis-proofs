@@ -1,0 +1,8 @@
+# T1 attempt 1 (application stamp fc447d1, bootloader without the USBCTRL reset).
+# After FW_INSTALL accepted (10_T1_install_v2_C.log) the port disappeared and did NOT come back.
+# The host wait loop (180 x 1 s) timed out after 186 s; the @V read that followed failed with
+# "/dev/ttyS10: No such device or address" (17.8 MB of repeated read errors, not kept).
+# CORRECTION (2026-10-07, before commit): an earlier version of this file said
+# "port gone -> back = 186 s". That was wrong: 186 s was the loop timeout, not a return of the port.
+# C was recovered by a manual BOOTSEL; its breadcrumbs (12_T1_stuck_breadcrumbs_state.log) show the
+# swap completed and v2 reached its main loop; USB was the defect (fixed in 067855c).

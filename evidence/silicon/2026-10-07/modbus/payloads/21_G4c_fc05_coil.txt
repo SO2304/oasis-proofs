@@ -1,0 +1,2 @@
+WARNING: not a valid OMB1 (the gateway refuses it at parsing)
+# gateway clock before: OASIS|C|UART|MB_GW_STATUS|boot_id=21232,now_ms=641185,executed=2,rejects=5/0/0/1/0/2/1,sent=2,ack=2,exception=0,timeout=0,bad=0,rx_errors=0,last_seq=Some(2)|mesh|a39d5fe

@@ -1,0 +1,19 @@
+# upload 301940 bytes from B_v9.bin at 2026-10-07T10:49:22Z
+OASIS|B|UART|DFU_PROGRESS|written_to=65536|mesh|a8d97a2
+OASIS|B|UART|DFU_PROGRESS|written_to=131072|mesh|a8d97a2
+OASIS|B|UART|DFU_PROGRESS|written_to=196608|mesh|a8d97a2
+OASIS|B|UART|DFU_PROGRESS|written_to=262144|mesh|a8d97a2
+OASIS|B|UART|DFU_PROGRESS|written_to=301940|mesh|a8d97a2
+# upload sent in 22 s
+OASIS|B|UART|STAGE|len=0|mesh|a8d97a2
+OASIS|B|UART|STAGE|len=280|mesh|a8d97a2
+OASIS|B|UART|STAGE|len=560|mesh|a8d97a2
+OASIS|B|UART|STAGE|len=840|mesh|a8d97a2
+OASIS|B|UART|STAGE|len=1120|mesh|a8d97a2
+OASIS|B|UART|STAGE|len=1400|mesh|a8d97a2
+OASIS|B|UART|STAGE|len=1680|mesh|a8d97a2
+OASIS|B|UART|STAGE|len=1960|mesh|a8d97a2
+OASIS|B|UART|STAGE|len=2240|mesh|a8d97a2
+OASIS|B|UART|STAGE|len=2520|mesh|a8d97a2
+OASIS|B|UART|STAGE|len=2548|mesh|a8d97a2
+OASIS|B|UART|FW_INSTALL|accepted,version=9,running=8,floor=8,check_us=707174,resetting_for_swap|mesh|a8d97a2

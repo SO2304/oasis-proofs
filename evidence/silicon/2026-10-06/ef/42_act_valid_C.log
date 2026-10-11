@@ -1,0 +1,4 @@
+OASIS|C|UART|RXF|n=2,len=153,ctr=2,seq=???|mesh|6daa0bc
+OASIS|C|UART|ARRIVED|msg_id=14412014626722181781,hops=1,sig=verified,forward=true|mesh|6daa0bc
+OASIS|C|UART|ACT|decision=Act,seq=2,origin=aa,entropy=0.361,pin25=1|mesh|6daa0bc
+OASIS|C|UART|EF_STATUS|boot_id=0,now_ms=122396,epoch=0,revoked=0,sensor_lost=false,pin25=1,executed=1,rejects=0/0/0/1/0/0/0|mesh|6daa0bc

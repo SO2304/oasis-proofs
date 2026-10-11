@@ -1,0 +1,3 @@
+OASIS|C|UART|RXF|n=5,len=153,ctr=4,seq=???|mesh|6daa0bc
+OASIS|C|UART|ARRIVED|msg_id=5039751254184596848,hops=1,sig=verified,forward=true|mesh|6daa0bc
+OASIS|C|UART|ACT|decision=Act,seq=5,origin=aa,entropy=0.361,pin25=1|mesh|6daa0bc

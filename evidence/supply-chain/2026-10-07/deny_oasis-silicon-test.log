@@ -1,0 +1,414 @@
+warning[duplicate]: found 2 duplicate entries for crate 'bitfield'
+  ┌─ C:\dev\oasis\oasis-silicon-test/Cargo.lock:6:1
+  │  
+6 │ ╭ bitfield 0.13.2 registry+https://github.com/rust-lang/crates.io-index
+7 │ │ bitfield 0.14.0 registry+https://github.com/rust-lang/crates.io-index
+  │ ╰─────────────────────────────────────────────────────────────────────┘ lock entries
+  │  
+  ├ bitfield v0.13.2
+    └── cortex-m v0.7.9
+        ├── oasis-silicon-test v0.1.0
+        ├── rp2040-hal v0.10.2
+        │   ├── oasis-silicon-test v0.1.0 (*)
+        │   └── rp2040-flash v0.5.2
+        │       └── oasis-silicon-test v0.1.0 (*)
+        └── rp2040-pac v0.6.0
+            └── rp2040-hal v0.10.2 (*)
+  ├ bitfield v0.14.0
+    └── rp2040-hal v0.10.2
+        ├── oasis-silicon-test v0.1.0
+        └── rp2040-flash v0.5.2
+            └── oasis-silicon-test v0.1.0 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'chacha20'
+   ┌─ C:\dev\oasis\oasis-silicon-test/Cargo.lock:14:1
+   │  
+14 │ ╭ chacha20 0.9.1 registry+https://github.com/rust-lang/crates.io-index
+15 │ │ chacha20 0.10.2 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰─────────────────────────────────────────────────────────────────────┘ lock entries
+   │  
+   ├ chacha20 v0.9.1
+     └── chacha20poly1305 v0.10.1
+         └── oasis-rt v0.3.0
+             ├── oasis-operator-key v0.1.0
+             │   └── oasis-silicon-test v0.1.0
+             └── oasis-silicon-test v0.1.0 (*)
+   ├ chacha20 v0.10.2
+     └── rand v0.10.3
+         ├── core-models v0.0.7
+         │   ├── libcrux-intrinsics v0.0.8
+         │   │   ├── libcrux-ml-dsa v0.0.10
+         │   │   │   └── oasis-rt v0.3.0
+         │   │   │       ├── oasis-operator-key v0.1.0
+         │   │   │       │   └── oasis-silicon-test v0.1.0
+         │   │   │       └── oasis-silicon-test v0.1.0 (*)
+         │   │   └── libcrux-sha3 v0.0.10
+         │   │       └── libcrux-ml-dsa v0.0.10 (*)
+         │   └── libcrux-ml-dsa v0.0.10 (*)
+         └── libcrux-traits v0.0.8
+             └── libcrux-sha3 v0.0.10 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'cpufeatures'
+   ┌─ C:\dev\oasis\oasis-silicon-test/Cargo.lock:24:1
+   │  
+24 │ ╭ cpufeatures 0.2.17 registry+https://github.com/rust-lang/crates.io-index
+25 │ │ cpufeatures 0.3.1 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰───────────────────────────────────────────────────────────────────────┘ lock entries
+   │  
+   ├ cpufeatures v0.2.17
+     ├── chacha20 v0.9.1
+     │   └── chacha20poly1305 v0.10.1
+     │       └── oasis-rt v0.3.0
+     │           ├── oasis-operator-key v0.1.0
+     │           │   └── oasis-silicon-test v0.1.0
+     │           └── oasis-silicon-test v0.1.0 (*)
+     └── poly1305 v0.8.0
+         └── chacha20poly1305 v0.10.1 (*)
+   ├ cpufeatures v0.3.1
+     ├── chacha20 v0.10.2
+     │   └── rand v0.10.3
+     │       ├── core-models v0.0.7
+     │       │   ├── libcrux-intrinsics v0.0.8
+     │       │   │   ├── libcrux-ml-dsa v0.0.10
+     │       │   │   │   └── oasis-rt v0.3.0
+     │       │   │   │       ├── oasis-operator-key v0.1.0
+     │       │   │   │       │   └── oasis-silicon-test v0.1.0
+     │       │   │   │       └── oasis-silicon-test v0.1.0 (*)
+     │       │   │   └── libcrux-sha3 v0.0.10
+     │       │   │       └── libcrux-ml-dsa v0.0.10 (*)
+     │       │   └── libcrux-ml-dsa v0.0.10 (*)
+     │       └── libcrux-traits v0.0.8
+     │           └── libcrux-sha3 v0.0.10 (*)
+     └── sha2 v0.11.0
+         └── oasis-rt v0.3.0 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'crypto-common'
+   ┌─ C:\dev\oasis\oasis-silicon-test/Cargo.lock:31:1
+   │  
+31 │ ╭ crypto-common 0.1.7 registry+https://github.com/rust-lang/crates.io-index
+32 │ │ crypto-common 0.2.2 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰─────────────────────────────────────────────────────────────────────────┘ lock entries
+   │  
+   ├ crypto-common v0.1.7
+     ├── aead v0.5.2
+     │   └── chacha20poly1305 v0.10.1
+     │       └── oasis-rt v0.3.0
+     │           ├── oasis-operator-key v0.1.0
+     │           │   └── oasis-silicon-test v0.1.0
+     │           └── oasis-silicon-test v0.1.0 (*)
+     ├── cipher v0.4.4
+     │   ├── chacha20 v0.9.1
+     │   │   └── chacha20poly1305 v0.10.1 (*)
+     │   └── chacha20poly1305 v0.10.1 (*)
+     └── universal-hash v0.5.1
+         └── poly1305 v0.8.0
+             └── chacha20poly1305 v0.10.1 (*)
+   ├ crypto-common v0.2.2
+     └── digest v0.11.3
+         └── sha2 v0.11.0
+             └── oasis-rt v0.3.0
+                 ├── oasis-operator-key v0.1.0
+                 │   └── oasis-silicon-test v0.1.0
+                 └── oasis-silicon-test v0.1.0 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'embedded-hal'
+   ┌─ C:\dev\oasis\oasis-silicon-test/Cargo.lock:39:1
+   │  
+39 │ ╭ embedded-hal 0.2.7 registry+https://github.com/rust-lang/crates.io-index
+40 │ │ embedded-hal 1.0.0 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰────────────────────────────────────────────────────────────────────────┘ lock entries
+   │  
+   ├ embedded-hal v0.2.7
+     ├── cortex-m v0.7.9
+     │   ├── oasis-silicon-test v0.1.0
+     │   ├── rp2040-hal v0.10.2
+     │   │   ├── oasis-silicon-test v0.1.0 (*)
+     │   │   └── rp2040-flash v0.5.2
+     │   │       └── oasis-silicon-test v0.1.0 (*)
+     │   └── rp2040-pac v0.6.0
+     │       └── rp2040-hal v0.10.2 (*)
+     ├── rp2040-hal v0.10.2 (*)
+     └── usbd-serial v0.2.2
+         └── oasis-silicon-test v0.1.0 (*)
+   ├ embedded-hal v1.0.0
+     ├── cortex-m v0.7.9
+     │   ├── oasis-silicon-test v0.1.0
+     │   ├── rp2040-hal v0.10.2
+     │   │   ├── oasis-silicon-test v0.1.0 (*)
+     │   │   └── rp2040-flash v0.5.2
+     │   │       └── oasis-silicon-test v0.1.0 (*)
+     │   └── rp2040-pac v0.6.0
+     │       └── rp2040-hal v0.10.2 (*)
+     ├── embedded-hal-async v1.0.0
+     │   └── rp2040-hal v0.10.2 (*)
+     ├── embedded-hal-nb v1.0.0
+     │   └── rp2040-hal v0.10.2 (*)
+     └── rp2040-hal v0.10.2 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'frunk_core'
+   ┌─ C:\dev\oasis\oasis-silicon-test/Cargo.lock:46:1
+   │  
+46 │ ╭ frunk_core 0.4.4 registry+https://github.com/rust-lang/crates.io-index
+47 │ │ frunk_core 0.5.0 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰──────────────────────────────────────────────────────────────────────┘ lock entries
+   │  
+   ├ frunk_core v0.4.4
+     └── frunk v0.4.4
+         └── rp2040-hal v0.10.2
+             ├── oasis-silicon-test v0.1.0
+             └── rp2040-flash v0.5.2
+                 └── oasis-silicon-test v0.1.0 (*)
+   ├ frunk_core v0.5.0
+     └── frunk_proc_macro_helpers v0.1.5
+         └── frunk_derives v0.4.4
+             └── frunk v0.4.4
+                 └── rp2040-hal v0.10.2
+                     ├── oasis-silicon-test v0.1.0
+                     └── rp2040-flash v0.5.2
+                         └── oasis-silicon-test v0.1.0 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'heapless'
+   ┌─ C:\dev\oasis\oasis-silicon-test/Cargo.lock:59:1
+   │  
+59 │ ╭ heapless 0.8.0 registry+https://github.com/rust-lang/crates.io-index
+60 │ │ heapless 0.9.3 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰────────────────────────────────────────────────────────────────────┘ lock entries
+   │  
+   ├ heapless v0.8.0
+     └── usb-device v0.3.2
+         ├── oasis-silicon-test v0.1.0
+         ├── rp2040-hal v0.10.2
+         │   ├── oasis-silicon-test v0.1.0 (*)
+         │   └── rp2040-flash v0.5.2
+         │       └── oasis-silicon-test v0.1.0 (*)
+         └── usbd-serial v0.2.2
+             └── oasis-silicon-test v0.1.0 (*)
+   ├ heapless v0.9.3
+     ├── oasis-silicon-test v0.1.0
+     └── rmodbus v0.12.2
+         └── oasis-silicon-test v0.1.0 (*)
+
+warning[license-not-encountered]: license was not encountered
+   ┌─ C:\dev\oasis\oasis-silicon-test\../deny.toml:34:6
+   │
+34 │     "0BSD", # stm32f4xx-hal (oasis-renode-m11): OSI-approved, more permissive than MIT
+   │      ━━━━ unmatched license allowance
+
+warning[license-not-encountered]: license was not encountered
+   ┌─ C:\dev\oasis\oasis-silicon-test\../deny.toml:32:6
+   │
+32 │     "Apache-2.0 WITH LLVM-exception",
+   │      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ unmatched license allowance
+
+warning[duplicate]: found 2 duplicate entries for crate 'nb'
+   ┌─ C:\dev\oasis\oasis-silicon-test/Cargo.lock:80:1
+   │  
+80 │ ╭ nb 0.1.3 registry+https://github.com/rust-lang/crates.io-index
+81 │ │ nb 1.1.0 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰──────────────────────────────────────────────────────────────┘ lock entries
+   │  
+   ├ nb v0.1.3
+     └── embedded-hal v0.2.7
+         ├── cortex-m v0.7.9
+         │   ├── oasis-silicon-test v0.1.0
+         │   ├── rp2040-hal v0.10.2
+         │   │   ├── oasis-silicon-test v0.1.0 (*)
+         │   │   └── rp2040-flash v0.5.2
+         │   │       └── oasis-silicon-test v0.1.0 (*)
+         │   └── rp2040-pac v0.6.0
+         │       └── rp2040-hal v0.10.2 (*)
+         ├── rp2040-hal v0.10.2 (*)
+         └── usbd-serial v0.2.2
+             └── oasis-silicon-test v0.1.0 (*)
+   ├ nb v1.1.0
+     ├── embedded-hal-nb v1.0.0
+     │   └── rp2040-hal v0.10.2
+     │       ├── oasis-silicon-test v0.1.0
+     │       └── rp2040-flash v0.5.2
+     │           └── oasis-silicon-test v0.1.0 (*)
+     ├── nb v0.1.3
+     │   └── embedded-hal v0.2.7
+     │       ├── cortex-m v0.7.9
+     │       │   ├── oasis-silicon-test v0.1.0 (*)
+     │       │   ├── rp2040-hal v0.10.2 (*)
+     │       │   └── rp2040-pac v0.6.0
+     │       │       └── rp2040-hal v0.10.2 (*)
+     │       ├── rp2040-hal v0.10.2 (*)
+     │       └── usbd-serial v0.2.2
+     │           └── oasis-silicon-test v0.1.0 (*)
+     ├── oasis-silicon-test v0.1.0 (*)
+     ├── rp2040-hal v0.10.2 (*)
+     └── usbd-serial v0.2.2 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'rand_core'
+    ┌─ C:\dev\oasis\oasis-silicon-test/Cargo.lock:105:1
+    │  
+105 │ ╭ rand_core 0.6.4 registry+https://github.com/rust-lang/crates.io-index
+106 │ │ rand_core 0.10.1 registry+https://github.com/rust-lang/crates.io-index
+    │ ╰──────────────────────────────────────────────────────────────────────┘ lock entries
+    │  
+    ├ rand_core v0.6.4
+      └── rp2040-hal v0.10.2
+          ├── oasis-silicon-test v0.1.0
+          └── rp2040-flash v0.5.2
+              └── oasis-silicon-test v0.1.0 (*)
+    ├ rand_core v0.10.1
+      ├── chacha20 v0.10.2
+      │   └── rand v0.10.3
+      │       ├── core-models v0.0.7
+      │       │   ├── libcrux-intrinsics v0.0.8
+      │       │   │   ├── libcrux-ml-dsa v0.0.10
+      │       │   │   │   └── oasis-rt v0.3.0
+      │       │   │   │       ├── oasis-operator-key v0.1.0
+      │       │   │   │       │   └── oasis-silicon-test v0.1.0
+      │       │   │   │       └── oasis-silicon-test v0.1.0 (*)
+      │       │   │   └── libcrux-sha3 v0.0.10
+      │       │   │       └── libcrux-ml-dsa v0.0.10 (*)
+      │       │   └── libcrux-ml-dsa v0.0.10 (*)
+      │       └── libcrux-traits v0.0.8
+      │           └── libcrux-sha3 v0.0.10 (*)
+      ├── getrandom v0.4.3
+      │   ├── rand v0.10.3 (*)
+      │   └── uuid v1.27.0
+      │       └── hax-lib-macros-types v0.3.7
+      │           └── hax-lib-macros v0.3.7
+      │               └── hax-lib v0.3.7
+      │                   ├── core-models v0.0.7 (*)
+      │                   ├── libcrux-intrinsics v0.0.8 (*)
+      │                   ├── libcrux-ml-dsa v0.0.10 (*)
+      │                   ├── libcrux-secrets v0.0.6
+      │                   │   ├── libcrux-ml-dsa v0.0.10 (*)
+      │                   │   └── libcrux-traits v0.0.8 (*)
+      │                   └── libcrux-sha3 v0.0.10 (*)
+      └── rand v0.10.3 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'shlex'
+    ┌─ C:\dev\oasis\oasis-silicon-test/Cargo.lock:125:1
+    │  
+125 │ ╭ shlex 1.3.0 registry+https://github.com/rust-lang/crates.io-index
+126 │ │ shlex 2.0.1 registry+https://github.com/rust-lang/crates.io-index
+    │ ╰─────────────────────────────────────────────────────────────────┘ lock entries
+    │  
+    ├ shlex v1.3.0
+      └── bindgen v0.72.1
+          └── (build) crabgrind v0.2.6
+              └── libcrux-secrets v0.0.6
+                  ├── libcrux-ml-dsa v0.0.10
+                  │   └── oasis-rt v0.3.0
+                  │       ├── oasis-operator-key v0.1.0
+                  │       │   └── oasis-silicon-test v0.1.0
+                  │       └── oasis-silicon-test v0.1.0 (*)
+                  └── libcrux-traits v0.0.8
+                      └── libcrux-sha3 v0.0.10
+                          └── libcrux-ml-dsa v0.0.10 (*)
+    ├ shlex v2.0.1
+      └── cc v1.6.0
+          └── (build) crabgrind v0.2.6
+              └── libcrux-secrets v0.0.6
+                  ├── libcrux-ml-dsa v0.0.10
+                  │   └── oasis-rt v0.3.0
+                  │       ├── oasis-operator-key v0.1.0
+                  │       │   └── oasis-silicon-test v0.1.0
+                  │       └── oasis-silicon-test v0.1.0 (*)
+                  └── libcrux-traits v0.0.8
+                      └── libcrux-sha3 v0.0.10
+                          └── libcrux-ml-dsa v0.0.10 (*)
+
+warning[duplicate]: found 3 duplicate entries for crate 'syn'
+    ┌─ C:\dev\oasis\oasis-silicon-test/Cargo.lock:129:1
+    │  
+129 │ ╭ syn 1.0.109 registry+https://github.com/rust-lang/crates.io-index
+130 │ │ syn 2.0.119 registry+https://github.com/rust-lang/crates.io-index
+131 │ │ syn 3.0.6 registry+https://github.com/rust-lang/crates.io-index
+    │ ╰───────────────────────────────────────────────────────────────┘ lock entries
+    │  
+    ├ syn v1.0.109
+      ├── num_enum_derive v0.5.11
+      │   └── num_enum v0.5.11
+      │       └── pio v0.2.1
+      │           └── rp2040-hal v0.10.2
+      │               ├── oasis-silicon-test v0.1.0
+      │               └── rp2040-flash v0.5.2
+      │                   └── oasis-silicon-test v0.1.0 (*)
+      └── rp2040-hal-macros v0.1.0
+          └── rp2040-hal v0.10.2 (*)
+    ├ syn v2.0.119
+      ├── bindgen v0.72.1
+      │   └── (build) crabgrind v0.2.6
+      │       └── libcrux-secrets v0.0.6
+      │           ├── libcrux-ml-dsa v0.0.10
+      │           │   └── oasis-rt v0.3.0
+      │           │       ├── oasis-operator-key v0.1.0
+      │           │       │   └── oasis-silicon-test v0.1.0
+      │           │       └── oasis-silicon-test v0.1.0 (*)
+      │           └── libcrux-traits v0.0.8
+      │               └── libcrux-sha3 v0.0.10
+      │                   └── libcrux-ml-dsa v0.0.10 (*)
+      ├── cortex-m-macros v0.7.8
+      │   └── cortex-m v0.7.9
+      │       ├── oasis-silicon-test v0.1.0 (*)
+      │       ├── rp2040-hal v0.10.2
+      │       │   ├── oasis-silicon-test v0.1.0 (*)
+      │       │   └── rp2040-flash v0.5.2
+      │       │       └── oasis-silicon-test v0.1.0 (*)
+      │       └── rp2040-pac v0.6.0
+      │           └── rp2040-hal v0.10.2 (*)
+      ├── frunk_derives v0.4.4
+      │   └── frunk v0.4.4
+      │       └── rp2040-hal v0.10.2 (*)
+      ├── frunk_proc_macro_helpers v0.1.5
+      │   └── frunk_derives v0.4.4 (*)
+      ├── hax-lib-macros v0.3.7
+      │   └── hax-lib v0.3.7
+      │       ├── core-models v0.0.7
+      │       │   ├── libcrux-intrinsics v0.0.8
+      │       │   │   ├── libcrux-ml-dsa v0.0.10 (*)
+      │       │   │   └── libcrux-sha3 v0.0.10 (*)
+      │       │   └── libcrux-ml-dsa v0.0.10 (*)
+      │       ├── libcrux-intrinsics v0.0.8 (*)
+      │       ├── libcrux-ml-dsa v0.0.10 (*)
+      │       ├── libcrux-secrets v0.0.6 (*)
+      │       └── libcrux-sha3 v0.0.10 (*)
+      ├── libcrux-macros v0.0.3
+      │   └── libcrux-ml-dsa v0.0.10 (*)
+      ├── prettyplease v0.2.37
+      │   └── bindgen v0.72.1 (*)
+      └── proc-macro-error2 v2.0.1
+          └── hax-lib-macros v0.3.7 (*)
+    ├ syn v3.0.6
+      ├── cortex-m-rt-macros v0.7.7
+      │   └── cortex-m-rt v0.7.7
+      │       ├── oasis-silicon-test v0.1.0
+      │       ├── rp2040-hal-macros v0.1.0
+      │       │   └── rp2040-hal v0.10.2
+      │       │       ├── oasis-silicon-test v0.1.0 (*)
+      │       │       └── rp2040-flash v0.5.2
+      │       │           └── oasis-silicon-test v0.1.0 (*)
+      │       └── rp2040-pac v0.6.0
+      │           └── rp2040-hal v0.10.2 (*)
+      └── serde_derive v1.0.229
+          └── serde v1.0.229
+              ├── hax-lib-macros-types v0.3.7
+              │   └── hax-lib-macros v0.3.7
+              │       └── hax-lib v0.3.7
+              │           ├── core-models v0.0.7
+              │           │   ├── libcrux-intrinsics v0.0.8
+              │           │   │   ├── libcrux-ml-dsa v0.0.10
+              │           │   │   │   └── oasis-rt v0.3.0
+              │           │   │   │       ├── oasis-operator-key v0.1.0
+              │           │   │   │       │   └── oasis-silicon-test v0.1.0 (*)
+              │           │   │   │       └── oasis-silicon-test v0.1.0 (*)
+              │           │   │   └── libcrux-sha3 v0.0.10
+              │           │   │       └── libcrux-ml-dsa v0.0.10 (*)
+              │           │   └── libcrux-ml-dsa v0.0.10 (*)
+              │           ├── libcrux-intrinsics v0.0.8 (*)
+              │           ├── libcrux-ml-dsa v0.0.10 (*)
+              │           ├── libcrux-secrets v0.0.6
+              │           │   ├── libcrux-ml-dsa v0.0.10 (*)
+              │           │   └── libcrux-traits v0.0.8
+              │           │       └── libcrux-sha3 v0.0.10 (*)
+              │           └── libcrux-sha3 v0.0.10 (*)
+              └── oasis-rt v0.3.0 (*)
+
+advisories ok, bans ok, licenses ok, sources ok
+cargo deny exit 0

@@ -1,0 +1,209 @@
+warning[duplicate]: found 2 duplicate entries for crate 'chacha20'
+   ┌─ C:\dev\oasis\oasis-lora-transport/Cargo.lock:10:1
+   │  
+10 │ ╭ chacha20 0.9.1 registry+https://github.com/rust-lang/crates.io-index
+11 │ │ chacha20 0.10.2 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰─────────────────────────────────────────────────────────────────────┘ lock entries
+   │  
+   ├ chacha20 v0.9.1
+     └── chacha20poly1305 v0.10.1
+         └── oasis-rt v0.3.0
+             └── (dev) oasis-lora-transport v0.1.0
+   ├ chacha20 v0.10.2
+     └── rand v0.10.3
+         ├── core-models v0.0.7
+         │   ├── libcrux-intrinsics v0.0.8
+         │   │   ├── libcrux-ml-dsa v0.0.10
+         │   │   │   └── oasis-rt v0.3.0
+         │   │   │       └── (dev) oasis-lora-transport v0.1.0
+         │   │   └── libcrux-sha3 v0.0.10
+         │   │       └── libcrux-ml-dsa v0.0.10 (*)
+         │   └── libcrux-ml-dsa v0.0.10 (*)
+         └── libcrux-traits v0.0.8
+             └── libcrux-sha3 v0.0.10 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'cpufeatures'
+   ┌─ C:\dev\oasis\oasis-lora-transport/Cargo.lock:16:1
+   │  
+16 │ ╭ cpufeatures 0.2.17 registry+https://github.com/rust-lang/crates.io-index
+17 │ │ cpufeatures 0.3.0 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰───────────────────────────────────────────────────────────────────────┘ lock entries
+   │  
+   ├ cpufeatures v0.2.17
+     ├── chacha20 v0.9.1
+     │   └── chacha20poly1305 v0.10.1
+     │       └── oasis-rt v0.3.0
+     │           └── (dev) oasis-lora-transport v0.1.0
+     └── poly1305 v0.8.0
+         └── chacha20poly1305 v0.10.1 (*)
+   ├ cpufeatures v0.3.0
+     ├── chacha20 v0.10.2
+     │   └── rand v0.10.3
+     │       ├── core-models v0.0.7
+     │       │   ├── libcrux-intrinsics v0.0.8
+     │       │   │   ├── libcrux-ml-dsa v0.0.10
+     │       │   │   │   └── oasis-rt v0.3.0
+     │       │   │   │       └── (dev) oasis-lora-transport v0.1.0
+     │       │   │   └── libcrux-sha3 v0.0.10
+     │       │   │       └── libcrux-ml-dsa v0.0.10 (*)
+     │       │   └── libcrux-ml-dsa v0.0.10 (*)
+     │       └── libcrux-traits v0.0.8
+     │           └── libcrux-sha3 v0.0.10 (*)
+     └── sha2 v0.11.0
+         ├── oasis-lora-transport v0.1.0 (*)
+         └── oasis-rt v0.3.0 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'crypto-common'
+   ┌─ C:\dev\oasis\oasis-lora-transport/Cargo.lock:21:1
+   │  
+21 │ ╭ crypto-common 0.1.7 registry+https://github.com/rust-lang/crates.io-index
+22 │ │ crypto-common 0.2.1 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰─────────────────────────────────────────────────────────────────────────┘ lock entries
+   │  
+   ├ crypto-common v0.1.7
+     ├── aead v0.5.2
+     │   └── chacha20poly1305 v0.10.1
+     │       └── oasis-rt v0.3.0
+     │           └── (dev) oasis-lora-transport v0.1.0
+     ├── cipher v0.4.4
+     │   ├── chacha20 v0.9.1
+     │   │   └── chacha20poly1305 v0.10.1 (*)
+     │   └── chacha20poly1305 v0.10.1 (*)
+     └── universal-hash v0.5.1
+         └── poly1305 v0.8.0
+             └── chacha20poly1305 v0.10.1 (*)
+   ├ crypto-common v0.2.1
+     └── digest v0.11.2
+         └── sha2 v0.11.0
+             ├── oasis-lora-transport v0.1.0
+             └── oasis-rt v0.3.0
+                 └── (dev) oasis-lora-transport v0.1.0 (*)
+
+warning[duplicate]: found 3 duplicate entries for crate 'getrandom'
+   ┌─ C:\dev\oasis\oasis-lora-transport/Cargo.lock:29:1
+   │  
+29 │ ╭ getrandom 0.2.17 registry+https://github.com/rust-lang/crates.io-index
+30 │ │ getrandom 0.3.4 registry+https://github.com/rust-lang/crates.io-index
+31 │ │ getrandom 0.4.3 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰─────────────────────────────────────────────────────────────────────┘ lock entries
+   │  
+   ├ getrandom v0.2.17
+     └── oasis-rt v0.3.0
+         └── (dev) oasis-lora-transport v0.1.0
+   ├ getrandom v0.3.4
+     └── ed25519-compact v2.2.0
+         └── oasis-rt v0.3.0
+             └── (dev) oasis-lora-transport v0.1.0
+   ├ getrandom v0.4.3
+     ├── rand v0.10.3
+     │   ├── core-models v0.0.7
+     │   │   ├── libcrux-intrinsics v0.0.8
+     │   │   │   ├── libcrux-ml-dsa v0.0.10
+     │   │   │   │   └── oasis-rt v0.3.0
+     │   │   │   │       └── (dev) oasis-lora-transport v0.1.0
+     │   │   │   └── libcrux-sha3 v0.0.10
+     │   │   │       └── libcrux-ml-dsa v0.0.10 (*)
+     │   │   └── libcrux-ml-dsa v0.0.10 (*)
+     │   └── libcrux-traits v0.0.8
+     │       └── libcrux-sha3 v0.0.10 (*)
+     └── uuid v1.27.0
+         └── hax-lib-macros-types v0.3.7
+             └── hax-lib-macros v0.3.7
+                 └── hax-lib v0.3.7
+                     ├── core-models v0.0.7 (*)
+                     ├── libcrux-intrinsics v0.0.8 (*)
+                     ├── libcrux-ml-dsa v0.0.10 (*)
+                     ├── libcrux-secrets v0.0.6
+                     │   ├── libcrux-ml-dsa v0.0.10 (*)
+                     │   └── libcrux-traits v0.0.8 (*)
+                     └── libcrux-sha3 v0.0.10 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'r-efi'
+   ┌─ C:\dev\oasis\oasis-lora-transport/Cargo.lock:70:1
+   │  
+70 │ ╭ r-efi 5.3.0 registry+https://github.com/rust-lang/crates.io-index
+71 │ │ r-efi 6.0.0 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰─────────────────────────────────────────────────────────────────┘ lock entries
+   │  
+   ├ r-efi v5.3.0
+     └── getrandom v0.3.4
+         └── ed25519-compact v2.2.0
+             └── oasis-rt v0.3.0
+                 └── (dev) oasis-lora-transport v0.1.0
+   ├ r-efi v6.0.0
+     └── getrandom v0.4.3
+         ├── rand v0.10.3
+         │   ├── core-models v0.0.7
+         │   │   ├── libcrux-intrinsics v0.0.8
+         │   │   │   ├── libcrux-ml-dsa v0.0.10
+         │   │   │   │   └── oasis-rt v0.3.0
+         │   │   │   │       └── (dev) oasis-lora-transport v0.1.0
+         │   │   │   └── libcrux-sha3 v0.0.10
+         │   │   │       └── libcrux-ml-dsa v0.0.10 (*)
+         │   │   └── libcrux-ml-dsa v0.0.10 (*)
+         │   └── libcrux-traits v0.0.8
+         │       └── libcrux-sha3 v0.0.10 (*)
+         └── uuid v1.27.0
+             └── hax-lib-macros-types v0.3.7
+                 └── hax-lib-macros v0.3.7
+                     └── hax-lib v0.3.7
+                         ├── core-models v0.0.7 (*)
+                         ├── libcrux-intrinsics v0.0.8 (*)
+                         ├── libcrux-ml-dsa v0.0.10 (*)
+                         ├── libcrux-secrets v0.0.6
+                         │   ├── libcrux-ml-dsa v0.0.10 (*)
+                         │   └── libcrux-traits v0.0.8 (*)
+                         └── libcrux-sha3 v0.0.10 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'shlex'
+   ┌─ C:\dev\oasis\oasis-lora-transport/Cargo.lock:84:1
+   │  
+84 │ ╭ shlex 1.3.0 registry+https://github.com/rust-lang/crates.io-index
+85 │ │ shlex 2.0.1 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰─────────────────────────────────────────────────────────────────┘ lock entries
+   │  
+   ├ shlex v1.3.0
+     └── bindgen v0.72.1
+         └── (build) crabgrind v0.2.6
+             └── libcrux-secrets v0.0.6
+                 ├── libcrux-ml-dsa v0.0.10
+                 │   └── oasis-rt v0.3.0
+                 │       └── (dev) oasis-lora-transport v0.1.0
+                 └── libcrux-traits v0.0.8
+                     └── libcrux-sha3 v0.0.10
+                         └── libcrux-ml-dsa v0.0.10 (*)
+   ├ shlex v2.0.1
+     └── cc v1.6.0
+         └── (build) crabgrind v0.2.6
+             └── libcrux-secrets v0.0.6
+                 ├── libcrux-ml-dsa v0.0.10
+                 │   └── oasis-rt v0.3.0
+                 │       └── (dev) oasis-lora-transport v0.1.0
+                 └── libcrux-traits v0.0.8
+                     └── libcrux-sha3 v0.0.10
+                         └── libcrux-ml-dsa v0.0.10 (*)
+
+warning[license-not-encountered]: license was not encountered
+   ┌─ C:\dev\oasis\oasis-lora-transport\../deny.toml:34:6
+   │
+34 │     "0BSD", # stm32f4xx-hal (oasis-renode-m11): OSI-approved, more permissive than MIT
+   │      ━━━━ unmatched license allowance
+
+warning[advisory-not-detected]: advisory was not encountered
+   ┌─ C:\dev\oasis\oasis-lora-transport\../deny.toml:22:13
+   │
+22 │     { id = "RUSTSEC-2024-0436", reason = "unmaintained build-time proc-macro paste via rp2040-hal/embassy-rp PIO crates; no vulnerability" },
+   │             ━━━━━━━━━━━━━━━━━             ─────────────────────────────────────────────────────────────────────────────────────────────── ignore reason
+   │             │                              
+   │             no crate matched advisory criteria
+
+warning[advisory-not-detected]: advisory was not encountered
+   ┌─ C:\dev\oasis\oasis-lora-transport\../deny.toml:19:13
+   │
+19 │     { id = "RUSTSEC-2026-0110", reason = "deprecated bare-metal 0.2.5 via cortex-m 0.7.9; no vulnerability; no replacement without leaving cortex-m 0.7" },
+   │             ━━━━━━━━━━━━━━━━━             ───────────────────────────────────────────────────────────────────────────────────────────────────────────── ignore reason
+   │             │                              
+   │             no crate matched advisory criteria
+
+advisories ok, bans ok, licenses ok, sources ok
+cargo deny exit 0

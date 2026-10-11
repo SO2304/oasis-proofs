@@ -1,0 +1,4 @@
+OASIS|B|UART|LEASE_PERSIST|ceiling=5116,writes_since_boot=2|mesh|5c4bd96
+OASIS|B|UART|WHOAMI|fp=578c9e1e5bb281b7,mixed=false,owner_seq=0,owner_ed=0beef5a9e679e6a3,previous_owner=false,pending_offer=0,peers=0,epoch=4,rev_signer=Current|mesh|5c4bd96
+OASIS|B|UART|PQ_STATUS|min_suite_revocation=3,legacy_orv1_allowed=false,epoch=4,revoked=3,reasm_in_use=0,stage_len=0|mesh|5c4bd96
+OASIS|B|UART|STATUS|rx_bytes=0,frames=0,crc_fails=0,tx=3837,lease_ceiling=5116,lease_writes=2,fp=578c9e1e5bb281b7,peers=0|mesh|5c4bd96

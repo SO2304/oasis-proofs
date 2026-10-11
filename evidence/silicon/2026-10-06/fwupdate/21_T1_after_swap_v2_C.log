@@ -1,0 +1,7 @@
+# port transitions (port_watch.sh, 100 ms sampling)
+2026-10-06T22:54:44.068Z /dev/ttyS10 present
+2026-10-06T22:55:09.543Z /dev/ttyS10 absent
+2026-10-06T22:55:27.251Z /dev/ttyS10 present
+# @V after re-enumeration
+OASIS|C|UART|LEASE_PERSIST|ceiling=16883,writes_since_boot=2|mesh|200d96b
+OASIS|C|UART|FW_STATUS|version=2,floor=2,boot=ConfirmedAfterSwap,bootloader_state=Boot,fp=a7089677a10b7fb0,guard_failed_before=0|mesh|200d96b

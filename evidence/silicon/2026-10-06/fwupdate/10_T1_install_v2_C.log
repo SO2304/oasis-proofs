@@ -1,0 +1,19 @@
+# upload 305856 bytes from C_v2.bin at 2026-10-06T22:26:50Z
+OASIS|C|UART|DFU_PROGRESS|written_to=65536|mesh|fc447d1
+OASIS|C|UART|DFU_PROGRESS|written_to=131072|mesh|fc447d1
+OASIS|C|UART|DFU_PROGRESS|written_to=196608|mesh|fc447d1
+OASIS|C|UART|DFU_PROGRESS|written_to=262144|mesh|fc447d1
+OASIS|C|UART|DFU_PROGRESS|written_to=305856|mesh|fc447d1
+# upload sent in 23 s
+OASIS|C|UART|STAGE|len=0|mesh|fc447d1
+OASIS|C|UART|STAGE|len=280|mesh|fc447d1
+OASIS|C|UART|STAGE|len=560|mesh|fc447d1
+OASIS|C|UART|STAGE|len=840|mesh|fc447d1
+OASIS|C|UART|STAGE|len=1120|mesh|fc447d1
+OASIS|C|UART|STAGE|len=1400|mesh|fc447d1
+OASIS|C|UART|STAGE|len=1680|mesh|fc447d1
+OASIS|C|UART|STAGE|len=1960|mesh|fc447d1
+OASIS|C|UART|STAGE|len=2240|mesh|fc447d1
+OASIS|C|UART|STAGE|len=2520|mesh|fc447d1
+OASIS|C|UART|STAGE|len=2548|mesh|fc447d1
+OASIS|C|UART|FW_INSTALL|accepted,version=2,running=1,floor=1,check_us=955551,resetting_for_swap|mesh|fc447d1

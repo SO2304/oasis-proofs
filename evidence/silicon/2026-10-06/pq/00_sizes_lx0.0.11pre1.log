@@ -1,0 +1,11 @@
+# pq_bench size per linked ML-DSA verifier, stamp 1b00414, 2026-10-06T18:22:21Z
+# llvm-size -B (Berkeley): text = code + rodata (flash), bss = RAM statics incl. the 16 KiB heap
+#   text    data     bss     dec     hex filename
+## variant: none
+  68544	      0	  16420	  84964	  14be4	target/thumbv6m-none-eabi/release/pq_bench
+## variant: bench_rc
+  85180	      0	  16420	 101600	  18ce0	target/thumbv6m-none-eabi/release/pq_bench
+## variant: bench_lx
+ 186208	      0	  16420	 202628	  31784	target/thumbv6m-none-eabi/release/pq_bench
+## variant: bench_rc,bench_lx
+ 201232	      0	  16420	 217652	  35234	target/thumbv6m-none-eabi/release/pq_bench

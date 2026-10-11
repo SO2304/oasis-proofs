@@ -1,0 +1,2 @@
+OASIS|C|UART|EF_STATUS|boot_id=50908,now_ms=9405925,epoch=2,revoked=1,sensor_lost=false,pin25=1,executed=2,stopped=false,stops=0,sup_required=false,sup_until=None,jseq=Some(2),rejects=0/0/0/1/0/0/0/0/0|mesh|ad8f24a
+OASIS|C|UART|FW_STATUS|version=26,floor=26,boot=Normal,bootloader_state=Boot,fp=a7089677a10b7fb0,guard_failed_before=0|mesh|ad8f24a

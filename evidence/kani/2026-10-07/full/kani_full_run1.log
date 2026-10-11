@@ -1,0 +1,1273 @@
+[2026-10-07T13:10:14Z] host: 6.18.40.1-microsoft-standard-WSL2, 3381 MB RAM, 4 cores, Kani Rust Verifier 0.68.0 (cargo plugin)
+[2026-10-07T13:10:14Z] tree: b361555
+[2026-10-07T13:10:14Z] harnesses in tree: 152
+Kani Rust Verifier 0.68.0 (cargo plugin)
+CBMC 6.11.0
+   Compiling oasis-rt v0.3.0 (/home/pc/oasis-kani/oasis-rt)
+warning: unused import: `crate::vec::*`
+ --> oasis-rt/src/morpho.rs:6:5
+  |
+6 | use crate::vec::*;
+  |     ^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: trailing semicolon in macro used in expression position
+  --> oasis-rt/src/enrollment/kani_proofs.rs:62:17
+   |
+62 |         None => assert!(a.enroll_seq <= held.seq && d == EnrollDecision::Reject(EnrollReject::StaleSeq)),
+   |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+   = note: for more information, see issue #79813 <https://github.com/rust-lang/rust/issues/79813>
+   = note: `#[warn(semicolon_in_expressions_from_non_local_macros)]` (part of `#[warn(future_incompatible)]`) on by default
+   = note: this warning originates in the macro `assert` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unnecessary parentheses around assigned value
+   --> oasis-rt/src/mesh/kani_proofs.rs:684:31
+    |
+684 |     let error_milli_swapped = ({
+    |                               ^
+...
+687 |     });
+    |      ^
+    |
+    = note: `#[warn(unused_parens)]` (part of `#[warn(unused)]`) on by default
+help: remove these parentheses
+    |
+684 ~     let error_milli_swapped = {
+685 |         let d = if v >= c { v - c } else { c - v };
+686 |         (d as u64 * 100_000) / larger as u64
+687 ~     };
+    |
+
+warning: trailing semicolon in macro used in expression position
+  --> oasis-rt/src/mesh_revocation/kani_proofs.rs:50:14
+   |
+50 |         _ => assert!(new.is_none()),
+   |              ^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+   = note: for more information, see issue #79813 <https://github.com/rust-lang/rust/issues/79813>
+   = note: this warning originates in the macro `assert` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unused import: `crate::vec::*`
+  --> oasis-rt/src/spore.rs:13:5
+   |
+13 | use crate::vec::*;
+   |     ^^^^^^^^^^^^^
+
+warning: unused variable: `persistence`
+   --> oasis-rt/src/efference.rs:109:13
+    |
+109 |         let persistence = if severity != Severity::Nominal {
+    |             ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_persistence`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `agent_count`
+   --> oasis-rt/src/federation.rs:116:59
+    |
+116 |     pub fn propagate(&mut self, synapses: &mut [Synapse], agent_count: usize, entropies: &[f64]) -> u32 {
+    |                                                           ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_agent_count`
+
+warning: unused variable: `before`
+   --> oasis-rt/src/federation.rs:567:13
+    |
+567 |         let before = self.digest_count();
+    |             ^^^^^^ help: if this is intentional, prefix it with an underscore: `_before`
+
+warning: unused variable: `handlers`
+   --> oasis-rt/src/spinal.rs:152:17
+    |
+152 |             let handlers = block.lines().find(|l| l.starts_with("H: Handlers=")).unwrap_or("");
+    |                 ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_handlers`
+
+warning: function `any_msg_id` is never used
+  --> oasis-rt/src/fragment/kani_proofs.rs:44:4
+   |
+44 | fn any_msg_id(_msg: &[u8]) -> [u8; 8] {
+   |    ^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: use of an unstable feature
+ --> <crate attribute>:1:12
+  |
+1 | #![feature(register_tool)]
+  |            ^^^^^^^^^^^^^
+  |
+  = note: requested on the command line with `--force-warn unstable-features`
+
+warning: variable `cA` should have a snake case name
+   --> oasis-rt/src/world_model.rs:283:13
+    |
+283 |         let cA: f64 = kani::any();
+    |             ^^ help: convert the identifier to snake case: `c_a`
+    |
+    = note: `#[warn(non_snake_case)]` (part of `#[warn(nonstandard_style)]`) on by default
+
+warning: variable `pA` should have a snake case name
+   --> oasis-rt/src/world_model.rs:284:13
+    |
+284 |         let pA: f64 = kani::any();
+    |             ^^ help: convert the identifier to snake case: `p_a`
+
+warning: variable `cB` should have a snake case name
+   --> oasis-rt/src/world_model.rs:285:13
+    |
+285 |         let cB: f64 = kani::any();
+    |             ^^ help: convert the identifier to snake case: `c_b`
+
+warning: variable `pB` should have a snake case name
+   --> oasis-rt/src/world_model.rs:286:13
+    |
+286 |         let pB: f64 = kani::any();
+    |             ^^ help: convert the identifier to snake case: `p_b`
+
+warning: variable `gA` should have a snake case name
+   --> oasis-rt/src/world_model.rs:291:13
+    |
+291 |         let gA = repulsive_grad_1d(x, cA, pA);
+    |             ^^ help: convert the identifier to snake case: `g_a`
+
+warning: variable `gB` should have a snake case name
+   --> oasis-rt/src/world_model.rs:292:13
+    |
+292 |         let gB = repulsive_grad_1d(x, cB, pB);
+    |             ^^ help: convert the identifier to snake case: `g_b`
+
+warning: Found the following unsupported constructs:
+             - TerminatorKind::InlineAsm (1)
+             - call to LLVM intrinsic `llvm.x86.sha256msg1` (1)
+             - call to LLVM intrinsic `llvm.x86.sha256msg2` (1)
+             - call to LLVM intrinsic `llvm.x86.sha256rnds2` (1)
+             - call to LLVM intrinsic `llvm.x86.ssse3.pshuf.b.128` (1)
+             - call to LLVM intrinsic `llvm.x86.xgetbv` (1)
+             - caller_location (1)
+             - foreign function (2)
+         
+         Verification will fail if one or more of these constructs is reachable.
+         See https://model-checking.github.io/kani/rust-feature-support.html for more details.
+
+warning: Kani currently does not support concurrency. The following constructs will be treated as sequential operations:
+             - atomic_store (3)
+             - atomic_load (3)
+         
+
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 22.24s
+warning: the following packages contain code that will be rejected by a future version of Rust: oasis-rt v0.3.0 (/home/pc/oasis-kani/oasis-rt)
+note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`
+Checking harness actions::kani_proofs::proof_actions_cancel_roundtrip...
+
+VERIFICATION RESULT:
+ ** 0 of 383 failed (7 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.2976136s
+
+Checking harness actions::kani_proofs::proof_actions_result_roundtrip...
+
+VERIFICATION RESULT:
+ ** 0 of 453 failed (7 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.6237726s
+
+Checking harness actions::kani_proofs::proof_actions_feedback_roundtrip...
+
+VERIFICATION RESULT:
+ ** 0 of 412 failed (7 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.1457553s
+
+Checking harness actions::kani_proofs::proof_actions_goal_roundtrip...
+
+VERIFICATION RESULT:
+ ** 0 of 417 failed (7 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.6537127s
+
+Checking harness actuation::kani_proofs::proof_decision_total_and_deterministic...
+
+VERIFICATION RESULT:
+ ** 0 of 137 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.20368554s
+
+Checking harness actuation::kani_proofs::proof_r14_unsafe_never_acts...
+
+VERIFICATION RESULT:
+ ** 0 of 137 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.106443785s
+
+Checking harness actuation::kani_proofs::proof_act_requires_all_conditions...
+
+VERIFICATION RESULT:
+ ** 0 of 147 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.33650798s
+
+Checking harness authority::kani_proofs::proof_auth_precheck_no_downgrade...
+
+VERIFICATION RESULT:
+ ** 0 of 72 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.26779965s
+
+Checking harness authority::kani_proofs::proof_auth_parse_total...
+
+VERIFICATION RESULT:
+ ** 0 of 114 failed (5 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.181535s
+
+Checking harness authority::kani_proofs::proof_auth_policy_never_lowers...
+
+VERIFICATION RESULT:
+ ** 0 of 97 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.39940307s
+
+Checking harness authority::kani_proofs::proof_auth_hybrid_requires_both...
+
+VERIFICATION RESULT:
+ ** 0 of 2 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.044039425s
+
+Checking harness branching::kani_proofs::proof_m4_fitness_monotone_in_goal...
+
+CBMC failed
+VERIFICATION:- FAILED
+CBMC timed out. You may want to rerun your proof with a larger timeout or use stubbing to reduce the size of the code the verifier reasons about.
+
+Checking harness branching::kani_proofs::proof_m4_fitness_bounded_in_unit_interval...
+
+VERIFICATION RESULT:
+ ** 0 of 5 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 5.328412s
+
+Checking harness dreams::kani_proofs::proof_m8_no_retrigger_at_same_tick...
+
+VERIFICATION RESULT:
+ ** 0 of 2 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.115613624s
+
+Checking harness dreams::kani_proofs::proof_m8_force_trigger_upper_bound...
+
+VERIFICATION RESULT:
+ ** 0 of 3 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.2306401s
+
+Checking harness efference::kani_proofs::proof_m3_pain_nonincreasing_when_idle...
+
+VERIFICATION RESULT:
+ ** 0 of 4 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.3609627s
+
+Checking harness efference::kani_proofs::proof_m3_pain_monotone_in_magnitude...
+
+CBMC failed
+VERIFICATION:- FAILED
+CBMC timed out. You may want to rerun your proof with a larger timeout or use stubbing to reduce the size of the code the verifier reasons about.
+
+Checking harness efference::kani_proofs::proof_m3_pain_bounded...
+
+VERIFICATION RESULT:
+ ** 0 of 4 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.14497153s
+
+Checking harness emotion::kani_proofs::proof_m5_fear_monotone...
+
+VERIFICATION RESULT:
+ ** 0 of 1 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.18571346s
+
+Checking harness emotion::kani_proofs::proof_m5_fear_idempotent...
+
+VERIFICATION RESULT:
+ ** 0 of 1 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.12959965s
+
+Checking harness emotion::kani_proofs::proof_m5_fear_bounded...
+
+VERIFICATION RESULT:
+ ** 0 of 2 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.09023043s
+
+Checking harness enrollment::kani_proofs::proof_enr_parse_total...
+
+VERIFICATION RESULT:
+ ** 0 of 162 failed (4 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.4185144s
+
+Checking harness enrollment::kani_proofs::proof_enr_other_entries_untouched...
+
+VERIFICATION RESULT:
+ ** 0 of 526 failed (7 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 11.05259s
+
+Checking harness enrollment::kani_proofs::proof_enr_seq_never_decreases...
+
+VERIFICATION RESULT:
+ ** 0 of 568 failed (6 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 5.053377s
+
+Checking harness enrollment::kani_proofs::proof_enr_revoked_never_enrolled...
+
+VERIFICATION RESULT:
+ ** 0 of 602 failed (5 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 33.961685s
+
+Checking harness federation::kani_proofs::proof_m11_trust_clamp_bounded...
+
+VERIFICATION RESULT:
+ ** 0 of 59 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.8187548s
+
+Checking harness federation::kani_proofs::proof_m11_hex_digit_range_and_rejection...
+
+VERIFICATION RESULT:
+ ** 0 of 9 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.12184109s
+
+Checking harness firmware::kani_proofs::proof_fw_parsers_total...
+
+VERIFICATION RESULT:
+ ** 0 of 165 failed (4 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.8060427s
+
+Checking harness firmware::kani_proofs::proof_fw_floor_never_lowers...
+
+VERIFICATION RESULT:
+ ** 0 of 13 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.0607723s
+
+Checking harness firmware::kani_proofs::proof_fw_install_requires_all_conditions...
+
+VERIFICATION RESULT:
+ ** 0 of 104 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.23147279s
+
+Checking harness fragment::kani_proofs::proof_frag_reassembler_never_panics...
+  - Stub: crate :: fragment :: msg_id_of -> any_msg_id
+
+VERIFICATION RESULT:
+ ** 0 of 660 failed (4 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 239.6444s
+
+Checking harness fragment::kani_proofs::proof_frag_completion_mask...
+
+VERIFICATION RESULT:
+ ** 0 of 5 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.1994128s
+
+Checking harness fragment::kani_proofs::proof_frag_parse_in_bounds...
+
+VERIFICATION RESULT:
+ ** 0 of 117 failed (4 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 21.578678s
+
+Checking harness hal::kani_proofs::proof_hal_clamp_identity_when_in_bounds...
+
+VERIFICATION RESULT:
+ ** 0 of 202 failed (1 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 3.6168134s
+
+Checking harness hal::kani_proofs::proof_hal_geofence_breach_zeroes_everything...
+
+VERIFICATION RESULT:
+ ** 0 of 204 failed (9 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.626844s
+
+Checking harness hal::kani_proofs::proof_hal_clamp_velocity_bounded...
+
+VERIFICATION RESULT:
+ ** 0 of 201 failed (1 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 4.42522s
+
+Checking harness hal::kani_proofs::proof_hal_clamp_torque_bounded...
+
+VERIFICATION RESULT:
+ ** 0 of 201 failed (1 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 4.2533016s
+
+Checking harness hal::kani_proofs::proof_hal_clamp_force_bounded...
+
+VERIFICATION RESULT:
+ ** 0 of 201 failed (1 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 4.465063s
+
+Checking harness hyper_state::kani_proofs::proof_r14_blocks_any_adversarial_spike...
+
+VERIFICATION RESULT:
+ ** 0 of 43 failed (1 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.238522s
+
+Checking harness hyper_state::kani_proofs::proof_r14_determinism...
+
+VERIFICATION RESULT:
+ ** 0 of 42 failed (1 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.74570674s
+
+Checking harness hyper_state::kani_proofs::proof_r14_boundary_strict...
+
+VERIFICATION RESULT:
+ ** 0 of 42 failed (1 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.6924995s
+
+Checking harness hyper_state::kani_proofs::proof_r14_monotonic...
+
+VERIFICATION RESULT:
+ ** 0 of 7 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.40805823s
+
+Checking harness mesh::kani_proofs::proof_v0b_preimage_domain_separated_and_consistent...
+
+VERIFICATION RESULT:
+ ** 0 of 57 failed (4 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 3.6256855s
+
+Checking harness mesh::kani_proofs::proof_v0b_preimage_binds_network...
+
+VERIFICATION RESULT:
+ ** 0 of 47 failed (4 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 3.8532336s
+
+Checking harness mesh::kani_proofs::proof_v0b_preimage_binds_counter...
+
+VERIFICATION RESULT:
+ ** 0 of 47 failed (4 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 3.7418747s
+
+Checking harness mesh::kani_proofs::proof_v0b_preimage_binds_payload_digest...
+
+VERIFICATION RESULT:
+ ** 0 of 47 failed (4 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 5.0572734s
+
+Checking harness mesh::kani_proofs::proof_v0b_parse_never_panics_with_payload...
+
+VERIFICATION RESULT:
+ ** 0 of 99 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 3.3419151s
+
+Checking harness mesh::kani_proofs::proof_v0b_parse_never_panics_short...
+
+VERIFICATION RESULT:
+ ** 0 of 107 failed (1 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.94997096s
+
+Checking harness mesh::kani_proofs::proof_v0b_parse_never_panics_full...
+
+VERIFICATION RESULT:
+ ** 0 of 99 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.9646742s
+
+Checking harness mesh::kani_proofs::proof_ad_per_call_overhead_constant...
+
+VERIFICATION RESULT:
+ ** 0 of 6 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.46440658s
+
+Checking harness mesh::kani_proofs::proof_ae_snapshot_internal_consistency...
+
+CBMC failed
+VERIFICATION:- FAILED
+CBMC timed out. You may want to rerun your proof with a larger timeout or use stubbing to reduce the size of the code the verifier reasons about.
+
+Checking harness mesh::kani_proofs::proof_ag_extrapolation_ratio_consistency...
+
+VERIFICATION RESULT:
+ ** 0 of 10 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 28.387169s
+
+Checking harness mesh::kani_proofs::proof_ah_tolerance_covers_observed_errors...
+
+VERIFICATION RESULT:
+ ** 0 of 2 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.03830821s
+
+Checking harness mesh::kani_proofs::proof_ai_corpus_recall_precision_pass...
+
+VERIFICATION RESULT:
+ ** 0 of 13 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.057215918s
+
+Checking harness mesh::kani_proofs::proof_aj_stress_soak_degradation_in_band...
+
+VERIFICATION RESULT:
+ ** 0 of 2 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.04003023s
+
+Checking harness mesh::kani_proofs::proof_aj_tamp0_false_alarm_rate_bounded...
+
+VERIFICATION RESULT:
+ ** 0 of 8 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.473602s
+
+Checking harness mesh::kani_proofs::proof_aj_emi_rejection_rate_matches_byte_ratio...
+
+VERIFICATION RESULT:
+ ** 0 of 5 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.6104708s
+
+Checking harness mesh::kani_proofs::proof_aj_v10_sig_preimage_bounded...
+
+VERIFICATION RESULT:
+ ** 0 of 1 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.034866426s
+
+Checking harness mesh::kani_proofs::proof_ai_multi_operand_known_gap...
+
+VERIFICATION RESULT:
+ ** 0 of 1 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.041739088s
+
+Checking harness mesh::kani_proofs::proof_ai_binary_precision_no_flag_within_tolerance...
+
+VERIFICATION RESULT:
+ ** 0 of 23 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.16497879s
+
+Checking harness mesh::kani_proofs::proof_ai_binary_recall_complete_above_tolerance...
+
+VERIFICATION RESULT:
+ ** 0 of 23 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.16705061s
+
+Checking harness mesh::kani_proofs::proof_ah_fragment_detection_sound...
+
+VERIFICATION RESULT:
+ ** 0 of 1 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.04361648s
+
+Checking harness mesh::kani_proofs::proof_ah_unit_suffix_skipped...
+
+VERIFICATION RESULT:
+ ** 0 of 1 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.034253635s
+
+Checking harness mesh::kani_proofs::proof_ah_arithmetic_tolerance_symmetric...
+
+CBMC failed
+VERIFICATION:- FAILED
+CBMC timed out. You may want to rerun your proof with a larger timeout or use stubbing to reduce the size of the code the verifier reasons about.
+
+Checking harness mesh::kani_proofs::proof_ag_fpr_geometric_growth_bound...
+
+VERIFICATION RESULT:
+ ** 0 of 7 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.11933631s
+
+Checking harness mesh::kani_proofs::proof_ag_reset_count_extrapolation...
+
+CBMC failed
+VERIFICATION:- FAILED
+CBMC timed out. You may want to rerun your proof with a larger timeout or use stubbing to reduce the size of the code the verifier reasons about.
+
+Checking harness mesh::kani_proofs::proof_ag_bloom_capacity_calibration...
+
+VERIFICATION RESULT:
+ ** 0 of 1 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.030740172s
+
+Checking harness mesh::kani_proofs::proof_af_combined_pattern_no_dashboard_alert...
+
+VERIFICATION RESULT:
+ ** 1 of 11 failed
+Failed Checks: attempt to multiply with overflow
+ File: "oasis-rt/src/mesh/kani_proofs.rs", line 552, in mesh::kani_proofs::proof_af_combined_pattern_no_dashboard_alert
+
+VERIFICATION:- FAILED
+Verification Time: 3.228916s
+
+Checking harness mesh::kani_proofs::proof_af_deserialize_rejects_bad_input...
+
+VERIFICATION RESULT:
+ ** 0 of 85 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.6273691s
+
+Checking harness mesh::kani_proofs::proof_af_serialize_roundtrip...
+
+VERIFICATION RESULT:
+ ** 0 of 160 failed (4 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.8962557s
+
+Checking harness mesh::kani_proofs::proof_af_serialize_wire_size_is_36...
+
+VERIFICATION RESULT:
+ ** 0 of 74 failed (4 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.69471544s
+
+Checking harness mesh::kani_proofs::proof_ae_lifetime_inserts_monotonic_across_resets...
+
+VERIFICATION RESULT:
+ ** 0 of 2 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.04025269s
+
+Checking harness mesh::kani_proofs::proof_ae_alert_threshold_correctness...
+
+CBMC failed
+VERIFICATION:- FAILED
+CBMC timed out. You may want to rerun your proof with a larger timeout or use stubbing to reduce the size of the code the verifier reasons about.
+
+Checking harness mesh::kani_proofs::proof_ae_capacity_consumed_monotonic...
+
+CBMC failed
+VERIFICATION:- FAILED
+CBMC timed out. You may want to rerun your proof with a larger timeout or use stubbing to reduce the size of the code the verifier reasons about.
+
+Checking harness mesh::kani_proofs::proof_ad_threshold_inverse_scaling...
+
+VERIFICATION RESULT:
+ ** 0 of 14 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.2203562s
+
+Checking harness mesh::kani_proofs::proof_ad_reset_period_bounded_by_threshold...
+
+VERIFICATION RESULT:
+ ** 0 of 4 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.046895664s
+
+Checking harness mesh::kani_proofs::proof_ad_reset_count_predictable...
+
+VERIFICATION RESULT:
+ ** 1 of 11 failed
+Failed Checks: "actual reset count must be within 1 of predicted floor(N / (T+1))"
+ File: "oasis-rt/src/mesh/kani_proofs.rs", line 339, in mesh::kani_proofs::proof_ad_reset_count_predictable
+
+VERIFICATION:- FAILED
+Verification Time: 0.3032102s
+
+Checking harness mesh::kani_proofs::proof_ac_throughput_flat_with_auto_reset...
+
+VERIFICATION RESULT:
+ ** 0 of 3 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.053073663s
+
+Checking harness mesh::kani_proofs::proof_ac_auto_reset_preserves_seen_set...
+
+VERIFICATION RESULT:
+ ** 0 of 1 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.038496017s
+
+Checking harness mesh::kani_proofs::proof_ac_bloom_reset_count_monotonic...
+
+VERIFICATION RESULT:
+ ** 0 of 5 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.07626249s
+
+Checking harness mesh::kani_proofs::proof_ac_bloom_inserts_since_reset_bounded...
+
+VERIFICATION RESULT:
+ ** 0 of 4 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.04902112s
+
+Checking harness mesh::kani_proofs::proof_mesh_bloom_bit_index_bounded...
+
+VERIFICATION RESULT:
+ ** 0 of 9 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.18345216s
+
+Checking harness mesh::kani_proofs::proof_mesh_v10_header_length_arithmetic...
+
+VERIFICATION RESULT:
+ ** 0 of 6 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.040483728s
+
+Checking harness mesh::kani_proofs::proof_mesh_v10_magic_distinct...
+
+VERIFICATION RESULT:
+ ** 0 of 30 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.08073071s
+
+Checking harness mesh::kani_proofs::proof_mesh_v9_header_length_arithmetic...
+
+VERIFICATION RESULT:
+ ** 0 of 4 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.03746014s
+
+Checking harness mesh::kani_proofs::proof_mesh_v9_magic_distinct_from_v8...
+
+VERIFICATION RESULT:
+ ** 0 of 29 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.065913625s
+
+Checking harness mesh::kani_proofs::proof_mesh_bloom_or_idempotent...
+
+VERIFICATION RESULT:
+ ** 0 of 1 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.032765005s
+
+Checking harness mesh::kani_proofs::proof_mesh_bloom_empty_contains_nothing...
+
+VERIFICATION RESULT:
+ ** 0 of 47 failed (2 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.22521077s
+
+Checking harness mesh::kani_proofs::proof_mesh_bloom_bit_set_then_test_true...
+
+VERIFICATION RESULT:
+ ** 0 of 7 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.044075955s
+
+Checking harness mesh::kani_proofs::proof_mesh_header_field_offsets...
+
+VERIFICATION RESULT:
+ ** 0 of 7 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.04393045s
+
+Checking harness mesh::kani_proofs::proof_mesh_total_forwards_bounded_by_ttl...
+
+VERIFICATION RESULT:
+ ** 0 of 33 failed (1 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.34127194s
+
+Checking harness mesh::kani_proofs::proof_mesh_msg_id_no_panic...
+
+VERIFICATION RESULT:
+ ** 0 of 3 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.046541143s
+
+Checking harness mesh::kani_proofs::proof_mesh_ttl_reaches_zero_in_bounded_hops...
+
+VERIFICATION RESULT:
+ ** 0 of 32 failed (1 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.15628229s
+
+Checking harness mesh::kani_proofs::proof_mesh_forward_decision...
+
+VERIFICATION RESULT:
+ ** 0 of 2 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.036351584s
+
+Checking harness mesh::kani_proofs::proof_mesh_ttl_monotonic_decrement...
+
+VERIFICATION RESULT:
+ ** 0 of 5 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.049554966s
+
+Checking harness mesh::prefilter::kani_proofs::proof_v0c_parse_total...
+
+VERIFICATION RESULT:
+ ** 0 of 138 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.5406516s
+
+Checking harness mesh::prefilter::kani_proofs::proof_budget_refill_capped...
+
+VERIFICATION RESULT:
+ ** 0 of 91 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 4.807083s
+
+Checking harness mesh::prefilter::kani_proofs::proof_budget_never_exceeds_burst...
+
+VERIFICATION RESULT:
+ ** 0 of 86 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 7.5288453s
+
+Checking harness mesh_revocation::kani_proofs::proof_rev_applied_is_superset...
+
+VERIFICATION RESULT:
+ ** 0 of 569 failed (19 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 7.2575903s
+
+Checking harness mesh_revocation::kani_proofs::proof_rev_rejected_leaves_state_unchanged...
+
+VERIFICATION RESULT:
+ ** 0 of 477 failed (5 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 3.1608887s
+
+Checking harness mesh_revocation::kani_proofs::proof_rev_epoch_never_decreases...
+
+VERIFICATION RESULT:
+ ** 0 of 462 failed (5 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.6119854s
+
+Checking harness modbus_gateway::kani_proofs::proof_mb_parsers_total...
+
+VERIFICATION RESULT:
+ ** 0 of 1060 failed (163 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 32.147453s
+
+Checking harness modbus_gateway::kani_proofs::proof_mb_frame_matches_rules...
+
+VERIFICATION RESULT:
+ ** 0 of 1342 failed (163 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 145.94685s
+
+Checking harness modbus_gateway::kani_proofs::proof_mb_no_frame_without_act...
+
+VERIFICATION RESULT:
+ ** 0 of 1300 failed (163 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 67.921326s
+
+Checking harness morpho::kani_proofs::proof_m6_stem_start_is_always_valid...
+
+VERIFICATION RESULT:
+ ** 0 of 13 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.04425907s
+
+Checking harness morpho::kani_proofs::proof_m6_stem_terminal_after_first_diff...
+
+VERIFICATION RESULT:
+ ** 0 of 13 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.06117641s
+
+Checking harness ownership::kani_proofs::proof_own_accept_parse_total...
+
+VERIFICATION RESULT:
+ ** 0 of 226 failed (11 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.9362447s
+
+Checking harness ownership::kani_proofs::proof_own_offer_rules...
+
+VERIFICATION RESULT:
+ ** 0 of 122 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.74139154s
+
+Checking harness ownership::kani_proofs::proof_own_transfer_requires_both_signatures...
+
+VERIFICATION RESULT:
+ ** 0 of 99 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.79081804s
+
+Checking harness parameters::kani_proofs::proof_params_clamp_int_in_bounds_is_identity...
+
+VERIFICATION RESULT:
+ ** 0 of 2 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.52547705s
+
+Checking harness parameters::kani_proofs::proof_params_clamp_int_respects_bounds...
+
+VERIFICATION RESULT:
+ ** 0 of 3 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.7649885s
+
+Checking harness parameters::kani_proofs::proof_params_clamp_float_idempotent...
+
+VERIFICATION RESULT:
+ ** 0 of 2 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.25579718s
+
+Checking harness parameters::kani_proofs::proof_params_clamp_float_unbounded_is_identity...
+
+VERIFICATION RESULT:
+ ** 0 of 2 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.046632007s
+
+Checking harness parameters::kani_proofs::proof_params_clamp_float_respects_bounds...
+
+VERIFICATION RESULT:
+ ** 0 of 3 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.2969399s
+
+Checking harness reflex::kani_proofs::proof_reflex_fires_when_above_baseline_zero_std...
+
+VERIFICATION RESULT:
+ ** 0 of 28 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.78507525s
+
+Checking harness reflex::kani_proofs::proof_reflex_threshold_formula...
+
+VERIFICATION RESULT:
+ ** 0 of 21 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.41605914s
+
+Checking harness reflex::kani_proofs::proof_reflex_uncalibrated_never_fires...
+
+VERIFICATION RESULT:
+ ** 0 of 28 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.07888263s
+
+Checking harness services::kani_proofs::proof_services_response_parse_rejects_short...
+
+VERIFICATION RESULT:
+ ** 0 of 256 failed (5 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.7336862s
+
+Checking harness services::kani_proofs::proof_services_request_parse_rejects_short...
+
+VERIFICATION RESULT:
+ ** 0 of 249 failed (4 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.9278224s
+
+Checking harness services::kani_proofs::proof_services_response_roundtrip...
+
+VERIFICATION RESULT:
+ ** 0 of 453 failed (7 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.5431323s
+
+Checking harness services::kani_proofs::proof_services_request_roundtrip...
+
+VERIFICATION RESULT:
+ ** 0 of 417 failed (7 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.529726s
+
+Checking harness spinal::kani_proofs::proof_spinal_classify_empty_is_unknown...
+
+VERIFICATION RESULT:
+ ** 0 of 3628 failed (467 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.8058553s
+
+Checking harness spinal::kani_proofs::proof_spinal_assign_dims_stay_in_zone...
+
+CBMC failed
+VERIFICATION:- FAILED
+CBMC timed out. You may want to rerun your proof with a larger timeout or use stubbing to reduce the size of the code the verifier reasons about.
+
+Checking harness spinal::kani_proofs::proof_spinal_zones_pairwise_disjoint...
+
+VERIFICATION RESULT:
+ ** 0 of 5 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.079974405s
+
+Checking harness spinal::kani_proofs::proof_spinal_zones_well_formed...
+
+VERIFICATION RESULT:
+ ** 0 of 4 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.054497678s
+
+Checking harness synapse::kani_proofs::proof_synapse_zero_reward_preserves_weight...
+
+VERIFICATION RESULT:
+ ** 0 of 5 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.8019083s
+
+Checking harness synapse::kani_proofs::proof_synapse_below_threshold_prunes...
+
+VERIFICATION RESULT:
+ ** 0 of 1 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.078728855s
+
+Checking harness synapse::kani_proofs::proof_synapse_prune_symmetric...
+
+VERIFICATION RESULT:
+ ** 0 of 1 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.090543605s
+
+Checking harness synapse::kani_proofs::proof_synapse_decay_non_expanding...
+
+VERIFICATION RESULT:
+ ** 0 of 2 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 17.869299s
+
+Checking harness synapse::kani_proofs::proof_synapse_reinforce_weight_bounded...
+
+VERIFICATION RESULT:
+ ** 0 of 7 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.0058203s
+
+Checking harness tension::kani_proofs::proof_m1_tick_terminates...
+
+VERIFICATION RESULT:
+ ** 0 of 31 failed (1 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.15130219s
+
+Checking harness tension::kani_proofs::proof_m1_deactivate_iff_zero...
+
+VERIFICATION RESULT:
+ ** 0 of 1 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.037766423s
+
+Checking harness tension::kani_proofs::proof_m1_ttl_monotone_non_increasing...
+
+VERIFICATION RESULT:
+ ** 0 of 1 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.03442303s
+
+Checking harness timers::kani_proofs::proof_timers_fire_count_saturates...
+
+VERIFICATION RESULT:
+ ** 0 of 44 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.043036986s
+
+Checking harness timers::kani_proofs::proof_timers_coalesces_missed_periods...
+
+VERIFICATION RESULT:
+ ** 0 of 47 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.08182635s
+
+Checking harness timers::kani_proofs::proof_timers_no_immediate_refire...
+
+VERIFICATION RESULT:
+ ** 0 of 46 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.1439376s
+
+Checking harness timers::kani_proofs::proof_timers_due_fires_and_rearms...
+
+VERIFICATION RESULT:
+ ** 0 of 48 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.08506156s
+
+Checking harness timers::kani_proofs::proof_timers_not_due_does_not_fire...
+
+VERIFICATION RESULT:
+ ** 0 of 46 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.08172433s
+
+Checking harness topics::kani_proofs::proof_topic_parse_rejects_short_inputs...
+
+VERIFICATION RESULT:
+ ** 0 of 246 failed (4 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.6686383s
+
+Checking harness topics::kani_proofs::proof_topic_envelope_roundtrip...
+
+VERIFICATION RESULT:
+ ** 0 of 412 failed (7 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.081138s
+
+Reading GOTO program from '/home/pc/oasis-kani/target/kani/x86_64-unknown-linux-gnu/debug/build/oasis-rt/1366bb43037f6661/out/oasis_rt-1366bb43037f6661__RNvNtNtCsdeKjjcEfh1K_8oasis_rt6topics11kani_proofs36proof_topic_hash_deterministic_1byte.out'
+Trying to force one backedge per target
+error: goto-instrument exited with status signal: 9 (SIGKILL)
+[2026-10-07T14:47:14Z] cargo kani exit code 1

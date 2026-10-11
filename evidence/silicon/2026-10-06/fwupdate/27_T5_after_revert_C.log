@@ -1,0 +1,8 @@
+# T5 port transitions (port_watch.sh, 100 ms sampling): reset for swap, v3hang enumerates, watchdog reset, v2 after revert
+2026-10-06T22:58:14.820Z /dev/ttyS10 present
+2026-10-06T22:58:39.919Z /dev/ttyS10 absent
+2026-10-06T22:58:57.633Z /dev/ttyS10 present
+2026-10-06T22:59:05.161Z /dev/ttyS10 absent
+2026-10-06T22:59:24.523Z /dev/ttyS10 present
+# @V after the revert
+OASIS|C|UART|FW_STATUS|version=2,floor=2,boot=Reverted,bootloader_state=Revert,fp=a7089677a10b7fb0,guard_failed_before=1|mesh|200d96b

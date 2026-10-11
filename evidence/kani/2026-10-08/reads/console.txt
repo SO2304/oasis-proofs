@@ -1,0 +1,23 @@
+
+thread 'main' (32533) panicked at /rustc/8925ea358a0f265ca61026aadc7ecc506c545cbe/library/std/src/io/stdio.rs:1168:9:
+failed printing to stdout: Broken pipe (os error 32)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+[2026-10-08T20:43:36Z] stamp=92b2f84  Kani Rust Verifier 0.68.0 (cargo plugin)
+== arbre tel quel : les 5 doivent passer ==
+  SUCCESSFUL   modbus_read::kani_proofs::proof_omq1_parse_is_total
+  SUCCESSFUL   modbus_read::kani_proofs::proof_omv1_parse_is_total_and_count_matches_length
+  SUCCESSFUL   modbus_read::kani_proofs::proof_no_read_frame_without_ok
+  SUCCESSFUL   modbus_read::kani_proofs::proof_read_frame_is_exactly_the_query
+  SUCCESSFUL   modbus_read::kani_proofs::proof_parse_tcp_read_never_accepts_a_write
+== controle negatif A : le span n'est verifie que sur son premier registre ==
+  mutant A applique: span_allowed ne verifie plus que le premier registre
+  FAILED       modbus_read::kani_proofs::proof_no_read_frame_without_ok
+== controle negatif B : parse_omv1 accepte un count qui ment ==
+  mutant B applique: la longueur declaree n est plus liee aux octets portes
+  FAILED       modbus_read::kani_proofs::proof_omv1_parse_is_total_and_count_matches_length
+
+[2026-10-08T20:44:38Z] stamp=92b2f84
+preuves :
+      5 VERIFICATION:- SUCCESSFUL
+controles negatifs (doivent echouer) :
+      2 VERIFICATION:- FAILED

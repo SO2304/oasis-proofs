@@ -1,0 +1,5 @@
+OASIS|C|UART|PF_MODE|v0c=false,next_hop=-,tokens=24|mesh|7f7a5ba
+OASIS|C|UART|PF_BUDGET|rate=1000,burst=10000,tokens=10000|mesh|7f7a5ba
+OASIS|C|UART|PF_QUIET|quiet=true|mesh|7f7a5ba
+OASIS|C|UART|PF_STATUS|v0c=false,accepted=12,drop_tag=0,drop_budget=0,drop_sig=98,drop_other=0,busy_us=19663895,max_us=181418,tokens=10000,rx_bytes=20463,frames=110,crc_fails=52,dh_derivations=0,ring_queued=0,ring_dropped=2476,ring_errors=1|mesh|7f7a5ba
+OASIS|C|UART|PF_QUIET|quiet=false|mesh|7f7a5ba

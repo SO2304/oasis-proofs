@@ -1,0 +1,13 @@
+### J/K campaign start 2026-10-08T10:35:17Z
+OASIS|A|MODBUS|MB_DEV_STATUS|rx_bytes=49,rx_errors=0,overflow=0,frames=7,parse_errors=0,writes=6,local_frames=0|device|a39d5fe
+OASIS|B|UART|FW_STATUS|version=25,floor=25,boot=Normal,bootloader_state=Boot,fp=f6bd34440030a136,guard_failed_before=0|mesh|6d3429f
+OASIS|C|UART|FW_STATUS|version=25,floor=25,boot=Normal,bootloader_state=Boot,fp=a7089677a10b7fb0,guard_failed_before=0|mesh|6d3429f
+### C boot_id=49629
+### J/K campaign part 1 done 2026-10-08T10:39:25Z
+### part K resumed 2026-10-08T10:46:35Z — wire moved, B.GP1 now fed by C.GP0
+### K3: B builds an order from its view; the PC gives only a validity
+### K6: C re-emits; then an order must still work
+### part K pre-reboot done 2026-10-08T10:47:18Z
+### K4/K5/K6 2026-10-08T10:50:19Z — C rebooted by the v26 reflash, B's view is a boot behind
+### K6: forcing a beacon with now_ms=44496, 60 s behind B's estimate of 104496
+### part K done 2026-10-08T10:51:26Z

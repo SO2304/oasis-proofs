@@ -1,0 +1,2 @@
+OASIS|B|UART|STATUS|rx_bytes=12634,frames=42,crc_fails=0,tx=14,lease_ceiling=1279,lease_writes=2,a_last_seen=42|mesh|1a9b461
+OASIS|B|UART|PQ_STATUS|min_suite_revocation=1,legacy_orv1_allowed=true,epoch=1,revoked=1,reasm_in_use=0,stage_len=0|mesh|1a9b461

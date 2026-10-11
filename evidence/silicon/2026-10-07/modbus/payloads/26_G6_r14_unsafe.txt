@@ -1,0 +1,2 @@
+order: MbOrder { gateway_id: 1, cmd_seq: 3, boot_id: 21232, deadline_ms: 728671, unit: 17, fc: 6, start: 16, count: 1, values: [230, 0, 0, 0, 0, 0, 0, 0] }
+# gateway clock before: OASIS|C|UART|MB_GW_STATUS|boot_id=21232,now_ms=719671,executed=2,rejects=5/0/0/1/0/2/1,sent=2,ack=2,exception=0,timeout=0,bad=0,rx_errors=0,last_seq=Some(2)|mesh|a39d5fe

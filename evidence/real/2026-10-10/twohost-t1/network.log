@@ -1,0 +1,12 @@
+# Network facts of the A.6/T1 run, 2026-10-10. PC2 identifiers masked.
+cable      one Ethernet cable PC1 <-> PC2, 100 Mbps, no switch; no IPv4 on either side (no DHCP), IPv6 link-local only
+PC1        Windows 11 Pro, interface "Ethernet" ifIndex 19, fe80::1601:70df:35b:73c0
+PC1 fw     the Ethernet link is on the Public profile, and the Public profile is disabled on this host (Enabled=False):
+           the inbound connection to 15711 needed no rule. A host with its firewall on needs an inbound rule for the gateway port.
+PC2        Ubuntu, Dell OptiPlex 7080 (OUI A4:BB:6D, MAC A4-BB-6D-xx-xx-xx), hostname <user>-OptiPlex-7080,
+           wired interface eno2 (ifindex 2), fe80::abea:xxxx:xxxx:xxxx (stable-privacy link-local)
+gateway    PC1, listen [::]:15711; PC2 dials [fe80::1601:70df:35b:73c0%2]:15711 (the scope is PC2's own interface)
+device     oasis_test_plc on PC1, listen 127.0.0.1:15720 unit 0x7e - loopback only, so PC2 had no route to it except the gateway
+access     SSH key authorised by the owner on PC2 (one line appended to authorized_keys), key only, BatchMode, host key pinned; no password used
+link       PC2's neighbour entry goes stale when idle and the first connect after idle can time out; a TCP touch first makes it Reachable (0-2 ms)
+sleep      a few minutes after run 1, PC2 stopped answering anything (no neighbour answer, port 22 silent, link still up): runs 2 and 3 could not be made

@@ -1,0 +1,6 @@
+boot_id=49629 entries=4 head_seq=Some(3) overwritten=0
+  [0] seq=0 origin=f6bd cmd_seq=400 class=Stop decision=Reject(NotAuthorized) flags=0x07
+  [1] seq=1 origin=f6bd cmd_seq=401 class=Stop decision=Stop flags=0x0f
+  [2] seq=2 origin=f6bd cmd_seq=402 class=Stop decision=Stop flags=0x0f
+  [3] seq=3 origin=f6bd cmd_seq=403 class=Stop decision=Stop flags=0x0f
+VERDICT intact entries=4

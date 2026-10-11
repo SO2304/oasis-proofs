@@ -1,0 +1,15 @@
+# upload 0 bytes from null at 2026-10-06T23:07:36Z
+# upload sent in 2 s
+OASIS|C|UART|STAGE|len=0|mesh|200d96b
+OASIS|C|UART|STAGE|len=280|mesh|200d96b
+OASIS|C|UART|STAGE|len=560|mesh|200d96b
+OASIS|C|UART|STAGE|len=840|mesh|200d96b
+OASIS|C|UART|STAGE|len=1120|mesh|200d96b
+OASIS|C|UART|STAGE|len=1400|mesh|200d96b
+OASIS|C|UART|STAGE|len=1680|mesh|200d96b
+OASIS|C|UART|STAGE|len=1960|mesh|200d96b
+OASIS|C|UART|STAGE|len=2240|mesh|200d96b
+OASIS|C|UART|STAGE|len=2520|mesh|200d96b
+OASIS|C|UART|STAGE|len=2548|mesh|200d96b
+OASIS|C|UART|FW_INSTALL|refused=HashMismatch,running=2,floor=2,check_us=939831|mesh|200d96b
+OASIS|C|UART|FW_STATUS|version=2,floor=2,boot=Reverted,bootloader_state=Revert,fp=a7089677a10b7fb0,guard_failed_before=0|mesh|200d96b

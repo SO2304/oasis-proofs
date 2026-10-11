@@ -1,0 +1,3 @@
+OASIS|A|UART|ENTROPY|n=100000,ones=47024,longest_run=19,mcv_h_milli=905,rct_ok=true,apt_ok=true,delay_cycles=100|mesh|5c4bd96
+OASIS|A|UART|ENTROPY|n=100000,ones=46919,longest_run=20,mcv_h_milli=902,rct_ok=true,apt_ok=true,delay_cycles=100|mesh|5c4bd96
+OASIS|A|UART|ENTROPY|n=100000,ones=46668,longest_run=23,mcv_h_milli=895,rct_ok=true,apt_ok=true,delay_cycles=100|mesh|5c4bd96

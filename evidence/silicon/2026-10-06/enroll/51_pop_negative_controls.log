@@ -1,0 +1,10 @@
+# PoP negative controls on A's recorded proof (tool side)
+# 1. recorded challenge:
+POP_OK fp=822460d254200275
+exit=0
+# 2. one challenge nibble changed:
+POP_FAIL
+exit=1
+# 3. B's public key with A's proof:
+POP_FAIL
+exit=1

@@ -1,0 +1,22 @@
+OASIS over IPv6 validation  2026-10-09T20:57:13Z  tree=b33cf90
+# gateway listens on IPv6, an order crosses the gate, a legit Act reaches the device.
+
+== gateway listening socket ==
+  TCP    [::]:15711             [::]:0                 LISTENING
+
+== legit Act 60% via the ethernet IPv6 link-local address ==
+ORDER acted reg=10 value=60 cmd_seq=193
+== attack: value out of range 40% ==
+ORDER refused reg=10 value=40 cmd_seq=257 outcome=Refused(OutOfLimits, ValueOutOfRange(0, 0))
+
+== the device's own write counter (ground truth) ==
+[   2525153 us] PLC conn_open peer=127.0.0.1:54461
+[   2525336 us] PLC rx peer=127.0.0.1:54461 len=12 bytes=00c1000000067e06000a003c
+[   2525405 us] PLC APPLIED_WRITE writes=1 reg=10 value=60
+[   2525463 us] PLC tx peer=127.0.0.1:54461 bytes=00c1000000067e06000a003c
+
+== gateway decision journal ==
+boot_id=1791579432502 entries=2 head_seq=Some(1) overwritten=0
+  [0] seq=0 origin=aa00 cmd_seq=193 class=Act decision=Act flags=0x00
+  [1] seq=1 origin=aa00 cmd_seq=257 class=Act decision=Reject(OutOfLimits) flags=0x00
+VERDICT intact entries=2

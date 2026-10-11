@@ -1,0 +1,26 @@
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=7800000000000000 permissions=none
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY journal=C:\dev\oasis\twohost\t1jrn.entries + C:\dev\oasis\twohost\t1jrn.head
+GATEWAY no authority configured: every ORV1 over the link is refused
+GATEWAY listen=[::]:15711 plc=127.0.0.1:15720 unit=0x7e boot_id=1791650429974 registers=1
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:60328 CLOCK boot_id=1791650429974
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:60328 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:60330 seq=1 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:60330 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:60340 CLOCK boot_id=1791650429974
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:60340 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:60356 seq=65 Reject(OutOfLimits) outcome=Refused(OutOfLimits, ValueOutOfRange(10, 40)) plc_written=false
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:60356 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:60368 CLOCK boot_id=1791650429974
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:60368 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:60376 seq=129 Reject(OutOfLimits) outcome=Refused(OutOfLimits, RegisterNotAllowed(99)) plc_written=false
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:60376 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:60378 CLOCK boot_id=1791650429974
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:60378 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:60388 MESH_DROP why="unknown sender" -> no PLC write
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:60388 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:60402 CLOCK boot_id=1791650429974
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:60402 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:60416 seq=1 Reject(NotAuthorized) outcome=Refused(NotAuthorized, Ok) plc_written=false
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:60416 conn_end err=UnexpectedEof

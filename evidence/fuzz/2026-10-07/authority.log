@@ -1,0 +1,1254 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on artifact directory
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\branching.rs:107:7
+    |
+107 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: expected names are: `docsrs`, `feature`, and `test` and 31 more
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+    = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\dreams.rs:211:7
+    |
+211 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\efference.rs:176:7
+    |
+176 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\emotion.rs:439:7
+    |
+439 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\federation.rs:618:7
+    |
+618 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\hal.rs:235:7
+    |
+235 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\hyper_state.rs:378:7
+    |
+378 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\morpho.rs:195:7
+    |
+195 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unused import: `crate::vec::*`
+ --> C:\dev\oasis\oasis-rt\src\morpho.rs:6:5
+  |
+6 | use crate::vec::*;
+  |     ^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\reflex.rs:108:7
+    |
+108 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\spinal.rs:395:7
+    |
+395 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\actions.rs:188:7
+    |
+188 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\actuation.rs:225:7
+    |
+225 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\authority.rs:335:7
+    |
+335 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\enrollment.rs:247:7
+    |
+247 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\firmware.rs:143:7
+    |
+143 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\fragment.rs:214:7
+    |
+214 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+    --> C:\dev\oasis\oasis-rt\src\mesh.rs:1491:7
+     |
+1491 | #[cfg(kani)]
+     |       ^^^^
+     |
+     = help: consider using a Cargo feature instead
+     = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+              [lints.rust]
+              unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+     = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+     = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\mesh_revocation.rs:377:7
+    |
+377 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\modbus_gateway.rs:298:7
+    |
+298 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\ownership.rs:282:7
+    |
+282 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\parameters.rs:364:7
+    |
+364 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\services.rs:175:7
+    |
+175 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unused import: `crate::vec::*`
+  --> C:\dev\oasis\oasis-rt\src\spore.rs:13:5
+   |
+13 | use crate::vec::*;
+   |     ^^^^^^^^^^^^^
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\timers.rs:270:7
+    |
+270 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\topics.rs:155:7
+    |
+155 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\transforms.rs:185:7
+    |
+185 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\tx_lease.rs:204:7
+    |
+204 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\synapse.rs:418:7
+    |
+418 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\tension.rs:244:7
+    |
+244 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\world_model.rs:241:7
+    |
+241 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unused variable: `persistence`
+   --> C:\dev\oasis\oasis-rt\src\efference.rs:109:13
+    |
+109 |         let persistence = if severity != Severity::Nominal {
+    |             ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_persistence`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `agent_count`
+   --> C:\dev\oasis\oasis-rt\src\federation.rs:116:59
+    |
+116 |     pub fn propagate(&mut self, synapses: &mut [Synapse], agent_count: usize, entropies: &[f64]) -> u32 {
+    |                                                           ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_agent_count`
+
+warning: unused variable: `before`
+   --> C:\dev\oasis\oasis-rt\src\federation.rs:567:13
+    |
+567 |         let before = self.digest_count();
+    |             ^^^^^^ help: if this is intentional, prefix it with an underscore: `_before`
+
+warning: unused variable: `handlers`
+   --> C:\dev\oasis\oasis-rt\src\spinal.rs:152:17
+    |
+152 |             let handlers = block.lines().find(|l| l.starts_with("H: Handlers=")).unwrap_or("");
+    |                 ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_handlers`
+
+warning: `oasis-rt` (lib) generated 35 warnings (run `cargo fix --lib -p oasis-rt` to apply 6 suggestions)
+   Compiling oasis-rt-fuzz v0.0.0 (C:\dev\oasis\oasis-rt\fuzz)
+    Finished `release` profile [optimized + debuginfo] target(s) in 4.43s
+    Blocking waiting for file lock on artifact directory
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\branching.rs:107:7
+    |
+107 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: expected names are: `docsrs`, `feature`, and `test` and 31 more
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+    = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\dreams.rs:211:7
+    |
+211 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\efference.rs:176:7
+    |
+176 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\emotion.rs:439:7
+    |
+439 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\federation.rs:618:7
+    |
+618 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\hal.rs:235:7
+    |
+235 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\hyper_state.rs:378:7
+    |
+378 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\morpho.rs:195:7
+    |
+195 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unused import: `crate::vec::*`
+ --> C:\dev\oasis\oasis-rt\src\morpho.rs:6:5
+  |
+6 | use crate::vec::*;
+  |     ^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\reflex.rs:108:7
+    |
+108 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\spinal.rs:395:7
+    |
+395 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\actions.rs:188:7
+    |
+188 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\actuation.rs:225:7
+    |
+225 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\authority.rs:335:7
+    |
+335 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\enrollment.rs:247:7
+    |
+247 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\firmware.rs:143:7
+    |
+143 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\fragment.rs:214:7
+    |
+214 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+    --> C:\dev\oasis\oasis-rt\src\mesh.rs:1491:7
+     |
+1491 | #[cfg(kani)]
+     |       ^^^^
+     |
+     = help: consider using a Cargo feature instead
+     = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+              [lints.rust]
+              unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+     = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+     = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\mesh_revocation.rs:377:7
+    |
+377 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\modbus_gateway.rs:298:7
+    |
+298 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\ownership.rs:282:7
+    |
+282 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\parameters.rs:364:7
+    |
+364 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\services.rs:175:7
+    |
+175 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unused import: `crate::vec::*`
+  --> C:\dev\oasis\oasis-rt\src\spore.rs:13:5
+   |
+13 | use crate::vec::*;
+   |     ^^^^^^^^^^^^^
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\timers.rs:270:7
+    |
+270 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\topics.rs:155:7
+    |
+155 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\transforms.rs:185:7
+    |
+185 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\tx_lease.rs:204:7
+    |
+204 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\synapse.rs:418:7
+    |
+418 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\tension.rs:244:7
+    |
+244 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> C:\dev\oasis\oasis-rt\src\world_model.rs:241:7
+    |
+241 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unused variable: `persistence`
+   --> C:\dev\oasis\oasis-rt\src\efference.rs:109:13
+    |
+109 |         let persistence = if severity != Severity::Nominal {
+    |             ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_persistence`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `agent_count`
+   --> C:\dev\oasis\oasis-rt\src\federation.rs:116:59
+    |
+116 |     pub fn propagate(&mut self, synapses: &mut [Synapse], agent_count: usize, entropies: &[f64]) -> u32 {
+    |                                                           ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_agent_count`
+
+warning: unused variable: `before`
+   --> C:\dev\oasis\oasis-rt\src\federation.rs:567:13
+    |
+567 |         let before = self.digest_count();
+    |             ^^^^^^ help: if this is intentional, prefix it with an underscore: `_before`
+
+warning: unused variable: `handlers`
+   --> C:\dev\oasis\oasis-rt\src\spinal.rs:152:17
+    |
+152 |             let handlers = block.lines().find(|l| l.starts_with("H: Handlers=")).unwrap_or("");
+    |                 ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_handlers`
+
+warning: `oasis-rt` (lib) generated 35 warnings (run `cargo fix --lib -p oasis-rt` to apply 6 suggestions)
+    Finished `release` profile [optimized + debuginfo] target(s) in 2.80s
+     Running `fuzz\target\x86_64-pc-windows-msvc\release\authority.exe '-artifact_prefix=C:\dev\oasis\oasis-rt\fuzz\artifacts\authority\' -max_total_time=3600 -print_final_stats=1 'C:\dev\oasis\oasis-rt\fuzz\corpus\authority'`
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 2564519841
+INFO: Loaded 1 modules   (11126 inline 8-bit counters): 11126 [00007FF681A67588, 00007FF681A6A0FE), 
+INFO: Loaded 1 PC tables (11126 PCs): 11126 [00007FF681A14CD8,00007FF681A40438), 
+INFO:        0 files found in C:\dev\oasis\oasis-rt\fuzz\corpus\authority
+INFO: -max_len is not provided; libFuzzer will not generate inputs larger than 4096 bytes
+INFO: A corpus is not provided, starting from an empty corpus
+#2	INITED cov: 58 ft: 58 corp: 1/1b exec/s: 0 rss: 39Mb
+#3	NEW    cov: 59 ft: 59 corp: 2/2b lim: 4 exec/s: 0 rss: 39Mb L: 1/1 MS: 1 ChangeByte-
+#4	NEW    cov: 62 ft: 69 corp: 3/4b lim: 4 exec/s: 0 rss: 39Mb L: 2/2 MS: 1 CrossOver-
+#26	NEW    cov: 62 ft: 77 corp: 4/7b lim: 4 exec/s: 0 rss: 39Mb L: 3/3 MS: 2 InsertByte-InsertByte-
+#31	NEW    cov: 62 ft: 85 corp: 5/11b lim: 4 exec/s: 0 rss: 39Mb L: 4/4 MS: 5 ChangeBit-InsertByte-ChangeBinInt-InsertByte-CrossOver-
+#457	NEW    cov: 63 ft: 86 corp: 6/19b lim: 8 exec/s: 0 rss: 39Mb L: 8/8 MS: 1 InsertRepeatedBytes-
+#769	NEW    cov: 64 ft: 87 corp: 7/28b lim: 11 exec/s: 0 rss: 39Mb L: 9/9 MS: 2 ChangeBinInt-InsertByte-
+#1401	NEW    cov: 70 ft: 93 corp: 8/44b lim: 17 exec/s: 0 rss: 39Mb L: 16/16 MS: 2 ChangeByte-InsertRepeatedBytes-
+#1426	NEW    cov: 76 ft: 99 corp: 9/61b lim: 17 exec/s: 0 rss: 39Mb L: 17/17 MS: 5 ChangeBit-ChangeByte-ShuffleBytes-ShuffleBytes-CrossOver-
+#4212	NEW    cov: 76 ft: 102 corp: 10/95b lim: 43 exec/s: 0 rss: 40Mb L: 34/34 MS: 1 InsertRepeatedBytes-
+#5405	NEW    cov: 76 ft: 105 corp: 11/146b lim: 53 exec/s: 0 rss: 40Mb L: 51/51 MS: 3 InsertRepeatedBytes-InsertRepeatedBytes-InsertByte-
+#7375	NEW    cov: 76 ft: 108 corp: 12/214b lim: 68 exec/s: 0 rss: 41Mb L: 68/68 MS: 5 ChangeBit-InsertByte-EraseBytes-CopyPart-InsertRepeatedBytes-
+#11109	NEW    cov: 84 ft: 116 corp: 13/234b lim: 104 exec/s: 0 rss: 41Mb L: 20/68 MS: 4 ChangeBinInt-CopyPart-CMP-CMP- DE: "\001\000\000\000\000\000\000\021"-"OFR1"-
+#11255	NEW    cov: 85 ft: 117 corp: 14/262b lim: 104 exec/s: 0 rss: 41Mb L: 28/68 MS: 1 PersAutoDict- DE: "\001\000\000\000\000\000\000\021"-
+#11761	NEW    cov: 92 ft: 124 corp: 15/364b lim: 104 exec/s: 0 rss: 41Mb L: 102/102 MS: 1 InsertRepeatedBytes-
+#11802	NEW    cov: 93 ft: 125 corp: 16/392b lim: 104 exec/s: 0 rss: 41Mb L: 28/102 MS: 1 ShuffleBytes-
+#11809	NEW    cov: 94 ft: 126 corp: 17/474b lim: 104 exec/s: 0 rss: 41Mb L: 82/102 MS: 2 ChangeBit-InsertRepeatedBytes-
+#11910	REDUCE cov: 94 ft: 126 corp: 17/461b lim: 104 exec/s: 0 rss: 41Mb L: 69/102 MS: 1 EraseBytes-
+#12102	REDUCE cov: 94 ft: 126 corp: 17/438b lim: 104 exec/s: 0 rss: 41Mb L: 79/79 MS: 2 ShuffleBytes-EraseBytes-
+#12417	REDUCE cov: 94 ft: 126 corp: 17/434b lim: 104 exec/s: 0 rss: 41Mb L: 65/79 MS: 5 CrossOver-ChangeBinInt-EraseBytes-ChangeASCIIInt-InsertByte-
+#12495	NEW    cov: 95 ft: 127 corp: 18/459b lim: 104 exec/s: 0 rss: 41Mb L: 25/79 MS: 3 CopyPart-EraseBytes-CopyPart-
+#12679	REDUCE cov: 95 ft: 127 corp: 18/453b lim: 104 exec/s: 0 rss: 41Mb L: 73/73 MS: 4 ChangeByte-PersAutoDict-ShuffleBytes-CrossOver- DE: "\001\000\000\000\000\000\000\021"-
+#12721	REDUCE cov: 95 ft: 127 corp: 18/452b lim: 104 exec/s: 0 rss: 41Mb L: 72/72 MS: 2 ChangeBit-EraseBytes-
+#12735	REDUCE cov: 96 ft: 128 corp: 19/554b lim: 104 exec/s: 0 rss: 41Mb L: 102/102 MS: 4 InsertByte-InsertRepeatedBytes-CopyPart-InsertByte-
+#12766	NEW    cov: 97 ft: 129 corp: 20/579b lim: 104 exec/s: 0 rss: 41Mb L: 25/102 MS: 1 ShuffleBytes-
+#12848	NEW    cov: 98 ft: 130 corp: 21/681b lim: 104 exec/s: 0 rss: 41Mb L: 102/102 MS: 2 ChangeBit-CopyPart-
+#12951	REDUCE cov: 98 ft: 130 corp: 21/672b lim: 104 exec/s: 0 rss: 41Mb L: 19/102 MS: 3 ChangeBinInt-ChangeByte-EraseBytes-
+#12956	REDUCE cov: 98 ft: 130 corp: 21/648b lim: 104 exec/s: 0 rss: 41Mb L: 78/102 MS: 5 CrossOver-InsertByte-CrossOver-CopyPart-EraseBytes-
+#13159	REDUCE cov: 98 ft: 130 corp: 21/636b lim: 104 exec/s: 0 rss: 41Mb L: 66/102 MS: 3 ChangeByte-ShuffleBytes-EraseBytes-
+#13289	REDUCE cov: 98 ft: 130 corp: 21/634b lim: 104 exec/s: 0 rss: 41Mb L: 23/102 MS: 5 ChangeBit-ChangeASCIIInt-CopyPart-ChangeBit-EraseBytes-
+#13327	REDUCE cov: 98 ft: 130 corp: 21/633b lim: 104 exec/s: 0 rss: 42Mb L: 27/102 MS: 3 CopyPart-CrossOver-EraseBytes-
+#13378	REDUCE cov: 98 ft: 130 corp: 21/628b lim: 104 exec/s: 0 rss: 42Mb L: 22/102 MS: 1 CrossOver-
+#13435	REDUCE cov: 98 ft: 130 corp: 21/625b lim: 104 exec/s: 0 rss: 42Mb L: 17/102 MS: 2 InsertByte-EraseBytes-
+#13436	NEW    cov: 99 ft: 131 corp: 22/658b lim: 104 exec/s: 0 rss: 42Mb L: 33/102 MS: 1 PersAutoDict- DE: "\001\000\000\000\000\000\000\021"-
+#13467	NEW    cov: 100 ft: 132 corp: 23/761b lim: 104 exec/s: 0 rss: 42Mb L: 103/103 MS: 1 CopyPart-
+#13694	REDUCE cov: 100 ft: 132 corp: 23/743b lim: 104 exec/s: 0 rss: 42Mb L: 84/103 MS: 2 ChangeBit-EraseBytes-
+#13918	REDUCE cov: 100 ft: 132 corp: 23/742b lim: 104 exec/s: 0 rss: 42Mb L: 65/103 MS: 4 ChangeByte-ChangeByte-ChangeByte-EraseBytes-
+#13929	REDUCE cov: 100 ft: 139 corp: 24/828b lim: 104 exec/s: 0 rss: 42Mb L: 86/103 MS: 1 CrossOver-
+#14319	NEW    cov: 101 ft: 140 corp: 25/921b lim: 104 exec/s: 0 rss: 42Mb L: 93/103 MS: 5 PersAutoDict-EraseBytes-EraseBytes-CopyPart-InsertRepeatedBytes- DE: "\001\000\000\000\000\000\000\021"-
+#14332	REDUCE cov: 101 ft: 140 corp: 25/912b lim: 104 exec/s: 0 rss: 42Mb L: 84/103 MS: 3 InsertRepeatedBytes-ChangeBinInt-EraseBytes-
+#14469	REDUCE cov: 101 ft: 140 corp: 25/897b lim: 104 exec/s: 0 rss: 42Mb L: 88/88 MS: 2 ShuffleBytes-EraseBytes-
+#14634	REDUCE cov: 101 ft: 140 corp: 25/895b lim: 104 exec/s: 0 rss: 42Mb L: 82/88 MS: 5 ShuffleBytes-InsertByte-CrossOver-PersAutoDict-EraseBytes- DE: "OFR1"-
+#14820	REDUCE cov: 101 ft: 140 corp: 25/887b lim: 104 exec/s: 0 rss: 42Mb L: 17/88 MS: 1 CrossOver-
+#14837	REDUCE cov: 101 ft: 140 corp: 25/873b lim: 104 exec/s: 0 rss: 42Mb L: 74/86 MS: 2 CopyPart-EraseBytes-
+#15041	REDUCE cov: 101 ft: 140 corp: 25/868b lim: 104 exec/s: 0 rss: 42Mb L: 77/86 MS: 4 ChangeByte-ChangeByte-InsertRepeatedBytes-EraseBytes-
+#15178	REDUCE cov: 101 ft: 140 corp: 25/858b lim: 104 exec/s: 0 rss: 42Mb L: 74/86 MS: 2 ChangeASCIIInt-EraseBytes-
+#15779	REDUCE cov: 101 ft: 140 corp: 25/855b lim: 104 exec/s: 0 rss: 42Mb L: 69/86 MS: 1 EraseBytes-
+#16133	REDUCE cov: 101 ft: 140 corp: 25/847b lim: 104 exec/s: 0 rss: 42Mb L: 66/86 MS: 4 CopyPart-InsertByte-PersAutoDict-EraseBytes- DE: "\001\000\000\000\000\000\000\021"-
+#16636	REDUCE cov: 101 ft: 140 corp: 25/845b lim: 104 exec/s: 0 rss: 42Mb L: 72/86 MS: 3 ChangeByte-ShuffleBytes-EraseBytes-
+#16819	REDUCE cov: 104 ft: 143 corp: 26/913b lim: 104 exec/s: 0 rss: 42Mb L: 68/86 MS: 3 InsertRepeatedBytes-InsertRepeatedBytes-InsertByte-
+#16887	REDUCE cov: 108 ft: 147 corp: 27/932b lim: 104 exec/s: 0 rss: 42Mb L: 19/86 MS: 3 ShuffleBytes-ChangeByte-ChangeBit-
+#17029	REDUCE cov: 108 ft: 147 corp: 27/924b lim: 104 exec/s: 0 rss: 42Mb L: 69/86 MS: 2 InsertByte-EraseBytes-
+#17298	NEW    cov: 109 ft: 148 corp: 28/1001b lim: 104 exec/s: 0 rss: 42Mb L: 77/86 MS: 4 InsertRepeatedBytes-EraseBytes-CrossOver-InsertByte-
+#17737	REDUCE cov: 109 ft: 148 corp: 28/998b lim: 104 exec/s: 0 rss: 42Mb L: 20/86 MS: 4 InsertByte-ShuffleBytes-ChangeBit-EraseBytes-
+#17983	REDUCE cov: 109 ft: 148 corp: 28/992b lim: 104 exec/s: 0 rss: 42Mb L: 66/86 MS: 1 EraseBytes-
+#18419	NEW    cov: 110 ft: 149 corp: 29/1063b lim: 104 exec/s: 0 rss: 42Mb L: 71/86 MS: 1 EraseBytes-
+#18690	REDUCE cov: 110 ft: 149 corp: 29/1061b lim: 104 exec/s: 0 rss: 42Mb L: 31/86 MS: 1 EraseBytes-
+#18953	REDUCE cov: 110 ft: 149 corp: 29/1060b lim: 104 exec/s: 0 rss: 42Mb L: 21/86 MS: 3 CopyPart-ChangeBinInt-EraseBytes-
+#18974	REDUCE cov: 110 ft: 149 corp: 29/1051b lim: 104 exec/s: 0 rss: 42Mb L: 22/86 MS: 1 EraseBytes-
+#19697	REDUCE cov: 110 ft: 149 corp: 29/1045b lim: 110 exec/s: 0 rss: 43Mb L: 71/86 MS: 3 InsertByte-EraseBytes-CrossOver-
+#19857	REDUCE cov: 110 ft: 149 corp: 29/1041b lim: 110 exec/s: 0 rss: 43Mb L: 65/86 MS: 5 ShuffleBytes-PersAutoDict-ChangeBit-CopyPart-EraseBytes- DE: "OFR1"-
+#23288	REDUCE cov: 110 ft: 149 corp: 29/1040b lim: 142 exec/s: 23288 rss: 44Mb L: 20/86 MS: 1 CrossOver-
+#24939	REDUCE cov: 110 ft: 149 corp: 29/1038b lim: 156 exec/s: 24939 rss: 44Mb L: 20/86 MS: 1 EraseBytes-
+#25058	REDUCE cov: 110 ft: 149 corp: 29/1036b lim: 156 exec/s: 25058 rss: 44Mb L: 18/86 MS: 4 CMP-ChangeBit-CrossOver-PersAutoDict- DE: "2RFO"-"OFR1"-
+#25569	REDUCE cov: 110 ft: 149 corp: 29/1035b lim: 156 exec/s: 25569 rss: 44Mb L: 85/85 MS: 1 EraseBytes-
+#25585	REDUCE cov: 110 ft: 149 corp: 29/1034b lim: 156 exec/s: 25585 rss: 44Mb L: 17/85 MS: 1 EraseBytes-
+#26996	REDUCE cov: 110 ft: 149 corp: 29/1033b lim: 170 exec/s: 26996 rss: 44Mb L: 18/85 MS: 1 EraseBytes-
+#27982	REDUCE cov: 110 ft: 149 corp: 29/1032b lim: 177 exec/s: 27982 rss: 44Mb L: 65/85 MS: 1 EraseBytes-
+#32258	REDUCE cov: 110 ft: 149 corp: 29/1029b lim: 219 exec/s: 32258 rss: 45Mb L: 17/85 MS: 1 EraseBytes-
+#33825	REDUCE cov: 110 ft: 149 corp: 29/1028b lim: 233 exec/s: 33825 rss: 45Mb L: 19/85 MS: 2 CopyPart-EraseBytes-
+	NEW_FUNC[1/4]: 0x7ff6818e5160 in digest::digest::impl$0::digest<sha2::Sha256,ref$<slice2$<u8> > > C:\Users\pc\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\digest-0.11.3\src\digest.rs:126
+	NEW_FUNC[2/4]: 0x7ff681925ea0 in sha2::sha256::compress256 C:\Users\pc\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.11.0\src\sha256.rs:86
+#35050	REDUCE cov: 153 ft: 192 corp: 30/1160b lim: 240 exec/s: 35050 rss: 47Mb L: 132/132 MS: 5 InsertRepeatedBytes-ChangeASCIIInt-ChangeASCIIInt-ChangeByte-ShuffleBytes-
+#35100	NEW    cov: 154 ft: 193 corp: 31/1289b lim: 240 exec/s: 35100 rss: 47Mb L: 129/132 MS: 5 InsertByte-ShuffleBytes-InsertRepeatedBytes-EraseBytes-EraseBytes-
+#38576	REDUCE cov: 154 ft: 193 corp: 31/1285b lim: 269 exec/s: 38576 rss: 47Mb L: 65/132 MS: 1 EraseBytes-
+#38944	REDUCE cov: 154 ft: 193 corp: 31/1284b lim: 269 exec/s: 38944 rss: 48Mb L: 18/132 MS: 3 CrossOver-ChangeASCIIInt-EraseBytes-
+#39820	NEW    cov: 157 ft: 196 corp: 32/1357b lim: 277 exec/s: 19910 rss: 48Mb L: 73/132 MS: 1 InsertRepeatedBytes-
+#50986	REDUCE cov: 157 ft: 196 corp: 32/1356b lim: 381 exec/s: 25493 rss: 50Mb L: 65/132 MS: 1 EraseBytes-
+#56793	REDUCE cov: 157 ft: 197 corp: 33/1442b lim: 437 exec/s: 28396 rss: 51Mb L: 86/132 MS: 2 CrossOver-CopyPart-
+#65536	pulse  cov: 157 ft: 197 corp: 33/1442b lim: 517 exec/s: 21845 rss: 52Mb
+#68650	REDUCE cov: 157 ft: 197 corp: 33/1441b lim: 553 exec/s: 22883 rss: 52Mb L: 85/132 MS: 2 EraseBytes-InsertByte-
+#69857	REDUCE cov: 157 ft: 198 corp: 34/1553b lim: 562 exec/s: 23285 rss: 53Mb L: 112/132 MS: 2 CMP-CopyPart- DE: "\021\000\000\000\000\000\000\000"-
+#74546	REDUCE cov: 157 ft: 199 corp: 35/1689b lim: 607 exec/s: 24848 rss: 54Mb L: 136/136 MS: 4 PersAutoDict-PersAutoDict-CrossOver-InsertByte- DE: "2RFO"-"OFR1"-
+#81477	REDUCE cov: 157 ft: 199 corp: 35/1687b lim: 670 exec/s: 27159 rss: 55Mb L: 110/136 MS: 1 EraseBytes-
+#83934	REDUCE cov: 157 ft: 199 corp: 35/1685b lim: 688 exec/s: 20983 rss: 55Mb L: 134/134 MS: 2 ShuffleBytes-EraseBytes-
+#91493	REDUCE cov: 157 ft: 199 corp: 35/1684b lim: 760 exec/s: 22873 rss: 56Mb L: 17/134 MS: 4 CopyPart-EraseBytes-ChangeByte-EraseBytes-
+#93999	REDUCE cov: 157 ft: 200 corp: 36/1749b lim: 778 exec/s: 23499 rss: 57Mb L: 65/134 MS: 1 CopyPart-
+#97429	REDUCE cov: 157 ft: 206 corp: 37/1834b lim: 805 exec/s: 24357 rss: 58Mb L: 85/134 MS: 5 ShuffleBytes-ShuffleBytes-ChangeBit-ShuffleBytes-CrossOver-
+#100906	REDUCE cov: 157 ft: 207 corp: 38/1919b lim: 832 exec/s: 25226 rss: 58Mb L: 85/134 MS: 2 ChangeBit-PersAutoDict- DE: "OFR1"-
+#131072	pulse  cov: 157 ft: 207 corp: 38/1919b lim: 1130 exec/s: 26214 rss: 63Mb
+#142710	REDUCE cov: 157 ft: 207 corp: 38/1911b lim: 1240 exec/s: 23785 rss: 65Mb L: 126/132 MS: 4 ShuffleBytes-ChangeBit-CopyPart-EraseBytes-
+#155124	REDUCE cov: 157 ft: 207 corp: 38/1910b lim: 1360 exec/s: 25854 rss: 67Mb L: 109/132 MS: 4 ChangeBit-InsertByte-EraseBytes-InsertByte-
+#156073	REDUCE cov: 157 ft: 207 corp: 38/1892b lim: 1360 exec/s: 26012 rss: 67Mb L: 67/132 MS: 4 EraseBytes-CopyPart-ShuffleBytes-PersAutoDict- DE: "OFR1"-
+#160781	REDUCE cov: 157 ft: 207 corp: 38/1891b lim: 1400 exec/s: 26796 rss: 68Mb L: 66/132 MS: 3 InsertByte-ChangeBit-EraseBytes-
+#164762	REDUCE cov: 157 ft: 207 corp: 38/1890b lim: 1430 exec/s: 27460 rss: 69Mb L: 125/132 MS: 1 EraseBytes-
+#176600	REDUCE cov: 157 ft: 207 corp: 38/1868b lim: 1540 exec/s: 29433 rss: 71Mb L: 103/132 MS: 3 PersAutoDict-ChangeBinInt-EraseBytes- DE: "OFR1"-
+#178625	REDUCE cov: 157 ft: 207 corp: 38/1866b lim: 1560 exec/s: 29770 rss: 71Mb L: 101/132 MS: 5 ChangeBit-ShuffleBytes-EraseBytes-CrossOver-CopyPart-
+#183436	REDUCE cov: 157 ft: 207 corp: 38/1865b lim: 1600 exec/s: 30572 rss: 72Mb L: 17/132 MS: 1 EraseBytes-
+#185352	REDUCE cov: 157 ft: 208 corp: 39/1974b lim: 1610 exec/s: 30892 rss: 73Mb L: 109/132 MS: 1 CopyPart-
+#202625	REDUCE cov: 157 ft: 208 corp: 39/1965b lim: 1780 exec/s: 28946 rss: 75Mb L: 76/132 MS: 3 ChangeASCIIInt-EraseBytes-CopyPart-
+#204582	REDUCE cov: 157 ft: 208 corp: 39/1962b lim: 1790 exec/s: 29226 rss: 76Mb L: 98/132 MS: 2 EraseBytes-CMP- DE: "\000\000\000\000\000\000\000Z"-
+#217728	REDUCE cov: 157 ft: 208 corp: 39/1960b lim: 1920 exec/s: 31104 rss: 78Mb L: 74/132 MS: 1 EraseBytes-
+#222915	REDUCE cov: 157 ft: 208 corp: 39/1959b lim: 1970 exec/s: 31845 rss: 79Mb L: 97/132 MS: 2 CopyPart-EraseBytes-
+#230150	REDUCE cov: 157 ft: 208 corp: 39/1950b lim: 2040 exec/s: 32878 rss: 80Mb L: 88/132 MS: 5 CopyPart-ChangeBinInt-ShuffleBytes-CrossOver-EraseBytes-
+#230901	REDUCE cov: 157 ft: 208 corp: 39/1949b lim: 2040 exec/s: 32985 rss: 80Mb L: 65/132 MS: 1 EraseBytes-
+#240900	NEW    cov: 157 ft: 209 corp: 40/2035b lim: 2138 exec/s: 30112 rss: 82Mb L: 86/132 MS: 4 InsertByte-ChangeBit-ShuffleBytes-ChangeBinInt-
+#244061	NEW    cov: 157 ft: 214 corp: 41/2121b lim: 2160 exec/s: 30507 rss: 82Mb L: 86/132 MS: 1 CopyPart-
+#248112	NEW    cov: 157 ft: 215 corp: 42/2207b lim: 2193 exec/s: 31014 rss: 83Mb L: 86/132 MS: 1 CrossOver-
+#249572	REDUCE cov: 157 ft: 215 corp: 42/2206b lim: 2204 exec/s: 31196 rss: 83Mb L: 85/132 MS: 5 CrossOver-ChangeBinInt-ChangeByte-EraseBytes-InsertByte-
+#251497	REDUCE cov: 158 ft: 216 corp: 43/2245b lim: 2215 exec/s: 31437 rss: 84Mb L: 39/132 MS: 5 EraseBytes-ChangeByte-ChangeByte-CrossOver-ChangeBit-
+#251668	NEW    cov: 159 ft: 217 corp: 44/2328b lim: 2215 exec/s: 31458 rss: 84Mb L: 83/132 MS: 1 InsertRepeatedBytes-
+#251771	REDUCE cov: 159 ft: 217 corp: 44/2320b lim: 2215 exec/s: 31471 rss: 84Mb L: 75/132 MS: 3 InsertByte-PersAutoDict-EraseBytes- DE: "OFR1"-
+#251885	NEW    cov: 159 ft: 219 corp: 45/2408b lim: 2215 exec/s: 31485 rss: 84Mb L: 88/132 MS: 4 CopyPart-ShuffleBytes-InsertByte-InsertByte-
+#252141	REDUCE cov: 159 ft: 219 corp: 45/2390b lim: 2215 exec/s: 31517 rss: 84Mb L: 21/132 MS: 1 EraseBytes-
+#255618	REDUCE cov: 159 ft: 219 corp: 45/2386b lim: 2248 exec/s: 31952 rss: 85Mb L: 71/132 MS: 2 ShuffleBytes-EraseBytes-
+#259529	REDUCE cov: 159 ft: 219 corp: 45/2384b lim: 2281 exec/s: 32441 rss: 85Mb L: 19/132 MS: 1 EraseBytes-
+#260036	REDUCE cov: 159 ft: 219 corp: 45/2382b lim: 2281 exec/s: 32504 rss: 85Mb L: 69/132 MS: 2 ChangeBinInt-EraseBytes-
+#260747	REDUCE cov: 159 ft: 219 corp: 45/2381b lim: 2281 exec/s: 32593 rss: 85Mb L: 18/132 MS: 1 EraseBytes-
+#262144	pulse  cov: 159 ft: 219 corp: 45/2381b lim: 2292 exec/s: 32768 rss: 86Mb
+#293474	REDUCE cov: 159 ft: 219 corp: 45/2380b lim: 2600 exec/s: 32608 rss: 92Mb L: 68/132 MS: 2 PersAutoDict-EraseBytes- DE: "2RFO"-
+#295861	REDUCE cov: 159 ft: 220 corp: 46/2506b lim: 2622 exec/s: 32873 rss: 92Mb L: 126/132 MS: 2 ChangeASCIIInt-CopyPart-
+#296534	REDUCE cov: 159 ft: 220 corp: 46/2505b lim: 2622 exec/s: 32948 rss: 93Mb L: 125/132 MS: 3 PersAutoDict-ChangeBinInt-EraseBytes- DE: "2RFO"-
+#308305	REDUCE cov: 159 ft: 220 corp: 46/2503b lim: 2732 exec/s: 30830 rss: 95Mb L: 72/132 MS: 1 EraseBytes-
+#317343	REDUCE cov: 159 ft: 220 corp: 46/2501b lim: 2820 exec/s: 31734 rss: 97Mb L: 66/132 MS: 3 EraseBytes-CrossOver-PersAutoDict- DE: "\000\000\000\000\000\000\000Z"-
+#326304	NEW    cov: 159 ft: 221 corp: 47/2586b lim: 2908 exec/s: 29664 rss: 98Mb L: 85/132 MS: 1 ShuffleBytes-
+#328005	REDUCE cov: 159 ft: 221 corp: 47/2585b lim: 2919 exec/s: 29818 rss: 99Mb L: 85/132 MS: 1 EraseBytes-
+#331626	NEW    cov: 162 ft: 232 corp: 48/2673b lim: 2952 exec/s: 30147 rss: 99Mb L: 88/132 MS: 1 CopyPart-
+#335599	REDUCE cov: 162 ft: 232 corp: 48/2671b lim: 2985 exec/s: 30509 rss: 100Mb L: 86/132 MS: 3 EraseBytes-ChangeByte-PersAutoDict- DE: "\021\000\000\000\000\000\000\000"-
+#341620	REDUCE cov: 162 ft: 232 corp: 48/2670b lim: 3040 exec/s: 31056 rss: 101Mb L: 71/132 MS: 1 EraseBytes-
+#342087	REDUCE cov: 162 ft: 232 corp: 48/2669b lim: 3040 exec/s: 31098 rss: 101Mb L: 65/132 MS: 2 ChangeBit-EraseBytes-
+#348530	REDUCE cov: 162 ft: 232 corp: 48/2668b lim: 3095 exec/s: 31684 rss: 103Mb L: 17/132 MS: 3 ShuffleBytes-ShuffleBytes-EraseBytes-
+#350576	REDUCE cov: 167 ft: 237 corp: 49/2754b lim: 3106 exec/s: 31870 rss: 103Mb L: 86/132 MS: 1 CopyPart-
+#359747	REDUCE cov: 167 ft: 237 corp: 49/2753b lim: 3194 exec/s: 29978 rss: 105Mb L: 85/132 MS: 1 EraseBytes-
+#366791	REDUCE cov: 167 ft: 237 corp: 49/2752b lim: 3260 exec/s: 30565 rss: 106Mb L: 85/132 MS: 4 ChangeByte-CopyPart-InsertRepeatedBytes-EraseBytes-
+#369013	REDUCE cov: 170 ft: 240 corp: 50/2837b lim: 3282 exec/s: 30751 rss: 107Mb L: 85/132 MS: 2 CopyPart-ChangeBit-
+#374350	REDUCE cov: 170 ft: 240 corp: 50/2835b lim: 3326 exec/s: 31195 rss: 108Mb L: 86/132 MS: 2 ChangeBinInt-EraseBytes-
+#415298	REDUCE cov: 170 ft: 240 corp: 50/2829b lim: 3733 exec/s: 31946 rss: 116Mb L: 67/132 MS: 3 EraseBytes-PersAutoDict-CMP- DE: "\001\000\000\000\000\000\000\021"-"\377\377\377\007"-
+#415645	REDUCE cov: 170 ft: 240 corp: 50/2827b lim: 3733 exec/s: 31972 rss: 116Mb L: 65/132 MS: 2 ChangeBit-EraseBytes-
+#420860	NEW    cov: 170 ft: 241 corp: 51/2915b lim: 3777 exec/s: 32373 rss: 117Mb L: 88/132 MS: 5 ShuffleBytes-ChangeBinInt-ChangeBinInt-ShuffleBytes-PersAutoDict- DE: "\001\000\000\000\000\000\000\021"-
+#437941	REDUCE cov: 170 ft: 241 corp: 51/2912b lim: 3942 exec/s: 33687 rss: 121Mb L: 85/132 MS: 1 EraseBytes-
+#475389	REDUCE cov: 170 ft: 241 corp: 51/2888b lim: 4096 exec/s: 33956 rss: 129Mb L: 101/132 MS: 3 ChangeBinInt-EraseBytes-EraseBytes-
+#478170	REDUCE cov: 170 ft: 242 corp: 52/2973b lim: 4096 exec/s: 34155 rss: 129Mb L: 85/132 MS: 1 CopyPart-
+#480681	REDUCE cov: 170 ft: 242 corp: 52/2972b lim: 4096 exec/s: 34334 rss: 130Mb L: 108/132 MS: 1 EraseBytes-
+#482578	NEW    cov: 170 ft: 243 corp: 53/3057b lim: 4096 exec/s: 34469 rss: 130Mb L: 85/132 MS: 2 ChangeBit-ChangeBit-
+#507488	REDUCE cov: 170 ft: 243 corp: 53/3055b lim: 4096 exec/s: 33832 rss: 135Mb L: 106/132 MS: 5 InsertRepeatedBytes-ShuffleBytes-ShuffleBytes-EraseBytes-EraseBytes-
+#524288	pulse  cov: 170 ft: 243 corp: 53/3055b lim: 4096 exec/s: 34952 rss: 138Mb
+#580560	REDUCE cov: 170 ft: 243 corp: 53/3053b lim: 4096 exec/s: 36285 rss: 150Mb L: 17/132 MS: 2 ChangeBit-EraseBytes-
+#595368	REDUCE cov: 170 ft: 243 corp: 53/3051b lim: 4096 exec/s: 37210 rss: 153Mb L: 84/132 MS: 3 InsertByte-CopyPart-EraseBytes-
+#745206	REDUCE cov: 170 ft: 243 corp: 53/3050b lim: 4096 exec/s: 37260 rss: 183Mb L: 70/132 MS: 3 ChangeBinInt-CMP-EraseBytes- DE: "\377\377\377\377\377\377\377\020"-
+#759222	REDUCE cov: 170 ft: 243 corp: 53/3049b lim: 4096 exec/s: 37961 rss: 186Mb L: 105/132 MS: 1 EraseBytes-
+#776053	REDUCE cov: 170 ft: 243 corp: 53/3048b lim: 4096 exec/s: 36954 rss: 190Mb L: 69/132 MS: 1 EraseBytes-
+#883756	REDUCE cov: 170 ft: 243 corp: 53/3046b lim: 4096 exec/s: 38424 rss: 212Mb L: 67/132 MS: 3 PersAutoDict-ChangeASCIIInt-EraseBytes- DE: "\377\377\377\377\377\377\377\020"-
+#908953	REDUCE cov: 170 ft: 243 corp: 53/3045b lim: 4096 exec/s: 37873 rss: 217Mb L: 100/132 MS: 2 ShuffleBytes-EraseBytes-
+#930799	REDUCE cov: 170 ft: 243 corp: 53/3044b lim: 4096 exec/s: 38783 rss: 221Mb L: 99/132 MS: 1 EraseBytes-
+#934535	REDUCE cov: 170 ft: 243 corp: 53/3043b lim: 4096 exec/s: 38938 rss: 222Mb L: 66/132 MS: 1 EraseBytes-
+#963698	NEW    cov: 172 ft: 245 corp: 54/3172b lim: 4096 exec/s: 38547 rss: 228Mb L: 129/132 MS: 3 ChangeBit-ChangeByte-CMP- DE: "\246\"\027\237Hz\217\203"-
+#986224	REDUCE cov: 172 ft: 245 corp: 54/3171b lim: 4096 exec/s: 37931 rss: 233Mb L: 85/132 MS: 1 EraseBytes-
+#987895	NEW    cov: 172 ft: 246 corp: 55/3256b lim: 4096 exec/s: 37995 rss: 233Mb L: 85/132 MS: 1 CopyPart-
+#1005466	REDUCE cov: 172 ft: 246 corp: 55/3254b lim: 4096 exec/s: 38671 rss: 237Mb L: 97/132 MS: 1 EraseBytes-
+#1048576	pulse  cov: 172 ft: 246 corp: 55/3254b lim: 4096 exec/s: 38836 rss: 245Mb
+#1053217	REDUCE cov: 172 ft: 247 corp: 56/3351b lim: 4096 exec/s: 39008 rss: 247Mb L: 97/132 MS: 1 CopyPart-
+#1063566	REDUCE cov: 172 ft: 248 corp: 57/3424b lim: 4096 exec/s: 39391 rss: 249Mb L: 73/132 MS: 4 ChangeBit-CrossOver-ChangeASCIIInt-CMP- DE: "\000\000\000\000\000\000\000\035"-
+#1110535	REDUCE cov: 172 ft: 248 corp: 57/3404b lim: 4096 exec/s: 39661 rss: 258Mb L: 77/132 MS: 4 EraseBytes-ShuffleBytes-ChangeASCIIInt-EraseBytes-
+#1139672	NEW    cov: 172 ft: 249 corp: 58/3625b lim: 4096 exec/s: 39299 rss: 265Mb L: 221/221 MS: 2 CopyPart-CopyPart-
+#1191176	REDUCE cov: 172 ft: 249 corp: 58/3624b lim: 4096 exec/s: 39705 rss: 276Mb L: 65/221 MS: 4 CrossOver-ChangeASCIIInt-ShuffleBytes-EraseBytes-
+#1404899	REDUCE cov: 172 ft: 249 corp: 58/3622b lim: 4096 exec/s: 39024 rss: 320Mb L: 71/221 MS: 3 ShuffleBytes-InsertByte-EraseBytes-
+#1494520	REDUCE cov: 172 ft: 249 corp: 58/3621b lim: 4096 exec/s: 39329 rss: 335Mb L: 83/221 MS: 1 EraseBytes-
+#1583487	REDUCE cov: 172 ft: 249 corp: 58/3619b lim: 4096 exec/s: 37702 rss: 351Mb L: 81/221 MS: 2 ChangeByte-EraseBytes-
+#1586233	REDUCE cov: 172 ft: 249 corp: 58/3610b lim: 4096 exec/s: 36889 rss: 351Mb L: 72/221 MS: 1 EraseBytes-
+#1603023	REDUCE cov: 172 ft: 249 corp: 58/3592b lim: 4096 exec/s: 37279 rss: 354Mb L: 53/221 MS: 5 InsertByte-ChangeBit-EraseBytes-PersAutoDict-PersAutoDict- DE: "2RFO"-"2RFO"-
+#1686510	REDUCE cov: 172 ft: 249 corp: 58/3586b lim: 4096 exec/s: 37478 rss: 369Mb L: 66/221 MS: 2 EraseBytes-CMP- DE: "\200\000\000\000\000\000\000\002"-
+#1812822	REDUCE cov: 172 ft: 249 corp: 58/3585b lim: 4096 exec/s: 37767 rss: 391Mb L: 70/221 MS: 2 ChangeByte-EraseBytes-
+#1941884	REDUCE cov: 172 ft: 249 corp: 58/3584b lim: 4096 exec/s: 38837 rss: 414Mb L: 69/221 MS: 2 ChangeBinInt-EraseBytes-
+#2055200	REDUCE cov: 172 ft: 249 corp: 58/3582b lim: 4096 exec/s: 38777 rss: 424Mb L: 67/221 MS: 1 EraseBytes-
+#2097152	pulse  cov: 172 ft: 249 corp: 58/3582b lim: 4096 exec/s: 39568 rss: 424Mb
+#2156871	NEW    cov: 172 ft: 250 corp: 59/3803b lim: 4096 exec/s: 39215 rss: 424Mb L: 221/221 MS: 1 CopyPart-
+#2334128	NEW    cov: 172 ft: 285 corp: 60/3932b lim: 4096 exec/s: 40243 rss: 444Mb L: 129/221 MS: 2 CrossOver-CopyPart-
+#2336790	NEW    cov: 172 ft: 287 corp: 61/4061b lim: 4096 exec/s: 40289 rss: 445Mb L: 129/221 MS: 2 ChangeBinInt-ChangeBinInt-
+#2418601	REDUCE cov: 172 ft: 287 corp: 61/4059b lim: 4096 exec/s: 40310 rss: 463Mb L: 65/221 MS: 1 EraseBytes-
+#2523143	NEW    cov: 172 ft: 329 corp: 62/4188b lim: 4096 exec/s: 40049 rss: 463Mb L: 129/221 MS: 2 ShuffleBytes-CopyPart-
+#2545320	NEW    cov: 172 ft: 330 corp: 63/4285b lim: 4096 exec/s: 40401 rss: 463Mb L: 97/221 MS: 2 ChangeASCIIInt-CopyPart-
+#2564837	NEW    cov: 172 ft: 331 corp: 64/4394b lim: 4096 exec/s: 40075 rss: 463Mb L: 109/221 MS: 2 ChangeBit-CopyPart-
+#2707778	REDUCE cov: 172 ft: 331 corp: 64/4393b lim: 4096 exec/s: 39820 rss: 463Mb L: 65/221 MS: 1 EraseBytes-
+#3249642	REDUCE cov: 172 ft: 331 corp: 64/4318b lim: 4096 exec/s: 39152 rss: 510Mb L: 146/221 MS: 4 PersAutoDict-CrossOver-ChangeBit-EraseBytes- DE: "\000\000\000\000\000\000\000\035"-
+#3286720	REDUCE cov: 172 ft: 331 corp: 64/4317b lim: 4096 exec/s: 39127 rss: 512Mb L: 145/221 MS: 3 ChangeByte-ChangeBinInt-EraseBytes-
+#3359496	NEW    cov: 172 ft: 332 corp: 65/4402b lim: 4096 exec/s: 39063 rss: 517Mb L: 85/221 MS: 1 CopyPart-
+#3484075	REDUCE cov: 172 ft: 332 corp: 65/4386b lim: 4096 exec/s: 39591 rss: 519Mb L: 55/221 MS: 4 PersAutoDict-EraseBytes-ChangeByte-ChangeByte- DE: "2RFO"-
+#3820146	REDUCE cov: 172 ft: 332 corp: 65/4385b lim: 4096 exec/s: 39793 rss: 532Mb L: 104/221 MS: 1 EraseBytes-
+#3854278	REDUCE cov: 172 ft: 332 corp: 65/4384b lim: 4096 exec/s: 39734 rss: 532Mb L: 103/221 MS: 2 ChangeBinInt-EraseBytes-
+#4074780	REDUCE cov: 172 ft: 332 corp: 65/4383b lim: 4096 exec/s: 39560 rss: 537Mb L: 102/221 MS: 2 CrossOver-CrossOver-
+#4194304	pulse  cov: 172 ft: 332 corp: 65/4383b lim: 4096 exec/s: 39199 rss: 541Mb
+#5385208	REDUCE cov: 172 ft: 332 corp: 65/4382b lim: 4096 exec/s: 41108 rss: 565Mb L: 101/221 MS: 3 CopyPart-EraseBytes-InsertByte-
+#5590208	REDUCE cov: 172 ft: 332 corp: 65/4379b lim: 4096 exec/s: 41408 rss: 569Mb L: 82/221 MS: 5 EraseBytes-EraseBytes-CrossOver-CMP-CMP- DE: "W\000\000O"-"1RFO"-
+#5691383	NEW    cov: 173 ft: 333 corp: 66/4731b lim: 4096 exec/s: 41542 rss: 573Mb L: 352/352 MS: 5 InsertRepeatedBytes-ShuffleBytes-CopyPart-CopyPart-CopyPart-
+#5778434	REDUCE cov: 173 ft: 333 corp: 66/4730b lim: 4096 exec/s: 41872 rss: 574Mb L: 81/352 MS: 1 EraseBytes-
+#5802963	REDUCE cov: 173 ft: 333 corp: 66/4729b lim: 4096 exec/s: 41747 rss: 574Mb L: 351/351 MS: 4 ChangeASCIIInt-ChangeBinInt-EraseBytes-CrossOver-
+#5866701	NEW    cov: 179 ft: 339 corp: 67/4814b lim: 4096 exec/s: 41905 rss: 576Mb L: 85/351 MS: 3 ChangeBinInt-ChangeASCIIInt-CMP- DE: "OAU1"-
+#5868870	NEW    cov: 181 ft: 341 corp: 68/4985b lim: 4096 exec/s: 41920 rss: 576Mb L: 171/351 MS: 4 CrossOver-ChangeASCIIInt-InsertByte-CrossOver-
+#5868872	REDUCE cov: 181 ft: 341 corp: 68/4957b lim: 4096 exec/s: 41920 rss: 576Mb L: 57/351 MS: 2 InsertByte-EraseBytes-
+#5868916	REDUCE cov: 181 ft: 341 corp: 68/4943b lim: 4096 exec/s: 41920 rss: 576Mb L: 157/351 MS: 4 InsertByte-PersAutoDict-ShuffleBytes-EraseBytes- DE: "\200\000\000\000\000\000\000\002"-
+#5868927	REDUCE cov: 181 ft: 341 corp: 68/4938b lim: 4096 exec/s: 41920 rss: 576Mb L: 152/351 MS: 1 EraseBytes-
+#5869018	REDUCE cov: 181 ft: 341 corp: 68/4926b lim: 4096 exec/s: 41921 rss: 576Mb L: 45/351 MS: 1 EraseBytes-
+#5869786	REDUCE cov: 181 ft: 341 corp: 68/4887b lim: 4096 exec/s: 41927 rss: 576Mb L: 113/351 MS: 3 ChangeBit-CopyPart-EraseBytes-
+#5870593	REDUCE cov: 181 ft: 341 corp: 68/4865b lim: 4096 exec/s: 41932 rss: 576Mb L: 91/351 MS: 2 ChangeBinInt-EraseBytes-
+#5870695	REDUCE cov: 181 ft: 341 corp: 68/4855b lim: 4096 exec/s: 41933 rss: 576Mb L: 81/351 MS: 2 ChangeBinInt-EraseBytes-
+#5871573	REDUCE cov: 181 ft: 341 corp: 68/4853b lim: 4096 exec/s: 41939 rss: 576Mb L: 43/351 MS: 3 CrossOver-ChangeBit-EraseBytes-
+#5871818	REDUCE cov: 181 ft: 341 corp: 68/4843b lim: 4096 exec/s: 41941 rss: 576Mb L: 71/351 MS: 5 ChangeBinInt-ChangeASCIIInt-ChangeBinInt-ChangeBit-EraseBytes-
+#5872050	REDUCE cov: 181 ft: 341 corp: 68/4836b lim: 4096 exec/s: 41943 rss: 576Mb L: 36/351 MS: 2 ChangeBinInt-EraseBytes-
+#5872251	REDUCE cov: 181 ft: 341 corp: 68/4811b lim: 4096 exec/s: 41944 rss: 576Mb L: 46/351 MS: 1 EraseBytes-
+#5873396	REDUCE cov: 181 ft: 341 corp: 68/4807b lim: 4096 exec/s: 41952 rss: 576Mb L: 32/351 MS: 5 CMP-ChangeBinInt-ChangeBit-ChangeASCIIInt-EraseBytes- DE: "\001\000\000\000\000\000\000\002"-
+#5873438	REDUCE cov: 181 ft: 341 corp: 68/4805b lim: 4096 exec/s: 41953 rss: 576Mb L: 44/351 MS: 2 ChangeBit-EraseBytes-
+#5873939	REDUCE cov: 181 ft: 341 corp: 68/4791b lim: 4096 exec/s: 41956 rss: 576Mb L: 18/351 MS: 1 EraseBytes-
+#5874030	REDUCE cov: 186 ft: 346 corp: 69/4815b lim: 4096 exec/s: 41957 rss: 576Mb L: 24/351 MS: 1 CopyPart-
+#5874991	REDUCE cov: 186 ft: 346 corp: 69/4811b lim: 4096 exec/s: 41964 rss: 576Mb L: 20/351 MS: 1 EraseBytes-
+#5875704	REDUCE cov: 186 ft: 346 corp: 69/4797b lim: 4096 exec/s: 41969 rss: 576Mb L: 30/351 MS: 3 PersAutoDict-ChangeByte-EraseBytes- DE: "OFR1"-
+#5877785	REDUCE cov: 186 ft: 346 corp: 69/4788b lim: 4096 exec/s: 41984 rss: 576Mb L: 21/351 MS: 1 EraseBytes-
+#5878312	REDUCE cov: 186 ft: 346 corp: 69/4785b lim: 4096 exec/s: 41987 rss: 576Mb L: 17/351 MS: 2 CrossOver-EraseBytes-
+#5880289	REDUCE cov: 186 ft: 346 corp: 69/4784b lim: 4096 exec/s: 42002 rss: 576Mb L: 17/351 MS: 2 ChangeBit-EraseBytes-
+#5882730	REDUCE cov: 186 ft: 346 corp: 69/4783b lim: 4096 exec/s: 41721 rss: 576Mb L: 20/351 MS: 1 EraseBytes-
+#5884334	REDUCE cov: 186 ft: 346 corp: 69/4782b lim: 4096 exec/s: 41732 rss: 576Mb L: 16/351 MS: 4 ShuffleBytes-CrossOver-InsertByte-EraseBytes-
+#5887844	REDUCE cov: 186 ft: 346 corp: 69/4781b lim: 4096 exec/s: 41757 rss: 577Mb L: 16/351 MS: 5 InsertByte-PersAutoDict-InsertRepeatedBytes-ChangeByte-EraseBytes- DE: "\001\000\000\000\000\000\000\021"-
+#5894929	REDUCE cov: 186 ft: 346 corp: 69/4777b lim: 4096 exec/s: 41808 rss: 577Mb L: 16/351 MS: 5 CrossOver-ChangeBinInt-InsertByte-EraseBytes-InsertByte-
+#5897705	REDUCE cov: 200 ft: 360 corp: 70/4793b lim: 4096 exec/s: 41827 rss: 577Mb L: 16/351 MS: 1 CMP- DE: "\003\000\000\000\000\000\000\200"-
+#5897726	NEW    cov: 202 ft: 362 corp: 71/4818b lim: 4096 exec/s: 41827 rss: 577Mb L: 25/351 MS: 1 CopyPart-
+#5902522	REDUCE cov: 202 ft: 362 corp: 71/4816b lim: 4096 exec/s: 41861 rss: 577Mb L: 23/351 MS: 1 EraseBytes-
+#5902838	REDUCE cov: 202 ft: 362 corp: 71/4814b lim: 4096 exec/s: 41864 rss: 577Mb L: 21/351 MS: 1 EraseBytes-
+#5922050	REDUCE cov: 202 ft: 362 corp: 71/4810b lim: 4096 exec/s: 42000 rss: 578Mb L: 17/351 MS: 2 ChangeBinInt-EraseBytes-
+#5949751	REDUCE cov: 204 ft: 364 corp: 72/4827b lim: 4096 exec/s: 41899 rss: 579Mb L: 17/351 MS: 1 PersAutoDict- DE: "\001\000\000\000\000\000\000\021"-
+#5959977	REDUCE cov: 204 ft: 364 corp: 72/4826b lim: 4096 exec/s: 41971 rss: 580Mb L: 16/351 MS: 1 EraseBytes-
+#6017728	REDUCE cov: 204 ft: 364 corp: 72/4824b lim: 4096 exec/s: 42082 rss: 580Mb L: 349/349 MS: 1 EraseBytes-
+#6142649	REDUCE cov: 211 ft: 371 corp: 73/4905b lim: 4096 exec/s: 42072 rss: 583Mb L: 81/349 MS: 1 CrossOver-
+#6229693	REDUCE cov: 211 ft: 371 corp: 73/4904b lim: 4096 exec/s: 42092 rss: 586Mb L: 80/349 MS: 4 ChangeASCIIInt-InsertByte-EraseBytes-CMP- DE: "\001\000\000\000\000\000\000\000"-
+#6591374	REDUCE cov: 211 ft: 371 corp: 73/4903b lim: 4096 exec/s: 42801 rss: 598Mb L: 16/349 MS: 1 EraseBytes-
+#8388608	pulse  cov: 211 ft: 371 corp: 73/4903b lim: 4096 exec/s: 43919 rss: 620Mb
+#12928395	REDUCE cov: 211 ft: 372 corp: 74/4988b lim: 4096 exec/s: 46338 rss: 620Mb L: 85/349 MS: 1 CopyPart-
+#12929591	NEW    cov: 211 ft: 375 corp: 75/5073b lim: 4096 exec/s: 46342 rss: 620Mb L: 85/349 MS: 1 ChangeBit-
+#14203858	REDUCE cov: 211 ft: 375 corp: 75/5060b lim: 4096 exec/s: 47346 rss: 620Mb L: 88/349 MS: 5 EraseBytes-ChangeBit-EraseBytes-CrossOver-InsertRepeatedBytes-
+#14903421	REDUCE cov: 211 ft: 375 corp: 75/5057b lim: 4096 exec/s: 47767 rss: 620Mb L: 85/349 MS: 3 CrossOver-ChangeBinInt-EraseBytes-
+#14960983	NEW    cov: 211 ft: 380 corp: 76/5142b lim: 4096 exec/s: 47798 rss: 620Mb L: 85/349 MS: 2 ChangeByte-CopyPart-
+#16007424	REDUCE cov: 211 ft: 380 corp: 76/5141b lim: 4096 exec/s: 48507 rss: 620Mb L: 76/349 MS: 1 EraseBytes-
+#16523296	REDUCE cov: 211 ft: 380 corp: 76/5139b lim: 4096 exec/s: 48741 rss: 620Mb L: 74/349 MS: 2 ChangeBinInt-EraseBytes-
+#16777216	pulse  cov: 211 ft: 380 corp: 76/5139b lim: 4096 exec/s: 48770 rss: 620Mb
+#17719627	REDUCE cov: 211 ft: 380 corp: 76/5138b lim: 4096 exec/s: 49358 rss: 620Mb L: 73/349 MS: 1 EraseBytes-
+	NEW_FUNC[1/5]: 0x7ff6818e8200 in oasis_rt::authority::ed25519_verify C:\dev\oasis\oasis-rt\src\authority.rs:273
+	NEW_FUNC[2/5]: 0x7ff6818e8730 in oasis_rt::authority::signed_message C:\dev\oasis\oasis-rt\src\authority.rs:122
+#18278441	REDUCE cov: 253 ft: 422 corp: 77/5218b lim: 4096 exec/s: 49268 rss: 620Mb L: 80/349 MS: 4 ChangeByte-ChangeBinInt-ShuffleBytes-CMP- DE: "OASISnet"-
+	NEW_FUNC[1/14]: 0x7ff6818e4e60 in ed25519_compact::sha512::Hash::update<ref$<slice2$<u8> > > C:\Users\pc\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ed25519-compact-2.6.0\src\sha512.rs:326
+	NEW_FUNC[2/14]: 0x7ff6818ea540 in ed25519_compact::sha512::Hash::update<array$<u8,32> > C:\Users\pc\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ed25519-compact-2.6.0\src\sha512.rs:326
+#18309363	NEW    cov: 594 ft: 763 corp: 78/5298b lim: 4096 exec/s: 49351 rss: 620Mb L: 80/349 MS: 2 ShuffleBytes-CopyPart-
+#18309454	NEW    cov: 594 ft: 764 corp: 79/5378b lim: 4096 exec/s: 49351 rss: 620Mb L: 80/349 MS: 1 ShuffleBytes-
+#18309470	NEW    cov: 598 ft: 806 corp: 80/5458b lim: 4096 exec/s: 49351 rss: 620Mb L: 80/349 MS: 1 ShuffleBytes-
+#18309796	NEW    cov: 598 ft: 809 corp: 81/5538b lim: 4096 exec/s: 49352 rss: 620Mb L: 80/349 MS: 1 ShuffleBytes-
+#18309848	NEW    cov: 598 ft: 813 corp: 82/5618b lim: 4096 exec/s: 49352 rss: 620Mb L: 80/349 MS: 2 ChangeByte-CMP- DE: "\377\377\377\377\377\377\377\371"-
+#18309899	NEW    cov: 598 ft: 814 corp: 83/5698b lim: 4096 exec/s: 49352 rss: 620Mb L: 80/349 MS: 1 CrossOver-
+#18310050	NEW    cov: 598 ft: 815 corp: 84/5778b lim: 4096 exec/s: 49353 rss: 620Mb L: 80/349 MS: 1 CopyPart-
+#18310056	NEW    cov: 598 ft: 817 corp: 85/5858b lim: 4096 exec/s: 49353 rss: 620Mb L: 80/349 MS: 1 ChangeByte-
+#18310072	NEW    cov: 598 ft: 821 corp: 86/5938b lim: 4096 exec/s: 49353 rss: 620Mb L: 80/349 MS: 1 ChangeBinInt-
+#18310083	NEW    cov: 599 ft: 823 corp: 87/6018b lim: 4096 exec/s: 49353 rss: 620Mb L: 80/349 MS: 1 CMP- DE: "\336\200!!"-
+#18310140	NEW    cov: 602 ft: 826 corp: 88/6098b lim: 4096 exec/s: 49353 rss: 620Mb L: 80/349 MS: 2 ChangeASCIIInt-ChangeBit-
+#18310166	NEW    cov: 602 ft: 828 corp: 89/6178b lim: 4096 exec/s: 49353 rss: 620Mb L: 80/349 MS: 1 ChangeBinInt-
+#18310172	NEW    cov: 603 ft: 829 corp: 90/6258b lim: 4096 exec/s: 49353 rss: 620Mb L: 80/349 MS: 1 ChangeBit-
+#18310386	NEW    cov: 603 ft: 830 corp: 91/6338b lim: 4096 exec/s: 49354 rss: 620Mb L: 80/349 MS: 4 ChangeBinInt-CrossOver-ChangeASCIIInt-CMP- DE: "\001\000\000\000\000\000\000\004"-
+#18310545	NEW    cov: 604 ft: 831 corp: 92/6418b lim: 4096 exec/s: 49221 rss: 620Mb L: 80/349 MS: 4 ChangeBinInt-ShuffleBytes-ChangeBinInt-ShuffleBytes-
+#18310656	NEW    cov: 604 ft: 835 corp: 93/6498b lim: 4096 exec/s: 49222 rss: 620Mb L: 80/349 MS: 1 CMP- DE: "\003\000\000\000\000\000\000\000"-
+#18310718	NEW    cov: 605 ft: 837 corp: 94/6578b lim: 4096 exec/s: 49222 rss: 620Mb L: 80/349 MS: 2 ChangeASCIIInt-ChangeBit-
+#18311515	NEW    cov: 605 ft: 843 corp: 95/6658b lim: 4096 exec/s: 49224 rss: 620Mb L: 80/349 MS: 2 ChangeByte-CopyPart-
+#18312176	NEW    cov: 605 ft: 845 corp: 96/6738b lim: 4096 exec/s: 49226 rss: 620Mb L: 80/349 MS: 1 ChangeBit-
+#18312963	NEW    cov: 605 ft: 846 corp: 97/6818b lim: 4096 exec/s: 49228 rss: 620Mb L: 80/349 MS: 2 ChangeBit-PersAutoDict- DE: "\003\000\000\000\000\000\000\000"-
+#18313819	NEW    cov: 605 ft: 848 corp: 98/6898b lim: 4096 exec/s: 49230 rss: 620Mb L: 80/349 MS: 1 CopyPart-
+#18313902	NEW    cov: 606 ft: 849 corp: 99/6986b lim: 4096 exec/s: 49230 rss: 620Mb L: 88/349 MS: 3 ShuffleBytes-CMP-ChangeBit- DE: "\377\377\377\377\377\377\377\377"-
+#18313977	NEW    cov: 606 ft: 850 corp: 100/7066b lim: 4096 exec/s: 49231 rss: 620Mb L: 80/349 MS: 5 ChangeASCIIInt-CrossOver-ChangeBit-ShuffleBytes-ShuffleBytes-
+#18314123	NEW    cov: 607 ft: 851 corp: 101/7146b lim: 4096 exec/s: 49231 rss: 620Mb L: 80/349 MS: 1 ChangeByte-
+#18314164	NEW    cov: 607 ft: 852 corp: 102/7226b lim: 4096 exec/s: 49231 rss: 620Mb L: 80/349 MS: 1 PersAutoDict- DE: "\021\000\000\000\000\000\000\000"-
+#18314730	NEW    cov: 609 ft: 854 corp: 103/7306b lim: 4096 exec/s: 49233 rss: 620Mb L: 80/349 MS: 1 ChangeBit-
+#18320756	NEW    cov: 609 ft: 856 corp: 104/7386b lim: 4096 exec/s: 49117 rss: 620Mb L: 80/349 MS: 1 PersAutoDict- DE: "\001\000\000\000\000\000\000\000"-
+#18326095	NEW    cov: 609 ft: 857 corp: 105/7466b lim: 4096 exec/s: 49131 rss: 620Mb L: 80/349 MS: 4 ShuffleBytes-ChangeByte-ShuffleBytes-ChangeBinInt-
+#18327256	NEW    cov: 609 ft: 858 corp: 106/7546b lim: 4096 exec/s: 49134 rss: 620Mb L: 80/349 MS: 1 CopyPart-
+#18327557	NEW    cov: 609 ft: 859 corp: 107/7626b lim: 4096 exec/s: 49135 rss: 620Mb L: 80/349 MS: 1 ShuffleBytes-
+#18328153	NEW    cov: 609 ft: 862 corp: 108/7706b lim: 4096 exec/s: 49137 rss: 620Mb L: 80/349 MS: 1 CrossOver-
+#18329044	NEW    cov: 609 ft: 864 corp: 109/7786b lim: 4096 exec/s: 49139 rss: 620Mb L: 80/349 MS: 1 PersAutoDict- DE: "\377\377\377\377\377\377\377\377"-
+#18332122	NEW    cov: 609 ft: 865 corp: 110/7866b lim: 4096 exec/s: 49147 rss: 620Mb L: 80/349 MS: 3 PersAutoDict-ChangeBit-ChangeBit- DE: "OFR1"-
+#18339234	NEW    cov: 609 ft: 866 corp: 111/7946b lim: 4096 exec/s: 49035 rss: 620Mb L: 80/349 MS: 2 CrossOver-CopyPart-
+#18339445	NEW    cov: 609 ft: 867 corp: 112/8026b lim: 4096 exec/s: 49035 rss: 620Mb L: 80/349 MS: 1 ChangeByte-
+#18355131	NEW    cov: 610 ft: 870 corp: 113/8106b lim: 4096 exec/s: 49077 rss: 620Mb L: 80/349 MS: 1 CrossOver-
+#18359157	NEW    cov: 610 ft: 871 corp: 114/8186b lim: 4096 exec/s: 49088 rss: 620Mb L: 80/349 MS: 1 ChangeBinInt-
+#18363593	NEW    cov: 610 ft: 873 corp: 115/8266b lim: 4096 exec/s: 48969 rss: 620Mb L: 80/349 MS: 1 CopyPart-
+#18366804	NEW    cov: 610 ft: 874 corp: 116/8346b lim: 4096 exec/s: 48978 rss: 620Mb L: 80/349 MS: 1 ChangeBit-
+#18372591	NEW    cov: 610 ft: 875 corp: 117/8426b lim: 4096 exec/s: 48993 rss: 620Mb L: 80/349 MS: 2 CMP-ChangeBinInt- DE: "\001\000\000\000\000\000\000\002"-
+#18373522	NEW    cov: 610 ft: 876 corp: 118/8506b lim: 4096 exec/s: 48996 rss: 620Mb L: 80/349 MS: 1 ChangeByte-
+#18375754	NEW    cov: 610 ft: 877 corp: 119/8586b lim: 4096 exec/s: 49002 rss: 620Mb L: 80/349 MS: 2 ChangeBinInt-PersAutoDict- DE: "\377\377\377\377\377\377\377\377"-
+#18378110	NEW    cov: 610 ft: 878 corp: 120/8666b lim: 4096 exec/s: 49008 rss: 620Mb L: 80/349 MS: 1 ChangeByte-
+#18385876	NEW    cov: 610 ft: 880 corp: 121/8746b lim: 4096 exec/s: 48898 rss: 620Mb L: 80/349 MS: 1 PersAutoDict- DE: "\377\377\377\377\377\377\377\371"-
+#18386337	NEW    cov: 610 ft: 882 corp: 122/8826b lim: 4096 exec/s: 48899 rss: 620Mb L: 80/349 MS: 1 ChangeByte-
+#18386758	NEW    cov: 610 ft: 884 corp: 123/8906b lim: 4096 exec/s: 48900 rss: 620Mb L: 80/349 MS: 1 ChangeBit-
+#18386844	NEW    cov: 610 ft: 886 corp: 124/8986b lim: 4096 exec/s: 48901 rss: 620Mb L: 80/349 MS: 1 ChangeBit-
+#18388785	NEW    cov: 610 ft: 887 corp: 125/9066b lim: 4096 exec/s: 48906 rss: 620Mb L: 80/349 MS: 1 ChangeByte-
+#18389173	NEW    cov: 610 ft: 888 corp: 126/9146b lim: 4096 exec/s: 48907 rss: 620Mb L: 80/349 MS: 3 ShuffleBytes-ChangeBinInt-ChangeByte-
+#18390119	NEW    cov: 610 ft: 890 corp: 127/9226b lim: 4096 exec/s: 48909 rss: 620Mb L: 80/349 MS: 1 CrossOver-
+#18391900	NEW    cov: 610 ft: 891 corp: 128/9306b lim: 4096 exec/s: 48914 rss: 620Mb L: 80/349 MS: 1 ChangeBinInt-
+#18393311	NEW    cov: 610 ft: 894 corp: 129/9386b lim: 4096 exec/s: 48918 rss: 620Mb L: 80/349 MS: 1 ChangeByte-
+#18398102	NEW    cov: 610 ft: 896 corp: 130/9466b lim: 4096 exec/s: 48931 rss: 620Mb L: 80/349 MS: 1 CopyPart-
+#18398943	NEW    cov: 610 ft: 897 corp: 131/9546b lim: 4096 exec/s: 48933 rss: 620Mb L: 80/349 MS: 1 ChangeBit-
+#18449044	NEW    cov: 610 ft: 900 corp: 132/9626b lim: 4096 exec/s: 48678 rss: 620Mb L: 80/349 MS: 1 CopyPart-
+#18450646	NEW    cov: 610 ft: 901 corp: 133/9706b lim: 4096 exec/s: 48682 rss: 620Mb L: 80/349 MS: 2 ChangeBinInt-ChangeBinInt-
+#18510209	NEW    cov: 610 ft: 904 corp: 134/9786b lim: 4096 exec/s: 48583 rss: 620Mb L: 80/349 MS: 3 ChangeASCIIInt-ChangeBit-ChangeByte-
+#18512100	NEW    cov: 610 ft: 906 corp: 135/9866b lim: 4096 exec/s: 48588 rss: 620Mb L: 80/349 MS: 1 ShuffleBytes-
+#18645117	NEW    cov: 613 ft: 922 corp: 136/10026b lim: 4096 exec/s: 48303 rss: 620Mb L: 160/349 MS: 2 ChangeBinInt-CrossOver-
+#18704674	NEW    cov: 613 ft: 923 corp: 137/10186b lim: 4096 exec/s: 48207 rss: 620Mb L: 160/349 MS: 2 ChangeBit-CopyPart-
+#18707515	NEW    cov: 613 ft: 924 corp: 138/10346b lim: 4096 exec/s: 48215 rss: 620Mb L: 160/349 MS: 1 CopyPart-
+#18709856	NEW    cov: 613 ft: 926 corp: 139/10506b lim: 4096 exec/s: 48221 rss: 620Mb L: 160/349 MS: 1 ChangeASCIIInt-
+#19006295	REDUCE cov: 613 ft: 926 corp: 139/10456b lim: 4096 exec/s: 47754 rss: 620Mb L: 95/349 MS: 4 EraseBytes-ChangeBinInt-PersAutoDict-EraseBytes- DE: "\001\000\000\000\000\000\000\000"-
+#19072873	REDUCE cov: 613 ft: 926 corp: 139/10454b lim: 4096 exec/s: 47682 rss: 620Mb L: 83/349 MS: 3 InsertRepeatedBytes-InsertByte-EraseBytes-
+#19074126	REDUCE cov: 613 ft: 926 corp: 139/10453b lim: 4096 exec/s: 47685 rss: 620Mb L: 82/349 MS: 3 CopyPart-ShuffleBytes-EraseBytes-
+#19182012	REDUCE cov: 613 ft: 926 corp: 139/10451b lim: 4096 exec/s: 47598 rss: 620Mb L: 80/349 MS: 1 EraseBytes-
+#19216931	NEW    cov: 614 ft: 942 corp: 140/10611b lim: 4096 exec/s: 47566 rss: 620Mb L: 160/349 MS: 4 ChangeByte-EraseBytes-InsertRepeatedBytes-EraseBytes-
+#19276879	REDUCE cov: 614 ft: 942 corp: 140/10608b lim: 4096 exec/s: 47479 rss: 620Mb L: 77/349 MS: 3 ChangeASCIIInt-ChangeASCIIInt-EraseBytes-
+#19291042	NEW    cov: 614 ft: 943 corp: 141/10768b lim: 4096 exec/s: 47398 rss: 620Mb L: 160/349 MS: 3 ChangeBit-ShuffleBytes-ChangeBit-
+#19291948	NEW    cov: 614 ft: 944 corp: 142/10928b lim: 4096 exec/s: 47400 rss: 620Mb L: 160/349 MS: 1 ChangeBinInt-
+#19344724	NEW    cov: 614 ft: 946 corp: 143/11088b lim: 4096 exec/s: 47297 rss: 620Mb L: 160/349 MS: 1 ChangeBinInt-
+#19463637	NEW    cov: 614 ft: 947 corp: 144/11248b lim: 4096 exec/s: 47127 rss: 620Mb L: 160/349 MS: 3 PersAutoDict-ChangeBinInt-ChangeBit- DE: "OASISnet"-
+#19648319	NEW    cov: 614 ft: 948 corp: 145/11328b lim: 4096 exec/s: 46781 rss: 620Mb L: 80/349 MS: 2 ChangeBit-ChangeByte-
+#19758259	NEW    cov: 615 ft: 953 corp: 146/11744b lim: 4096 exec/s: 46599 rss: 620Mb L: 416/416 MS: 5 InsertRepeatedBytes-ChangeBit-CMP-InsertRepeatedBytes-CrossOver- DE: "1RFO"-
+#19817436	NEW    cov: 615 ft: 955 corp: 147/11904b lim: 4096 exec/s: 46519 rss: 620Mb L: 160/416 MS: 2 ChangeByte-ChangeASCIIInt-
+#19911180	REDUCE cov: 615 ft: 955 corp: 147/11898b lim: 4096 exec/s: 46413 rss: 620Mb L: 71/416 MS: 4 CrossOver-EraseBytes-ChangeBinInt-EraseBytes-
+#20112761	REDUCE cov: 615 ft: 955 corp: 147/11897b lim: 4096 exec/s: 46024 rss: 620Mb L: 70/416 MS: 1 EraseBytes-
+#20124848	REDUCE cov: 615 ft: 955 corp: 147/11895b lim: 4096 exec/s: 46052 rss: 621Mb L: 68/416 MS: 2 ChangeBinInt-EraseBytes-
+#20309260	REDUCE cov: 615 ft: 955 corp: 147/11892b lim: 4096 exec/s: 45844 rss: 629Mb L: 65/416 MS: 2 ShuffleBytes-EraseBytes-
+#20389122	NEW    cov: 615 ft: 956 corp: 148/12052b lim: 4096 exec/s: 45715 rss: 632Mb L: 160/416 MS: 2 CopyPart-CrossOver-
+#20574360	NEW    cov: 615 ft: 959 corp: 149/12212b lim: 4096 exec/s: 45418 rss: 640Mb L: 160/416 MS: 3 PersAutoDict-ShuffleBytes-CMP- DE: "2RFO"-"/\000\000\000\000\000\000\000"-
+#20834378	NEW    cov: 615 ft: 960 corp: 150/12372b lim: 4096 exec/s: 45096 rss: 644Mb L: 160/416 MS: 3 ChangeASCIIInt-ChangeASCIIInt-CMP- DE: "OFR1"-
+#20930965	NEW    cov: 615 ft: 963 corp: 151/12532b lim: 4096 exec/s: 44820 rss: 645Mb L: 160/416 MS: 2 ChangeBit-ChangeASCIIInt-
+#21111967	NEW    cov: 615 ft: 964 corp: 152/12692b lim: 4096 exec/s: 44540 rss: 645Mb L: 160/416 MS: 2 ChangeBinInt-PersAutoDict- DE: "/\000\000\000\000\000\000\000"-
+#22035013	NEW    cov: 615 ft: 967 corp: 153/12852b lim: 4096 exec/s: 41419 rss: 653Mb L: 160/416 MS: 1 CrossOver-
+#22455092	NEW    cov: 615 ft: 968 corp: 154/12932b lim: 4096 exec/s: 38516 rss: 653Mb L: 80/416 MS: 4 PersAutoDict-CopyPart-InsertRepeatedBytes-EraseBytes- DE: "/\000\000\000\000\000\000\000"-
+#22495473	NEW    cov: 615 ft: 971 corp: 155/13092b lim: 4096 exec/s: 38192 rss: 653Mb L: 160/416 MS: 1 ChangeByte-
+#22936660	NEW    cov: 615 ft: 972 corp: 156/13252b lim: 4096 exec/s: 36120 rss: 653Mb L: 160/416 MS: 1 ChangeBit-
+#23364949	NEW    cov: 615 ft: 973 corp: 157/13412b lim: 4096 exec/s: 34873 rss: 653Mb L: 160/416 MS: 4 ChangeBinInt-ChangeByte-ChangeASCIIInt-ChangeBinInt-
+#24548312	REDUCE cov: 615 ft: 973 corp: 157/13399b lim: 4096 exec/s: 33173 rss: 653Mb L: 55/416 MS: 3 InsertRepeatedBytes-EraseBytes-InsertByte-
+#24762290	REDUCE cov: 615 ft: 973 corp: 157/13397b lim: 4096 exec/s: 32841 rss: 653Mb L: 53/416 MS: 3 ChangeBit-CopyPart-EraseBytes-
+#24872383	REDUCE cov: 615 ft: 973 corp: 157/13396b lim: 4096 exec/s: 32726 rss: 653Mb L: 72/416 MS: 3 ChangeByte-ChangeBinInt-EraseBytes-
+#24966217	NEW    cov: 615 ft: 974 corp: 158/13476b lim: 4096 exec/s: 32635 rss: 653Mb L: 80/416 MS: 4 EraseBytes-ChangeBinInt-ChangeBinInt-InsertRepeatedBytes-
+#25018269	NEW    cov: 615 ft: 976 corp: 159/13556b lim: 4096 exec/s: 32533 rss: 653Mb L: 80/416 MS: 2 ChangeByte-ChangeByte-
+#25697265	REDUCE cov: 615 ft: 976 corp: 159/13554b lim: 4096 exec/s: 31842 rss: 653Mb L: 70/416 MS: 1 EraseBytes-
+#25748028	REDUCE cov: 615 ft: 976 corp: 159/13553b lim: 4096 exec/s: 31787 rss: 653Mb L: 69/416 MS: 3 CrossOver-ChangeASCIIInt-EraseBytes-
+#27484530	NEW    cov: 615 ft: 978 corp: 160/13713b lim: 4096 exec/s: 30674 rss: 653Mb L: 160/416 MS: 2 PersAutoDict-ShuffleBytes- DE: "\000\000\000\000\000\000\000Z"-
+#27832616	REDUCE cov: 615 ft: 978 corp: 160/13711b lim: 4096 exec/s: 30585 rss: 653Mb L: 93/416 MS: 1 EraseBytes-
+#30904284	REDUCE cov: 615 ft: 978 corp: 160/13700b lim: 4096 exec/s: 29045 rss: 653Mb L: 74/416 MS: 3 ChangeBinInt-CopyPart-EraseBytes-
+#30990557	REDUCE cov: 615 ft: 978 corp: 160/13699b lim: 4096 exec/s: 29017 rss: 653Mb L: 73/416 MS: 3 ChangeBinInt-ShuffleBytes-EraseBytes-
+#33554432	pulse  cov: 615 ft: 978 corp: 160/13699b lim: 4096 exec/s: 28032 rss: 653Mb
+#34393032	REDUCE cov: 615 ft: 978 corp: 160/13690b lim: 4096 exec/s: 27713 rss: 653Mb L: 407/407 MS: 3 CrossOver-EraseBytes-ChangeBinInt-
+#36314736	REDUCE cov: 615 ft: 978 corp: 160/13611b lim: 4096 exec/s: 27060 rss: 653Mb L: 81/407 MS: 4 ChangeBinInt-EraseBytes-CMP-PersAutoDict- DE: "\377\377\377\377"-"\001\000\000\000\000\000\000\000"-
+#36443287	REDUCE cov: 615 ft: 978 corp: 160/13610b lim: 4096 exec/s: 27035 rss: 653Mb L: 80/407 MS: 1 EraseBytes-
+#40784799	REDUCE cov: 616 ft: 980 corp: 161/13729b lim: 4096 exec/s: 26691 rss: 653Mb L: 119/407 MS: 2 InsertRepeatedBytes-InsertByte-
+#41317895	REDUCE cov: 616 ft: 980 corp: 161/13728b lim: 4096 exec/s: 26622 rss: 653Mb L: 68/407 MS: 1 EraseBytes-
+#41336817	REDUCE cov: 616 ft: 980 corp: 161/13725b lim: 4096 exec/s: 26617 rss: 653Mb L: 65/407 MS: 2 EraseBytes-PersAutoDict- DE: "/\000\000\000\000\000\000\000"-
+#45693027	REDUCE cov: 616 ft: 980 corp: 161/13721b lim: 4096 exec/s: 26125 rss: 653Mb L: 403/403 MS: 5 CrossOver-EraseBytes-ShuffleBytes-InsertByte-ChangeBit-
+#51938153	REDUCE cov: 616 ft: 980 corp: 161/13712b lim: 4096 exec/s: 25459 rss: 653Mb L: 76/403 MS: 4 CopyPart-ShuffleBytes-ChangeBit-EraseBytes-
+#54969522	REDUCE cov: 617 ft: 981 corp: 162/14028b lim: 4096 exec/s: 23910 rss: 653Mb L: 316/403 MS: 4 InsertByte-ChangeByte-CrossOver-EraseBytes-
+#55127935	REDUCE cov: 617 ft: 981 corp: 162/14027b lim: 4096 exec/s: 23895 rss: 653Mb L: 315/403 MS: 3 CrossOver-ShuffleBytes-EraseBytes-
+#55223172	REDUCE cov: 617 ft: 981 corp: 162/14025b lim: 4096 exec/s: 23885 rss: 653Mb L: 313/403 MS: 2 CMP-EraseBytes- DE: "\377\377\377\377\377\377\377\001"-
+#61289736	REDUCE cov: 617 ft: 981 corp: 162/14024b lim: 4096 exec/s: 23473 rss: 653Mb L: 75/403 MS: 3 PersAutoDict-ShuffleBytes-EraseBytes- DE: "\000\000\000\000\000\000\000Z"-
+#63211707	REDUCE cov: 617 ft: 981 corp: 162/14023b lim: 4096 exec/s: 23359 rss: 653Mb L: 74/403 MS: 1 EraseBytes-
+#67108864	pulse  cov: 617 ft: 981 corp: 162/14023b lim: 4096 exec/s: 23133 rss: 653Mb
+#74123994	REDUCE cov: 617 ft: 981 corp: 162/14017b lim: 4096 exec/s: 22793 rss: 653Mb L: 68/403 MS: 2 CopyPart-EraseBytes-
+#81910459	DONE   cov: 617 ft: 981 corp: 162/14017b lim: 4096 exec/s: 22746 rss: 653Mb
+###### Recommended dictionary. ######
+"\001\000\000\000\000\000\000\021" # Uses: 352766
+"OFR1" # Uses: 361709
+"2RFO" # Uses: 360177
+"\021\000\000\000\000\000\000\000" # Uses: 350617
+"\000\000\000\000\000\000\000Z" # Uses: 348573
+"\377\377\377\007" # Uses: 350453
+"\377\377\377\377\377\377\377\020" # Uses: 339424
+"\246\"\027\237Hz\217\203" # Uses: 336814
+"\000\000\000\000\000\000\000\035" # Uses: 335106
+"\200\000\000\000\000\000\000\002" # Uses: 329278
+"W\000\000O" # Uses: 305485
+"1RFO" # Uses: 304774
+"OAU1" # Uses: 302575
+"\001\000\000\000\000\000\000\002" # Uses: 295955
+"\003\000\000\000\000\000\000\200" # Uses: 295852
+"\001\000\000\000\000\000\000\000" # Uses: 294462
+"OASISnet" # Uses: 239789
+"\377\377\377\377\377\377\377\371" # Uses: 239694
+"\336\200!!" # Uses: 239510
+"\001\000\000\000\000\000\000\004" # Uses: 239292
+"\003\000\000\000\000\000\000\000" # Uses: 239551
+"\377\377\377\377\377\377\377\377" # Uses: 239458
+"/\000\000\000\000\000\000\000" # Uses: 230087
+"\377\377\377\377" # Uses: 168361
+"\377\377\377\377\377\377\377\001" # Uses: 96338
+###### End of recommended dictionary. ######
+Done 81910459 runs in 3601 second(s)
+stat::number_of_executed_units: 81910459
+stat::average_exec_per_sec:     22746
+stat::new_units_added:          346
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              653

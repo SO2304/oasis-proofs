@@ -1,0 +1,4 @@
+OASIS|C|UART|EF_STATUS|boot_id=1279,now_ms=83896,epoch=2,revoked=2,sensor_lost=false,pin25=0,executed=0,rejects=0/0/0/0/0/0/0|mesh|6daa0bc
+old_boot_id=0 seq=11 deadline=92896 (C boot_id=1279 now_ms=83896)
+OASIS|C|UART|EF_STATUS|boot_id=1279,now_ms=90511,epoch=2,revoked=2,sensor_lost=false,pin25=0,executed=0,rejects=0/0/0/1/0/0/0|mesh|6daa0bc
+new_boot_id=1279 seq=12 deadline=99511

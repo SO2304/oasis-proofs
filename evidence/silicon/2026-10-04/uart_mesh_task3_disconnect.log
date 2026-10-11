@@ -1,0 +1,24 @@
+=== C arrivals per second (0/s = B->C link down) ===
+t+ 0s | #
+t+ 1s | #
+t+ 2s | #
+t+ 3s | # (1)
+t+ 4s | #
+t+ 5s | #
+t+ 6s | #
+t+ 7s | # (1)
+t+ 8s | #
+t+ 9s | #
+t+10s | #
+t+11s | # (1)
+t+12s | #
+t+13s | #
+t+14s | #
+t+15s | # (1)
+t+16s | #
+t+17s | #
+t+18s | #
+t+19s | # (1)
+t+20s | #
+t+21s | #
+post BOOTSEL: (empty=no crash)  serial: COM10 COM11 COM3 COM4 COM9 

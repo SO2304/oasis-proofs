@@ -1,0 +1,37 @@
+[2026-10-07T07:42:31Z] campaign: 3600s per target, tree a51f00e, cargo 1.93.0-nightly (5c0343317 2025-11-18)
+[2026-10-07T07:42:32Z] start mesh_v0b
+[2026-10-07T07:42:32Z] start authority
+[2026-10-07T07:42:32Z] start modbus
+[2026-10-07T07:42:32Z] start revocation
+[2026-10-07T08:42:41Z] end authority exit 0
+[2026-10-07T08:42:41Z] end mesh_v0b exit 0
+[2026-10-07T08:42:42Z] end modbus exit 0
+[2026-10-07T08:42:42Z] end revocation exit 0
+[2026-10-07T08:42:42Z] start actuation
+[2026-10-07T08:42:42Z] start enrollment
+[2026-10-07T08:42:42Z] start firmware
+[2026-10-07T08:42:42Z] start mavlink
+[2026-10-07T09:43:29Z] end mavlink exit 0
+[2026-10-07T09:43:29Z] end firmware exit 0
+[2026-10-07T09:43:29Z] end enrollment exit 0
+[2026-10-07T09:43:30Z] end actuation exit 0
+[2026-10-07T09:43:30Z] campaign done
+# Lot 1 interrompu à 2026-10-07T10:03:44Z — état final avant arrêt
+# (le script campaign.sh est mort au redémarrage de session ; les 4 processus enfants ont
+#  continué au-delà de -max_total_time=3600 et plafonnaient. Lot 2 jamais démarré.)
+mesh_v0b    #2465784	DONE   cov: 1009 ft: 1585 corp: 75/5195b lim: 4096 exec/s: 684 rss: 329Mb
+authority   #81910459	DONE   cov: 617 ft: 981 corp: 162/14017b lim: 4096 exec/s: 22746 rss: 653Mb
+modbus      #207277840	DONE   cov: 212 ft: 245 corp: 35/1175b lim: 4096 exec/s: 57561 rss: 571Mb
+revocation  #232779208	DONE   cov: 175 ft: 303 corp: 57/12029b lim: 4096 exec/s: 64642 rss: 549Mb
+# crashs trouvés :
+#   oasis-rt/fuzz/artifacts/actuation/ : crash-panic-35afc4d72970a980 
+[2026-10-07T11:21:01Z] batch 2: 3600s per target, tree a8f29ba
+[2026-10-07T11:21:01Z] start actuation
+[2026-10-07T11:21:01Z] start enrollment
+[2026-10-07T11:21:01Z] start mavlink
+[2026-10-07T11:21:01Z] start firmware
+[2026-10-07T12:21:45Z] end mavlink exit 0
+[2026-10-07T12:21:45Z] end enrollment exit 0
+[2026-10-07T12:21:45Z] end firmware exit 0
+[2026-10-07T12:21:45Z] end actuation exit 0
+[2026-10-07T12:21:45Z] batch 2 done

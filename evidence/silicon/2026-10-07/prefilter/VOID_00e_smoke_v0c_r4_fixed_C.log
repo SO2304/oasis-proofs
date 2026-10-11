@@ -1,0 +1,4 @@
+OASIS|C|UART|PF_MODE|v0c=true,next_hop=-,tokens=24|mesh|8dc1822
+OASIS|C|UART|PF_QUIET|quiet=true|mesh|8dc1822
+OASIS|C|UART|PF_STATUS|v0c=true,accepted=0,drop_tag=0,drop_budget=0,drop_sig=0,drop_other=100,busy_us=254,max_us=26,tokens=24,rx_bytes=10900,frames=100,crc_fails=0,dh_derivations=0|mesh|8dc1822
+OASIS|C|UART|PF_QUIET|quiet=false|mesh|8dc1822

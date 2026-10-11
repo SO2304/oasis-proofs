@@ -1,0 +1,16 @@
+boot_id=1791665955011 entries=13 head_seq=Some(12) overwritten=0
+  [0] seq=0 origin=ab00 cmd_seq=1 class=Act decision=Act flags=0x00
+  [1] seq=1 origin=ab00 cmd_seq=2 class=Act decision=Reject(OutOfLimits) flags=0x00
+  [2] seq=2 origin=ab00 cmd_seq=3 class=Act decision=Reject(OutOfLimits) flags=0x00
+  [3] seq=3 origin=ab00 cmd_seq=4 class=Act decision=Act flags=0x00
+  [4] seq=4 origin=ab00 cmd_seq=5 class=Act decision=Reject(OutOfLimits) flags=0x00
+  [5] seq=5 origin=ab00 cmd_seq=6 class=Act decision=Reject(OutOfLimits) flags=0x00
+  [6] seq=6 origin=ab00 cmd_seq=7 class=Act decision=Act flags=0x00
+  [7] seq=7 origin=ab00 cmd_seq=8 class=Act decision=Reject(OutOfLimits) flags=0x00
+  [8] seq=8 origin=ab00 cmd_seq=9 class=Act decision=Reject(OutOfLimits) flags=0x00
+  [9] seq=9 origin=aa00 cmd_seq=1 class=Act decision=Act flags=0x00
+  [10] seq=10 origin=aa00 cmd_seq=65 class=Act decision=Act flags=0x00
+  [11] seq=11 origin=0000 cmd_seq=0 class=Act decision=Reject(NotVerified) flags=0x00
+  [12] seq=12 origin=ab00 cmd_seq=65 class=Act decision=Act flags=0x00
+VERDICT intact entries=13
+exit=0

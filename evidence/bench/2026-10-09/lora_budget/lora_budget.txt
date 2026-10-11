@@ -1,0 +1,39 @@
+lora_budget — EU868, BW 125 kHz, CR 4/5, 8-symbol preamble, CRC on, explicit header
+duty cycle: 36 s of air time per hour per BAND (1 %, Tobs = 1 h, ETSI EN 300 220-2 §4.4.3.2)
+
+self-check  SF7/16 B = 51.456 ms (published 51.456)
+self-check  SF12/64 B = 2793.472 ms (published 2793.5)
+
+=== raw LoRa: 255-byte PHY payload, no application cap ===
+| message | bytes | SF7 | SF9 | SF10 | SF12 |
+|---|---:|---:|---:|---:|---:|
+| compact stop OAS1 (part J) | 110 | 184.576 ms / 195/h | 594.944 ms / 60/h | 1107.968 ms / 32/h | 4268.032 ms / 8/h |
+| supervision beacon OSB1 | 131 | 215.296 ms / 167/h | 697.344 ms / 51/h | 1271.808 ms / 28/h | 5087.232 ms / 7/h |
+| Modbus order OMB1 | 132 | 220.416 ms / 163/h | 697.344 ms / 51/h | 1271.808 ms / 28/h | 5087.232 ms / 7/h |
+| actuation order OAC1 | 153 | 251.136 ms / 143/h | 799.744 ms / 45/h | 1435.648 ms / 25/h | 5742.592 ms / 6/h |
+| enrolment attestation OAU1 (Ed25519) | 221 | 348.416 ms / 103/h | 1106.944 ms / 32/h | 2009.088 ms / 17/h | 8036.352 ms / 4/h |
+| revocation ORV1, 1 node | 234 | 368.896 ms / 97/h | 1168.384 ms / 30/h | 2091.008 ms / 17/h | 8364.032 ms / 4/h |
+| revocation ORV1, 2 nodes | 242 | 379.136 ms / 94/h | 1188.864 ms / 30/h | 2172.928 ms / 16/h | 8691.712 ms / 4/h |
+| revocation ORV1, 16 nodes [extrapolated +8/node] | 354 | 542.976 ms / 66/h | 1700.864 ms / 21/h | 3074.048 ms / 11/h | 12296.192 ms / 2/h |
+
+=== LoRaWAN class A: application payload cap, RP002-1.0.3 tables 12/13 ===
+cap: SF7=242 B SF8=242 B SF9=115 B SF10=51 B SF11=51 B SF12=51 B
+  compact stop OAS1 (part J) (110 B): fits only at SF7, SF8, SF9
+  supervision beacon OSB1 (131 B): fits only at SF7, SF8
+  Modbus order OMB1 (132 B): fits only at SF7, SF8
+  actuation order OAC1 (153 B): fits only at SF7, SF8
+  enrolment attestation OAU1 (Ed25519) (221 B): fits only at SF7, SF8
+  revocation ORV1, 1 node (234 B): fits only at SF7, SF8
+  revocation ORV1, 2 nodes (242 B): fits only at SF7, SF8
+  revocation ORV1, 16 nodes [extrapolated +8/node] (354 B): over the cap at every SF — does not fit on LoRaWAN at all
+
+The v0B header alone is 99 B and the cap is 51 B at SF10-SF12, so **no OASIS
+message fits at long range on LoRaWAN class A**. Raw LoRa is the usable column.
+
+=== fragmenting a post-quantum payload (CRYPTO_MIGRATION.md §2, §6-d) ===
+charged against the same hourly band budget; 13 B of frame overhead per fragment
+ML-DSA-44 signature alone               2420 B | SF12  48 frags 134.0 s = 3.72 h of budget | SF7  10 frags 3.9 s = 0.11 h
+ML-KEM-768 ciphertext, once per peer    1088 B | SF12  22 frags 61.4 s = 1.70 h of budget | SF7   5 frags 1.9 s = 0.05 h
+ML-KEM-768 encapsulation key            1184 B | SF12  24 frags 67.0 s = 1.86 h of budget | SF7   5 frags 1.9 s = 0.05 h
+OAQ1 k=2, keys carried                  7516 B | SF12 148 frags 413.4 s = 11.48 h of budget | SF7  32 frags 12.7 s = 0.35 h
+OAQ1 k=2, one-byte signer indices       4894 B | SF12  96 frags 268.1 s = 7.44 h of budget | SF7  21 frags 8.3 s = 0.23 h

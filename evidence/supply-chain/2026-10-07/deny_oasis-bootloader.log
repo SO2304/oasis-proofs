@@ -1,0 +1,284 @@
+warning[duplicate]: found 2 duplicate entries for crate 'embassy-hal-internal'
+   ┌─ C:\dev\oasis\oasis-bootloader/Cargo.lock:33:1
+   │  
+33 │ ╭ embassy-hal-internal 0.4.0 registry+https://github.com/rust-lang/crates.io-index
+34 │ │ embassy-hal-internal 0.5.0 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰────────────────────────────────────────────────────────────────────────────────┘ lock entries
+   │  
+   ├ embassy-hal-internal v0.4.0
+     └── embassy-embedded-hal v0.6.0
+         ├── embassy-boot v0.7.0
+         │   └── embassy-boot-rp v0.10.0
+         │       └── oasis-bootloader v0.1.0
+         └── embassy-rp v0.10.0
+             ├── embassy-boot-rp v0.10.0 (*)
+             └── oasis-bootloader v0.1.0 (*)
+   ├ embassy-hal-internal v0.5.0
+     └── embassy-rp v0.10.0
+         ├── embassy-boot-rp v0.10.0
+         │   └── oasis-bootloader v0.1.0
+         └── oasis-bootloader v0.1.0 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'embedded-hal'
+   ┌─ C:\dev\oasis\oasis-bootloader/Cargo.lock:40:1
+   │  
+40 │ ╭ embedded-hal 0.2.7 registry+https://github.com/rust-lang/crates.io-index
+41 │ │ embedded-hal 1.0.0 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰────────────────────────────────────────────────────────────────────────┘ lock entries
+   │  
+   ├ embedded-hal v0.2.7
+     ├── cortex-m v0.7.9
+     │   ├── embassy-boot-rp v0.10.0
+     │   │   └── oasis-bootloader v0.1.0
+     │   ├── embassy-hal-internal v0.5.0
+     │   │   └── embassy-rp v0.10.0
+     │   │       ├── embassy-boot-rp v0.10.0 (*)
+     │   │       └── oasis-bootloader v0.1.0 (*)
+     │   ├── embassy-rp v0.10.0 (*)
+     │   ├── oasis-bootloader v0.1.0 (*)
+     │   └── rp-pac v7.0.0
+     │       └── embassy-rp v0.10.0 (*)
+     ├── embassy-embedded-hal v0.6.0
+     │   ├── embassy-boot v0.7.0
+     │   │   └── embassy-boot-rp v0.10.0 (*)
+     │   └── embassy-rp v0.10.0 (*)
+     ├── embassy-rp v0.10.0 (*)
+     └── embassy-time v0.5.1
+         ├── embassy-boot-rp v0.10.0 (*)
+         ├── embassy-rp v0.10.0 (*)
+         └── oasis-bootloader v0.1.0 (*)
+   ├ embedded-hal v1.0.0
+     ├── cortex-m v0.7.9
+     │   ├── embassy-boot-rp v0.10.0
+     │   │   └── oasis-bootloader v0.1.0
+     │   ├── embassy-hal-internal v0.5.0
+     │   │   └── embassy-rp v0.10.0
+     │   │       ├── embassy-boot-rp v0.10.0 (*)
+     │   │       └── oasis-bootloader v0.1.0 (*)
+     │   ├── embassy-rp v0.10.0 (*)
+     │   ├── oasis-bootloader v0.1.0 (*)
+     │   └── rp-pac v7.0.0
+     │       └── embassy-rp v0.10.0 (*)
+     ├── embassy-embedded-hal v0.6.0
+     │   ├── embassy-boot v0.7.0
+     │   │   └── embassy-boot-rp v0.10.0 (*)
+     │   └── embassy-rp v0.10.0 (*)
+     ├── embassy-rp v0.10.0 (*)
+     ├── embassy-time v0.5.1
+     │   ├── embassy-boot-rp v0.10.0 (*)
+     │   ├── embassy-rp v0.10.0 (*)
+     │   └── oasis-bootloader v0.1.0 (*)
+     ├── embedded-hal-async v1.0.0
+     │   ├── embassy-embedded-hal v0.6.0 (*)
+     │   ├── embassy-rp v0.10.0 (*)
+     │   └── embassy-time v0.5.1 (*)
+     └── embedded-hal-nb v1.0.0
+         └── embassy-rp v0.10.0 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'embedded-io'
+   ┌─ C:\dev\oasis\oasis-bootloader/Cargo.lock:44:1
+   │  
+44 │ ╭ embedded-io 0.6.1 registry+https://github.com/rust-lang/crates.io-index
+45 │ │ embedded-io 0.7.1 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰───────────────────────────────────────────────────────────────────────┘ lock entries
+   │  
+   ├ embedded-io v0.6.1
+     └── embedded-io-async v0.6.1
+         └── embassy-usb-driver v0.2.2
+             └── embassy-rp v0.10.0
+                 ├── embassy-boot-rp v0.10.0
+                 │   └── oasis-bootloader v0.1.0
+                 └── oasis-bootloader v0.1.0 (*)
+   ├ embedded-io v0.7.1
+     ├── embassy-rp v0.10.0
+     │   ├── embassy-boot-rp v0.10.0
+     │   │   └── oasis-bootloader v0.1.0
+     │   └── oasis-bootloader v0.1.0 (*)
+     └── embedded-io-async v0.7.0
+         ├── embassy-rp v0.10.0 (*)
+         ├── embassy-sync v0.8.0
+         │   ├── embassy-boot v0.7.0
+         │   │   └── embassy-boot-rp v0.10.0 (*)
+         │   ├── embassy-boot-rp v0.10.0 (*)
+         │   ├── embassy-embedded-hal v0.6.0
+         │   │   ├── embassy-boot v0.7.0 (*)
+         │   │   └── embassy-rp v0.10.0 (*)
+         │   ├── embassy-rp v0.10.0 (*)
+         │   └── oasis-bootloader v0.1.0 (*)
+         └── embassy-usb-driver v0.2.2
+             └── embassy-rp v0.10.0 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'embedded-io-async'
+   ┌─ C:\dev\oasis\oasis-bootloader/Cargo.lock:46:1
+   │  
+46 │ ╭ embedded-io-async 0.6.1 registry+https://github.com/rust-lang/crates.io-index
+47 │ │ embedded-io-async 0.7.0 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰─────────────────────────────────────────────────────────────────────────────┘ lock entries
+   │  
+   ├ embedded-io-async v0.6.1
+     └── embassy-usb-driver v0.2.2
+         └── embassy-rp v0.10.0
+             ├── embassy-boot-rp v0.10.0
+             │   └── oasis-bootloader v0.1.0
+             └── oasis-bootloader v0.1.0 (*)
+   ├ embedded-io-async v0.7.0
+     ├── embassy-rp v0.10.0
+     │   ├── embassy-boot-rp v0.10.0
+     │   │   └── oasis-bootloader v0.1.0
+     │   └── oasis-bootloader v0.1.0 (*)
+     ├── embassy-sync v0.8.0
+     │   ├── embassy-boot v0.7.0
+     │   │   └── embassy-boot-rp v0.10.0 (*)
+     │   ├── embassy-boot-rp v0.10.0 (*)
+     │   ├── embassy-embedded-hal v0.6.0
+     │   │   ├── embassy-boot v0.7.0 (*)
+     │   │   └── embassy-rp v0.10.0 (*)
+     │   ├── embassy-rp v0.10.0 (*)
+     │   └── oasis-bootloader v0.1.0 (*)
+     └── embassy-usb-driver v0.2.2
+         └── embassy-rp v0.10.0 (*)
+
+warning[license-not-encountered]: license was not encountered
+   ┌─ C:\dev\oasis\oasis-bootloader\../deny.toml:34:6
+   │
+34 │     "0BSD", # stm32f4xx-hal (oasis-renode-m11): OSI-approved, more permissive than MIT
+   │      ━━━━ unmatched license allowance
+
+warning[license-not-encountered]: license was not encountered
+   ┌─ C:\dev\oasis\oasis-bootloader\../deny.toml:32:6
+   │
+32 │     "Apache-2.0 WITH LLVM-exception",
+   │      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ unmatched license allowance
+
+warning[license-not-encountered]: license was not encountered
+   ┌─ C:\dev\oasis\oasis-bootloader\../deny.toml:35:6
+   │
+35 │     "ISC",
+   │      ━━━ unmatched license allowance
+
+warning[duplicate]: found 2 duplicate entries for crate 'nb'
+   ┌─ C:\dev\oasis\oasis-bootloader/Cargo.lock:71:1
+   │  
+71 │ ╭ nb 0.1.3 registry+https://github.com/rust-lang/crates.io-index
+72 │ │ nb 1.1.0 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰──────────────────────────────────────────────────────────────┘ lock entries
+   │  
+   ├ nb v0.1.3
+     └── embedded-hal v0.2.7
+         ├── cortex-m v0.7.9
+         │   ├── embassy-boot-rp v0.10.0
+         │   │   └── oasis-bootloader v0.1.0
+         │   ├── embassy-hal-internal v0.5.0
+         │   │   └── embassy-rp v0.10.0
+         │   │       ├── embassy-boot-rp v0.10.0 (*)
+         │   │       └── oasis-bootloader v0.1.0 (*)
+         │   ├── embassy-rp v0.10.0 (*)
+         │   ├── oasis-bootloader v0.1.0 (*)
+         │   └── rp-pac v7.0.0
+         │       └── embassy-rp v0.10.0 (*)
+         ├── embassy-embedded-hal v0.6.0
+         │   ├── embassy-boot v0.7.0
+         │   │   └── embassy-boot-rp v0.10.0 (*)
+         │   └── embassy-rp v0.10.0 (*)
+         ├── embassy-rp v0.10.0 (*)
+         └── embassy-time v0.5.1
+             ├── embassy-boot-rp v0.10.0 (*)
+             ├── embassy-rp v0.10.0 (*)
+             └── oasis-bootloader v0.1.0 (*)
+   ├ nb v1.1.0
+     ├── embassy-embedded-hal v0.6.0
+     │   ├── embassy-boot v0.7.0
+     │   │   └── embassy-boot-rp v0.10.0
+     │   │       └── oasis-bootloader v0.1.0
+     │   └── embassy-rp v0.10.0
+     │       ├── embassy-boot-rp v0.10.0 (*)
+     │       └── oasis-bootloader v0.1.0 (*)
+     ├── embassy-rp v0.10.0 (*)
+     ├── embedded-hal-nb v1.0.0
+     │   └── embassy-rp v0.10.0 (*)
+     └── nb v0.1.3
+         └── embedded-hal v0.2.7
+             ├── cortex-m v0.7.9
+             │   ├── embassy-boot-rp v0.10.0 (*)
+             │   ├── embassy-hal-internal v0.5.0
+             │   │   └── embassy-rp v0.10.0 (*)
+             │   ├── embassy-rp v0.10.0 (*)
+             │   ├── oasis-bootloader v0.1.0 (*)
+             │   └── rp-pac v7.0.0
+             │       └── embassy-rp v0.10.0 (*)
+             ├── embassy-embedded-hal v0.6.0 (*)
+             ├── embassy-rp v0.10.0 (*)
+             └── embassy-time v0.5.1
+                 ├── embassy-boot-rp v0.10.0 (*)
+                 ├── embassy-rp v0.10.0 (*)
+                 └── oasis-bootloader v0.1.0 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'rand_core'
+   ┌─ C:\dev\oasis\oasis-bootloader/Cargo.lock:93:1
+   │  
+93 │ ╭ rand_core 0.6.4 registry+https://github.com/rust-lang/crates.io-index
+94 │ │ rand_core 0.9.5 registry+https://github.com/rust-lang/crates.io-index
+   │ ╰─────────────────────────────────────────────────────────────────────┘ lock entries
+   │  
+   ├ rand_core v0.6.4
+     └── embassy-rp v0.10.0
+         ├── embassy-boot-rp v0.10.0
+         │   └── oasis-bootloader v0.1.0
+         └── oasis-bootloader v0.1.0 (*)
+   ├ rand_core v0.9.5
+     └── embassy-rp v0.10.0
+         ├── embassy-boot-rp v0.10.0
+         │   └── oasis-bootloader v0.1.0
+         └── oasis-bootloader v0.1.0 (*)
+
+warning[duplicate]: found 2 duplicate entries for crate 'syn'
+    ┌─ C:\dev\oasis\oasis-bootloader/Cargo.lock:117:1
+    │  
+117 │ ╭ syn 2.0.119 registry+https://github.com/rust-lang/crates.io-index
+118 │ │ syn 3.0.6 registry+https://github.com/rust-lang/crates.io-index
+    │ ╰───────────────────────────────────────────────────────────────┘ lock entries
+    │  
+    ├ syn v2.0.119
+      ├── cortex-m-macros v0.7.8
+      │   └── cortex-m v0.7.9
+      │       ├── embassy-boot-rp v0.10.0
+      │       │   └── oasis-bootloader v0.1.0
+      │       ├── embassy-hal-internal v0.5.0
+      │       │   └── embassy-rp v0.10.0
+      │       │       ├── embassy-boot-rp v0.10.0 (*)
+      │       │       └── oasis-bootloader v0.1.0 (*)
+      │       ├── embassy-rp v0.10.0 (*)
+      │       ├── oasis-bootloader v0.1.0 (*)
+      │       └── rp-pac v7.0.0
+      │           └── embassy-rp v0.10.0 (*)
+      ├── num_enum_derive v0.7.6
+      │   └── num_enum v0.7.6
+      │       └── pio-core v0.3.0
+      │           ├── pio v0.3.0
+      │           │   └── embassy-rp v0.10.0 (*)
+      │           ├── pio-parser v0.3.0
+      │           │   └── pio-proc v0.3.0
+      │           │       └── pio v0.3.0 (*)
+      │           └── pio-proc v0.3.0 (*)
+      ├── pio-proc v0.3.0 (*)
+      ├── proc-macro-error2 v2.0.1
+      │   └── pio-proc v0.3.0 (*)
+      └── zerocopy-derive v0.8.60
+          └── zerocopy v0.8.60
+              └── half v2.7.1
+                  └── fixed v1.31.0
+                      └── embassy-rp v0.10.0 (*)
+    ├ syn v3.0.6
+      └── cortex-m-rt-macros v0.7.7
+          └── cortex-m-rt v0.7.7
+              ├── embassy-boot-rp v0.10.0
+              │   └── oasis-bootloader v0.1.0
+              ├── embassy-rp v0.10.0
+              │   ├── embassy-boot-rp v0.10.0 (*)
+              │   └── oasis-bootloader v0.1.0 (*)
+              ├── oasis-bootloader v0.1.0 (*)
+              └── rp-pac v7.0.0
+                  └── embassy-rp v0.10.0 (*)
+
+advisories ok, bans ok, licenses ok, sources ok
+cargo deny exit 0

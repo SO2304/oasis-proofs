@@ -1,0 +1,24 @@
+To https://github.com/SO2304/oasis.git
+   ef6adb5..dd993b5  b1-px4-sitl -> b1-px4-sitl
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+[2026-10-08T16:57:11Z] stamp=dd993b5  Kani Rust Verifier 0.68.0 (cargo plugin)
+== arbre tel quel : les 4 doivent passer ==
+  FAILED       sealed::kani_proofs::proof_sealed_dest_total
+  FAILED       sealed::kani_proofs::proof_ose1_len_is_sane
+  SUCCESSFUL   sealed::kani_proofs::proof_nonce_is_injective_in_the_counter
+  SUCCESSFUL   sealed::kani_proofs::proof_open_refuses_another_destination_without_crypto
+== controle negatif A : sealed_dest accepte un blob trop court ==
+  mutant A applique: la borne de longueur tombe a 4
+  FAILED       sealed::kani_proofs::proof_sealed_dest_total
+== controle negatif B : le nonce ignore les 4 octets hauts du compteur ==
+  mutant B applique: deux compteurs peuvent partager un nonce
+  FAILED       sealed::kani_proofs::proof_nonce_is_injective_in_the_counter
+
+[2026-10-08T16:58:13Z] stamp=dd993b5
+preuves :
+      2 VERIFICATION:- FAILED
+      2 VERIFICATION:- SUCCESSFUL
+controles negatifs (doivent echouer) :
+      2 VERIFICATION:- FAILED
+
+[exited with code 0]

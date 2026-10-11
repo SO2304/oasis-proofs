@@ -1,0 +1,21 @@
+AGENT tx_counter restored_to=0 (next send 1)
+AGENT listen=127.0.0.1:15722 gateway=[fe80::1601:70df:35b:73c0%2]:15711 unit=0x7e next_seq=1
+AGENT hmi=127.0.0.1:44778 end err=UnexpectedEof
+AGENT hmi=127.0.0.1:44786 end err=UnexpectedEof
+AGENT hmi=127.0.0.1:44802 end err=UnexpectedEof
+AGENT hmi=127.0.0.1:44806 end err=UnexpectedEof
+AGENT hmi=127.0.0.1:44822 end err=UnexpectedEof
+AGENT tx_counter restored_to=256 (next send 257)
+AGENT listen=127.0.0.1:15722 gateway=[fe80::1601:70df:35b:73c0%2]:15711 unit=0x7e next_seq=257
+AGENT hmi=127.0.0.1:56256 end err=UnexpectedEof
+AGENT hmi=127.0.0.1:56268 end err=UnexpectedEof
+AGENT hmi=127.0.0.1:56284 end err=UnexpectedEof
+AGENT hmi=127.0.0.1:39506 end err=UnexpectedEof
+AGENT hmi=127.0.0.1:39514 end err=UnexpectedEof
+AGENT tx_counter restored_to=512 (next send 513)
+AGENT listen=127.0.0.1:15722 gateway=[fe80::1601:70df:35b:73c0%2]:15711 unit=0x7e next_seq=513
+AGENT hmi=127.0.0.1:40742 end err=UnexpectedEof
+AGENT hmi=127.0.0.1:40758 end err=UnexpectedEof
+AGENT hmi=127.0.0.1:40770 end err=UnexpectedEof
+AGENT hmi=127.0.0.1:40772 end err=UnexpectedEof
+AGENT hmi=127.0.0.1:40782 end err=UnexpectedEof

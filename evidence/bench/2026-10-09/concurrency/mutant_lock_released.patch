@@ -1,0 +1,35 @@
+diff --git a/oasis-rt/src/mbtcp_pilot/agent.rs b/oasis-rt/src/mbtcp_pilot/agent.rs
+index 847be06..0c0a6e4 100644
+--- a/oasis-rt/src/mbtcp_pilot/agent.rs
++++ b/oasis-rt/src/mbtcp_pilot/agent.rs
+@@ -434,7 +434,7 @@ pub fn agent_try(link: &mut GatewayLink, agent: &Mutex<AgentState>, conf: &Confi
+     //
+     // An idle HMI still holds nothing: it blocks in `modbus_read_request` before ever
+     // reaching here, so `an_idle_connection_does_not_block_another` is unaffected.
+-    let (seq, reply) = {
++    let (env, seq) = {
+         let mut st = agent.lock().map_err(|_| "agent state poisoned".to_string())?;
+         // The v0B counter this envelope will use must be claimed on disk first, or a
+         // restart would reuse it and the gateway would refuse everything that follows.
+@@ -448,16 +448,18 @@ pub fn agent_try(link: &mut GatewayLink, agent: &Mutex<AgentState>, conf: &Confi
+         let order = w.to_order(conf.gateway_id, seq, boot_id, deadline_ms);
+         let (buf, n) = encode_omb1(&order).ok_or("order: unsupported write")?;
+         let env = st.origin.origin_wrap_v0b(&buf[..n]).ok_or("sign failed")?;
++        (env, seq)
++    };
+ 
+-        // Send on the kept connection and wait for the outcome, still holding the lock so
+-        // that orders leave and are answered in the order their numbers were handed out.
++    // MUTANT: the lock is released before the round trip.
++    let reply = {
+         let sock = link.connect(conf)?;
+         let r = (|| -> io::Result<Vec<u8>> {
+             write_frame(sock, &env)?;
+             read_frame(sock)
+         })();
+         match r {
+-            Ok(r) => (seq, r),
++            Ok(r) => r,
+             Err(e) => {
+                 link.reset();
+                 return Err(format!("gw: {:?}", e.kind()));

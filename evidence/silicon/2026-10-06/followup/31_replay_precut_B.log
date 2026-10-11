@@ -1,0 +1,4 @@
+OASIS|B|UART|RXF|n=153,len=111,ctr=153,seq=-T8|mesh|3a67e6e
+OASIS|B|UART|ARRIVED|msg_id=6528347323623648531,hops=0,sig=verified,forward=true|mesh|3a67e6e
+OASIS|B|UART|RELAYED|msg_id=6528347323623648531,hops=0|mesh|3a67e6e
+OASIS|B|UART|PERSIST_SAVED|ok=true,bytes=40,a_last_seen=153|mesh|3a67e6e

@@ -1,0 +1,19 @@
+# upload 317612 bytes from uart_mesh_v27.bin at 2026-10-09T10:53:52Z
+OASIS|B|UART|DFU_PROGRESS|written_to=65536|mesh|6d3429f
+OASIS|B|UART|DFU_PROGRESS|written_to=131072|mesh|6d3429f
+OASIS|B|UART|DFU_PROGRESS|written_to=196608|mesh|6d3429f
+OASIS|B|UART|DFU_PROGRESS|written_to=262144|mesh|6d3429f
+OASIS|B|UART|DFU_PROGRESS|written_to=317612|mesh|6d3429f
+# upload sent in 25 s
+OASIS|B|UART|STAGE|len=0|mesh|6d3429f
+OASIS|B|UART|STAGE|len=280|mesh|6d3429f
+OASIS|B|UART|STAGE|len=560|mesh|6d3429f
+OASIS|B|UART|STAGE|len=840|mesh|6d3429f
+OASIS|B|UART|STAGE|len=1120|mesh|6d3429f
+OASIS|B|UART|STAGE|len=1400|mesh|6d3429f
+OASIS|B|UART|STAGE|len=1680|mesh|6d3429f
+OASIS|B|UART|STAGE|len=1960|mesh|6d3429f
+OASIS|B|UART|STAGE|len=2240|mesh|6d3429f
+OASIS|B|UART|STAGE|len=2520|mesh|6d3429f
+OASIS|B|UART|STAGE|len=2548|mesh|6d3429f
+OASIS|B|UART|FW_INSTALL|accepted,version=27,running=25,floor=25,check_us=981880,resetting_for_swap|mesh|6d3429f

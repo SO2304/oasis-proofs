@@ -1,0 +1,294 @@
+[2026-10-06T12:39:49Z] host: 6.18.40.1-microsoft-standard-WSL2, 3381 MB RAM, cargo-kani 0.67.0
+[2026-10-06T12:40:20Z] tree: 147f34a
+[2026-10-06T12:40:20Z] cargo kani --lib --harness proof_v0b_parse_never_panics_full --harness proof_v0b_parse_never_panics_short --harness proof_v0b_parse_never_panics_with_payload --harness proof_v0b_preimage_binds_payload_digest --harness proof_v0b_preimage_binds_counter --harness proof_v0b_preimage_binds_network --harness proof_v0b_preimage_domain_separated_and_consistent --harness proof_tx_lease_resume_strictly_above_issued --harness proof_tx_lease_never_issues_above_durable_ceiling --harness proof_tx_lease_failed_store_issues_nothing --harness proof_rev_epoch_never_decreases --harness proof_rev_rejected_leaves_state_unchanged --harness proof_rev_applied_is_superset --harness proof_act_requires_all_conditions --harness proof_r14_unsafe_never_acts --harness proof_decision_total_and_deterministic
+Kani Rust Verifier 0.67.0 (cargo plugin)
+   Compiling typenum v1.20.1
+   Compiling version_check v0.9.5
+   Compiling cfg-if v1.0.4
+   Compiling proc-macro2 v1.0.106
+   Compiling libc v0.2.186
+   Compiling generic-array v0.14.7
+   Compiling quote v1.0.45
+   Compiling unicode-ident v1.0.24
+   Compiling serde_core v1.0.228
+   Compiling hybrid-array v0.4.12
+   Compiling crypto-common v0.1.7
+   Compiling inout v0.1.4
+   Compiling getrandom v0.4.2
+   Compiling zmij v1.0.21
+   Compiling cpufeatures v0.2.17
+   Compiling subtle v2.6.1
+   Compiling zeroize v1.8.2
+   Compiling cipher v0.4.4
+   Compiling universal-hash v0.5.1
+   Compiling crypto-common v0.2.2
+   Compiling block-buffer v0.12.0
+   Compiling syn v2.0.117
+   Compiling opaque-debug v0.3.1
+   Compiling serde_json v1.0.150
+   Compiling libm v0.2.16
+   Compiling serde v1.0.228
+   Compiling digest v0.11.3
+   Compiling poly1305 v0.8.0
+   Compiling chacha20 v0.9.1
+   Compiling aead v0.5.2
+   Compiling itoa v1.0.18
+   Compiling cpufeatures v0.3.0
+   Compiling memchr v2.8.1
+   Compiling sha2 v0.11.0
+   Compiling chacha20poly1305 v0.10.1
+   Compiling ed25519-compact v2.3.0
+   Compiling getrandom v0.2.17
+   Compiling serde_derive v1.0.228
+   Compiling oasis-rt v0.3.0 (/root/oasis-kani/oasis-rt)
+warning: unused import: `crate::vec::*`
+ --> oasis-rt/src/morpho.rs:6:5
+  |
+6 | use crate::vec::*;
+  |     ^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unnecessary parentheses around assigned value
+   --> oasis-rt/src/mesh/kani_proofs.rs:684:31
+    |
+684 |     let error_milli_swapped = ({
+    |                               ^
+...
+687 |     });
+    |      ^
+    |
+    = note: `#[warn(unused_parens)]` (part of `#[warn(unused)]`) on by default
+help: remove these parentheses
+    |
+684 ~     let error_milli_swapped = {
+685 |         let d = if v >= c { v - c } else { c - v };
+686 |         (d as u64 * 100_000) / larger as u64
+687 ~     } ;
+    |
+
+warning: unused import: `crate::vec::*`
+  --> oasis-rt/src/spore.rs:13:5
+   |
+13 | use crate::vec::*;
+   |     ^^^^^^^^^^^^^
+
+warning: unused variable: `persistence`
+   --> oasis-rt/src/efference.rs:109:13
+    |
+109 |         let persistence = if severity != Severity::Nominal {
+    |             ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_persistence`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `agent_count`
+   --> oasis-rt/src/federation.rs:116:59
+    |
+116 |     pub fn propagate(&mut self, synapses: &mut [Synapse], agent_count: usize, entropies: &[f64]) -> u32 {
+    |                                                           ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_agent_count`
+
+warning: unused variable: `before`
+   --> oasis-rt/src/federation.rs:567:13
+    |
+567 |         let before = self.digest_count();
+    |             ^^^^^^ help: if this is intentional, prefix it with an underscore: `_before`
+
+warning: unused variable: `handlers`
+   --> oasis-rt/src/spinal.rs:152:17
+    |
+152 |             let handlers = block.lines().find(|l| l.starts_with("H: Handlers=")).unwrap_or("");
+    |                 ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_handlers`
+
+warning: variable `cA` should have a snake case name
+   --> oasis-rt/src/world_model.rs:283:13
+    |
+283 |         let cA: f64 = kani::any();
+    |             ^^ help: convert the identifier to snake case: `c_a`
+    |
+    = note: `#[warn(non_snake_case)]` (part of `#[warn(nonstandard_style)]`) on by default
+
+warning: variable `pA` should have a snake case name
+   --> oasis-rt/src/world_model.rs:284:13
+    |
+284 |         let pA: f64 = kani::any();
+    |             ^^ help: convert the identifier to snake case: `p_a`
+
+warning: variable `cB` should have a snake case name
+   --> oasis-rt/src/world_model.rs:285:13
+    |
+285 |         let cB: f64 = kani::any();
+    |             ^^ help: convert the identifier to snake case: `c_b`
+
+warning: variable `pB` should have a snake case name
+   --> oasis-rt/src/world_model.rs:286:13
+    |
+286 |         let pB: f64 = kani::any();
+    |             ^^ help: convert the identifier to snake case: `p_b`
+
+warning: variable `gA` should have a snake case name
+   --> oasis-rt/src/world_model.rs:291:13
+    |
+291 |         let gA = repulsive_grad_1d(x, cA, pA);
+    |             ^^ help: convert the identifier to snake case: `g_a`
+
+warning: variable `gB` should have a snake case name
+   --> oasis-rt/src/world_model.rs:292:13
+    |
+292 |         let gB = repulsive_grad_1d(x, cB, pB);
+    |             ^^ help: convert the identifier to snake case: `g_b`
+
+warning: Found the following unsupported constructs:
+             - caller_location (1)
+             - foreign function (1)
+         
+         Verification will fail if one or more of these constructs is reachable.
+         See https://model-checking.github.io/kani/rust-feature-support.html for more details.
+
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 38.00s
+Checking harness actuation::kani_proofs::proof_decision_total_and_deterministic...
+
+VERIFICATION RESULT:
+ ** 0 of 137 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.34549516s
+
+Checking harness actuation::kani_proofs::proof_r14_unsafe_never_acts...
+
+VERIFICATION RESULT:
+ ** 0 of 137 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.2771091s
+
+Checking harness actuation::kani_proofs::proof_act_requires_all_conditions...
+
+VERIFICATION RESULT:
+ ** 0 of 147 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.60908747s
+
+Checking harness mesh::kani_proofs::proof_v0b_preimage_domain_separated_and_consistent...
+
+VERIFICATION RESULT:
+ ** 0 of 56 failed (4 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.5133762s
+
+Checking harness mesh::kani_proofs::proof_v0b_preimage_binds_network...
+
+VERIFICATION RESULT:
+ ** 0 of 46 failed (4 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.6905751s
+
+Checking harness mesh::kani_proofs::proof_v0b_preimage_binds_counter...
+
+VERIFICATION RESULT:
+ ** 0 of 46 failed (4 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.6492982s
+
+Checking harness mesh::kani_proofs::proof_v0b_preimage_binds_payload_digest...
+
+VERIFICATION RESULT:
+ ** 0 of 46 failed (4 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.735836s
+
+Checking harness mesh::kani_proofs::proof_v0b_parse_never_panics_with_payload...
+
+VERIFICATION RESULT:
+ ** 0 of 99 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.7687385s
+
+Checking harness mesh::kani_proofs::proof_v0b_parse_never_panics_short...
+
+VERIFICATION RESULT:
+ ** 0 of 106 failed (1 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.55005693s
+
+Checking harness mesh::kani_proofs::proof_v0b_parse_never_panics_full...
+
+VERIFICATION RESULT:
+ ** 0 of 99 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.4640646s
+
+Checking harness mesh_revocation::kani_proofs::proof_rev_applied_is_superset...
+
+VERIFICATION RESULT:
+ ** 1 of 507 failed (506 undetermined)
+Failed Checks: unwinding assertion loop 0
+ File: "<builtin-library-memcmp>", line 25, in memcmp
+
+VERIFICATION:- FAILED
+[Kani] info: Verification output shows one or more unwinding failures.
+[Kani] tip: Consider increasing the unwinding value or disabling `--unwinding-assertions`.
+Verification Time: 1.6052248s
+
+Checking harness mesh_revocation::kani_proofs::proof_rev_rejected_leaves_state_unchanged...
+
+VERIFICATION RESULT:
+ ** 1 of 512 failed (511 undetermined)
+Failed Checks: unwinding assertion loop 0
+ File: "<builtin-library-memcmp>", line 25, in memcmp
+
+VERIFICATION:- FAILED
+[Kani] info: Verification output shows one or more unwinding failures.
+[Kani] tip: Consider increasing the unwinding value or disabling `--unwinding-assertions`.
+Verification Time: 3.8162622s
+
+Checking harness mesh_revocation::kani_proofs::proof_rev_epoch_never_decreases...
+
+VERIFICATION RESULT:
+ ** 1 of 498 failed (497 undetermined)
+Failed Checks: unwinding assertion loop 0
+ File: "<builtin-library-memcmp>", line 25, in memcmp
+
+VERIFICATION:- FAILED
+[Kani] info: Verification output shows one or more unwinding failures.
+[Kani] tip: Consider increasing the unwinding value or disabling `--unwinding-assertions`.
+Verification Time: 1.5623906s
+
+Checking harness tx_lease::kani_proofs::proof_tx_lease_failed_store_issues_nothing...
+
+VERIFICATION RESULT:
+ ** 0 of 149 failed (1 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.18567671s
+
+Checking harness tx_lease::kani_proofs::proof_tx_lease_never_issues_above_durable_ceiling...
+
+VERIFICATION RESULT:
+ ** 0 of 66 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.20936306s
+
+Checking harness tx_lease::kani_proofs::proof_tx_lease_resume_strictly_above_issued...
+
+VERIFICATION RESULT:
+ ** 0 of 83 failed
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.2511633s
+
+Manual Harness Summary:
+Verification failed for - mesh_revocation::kani_proofs::proof_rev_applied_is_superset
+Verification failed for - mesh_revocation::kani_proofs::proof_rev_rejected_leaves_state_unchanged
+Verification failed for - mesh_revocation::kani_proofs::proof_rev_epoch_never_decreases
+Complete - 13 successfully verified harnesses, 3 failures, 16 total.
+[2026-10-06T12:41:50Z] cargo kani exit code 0
+[2026-10-06T12:41:50Z] wrapper exit 0 (124 = 25-min timebox hit)

@@ -1,0 +1,7 @@
+=== UART mesh A->B->C : sending 'o' (originate) to A ===
+A| OASIS|A|UART|ORIGINATED|msg_id=0,len=105|mesh|2d67b3e
+B| OASIS|B|UART|ARRIVED|msg_id=10830354352046574055,hops=0,sig=verified,forward=true|mesh|2d67b3e
+C| OASIS|C|UART|ARRIVED|msg_id=10830354352046574055,hops=1,sig=verified,forward=true|mesh|2d67b3e
+B| OASIS|B|UART|RELAYED|msg_id=10830354352046574055,hops=0|mesh|2d67b3e
+C| OASIS|C|UART|RELAYED|msg_id=10830354352046574055,hops=1|mesh|2d67b3e
+=== done ===

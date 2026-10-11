@@ -1,0 +1,32 @@
+[150/175] VERIFIED               synapse::kani_proofs::proof_synapse_reinforce_weight_bounded
+[151/175] VERIFIED               synapse::kani_proofs::proof_synapse_decay_non_expanding
+[152/175] VERIFIED               synapse::kani_proofs::proof_synapse_prune_symmetric
+[153/175] VERIFIED               synapse::kani_proofs::proof_synapse_below_threshold_prunes
+[154/175] VERIFIED               synapse::kani_proofs::proof_synapse_zero_reward_preserves_weight
+[155/175] VERIFIED               tension::kani_proofs::proof_m1_ttl_monotone_non_increasing
+[156/175] VERIFIED               tension::kani_proofs::proof_m1_deactivate_iff_zero
+[157/175] VERIFIED               tension::kani_proofs::proof_m1_tick_terminates
+[158/175] VERIFIED               timers::kani_proofs::proof_timers_not_due_does_not_fire
+[159/175] VERIFIED               timers::kani_proofs::proof_timers_due_fires_and_rearms
+[160/175] VERIFIED               timers::kani_proofs::proof_timers_no_immediate_refire
+[161/175] VERIFIED               timers::kani_proofs::proof_timers_coalesces_missed_periods
+[162/175] VERIFIED               timers::kani_proofs::proof_timers_fire_count_saturates
+[163/175] VERIFIED               topics::kani_proofs::proof_topic_envelope_roundtrip
+[164/175] VERIFIED               topics::kani_proofs::proof_topic_parse_rejects_short_inputs
+[165/175] VERIFIED               transforms::kani_proofs::proof_transforms_compose_left_identity
+[166/175] VERIFIED               transforms::kani_proofs::proof_transforms_compose_right_identity
+[167/175] VERIFIED               transforms::kani_proofs::proof_transforms_inverse_of_identity_is_identity
+[168/175] VERIFIED               transforms::kani_proofs::proof_transforms_translation_inverse_cancels
+[169/175] VERIFIED               transforms::kani_proofs::proof_transforms_apply_identity_is_identity
+[170/175] VERIFIED               tx_lease::kani_proofs::proof_tx_lease_resume_strictly_above_issued
+[171/175] VERIFIED               tx_lease::kani_proofs::proof_tx_lease_never_issues_above_durable_ceiling
+[172/175] VERIFIED               tx_lease::kani_proofs::proof_tx_lease_failed_store_issues_nothing
+[173/175] VERIFIED               world_model::kani_proofs::proof_m10_repulsive_points_away
+[174/175] VERIFIED               world_model::kani_proofs::proof_m10_attractive_points_toward
+[175/175] VERIFIED               world_model::kani_proofs::proof_m10_field_linear
+
+[2026-10-08T16:05:54Z] stamp=fb1db2c  verifies=175  refutes=0  indetermines=0  (sur 175, +7 lourds non tentes)
+--- refutations, s il y en a ---
+0
+
+[exited with code 0]

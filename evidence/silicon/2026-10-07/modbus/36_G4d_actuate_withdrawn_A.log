@@ -1,0 +1,2 @@
+OASIS|A|MODBUS|MB_DEV_STATUS|rx_bytes=33,rx_errors=0,overflow=0,frames=5,parse_errors=0,writes=4,local_frames=1|device|a39d5fe
+OASIS|A|MODBUS|MB_DEV_REGS|r10=240,r11=0,r12=0,r20=0|device|a39d5fe

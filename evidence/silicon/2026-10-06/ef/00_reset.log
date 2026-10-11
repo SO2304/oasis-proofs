@@ -1,0 +1,6 @@
+OASIS|A|UART|LEASE_PERSIST|ceiling=3837,writes_since_boot=2|mesh|6daa0bc
+OASIS|A|UART|PERSIST_WIPED|all persistence erased; resetting|mesh|6daa0bc
+OASIS|B|UART|LEASE_PERSIST|ceiling=5116,writes_since_boot=2|mesh|6daa0bc
+OASIS|B|UART|PERSIST_WIPED|all persistence erased; resetting|mesh|6daa0bc
+OASIS|C|UART|LEASE_PERSIST|ceiling=2558,writes_since_boot=2|mesh|6daa0bc
+OASIS|C|UART|PERSIST_WIPED|all persistence erased; resetting|mesh|6daa0bc

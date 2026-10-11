@@ -1,0 +1,10 @@
+# fw13i (board C) manifests, in the order they were signed:
+manifest: version=1 image_len=305888 sha256=215b3566ce723eb16dbedcaaa0e4f8cd0fe803f6937be261a8912dc63791674e
+manifest: version=2 image_len=305904 sha256=a9284139a3c1d8b710604ccc91d8f46cf848a29fc4d91a3ebe72649d3fcc576e
+manifest: version=3 image_len=305896 sha256=9081e61cdde5f5b63ee32f55b64245a8fbbb9d1588f786f279fd554ad92960a3
+manifest: version=3 image_len=303192 sha256=9582dc6c37b683bf8d08e14434db6f2bf6fa3573c25a4b2f5f2eb2d054bbefa2
+manifest: version=3 image_len=305896 sha256=9081e61cdde5f5b63ee32f55b64245a8fbbb9d1588f786f279fd554ad92960a3
+manifest: version=3 image_len=305896 sha256=9081e61cdde5f5b63ee32f55b64245a8fbbb9d1588f786f279fd554ad92960a3
+# fw13j (boards A, B):
+manifest: version=3 image_len=287264 sha256=17457d53ba57094c2432a10fdeac3214661f1614a31174251992dae0d31f22e3
+manifest: version=3 image_len=287264 sha256=481888f4778b515bcfde62124f8a035a8d921b60ce5b20e26e7b6a603a86f7e2

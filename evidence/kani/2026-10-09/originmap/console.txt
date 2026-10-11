@@ -1,0 +1,17 @@
+
+[2026-10-09T04:50:18Z] stamp=f391ed7  Kani Rust Verifier 0.68.0 (cargo plugin)
+== arbre tel quel : les 3 doivent passer ==
+  SUCCESSFUL   modbus_gateway::kani_proofs::proof_mb_no_frame_outside_the_origin_map
+  SUCCESSFUL   modbus_gateway::kani_proofs::proof_mb_no_frame_without_act
+  SUCCESSFUL   modbus_gateway::kani_proofs::proof_mb_frame_matches_rules
+== controle negatif : la carte d'une origine est consultee sans filtrer l'origine ==
+  mutant applique: le filtre par origine est retire du parcours de la carte
+  FAILED       modbus_gateway::kani_proofs::proof_mb_no_frame_outside_the_origin_map
+
+[2026-10-09T05:01:13Z] stamp=f391ed7
+preuves :
+      3 VERIFICATION:- SUCCESSFUL
+controle negatif (doit echouer) :
+      1 VERIFICATION:- FAILED
+
+[exited with code 0]

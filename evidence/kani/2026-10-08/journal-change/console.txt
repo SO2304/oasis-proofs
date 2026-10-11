@@ -1,0 +1,24 @@
+
+thread 'main' (33119) panicked at /rustc/8925ea358a0f265ca61026aadc7ecc506c545cbe/library/std/src/io/stdio.rs:1168:9:
+failed printing to stdout: Broken pipe (os error 32)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+[2026-10-08T21:59:38Z] stamp=f187527  Kani Rust Verifier 0.68.0 (cargo plugin)
+== arbre tel quel : les 6 doivent passer ==
+  SUCCESSFUL   journal::kani_proofs::proof_entry_roundtrip_is_lossless
+  SUCCESSFUL   journal::kani_proofs::proof_journal_seq_monotone
+  SUCCESSFUL   journal::kani_proofs::proof_journal_parse_total
+  SUCCESSFUL   journal::kani_proofs::proof_decision_byte_is_injective
+  SUCCESSFUL   journal::kani_proofs::proof_every_decision_is_logged
+  SUCCESSFUL   journal::kani_proofs::proof_change_record_preserves_what_an_auditor_reads
+== controle negatif A : la region des changements chevauche celle des refus ==
+  mutant A applique: DEC_CHANGE_BASE 64 -> 20, un refus lirait comme un changement
+  FAILED       journal::kani_proofs::proof_decision_byte_is_injective
+== controle negatif B : le drapeau applique/refuse est perdu ==
+  mutant B applique: un changement refuse est enregistre comme applique
+  FAILED       journal::kani_proofs::proof_change_record_preserves_what_an_auditor_reads
+
+[2026-10-08T22:01:27Z] stamp=f187527
+preuves :
+      6 VERIFICATION:- SUCCESSFUL
+controles negatifs (doivent echouer) :
+      2 VERIFICATION:- FAILED

@@ -1,0 +1,2 @@
+OASIS|C|UART|EF_STATUS|boot_id=2558,now_ms=170728,epoch=0,revoked=0,sensor_lost=false,pin25=0,executed=0,rejects=0/1/0/1/0/0/0|mesh|4713703
+boot_id=2558 now_ms=170728 deadline=179728 (validity 9 s, MAX_VALIDITY_MS 10 s)

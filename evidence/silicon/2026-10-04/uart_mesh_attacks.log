@@ -1,0 +1,15 @@
+===== TASK 1 ANTI-REPLAY (R->A): B accepts msg once (ARRIVED+RELAYED), DROPs the replay =====
+OASIS|A|UART|REPLAY_TX1|len=101|mesh|41702dd
+OASIS|B|UART|ARRIVED|msg_id=10830354352046574055,hops=0,sig=verified,forward=true|mesh|41702dd
+OASIS|B|UART|RELAYED|msg_id=10830354352046574055,hops=0|mesh|41702dd
+OASIS|C|UART|ARRIVED|msg_id=10830354352046574055,hops=1,sig=verified,forward=true|mesh|41702dd
+OASIS|C|UART|RELAYED|msg_id=10830354352046574055,hops=1|mesh|41702dd
+OASIS|A|UART|REPLAY_TX2|replay_same_msg_id,len=101|mesh|41702dd
+OASIS|B|UART|DROP|duplicate|mesh|41702dd
+===== TASK 4 TTL=0 (T->A): B ARRIVED forward=false, NO relay; C silent =====
+OASIS|A|UART|ORIGINATED_TTL0|ttl=0,len=99|mesh|41702dd
+OASIS|B|UART|ARRIVED|msg_id=14412014626722181781,hops=0,sig=verified,forward=false|mesh|41702dd
+===== TASK 2 FORGE (F->B): B TX a packet claiming A w/ bad seed; C DROPs bad signature =====
+OASIS|B|UART|FORGE_TX|claim=A,bad_seed,len=100|mesh|41702dd
+OASIS|C|UART|DROP|bad mesh signature|mesh|41702dd
+===== done =====

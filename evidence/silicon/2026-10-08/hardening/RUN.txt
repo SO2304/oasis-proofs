@@ -1,0 +1,10 @@
+### campaign start 2026-10-08T09:16:09Z
+OASIS|A|MODBUS|MB_DEV_STATUS|rx_bytes=32,rx_errors=0,overflow=0,frames=4,parse_errors=0,writes=4,local_frames=0|device|a39d5fe
+OASIS|A|MODBUS|MB_DEV_REGS|r10=240,r11=0,r12=0,r20=0|device|a39d5fe
+OASIS|B|UART|FW_STATUS|version=24,floor=24,boot=Normal,bootloader_state=Boot,fp=f6bd34440030a136,guard_failed_before=0|mesh|a09781e
+OASIS|C|UART|FW_STATUS|version=24,floor=24,boot=Normal,bootloader_state=Boot,fp=a7089677a10b7fb0,guard_failed_before=0|mesh|a09781e
+### C boot_id=47071 now_ms=101736
+### campaign part 1 done 2026-10-08T09:18:41Z
+### part 2 start 2026-10-08T09:18:45Z, C boot_id=47071
+### part 2 done 2026-10-08T09:22:11Z
+### S8 pre-cut, C boot_id=47071

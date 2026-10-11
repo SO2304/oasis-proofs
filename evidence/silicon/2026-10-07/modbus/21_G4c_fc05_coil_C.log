@@ -1,0 +1,3 @@
+OASIS|C|UART|RXF|n=12,len=132,ctr=8959,seq=???|mesh|a39d5fe
+OASIS|C|UART|ARRIVED|msg_id=2975193929570679114,hops=0,sig=verified,forward=true|mesh|a39d5fe
+OASIS|C|UART|MB_GW|decision=Malformed,len=33,origin=f6|mesh|a39d5fe

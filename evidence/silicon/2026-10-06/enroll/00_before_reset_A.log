@@ -1,0 +1,3 @@
+OASIS|A|UART|WHOAMI|fp=ce279863f4277e13,mixed=false,owner_seq=0,owner_ed=0beef5a9e679e6a3,previous_owner=false,pending_offer=0,peers=0,epoch=0,rev_signer=None|mesh|5c4bd96
+OASIS|A|UART|PQ_STATUS|min_suite_revocation=1,legacy_orv1_allowed=true,epoch=0,revoked=0,reasm_in_use=0,stage_len=0|mesh|5c4bd96
+OASIS|A|UART|STATUS|rx_bytes=0,frames=0,crc_fails=0,tx=2558,lease_ceiling=3837,lease_writes=2,fp=ce279863f4277e13,peers=0|mesh|5c4bd96

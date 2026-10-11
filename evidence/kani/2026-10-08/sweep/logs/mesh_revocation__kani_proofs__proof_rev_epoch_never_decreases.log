@@ -1,0 +1,220 @@
+Kani Rust Verifier 0.68.0 (cargo plugin)
+CBMC 6.11.0
+   Compiling oasis-rt v0.3.0 (/home/pc/oasis-kani/oasis-rt)
+warning: unused import: `crate::vec::*`
+ --> oasis-rt/src/morpho.rs:6:5
+  |
+6 | use crate::vec::*;
+  |     ^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: trailing semicolon in macro used in expression position
+   --> oasis-rt/src/actuation/kani_proofs.rs:178:34
+    |
+178 |         Some(OrderClass::Act) => assert!(c == 0),
+    |                                  ^^^^^^^^^^^^^^^
+    |
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+    = note: for more information, see issue #79813 <https://github.com/rust-lang/rust/issues/79813>
+    = note: `#[warn(semicolon_in_expressions_from_non_local_macros)]` (part of `#[warn(future_incompatible)]`) on by default
+    = note: this warning originates in the macro `assert` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: trailing semicolon in macro used in expression position
+   --> oasis-rt/src/actuation/kani_proofs.rs:179:35
+    |
+179 |         Some(OrderClass::Stop) => assert!(c == 1),
+    |                                   ^^^^^^^^^^^^^^^
+    |
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+    = note: for more information, see issue #79813 <https://github.com/rust-lang/rust/issues/79813>
+    = note: this warning originates in the macro `assert` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: trailing semicolon in macro used in expression position
+   --> oasis-rt/src/actuation/kani_proofs.rs:180:17
+    |
+180 |         None => assert!(c > 1),
+    |                 ^^^^^^^^^^^^^^
+    |
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+    = note: for more information, see issue #79813 <https://github.com/rust-lang/rust/issues/79813>
+    = note: this warning originates in the macro `assert` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: trailing semicolon in macro used in expression position
+  --> oasis-rt/src/enrollment/kani_proofs.rs:62:17
+   |
+62 |         None => assert!(a.enroll_seq <= held.seq && d == EnrollDecision::Reject(EnrollReject::StaleSeq)),
+   |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+   = note: for more information, see issue #79813 <https://github.com/rust-lang/rust/issues/79813>
+   = note: this warning originates in the macro `assert` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: trailing semicolon in macro used in expression position
+   --> oasis-rt/src/journal/kani_proofs.rs:121:38
+    |
+121 |         Some(LoggedDecision::Act) => assert!(b == DEC_ACT),
+    |                                      ^^^^^^^^^^^^^^^^^^^^^
+    |
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+    = note: for more information, see issue #79813 <https://github.com/rust-lang/rust/issues/79813>
+    = note: this warning originates in the macro `assert` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: trailing semicolon in macro used in expression position
+   --> oasis-rt/src/journal/kani_proofs.rs:122:39
+    |
+122 |         Some(LoggedDecision::Stop) => assert!(b == DEC_STOP),
+    |                                       ^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+    = note: for more information, see issue #79813 <https://github.com/rust-lang/rust/issues/79813>
+    = note: this warning originates in the macro `assert` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: trailing semicolon in macro used in expression position
+  --> oasis-rt/src/mesh_revocation/kani_proofs.rs:50:14
+   |
+50 |         _ => assert!(new.is_none()),
+   |              ^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+   = note: for more information, see issue #79813 <https://github.com/rust-lang/rust/issues/79813>
+   = note: this warning originates in the macro `assert` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unused import: `crate::vec::*`
+  --> oasis-rt/src/spore.rs:13:5
+   |
+13 | use crate::vec::*;
+   |     ^^^^^^^^^^^^^
+
+warning: trailing semicolon in macro used in expression position
+   --> oasis-rt/src/mavlink_order/kani_proofs.rs:107:27
+    |
+107 |             Some(prev) => assert!(o.cmd_seq > prev),
+    |                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+    = note: for more information, see issue #79813 <https://github.com/rust-lang/rust/issues/79813>
+    = note: this warning originates in the macro `assert` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: trailing semicolon in macro used in expression position
+   --> oasis-rt/src/mavlink_order/kani_proofs.rs:147:17
+    |
+147 |         None => assert!(o.actuator_id != rules.vehicle_id || (o.force != 1.0 && o.force != 0.0)),
+    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+    = note: for more information, see issue #79813 <https://github.com/rust-lang/rust/issues/79813>
+    = note: this warning originates in the macro `assert` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unused variable: `persistence`
+   --> oasis-rt/src/efference.rs:109:13
+    |
+109 |         let persistence = if severity != Severity::Nominal {
+    |             ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_persistence`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `agent_count`
+   --> oasis-rt/src/federation.rs:116:59
+    |
+116 |     pub fn propagate(&mut self, synapses: &mut [Synapse], agent_count: usize, entropies: &[f64]) -> u32 {
+    |                                                           ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_agent_count`
+
+warning: unused variable: `before`
+   --> oasis-rt/src/federation.rs:567:13
+    |
+567 |         let before = self.digest_count();
+    |             ^^^^^^ help: if this is intentional, prefix it with an underscore: `_before`
+
+warning: unused variable: `handlers`
+   --> oasis-rt/src/spinal.rs:152:17
+    |
+152 |             let handlers = block.lines().find(|l| l.starts_with("H: Handlers=")).unwrap_or("");
+    |                 ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_handlers`
+
+warning: function `any_msg_id` is never used
+  --> oasis-rt/src/fragment/kani_proofs.rs:44:4
+   |
+44 | fn any_msg_id(_msg: &[u8]) -> [u8; 8] {
+   |    ^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: function `genesis_stub` is never used
+  --> oasis-rt/src/journal/kani_proofs.rs:33:4
+   |
+33 | fn genesis_stub(boot_id: u64) -> [u8; 32] {
+   |    ^^^^^^^^^^^^
+
+warning: function `chain_stub` is never used
+  --> oasis-rt/src/journal/kani_proofs.rs:40:4
+   |
+40 | fn chain_stub(prev: &[u8; 32], entry: &[u8; ENTRY_LEN]) -> [u8; 32] {
+   |    ^^^^^^^^^^
+
+warning: use of an unstable feature
+ --> <crate attribute>:1:12
+  |
+1 | #![feature(register_tool)]
+  |            ^^^^^^^^^^^^^
+  |
+  = note: requested on the command line with `--force-warn unstable-features`
+
+warning: variable `cA` should have a snake case name
+   --> oasis-rt/src/world_model.rs:283:13
+    |
+283 |         let cA: f64 = kani::any();
+    |             ^^ help: convert the identifier to snake case: `c_a`
+    |
+    = note: `#[warn(non_snake_case)]` (part of `#[warn(nonstandard_style)]`) on by default
+
+warning: variable `pA` should have a snake case name
+   --> oasis-rt/src/world_model.rs:284:13
+    |
+284 |         let pA: f64 = kani::any();
+    |             ^^ help: convert the identifier to snake case: `p_a`
+
+warning: variable `cB` should have a snake case name
+   --> oasis-rt/src/world_model.rs:285:13
+    |
+285 |         let cB: f64 = kani::any();
+    |             ^^ help: convert the identifier to snake case: `c_b`
+
+warning: variable `pB` should have a snake case name
+   --> oasis-rt/src/world_model.rs:286:13
+    |
+286 |         let pB: f64 = kani::any();
+    |             ^^ help: convert the identifier to snake case: `p_b`
+
+warning: variable `gA` should have a snake case name
+   --> oasis-rt/src/world_model.rs:291:13
+    |
+291 |         let gA = repulsive_grad_1d(x, cA, pA);
+    |             ^^ help: convert the identifier to snake case: `g_a`
+
+warning: variable `gB` should have a snake case name
+   --> oasis-rt/src/world_model.rs:292:13
+    |
+292 |         let gB = repulsive_grad_1d(x, cB, pB);
+    |             ^^ help: convert the identifier to snake case: `g_b`
+
+warning: Found the following unsupported constructs:
+             - caller_location (1)
+             - foreign function (2)
+         
+         Verification will fail if one or more of these constructs is reachable.
+         See https://model-checking.github.io/kani/rust-feature-support.html for more details.
+
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.09s
+warning: the following packages contain code that will be rejected by a future version of Rust: oasis-rt v0.3.0 (/home/pc/oasis-kani/oasis-rt)
+note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 6`
+Checking harness mesh_revocation::kani_proofs::proof_rev_epoch_never_decreases...
+
+VERIFICATION RESULT:
+ ** 0 of 462 failed (5 unreachable)
+
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.6603155s
+
+Manual Harness Summary:
+Complete - 1 successfully verified harnesses, 0 failures, 1 total.

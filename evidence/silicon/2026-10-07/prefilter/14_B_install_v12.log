@@ -1,0 +1,19 @@
+# upload 305156 bytes from B_v12.bin at 2026-10-07T13:47:18Z
+OASIS|B|UART|DFU_PROGRESS|written_to=65536|mesh|30dd63a
+OASIS|B|UART|DFU_PROGRESS|written_to=131072|mesh|30dd63a
+OASIS|B|UART|DFU_PROGRESS|written_to=196608|mesh|30dd63a
+OASIS|B|UART|DFU_PROGRESS|written_to=262144|mesh|30dd63a
+OASIS|B|UART|DFU_PROGRESS|written_to=305156|mesh|30dd63a
+# upload sent in 24 s
+OASIS|B|UART|STAGE|len=0|mesh|30dd63a
+OASIS|B|UART|STAGE|len=280|mesh|30dd63a
+OASIS|B|UART|STAGE|len=560|mesh|30dd63a
+OASIS|B|UART|STAGE|len=840|mesh|30dd63a
+OASIS|B|UART|STAGE|len=1120|mesh|30dd63a
+OASIS|B|UART|STAGE|len=1400|mesh|30dd63a
+OASIS|B|UART|STAGE|len=1680|mesh|30dd63a
+OASIS|B|UART|STAGE|len=1960|mesh|30dd63a
+OASIS|B|UART|STAGE|len=2240|mesh|30dd63a
+OASIS|B|UART|STAGE|len=2520|mesh|30dd63a
+OASIS|B|UART|STAGE|len=2548|mesh|30dd63a
+OASIS|B|UART|FW_INSTALL|accepted,version=12,running=11,floor=11,check_us=712039,resetting_for_swap|mesh|30dd63a

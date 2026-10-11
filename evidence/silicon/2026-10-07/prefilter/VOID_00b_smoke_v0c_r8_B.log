@@ -1,0 +1,5 @@
+OASIS|B|UART|PF_MODE|v0c=true,next_hop=a7089677a10b7fb0,tokens=24|mesh|a8d97a2
+OASIS|B|UART|PF_QUIET|quiet=true|mesh|a8d97a2
+# flood mode=v0c rate=8 secs=20 start=2026-10-07T10:42:38Z
+OASIS|B|UART|PF_FLOOD|start,rate=8,secs=20,v0c=true|mesh|a8d97a2
+OASIS|B|UART|PF_FLOOD_DONE|forged=160,legit=21,secs=20|mesh|a8d97a2

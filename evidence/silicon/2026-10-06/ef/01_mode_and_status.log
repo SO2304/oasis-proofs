@@ -1,0 +1,9 @@
+OASIS|A|UART|LEASE_PERSIST|ceiling=1279,writes_since_boot=2|mesh|6daa0bc
+OASIS|A|UART|MODE|strict_v0b=true|mesh|6daa0bc
+OASIS|A|UART|EF_STATUS|boot_id=0,now_ms=18608,epoch=0,revoked=0,sensor_lost=false,pin25=0,executed=0,rejects=0/0/0/0/0/0/0|mesh|6daa0bc
+OASIS|B|UART|LEASE_PERSIST|ceiling=1279,writes_since_boot=2|mesh|6daa0bc
+OASIS|B|UART|MODE|strict_v0b=true|mesh|6daa0bc
+OASIS|B|UART|EF_STATUS|boot_id=0,now_ms=20284,epoch=0,revoked=0,sensor_lost=false,pin25=0,executed=0,rejects=0/0/0/0/0/0/0|mesh|6daa0bc
+OASIS|C|UART|LEASE_PERSIST|ceiling=1279,writes_since_boot=2|mesh|6daa0bc
+OASIS|C|UART|MODE|strict_v0b=true|mesh|6daa0bc
+OASIS|C|UART|EF_STATUS|boot_id=0,now_ms=22018,epoch=0,revoked=0,sensor_lost=false,pin25=0,executed=0,rejects=0/0/0/0/0/0/0|mesh|6daa0bc

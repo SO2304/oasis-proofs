@@ -1,0 +1,4 @@
+flashing /c/Users/pc/AppData/Local/Temp/claude/c--dev-oasis/3b644d8a-d030-4382-a054-af7fa383b4ab/scratchpad/fw13j/B_first_flash_v1.uf2 -> D: (UF2 Bootloader v3.0 Model: Raspberry Pi RP2 )
+done: /dev/ttyS9 back=yes
+OASIS|B|UART|LEASE_PERSIST|ceiling=6395,writes_since_boot=2|mesh|200d96b
+OASIS|B|UART|FW_STATUS|version=1,floor=1,boot=Normal,bootloader_state=Boot,fp=f6bd34440030a136,guard_failed_before=0|mesh|200d96b

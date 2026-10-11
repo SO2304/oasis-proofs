@@ -1,0 +1,26 @@
+# upload 287264 bytes from A_v3.bin at 2026-10-06T23:19:54Z
+OASIS|A|UART|DFU_PROGRESS|written_to=65536|mesh|200d96b
+OASIS|A|UART|DFU_PROGRESS|written_to=131072|mesh|200d96b
+OASIS|A|UART|DFU_PROGRESS|written_to=196608|mesh|200d96b
+OASIS|A|UART|DFU_PROGRESS|written_to=262144|mesh|200d96b
+OASIS|A|UART|DFU_PROGRESS|written_to=287264|mesh|200d96b
+# upload sent in 22 s
+OASIS|A|UART|STAGE|len=0|mesh|200d96b
+OASIS|A|UART|STAGE|len=280|mesh|200d96b
+OASIS|A|UART|STAGE|len=560|mesh|200d96b
+OASIS|A|UART|STAGE|len=840|mesh|200d96b
+OASIS|A|UART|STAGE|len=1120|mesh|200d96b
+OASIS|A|UART|STAGE|len=1400|mesh|200d96b
+OASIS|A|UART|STAGE|len=1680|mesh|200d96b
+OASIS|A|UART|STAGE|len=1960|mesh|200d96b
+OASIS|A|UART|STAGE|len=2240|mesh|200d96b
+OASIS|A|UART|STAGE|len=2520|mesh|200d96b
+OASIS|A|UART|STAGE|len=2548|mesh|200d96b
+OASIS|A|UART|FW_INSTALL|accepted,version=3,running=1,floor=1,check_us=691721,resetting_for_swap|mesh|200d96b
+# port transitions (port_watch.sh, 100 ms sampling)
+2026-10-06T23:19:54.661Z /dev/ttyS8 present
+2026-10-06T23:20:17.994Z /dev/ttyS8 absent
+2026-10-06T23:20:35.898Z /dev/ttyS8 present
+# @V after the swap
+OASIS|A|UART|LEASE_PERSIST|ceiling=6395,writes_since_boot=2|mesh|200d96b
+OASIS|A|UART|FW_STATUS|version=3,floor=3,boot=ConfirmedAfterSwap,bootloader_state=Boot,fp=822460d254200275,guard_failed_before=0|mesh|200d96b

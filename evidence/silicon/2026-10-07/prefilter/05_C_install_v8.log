@@ -1,0 +1,26 @@
+# upload 325776 bytes from C_v8.bin at 2026-10-07T10:40:46Z
+OASIS|C|UART|DFU_PROGRESS|written_to=65536|mesh|1199aba
+OASIS|C|UART|DFU_PROGRESS|written_to=131072|mesh|1199aba
+OASIS|C|UART|DFU_PROGRESS|written_to=196608|mesh|1199aba
+OASIS|C|UART|DFU_PROGRESS|written_to=262144|mesh|1199aba
+OASIS|C|UART|DFU_PROGRESS|written_to=325776|mesh|1199aba
+# upload sent in 25 s
+OASIS|C|UART|STAGE|len=0|mesh|1199aba
+OASIS|C|UART|STAGE|len=280|mesh|1199aba
+OASIS|C|UART|STAGE|len=560|mesh|1199aba
+OASIS|C|UART|STAGE|len=840|mesh|1199aba
+OASIS|C|UART|STAGE|len=1120|mesh|1199aba
+OASIS|C|UART|STAGE|len=1400|mesh|1199aba
+OASIS|C|UART|STAGE|len=1680|mesh|1199aba
+OASIS|C|UART|STAGE|len=1960|mesh|1199aba
+OASIS|C|UART|STAGE|len=2240|mesh|1199aba
+OASIS|C|UART|STAGE|len=2520|mesh|1199aba
+OASIS|C|UART|STAGE|len=2548|mesh|1199aba
+OASIS|C|UART|FW_INSTALL|accepted,version=8,running=7,floor=7,check_us=738588,resetting_for_swap|mesh|1199aba
+# port transitions
+2026-10-07T10:40:46.386Z /dev/ttyS10 present
+2026-10-07T10:41:13.533Z /dev/ttyS10 absent
+2026-10-07T10:41:31.595Z /dev/ttyS10 present
+# @V
+OASIS|C|UART|LEASE_PERSIST|ceiling=27627,writes_since_boot=2|mesh|a8d97a2
+OASIS|C|UART|FW_STATUS|version=8,floor=8,boot=ConfirmedAfterSwap,bootloader_state=Boot,fp=a7089677a10b7fb0,guard_failed_before=0|mesh|a8d97a2

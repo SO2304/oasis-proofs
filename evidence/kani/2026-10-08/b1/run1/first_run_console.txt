@@ -1,0 +1,25 @@
+
+thread 'main' (507) panicked at /rustc/8925ea358a0f265ca61026aadc7ecc506c545cbe/library/std/src/io/stdio.rs:1168:9:
+failed printing to stdout: Broken pipe (os error 32)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+[2026-10-08T12:15:46Z] ref=positioning-alignment stamp=fe8cad9, Kani Rust Verifier 0.68.0 (cargo plugin)
+=== proof_no_arm_frame_without_act (12:15:46Z)
+  *** FAILED (counterexample) ***
+    Failed Checks: unwinding assertion loop 0
+     File: "oasis-rt/src/mavlink_min.rs", line 229, in mavlink_min::crc_over
+    
+    VERIFICATION:- FAILED
+=== proof_arm_implies_every_condition (12:16:06Z)
+  *** FAILED (counterexample) ***
+    Failed Checks: unwinding assertion loop 0
+     File: "oasis-rt/src/mavlink_min.rs", line 229, in mavlink_min::crc_over
+    
+    VERIFICATION:- FAILED
+=== proof_stop_class_never_arms (12:16:25Z)
+  SUCCESSFUL
+=== proof_action_is_total_and_binary (12:16:34Z)
+  SUCCESSFUL
+
+[2026-10-08T12:16:39Z] stamp=fe8cad9  verified=2  refuted=2  undetermined=0
+
+[exited with code 0]
