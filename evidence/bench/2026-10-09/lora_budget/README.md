@@ -51,14 +51,17 @@ juste.
 ## 3. Ce que le port change en plus
 
 - **Les assertions deviennent des tests.** Un script ne tourne que si quelqu'un y pense ;
-  `budget::tests` tourne à chaque `cargo test` de la crate. 10 tests, dont la
+  `budget::tests` tourne à chaque `cargo test` de la crate. 9 tests (« 10 » jusqu'au 2026-10-11), dont la
   monotonie en charge utile **et** en SF, que nul chiffre isolé n'aurait attrapée.
 - **`tools/check_claims.sh --full` exécute désormais les tests de cette crate.** Elle est
   délibérément **hors** de l'espace de travail — elle active sans condition
   `oasis-rt/mesh_bloom_mcu`, ce qui, dans l'espace de travail, rétrécirait le filtre de
   Bloom de l'hôte pour tout le monde (la fuite d'unification de features du
-  2026-05-11) — et la conséquence était passée inaperçue : **ses 31 tests ne tournaient
-  nulle part**, ni ici, ni en CI, ni dans `--workspace`.
+  2026-05-11) — et la conséquence était passée inaperçue : **ses 41 tests (« 31 » jusqu'au 2026-10-11) ne tournaient
+  nulle part**, ni ici, ni en CI, ni dans `--workspace`. ⚠️ **2026-10-13 :** 41 est le nombre
+  **déclaré**, pas le nombre qui passe. Sans `--features std`, ce que lance `check_claims.sh`,
+  **31** tournent. Avec cette option, **40 passent et 1 échoue** : un test de la radio simulée
+  antérieur à l'application du rapport cyclique. Voir `../../2026-10-13/lora_sim/`.
 - **Règle 7 contrôlée.** `check_claims.sh` refuse tout nouveau `.py` hors des deux
   exceptions déclarées (`tools/hmi_client.py` et les scripts de contre-épreuve sous
   `evidence/`). Contre-épreuve : un fichier Python ajouté dans `docs/` → `NOUVEAU`,

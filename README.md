@@ -24,3 +24,18 @@ Licence of this corpus: **CC BY 4.0** (see `RELICENSING.md`).
 
 Every directory carries a `SHA256SUMS`; `tools/check_claims.sh --full` in the code repository
 verifies all of them against the committed blobs.
+
+## Work in progress — software only, not proven on hardware
+
+- **LoRa transport, virtual tests** — `evidence/bench/2026-10-13/lora_sim/README.md`. The OASIS
+  stack runs over a simulated LoRa radio at the byte layer, with these results:
+  - a signed envelope is sent and verified, and a forged one is refused;
+  - the EU868 1 % duty cycle is enforced by the transport itself;
+  - frequency hopping is measured against three jammer models, K=10 per scenario. Every simulation
+    was run twice with byte-identical output.
+
+  **40 of the 41 tests pass.** The failing one predates the duty-cycle enforcement; it is recorded,
+  not hidden. Time on air per message: `evidence/bench/2026-10-09/lora_budget/`.
+- **What is missing.** No radio has ever transmitted. The SX1262 driver is tested against a
+  simulated SPI bus only, and the time-on-air formula is not verified at the source. Next step: two
+  SX1262 radios on RP2040 boards.

@@ -1,0 +1,10 @@
+== OASIS LoRa-mesh POC (logiciel, radio simulee) ==
+
+[1] 2 noeuds Ed25519 (A=0xAA, B=0xBB), pubkeys croisees enregistrees.
+[2] Lien LoRa simule (SF7, BW code 4).
+[3] A signe + emet (28 o charge -> 117 o enveloppe, airtime 210.2 ms).
+[4] B recoit + VERIFIE la signature: ARRIVED (msg_id=0x100ba66a4ed81db5, hops=0).
+[5] Securite: enveloppe FORGEE rejetee (bad mesh signature). OK.
+[6] EU868 1%: 7/50 envois legaux a 1 msg/s (le reste throttle).
+
+== POC logiciel OK. Etape suivante: ecrire le driver SX1262 reel, puis flasher 3 Pico. ==

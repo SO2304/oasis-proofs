@@ -1,0 +1,11 @@
+Time-on-air for a 24-byte payload (BW 125 kHz, CR 4/5, CRC on, 8-sym preamble):
+  SF7  ->    61.70 ms
+  SF8  ->   113.15 ms
+  SF9  ->   205.82 ms
+  SF10 ->   370.69 ms
+  SF11 ->   823.30 ms
+  SF12 ->  1482.75 ms
+
+EU868 1% duty cycle — one SF7 packet attempted every 200 ms for 30 s:
+  result: 21 legal, 129 throttled
+  each SF7 packet costs 61.7 ms airtime; budget = 1 s burst + 1% of elapsed time
