@@ -154,7 +154,7 @@ sur demande motivée » au titre de l'article 10(3) — doivent lui être fourni
 
 **C'est le modèle commercial que ce texte dicte** : OASIS ne se vend pas comme un produit
 certifié, il se vend comme le **fournisseur de la preuve** qu'un fabricant devra produire aux
-autorités, accompagné du droit contractuel d'accéder au code (la licence MIT le donne déjà).
+autorités, accompagné du droit contractuel d'accéder au code (à écrire dans la licence commerciale : accès sous NDA ou séquestre, le code étant propriétaire depuis le 11 octobre 2026).
 
 Deux pièges à connaître : l'**article 17** requalifie en fabricant quiconque met un produit sur
 le marché sous son nom ou le modifie au point d'affecter sa conformité ; l'**article 18** fait

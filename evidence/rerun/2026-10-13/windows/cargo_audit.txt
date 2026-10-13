@@ -1,0 +1,30 @@
+cargo-audit: cargo-audit-audit 0.22.2
+advisory-db: 6aed84668c23d7f535077a9fe918bf1fa0f6a5bc 2026-10-13 12:26:19 +0200
+
+== workspace (Cargo.lock at repo root) ==
+      Loaded 1310 security advisories (from C:/tmp/advisory-db-fresh)
+    Scanning Cargo.lock for vulnerabilities (150 crate dependencies)
+Crate:     proc-macro-error2
+Version:   2.0.1
+Warning:   unmaintained
+Title:     proc-macro-error2 is unmaintained
+Date:      2026-06-07
+ID:        RUSTSEC-2026-0173
+URL:       https://rustsec.org/advisories/RUSTSEC-2026-0173
+
+warning: 1 allowed warning found
+exit=0
+
+== oasis-lora-transport (own Cargo.lock) ==
+      Loaded 1310 security advisories (from C:/tmp/advisory-db-fresh)
+    Scanning Cargo.lock for vulnerabilities (108 crate dependencies)
+Crate:     proc-macro-error2
+Version:   2.0.1
+Warning:   unmaintained
+Title:     proc-macro-error2 is unmaintained
+Date:      2026-06-07
+ID:        RUSTSEC-2026-0173
+URL:       https://rustsec.org/advisories/RUSTSEC-2026-0173
+
+warning: 1 allowed warning found
+exit=0

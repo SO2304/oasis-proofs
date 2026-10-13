@@ -186,7 +186,7 @@ peut envoyer. Un opérateur légitime et un opérateur légitime compromis sont 
 **9 conditions ordonnées** (7 à la rédaction de ce fichier ; les parties G et H ont ajouté le verrou d'arrêt et la vivacité de la supervision) : trame v0B valide, origine **habilitée pour cet actionneur**, non
 révoquée, non expirée dans l'horloge de l'actionneur (`boot_id`), verrou d'état des capteurs,
 **dans les limites physiques** (avec garde NaN), `cmd_seq` strictement plus récent. 15 tests
-`act_*`, 3 harnais Kani vérifiés, et sur silicium un ordre non habilité, expiré, rejoué, à
+`act_*` (17 aujourd'hui), 15 harnais Kani d'actionnement vérifiés (3 quand écrit), et sur silicium un ordre non habilité, expiré, rejoué, à
 capteur perdu, à 1 000 N et à NaN sont tous refusés (`evidence/silicon/2026-10-06/ef/REPORT.md`).
 Sur un équipement Modbus réel : **4 décisions « agir » = 4 trames émises = 4 écritures sur le
 bus**, octet pour octet, tandis que **12 refus de la porte** (ses six raisons), 1 ordre malformé
@@ -212,15 +212,15 @@ intégrateur qui ne lit que la spécification ne voit aucune de ces neuf limites
 | L5 | Horodatage dérivable du GPS → rejeu (#13860) | ARDU | Pas d'horloge : `boot_id` + compteur persisté | **prouvé** |
 | L6 | 1 à 4 messages exemptés, variables selon l'autopilote | SPEC, PX4, ARDU | Aucune exemption (`ttl`/`hops` en plage) | **prouvé** |
 | L7 | Aucune rotation, aucune révocation, rien en vol | PX4, ARDU | ORV1 signée, époque, appliquée par relais, persistée | **prouvé** |
-| L8 | N'autorise pas **par commande** | PX4 | Porte à 9 conditions, atteinte depuis un `V2_EXTENSION` (B1) | **prouvé en logiciel**, rien sur PX4 SITL |
+| L8 | N'autorise pas **par commande** | PX4 | Porte à 9 conditions, atteinte depuis un `V2_EXTENSION` (B1) | **prouvé en logiciel et sur PX4 SITL** (5/5 le 2026-10-08, `evidence/silicon/2026-10-08/b1-sitl/` ; cette case disait « rien sur PX4 SITL » jusqu'au 2026-10-11) |
 | L9 | Pas de modèle de menace dans la spécification | SPEC | `docs/specs/` : modèle de menace par spécification | **prouvé** |
 
 **Et le manque qui annule la démonstration commerciale :**
 
-| B1 | **Aucune intégration MAVLink n'est testée** | — | PX4 SITL est déjà utilisé dans le dépôt (mission 4 points, tenue d'altitude à ±6 cm) ; transporter un ordre OASIS signé dans un message MAVLink et le faire vérifier par la porte avant exécution reste à faire | **absent** |
+| B1 | **Intégration MAVLink testée sur SITL depuis le 2026-10-08** (`mavlink_order.rs`, 5/5 ; cette ligne disait « aucune » jusqu'au 2026-10-11) | — | PX4 SITL est déjà utilisé dans le dépôt (mission 4 points, tenue d'altitude à ±6 cm) ; transporter un ordre OASIS signé dans un message MAVLink et le faire vérifier par la porte avant exécution reste à faire | **absent** |
 
 C'est la seule ligne de ce tableau qui compte pour une vente côté drones : **neuf réponses
-prouvées sur un banc filaire ne valent rien sans la dixième démonstration, sur PX4.** Le travail
+prouvées sur un banc filaire ne valent rien sans la dixième démonstration, sur PX4.** *(Faite le 2026-10-08 sur PX4 SITL, 5/5 — `evidence/silicon/2026-10-08/b1-sitl/` ; simulation, pas de Pixhawk. Ce paragraphe la disait manquante jusqu'au 2026-10-11.)* Le travail
 est cadré en phase 3 du prompt.
 
 ## 4. Ce que ce document ne permet pas de dire

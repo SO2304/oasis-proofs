@@ -33,5 +33,5 @@ Le bundle n'est pas dans le dépôt (il contient le dépôt). Il est dans l'espa
 Scan du 11 octobre : aucune graine, clé privée ni configuration client trouvée dans l'historique (`our_seed`, `seed`,
 `private_key`, fichiers `.seed`/`.pem`). Les configurations de campagne ne contiennent que des clés publiques et des
 chemins de graines hors dépôt. Les fichiers `mesh/shared/*_fed.bin` (état de fédération du 5 octobre, baseline
-`d8681c5`) sont dans l'historique public ; s'ils contenaient une clé, elle est à considérer comme brûlée et à ne jamais
+`d8681c5`) sont dans l'historique, public jusqu'au 11 octobre 2026 ; s'ils contenaient une clé, elle est à considérer comme brûlée et à ne jamais
 réutiliser.

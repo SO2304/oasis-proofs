@@ -91,8 +91,8 @@ négatif** : avec l'ancien affichage remis en place, **4 tests sur 5 échouent**
 `Act`, était déjà correct. Le fichier restauré est identique octet pour octet à la version
 corrigée.
 
-⚠️ Le binaire corrigé (`460f25a8…`) n'a **pas** été exécuté sur PC2 : PC2 s'était mis en
-veille (§5).
+⚠️ Le binaire corrigé (`460f25a8…`) n'a **pas** été exécuté sur PC2 : PC2 avait cessé de
+répondre (§5 — **pas une veille** : NetworkManager retirait l'adresse du câble, voir l'erratum du §8).
 
 ## 4. Pourquoi ce n'est pas un détail
 

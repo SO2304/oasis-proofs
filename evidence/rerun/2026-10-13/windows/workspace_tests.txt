@@ -1,0 +1,1805 @@
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-operator-key\src\lib.rs:279:7
+    |
+279 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: expected names are: `docsrs`, `feature`, and `test` and 31 more
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+    = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: `oasis-operator-key` (lib) generated 1 warning
+   Compiling oasis-rt v0.3.0 (C:\dev\oasis\oasis-rt)
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\branching.rs:107:7
+    |
+107 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: expected names are: `docsrs`, `feature`, and `test` and 31 more
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+    = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\dreams.rs:211:7
+    |
+211 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\efference.rs:176:7
+    |
+176 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\emotion.rs:439:7
+    |
+439 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\federation.rs:618:7
+    |
+618 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\hal.rs:235:7
+    |
+235 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\hyper_state.rs:378:7
+    |
+378 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\morpho.rs:195:7
+    |
+195 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unused import: `crate::vec::*`
+ --> oasis-rt\src\morpho.rs:6:5
+  |
+6 | use crate::vec::*;
+  |     ^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\reflex.rs:108:7
+    |
+108 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\spinal.rs:395:7
+    |
+395 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\actions.rs:188:7
+    |
+188 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\actuation.rs:336:7
+    |
+336 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\actuation\timeview.rs:111:7
+    |
+111 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\authority.rs:335:7
+    |
+335 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\enrollment.rs:254:7
+    |
+254 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\firmware.rs:143:7
+    |
+143 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\fragment.rs:214:7
+    |
+214 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\journal.rs:406:7
+    |
+406 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+    --> oasis-rt\src\mesh.rs:1496:7
+     |
+1496 | #[cfg(kani)]
+     |       ^^^^
+     |
+     = help: consider using a Cargo feature instead
+     = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+              [lints.rust]
+              unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+     = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+     = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\mesh\prefilter.rs:436:7
+    |
+436 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\mesh_revocation.rs:377:7
+    |
+377 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\modbus_gateway.rs:444:7
+    |
+444 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\modbus_read\mod.rs:307:7
+    |
+307 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\modbus_tcp.rs:228:7
+    |
+228 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\ownership.rs:282:7
+    |
+282 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\parameters.rs:364:7
+    |
+364 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\quorum.rs:211:7
+    |
+211 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\sealed.rs:162:7
+    |
+162 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\services.rs:175:7
+    |
+175 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unused import: `crate::vec::*`
+  --> oasis-rt\src\spore.rs:13:5
+   |
+13 | use crate::vec::*;
+   |     ^^^^^^^^^^^^^
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\timers.rs:270:7
+    |
+270 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\topics.rs:155:7
+    |
+155 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\transforms.rs:185:7
+    |
+185 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\tx_lease.rs:204:7
+    |
+204 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\mavlink_order.rs:288:7
+    |
+288 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\synapse.rs:418:7
+    |
+418 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\tension.rs:244:7
+    |
+244 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-rt\src\world_model.rs:241:7
+    |
+241 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unused variable: `persistence`
+   --> oasis-rt\src\efference.rs:109:13
+    |
+109 |         let persistence = if severity != Severity::Nominal {
+    |             ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_persistence`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `agent_count`
+   --> oasis-rt\src\federation.rs:116:59
+    |
+116 |     pub fn propagate(&mut self, synapses: &mut [Synapse], agent_count: usize, entropies: &[f64]) -> u32 {
+    |                                                           ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_agent_count`
+
+warning: unused variable: `before`
+   --> oasis-rt\src\federation.rs:567:13
+    |
+567 |         let before = self.digest_count();
+    |             ^^^^^^ help: if this is intentional, prefix it with an underscore: `_before`
+
+warning: unused variable: `handlers`
+   --> oasis-rt\src\spinal.rs:152:17
+    |
+152 |             let handlers = block.lines().find(|l| l.starts_with("H: Handlers=")).unwrap_or("");
+    |                 ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_handlers`
+
+   Compiling oasis-secure-element v0.1.0 (C:\dev\oasis\oasis-secure-element)
+warning: unused variable: `w_before`
+   --> oasis-rt\src\dreams.rs:281:13
+    |
+281 |         let w_before = net.synapses[0].weight;
+    |             ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_w_before`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `persistence`
+   --> oasis-rt\src\efference.rs:109:13
+    |
+109 |         let persistence = if severity != Severity::Nominal {
+    |             ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_persistence`
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-secure-element\src\lib.rs:118:7
+    |
+118 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: expected names are: `docsrs`, `feature`, and `test` and 31 more
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+    = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: `oasis-secure-element` (lib) generated 1 warning
+   Compiling oasis-trl-harness v0.1.0 (C:\dev\oasis\oasis-trl-harness)
+warning: unused variable: `role_before`
+   --> oasis-rt\src\morpho.rs:281:13
+    |
+281 |         let role_before = engine.get_role(0);
+    |             ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_role_before`
+
+warning: unused variable: `role_after`
+   --> oasis-rt\src\morpho.rs:288:13
+    |
+288 |         let role_after = engine.get_role(0);
+    |             ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_role_after`
+
+warning: unexpected `cfg` condition name: `kani`
+   --> oasis-trl-harness\src\lib.rs:239:7
+    |
+239 | #[cfg(kani)]
+    |       ^^^^
+    |
+    = help: expected names are: `docsrs`, `feature`, and `test` and 31 more
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(kani)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+    = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: variable does not need to be mutable
+   --> oasis-rt\src\actuation\tests.rs:187:9
+    |
+187 |     let mut run = |env: &[u8], origin: [u8; 8], c: &mut MeshRouter, act: &mut Actuator| -> Decision {
+    |         ----^^^
+    |         |
+    |         help: remove this `mut`
+    |
+    = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+   --> oasis-rt\src\journal\tests.rs:201:9
+    |
+201 |     let mut record = |a: &mut Actuator, j: &mut Journal, v: &mut std::vec::Vec<[u8; ENTRY_LEN]>, i: GateInput| {
+    |         ----^^^^^^
+    |         |
+    |         help: remove this `mut`
+
+warning: `oasis-trl-harness` (lib) generated 1 warning
+warning: function `reset_rate_limiter_for_tests` is never used
+   --> oasis-rt\src\spore.rs:396:15
+    |
+396 | pub(crate) fn reset_rate_limiter_for_tests() {
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused `Result` that must be used
+   --> oasis-rt\src\nav.rs:156:9
+    |
+156 |         nav.add_obstacle(obs, 8.0, 0.8);
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: this `Result` may be an `Err` variant, which should be handled
+    = note: `#[warn(unused_must_use)]` (part of `#[warn(unused)]`) on by default
+help: use `let _ = ...` to ignore the resulting value
+    |
+156 |         let _ = nav.add_obstacle(obs, 8.0, 0.8);
+    |         +++++++
+
+warning: unused `Result` that must be used
+   --> oasis-rt\src\nav.rs:191:9
+    |
+191 |         nav.add_obstacle(o1, 5.0, 1.0);
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: this `Result` may be an `Err` variant, which should be handled
+help: use `let _ = ...` to ignore the resulting value
+    |
+191 |         let _ = nav.add_obstacle(o1, 5.0, 1.0);
+    |         +++++++
+
+warning: unused `Result` that must be used
+   --> oasis-rt\src\nav.rs:192:9
+    |
+192 |         nav.add_obstacle(o2, 5.0, 1.0);
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: this `Result` may be an `Err` variant, which should be handled
+help: use `let _ = ...` to ignore the resulting value
+    |
+192 |         let _ = nav.add_obstacle(o2, 5.0, 1.0);
+    |         +++++++
+
+warning: unused `Result` that must be used
+   --> oasis-rt\src\nav.rs:218:13
+    |
+218 |             nav.add_obstacle(o, 2.0, 0.5);
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: this `Result` may be an `Err` variant, which should be handled
+help: use `let _ = ...` to ignore the resulting value
+    |
+218 |             let _ = nav.add_obstacle(o, 2.0, 0.5);
+    |             +++++++
+
+warning: `oasis-rt` (lib) generated 43 warnings (run `cargo fix --lib -p oasis-rt` to apply 6 suggestions)
+   Compiling oasis-operator-key v0.1.0 (C:\dev\oasis\oasis-operator-key)
+warning: variable does not need to be mutable
+  --> oasis-rt\src\bin\sim_200_drones.rs:51:9
+   |
+51 |     let mut rnd_f = |r: &mut dyn FnMut() -> u64| -> f64 { (r() >> 11) as f64 / ((1u64 << 53) as f64) };
+   |         ----^^^^^
+   |         |
+   |         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `fp` is never read
+  --> oasis-rt\src\bin\sim_200_drones.rs:55:9
+   |
+54 |     struct Drone {
+   |            ----- field in this struct
+55 |         fp: [u8; FP_LEN],
+   |         ^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `oasis-operator-key` (lib test) generated 1 warning (1 duplicate)
+warning: `oasis-rt` (bin "sim_200_drones") generated 2 warnings (run `cargo fix --bin "sim_200_drones" -p oasis-rt` to apply 1 suggestion)
+warning: `oasis-rt` (bin "sim_200_drones" test) generated 1 warning (1 duplicate)
+warning: variable does not need to be mutable
+  --> oasis-rt\src\bin\bench_mechanisms_soak.rs:56:9
+   |
+56 |     let mut reflex_g = AdaptiveReflex::new(2.0);
+   |         ----^^^^^^^^
+   |         |
+   |         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+  --> oasis-rt\src\bin\bench_mechanisms_soak.rs:57:9
+   |
+57 |     let mut reflex_m = AdaptiveReflex::new(2.0);
+   |         ----^^^^^^^^
+   |         |
+   |         help: remove this `mut`
+
+warning: `oasis-rt` (bin "bench_mechanisms_soak" test) generated 2 warnings (run `cargo fix --bin "bench_mechanisms_soak" -p oasis-rt --tests` to apply 2 suggestions)
+warning: `oasis-trl-harness` (lib test) generated 1 warning (1 duplicate)
+warning: `oasis-secure-element` (lib test) generated 1 warning (1 duplicate)
+warning: `oasis-rt` (lib test) generated 52 warnings (41 duplicates) (run `cargo fix --lib -p oasis-rt --tests` to apply 6 suggestions)
+warning: fields `envelopes_lost`, `cap_hits`, and `revocations_issued` are never read
+  --> oasis-trl-harness\examples\long_soak_24h.rs:45:5
+   |
+42 | struct HourCheckpoint {
+   |        -------------- fields in this struct
+...
+45 |     envelopes_lost: u64,
+   |     ^^^^^^^^^^^^^^
+...
+48 |     cap_hits: u32,
+   |     ^^^^^^^^
+49 |     revocations_issued: u32,
+   |     ^^^^^^^^^^^^^^^^^^
+   |
+   = note: `HourCheckpoint` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `oasis-trl-harness` (example "long_soak_24h") generated 1 warning
+warning: unused import: `VitalityLevel`
+  --> oasis-rt\src\main.rs:19:36
+   |
+19 | use oasis_rt::vitality::{Vitality, VitalityLevel, VitalityState};
+   |                                    ^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `rns`
+   --> oasis-rt\src\main.rs:339:13
+    |
+339 |         let rns = r0.elapsed().as_nanos() as u64;
+    |             ^^^ help: if this is intentional, prefix it with an underscore: `_rns`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: constant `POLL_SECS` is never used
+  --> oasis-rt\src\main.rs:29:7
+   |
+29 | const POLL_SECS: u64 = 3;
+   |       ^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+  --> oasis-trl-harness\examples\probe_bloom_msg_id.rs:79:9
+   |
+79 |     let mut frozen_at: Option<u64> = None;
+   |         ----^^^^^^^^^
+   |         |
+   |         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: `oasis-trl-harness` (example "probe_bloom_msg_id") generated 1 warning (run `cargo fix --example "probe_bloom_msg_id" -p oasis-trl-harness` to apply 1 suggestion)
+warning: field `file` is never read
+  --> oasis-trl-harness\examples\audit_lint.rs:21:5
+   |
+20 | struct Finding {
+   |        ------- field in this struct
+21 |     file: PathBuf,
+   |     ^^^^
+   |
+   = note: `Finding` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `oasis-trl-harness` (example "audit_lint") generated 1 warning
+warning: `oasis-rt` (bin "oasis-rt") generated 3 warnings (run `cargo fix --bin "oasis-rt" -p oasis-rt` to apply 2 suggestions)
+warning: `oasis-rt` (bin "bench_mechanisms_soak") generated 2 warnings (2 duplicates)
+warning: fields `name` and `fp` are never read
+  --> oasis-trl-harness\examples\full_system_soak.rs:40:5
+   |
+39 | struct Node {
+   |        ---- fields in this struct
+40 |     name: &'static str,
+   |     ^^^^
+41 |     fp: [u8; 8],
+   |     ^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `oasis-trl-harness` (example "full_system_soak") generated 1 warning
+warning: struct `DaySnapshot` is never constructed
+  --> oasis-trl-harness\examples\long_soak_7d.rs:39:8
+   |
+39 | struct DaySnapshot {
+   |        ^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `oasis-trl-harness` (example "long_soak_7d") generated 1 warning
+warning: `oasis-rt` (bin "oasis-rt" test) generated 3 warnings (3 duplicates)
+    Finished `release` profile [optimized] target(s) in 6m 32s
+     Running unittests src\lib.rs (target\release\deps\oasis_operator_key-2e4235a04e4af20f.exe)
+
+running 7 tests
+test tests::locked_rejects_everything ... ok
+test tests::rotation_swaps_authority_only_when_signed_by_current ... ok
+test tests::multisig_3_of_5_rejects_2_distinct_signers ... ok
+test tests::multisig_rejects_duplicate_signer ... ok
+test tests::single_authority_rejects_unknown_signer ... ok
+test tests::single_authority_verifies_legit_sig ... ok
+test tests::multisig_3_of_5_accepts_3_distinct ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\mesh_revocation.rs (target\release\deps\mesh_revocation-a97aa0e19838c13e.exe)
+
+running 3 tests
+test rev_single_operator_authority ... ok
+test rev_k_of_n_quorum ... ok
+test rev_quorum_rejects_duplicate_and_outsider_signers ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\lib.rs (target\release\deps\oasis_rt-30a8de06019083a1.exe)
+
+running 681 tests
+test actions::tests::cancel_mid_action_sequence ... ok
+test actions::tests::cancel_roundtrip ... ok
+test actions::tests::feedback_roundtrip ... ok
+test actions::tests::goal_feedback_result_sequence_example ... ok
+test actions::tests::parse_rejects_bad_magic ... ok
+test actions::tests::goal_roundtrip ... ok
+test actions::tests::parse_rejects_truncated ... ok
+test actions::tests::result_aborted_roundtrip ... ok
+test actions::tests::result_canceled_roundtrip ... ok
+test actions::tests::result_succeeded_roundtrip ... ok
+test actuation::tests::act_expired ... ok
+test actuation::tests::act_far_future_deadline ... ok
+test actuation::tests::act_formats_roundtrip ... ok
+test actuation::tests::act_nan_setpoint_rejected ... ok
+test actuation::tests::act_needs_a_live_beacon_and_stop_does_not ... ok
+test actuation::tests::act_not_verified ... ok
+test actuation::tests::act_oac1_reserved_bytes_must_be_zero ... ok
+test actuation::tests::act_out_of_limits ... ok
+test actuation::tests::act_rejection_counters ... ok
+test actuation::tests::act_r14_unsafe_sensor_loss ... ok
+test actuation::tests::act_reordered_older ... ok
+test actuation::tests::act_replayed ... ok
+test actuation::tests::act_revoked_origin ... ok
+test actuation::tests::act_unauthorized_origin ... ok
+test actuation::tests::act_valid_executes_exactly_once ... ok
+test actuation::tests::act_wrong_boot_id ... ok
+test actuation::tests::act_end_to_end_over_v0b ... ok
+test actuation::tests::beacon_replay_and_rollback_are_refused ... ok
+test actuation::tests::beacon_validity_is_bounded_and_cannot_wrap ... ok
+test actuation::tests::oas1_actuator_zero_addresses_every_actuator ... ok
+test actuation::tests::oas1_decides_like_an_oac1_stop ... ok
+test actuation::tests::oas1_is_43_bytes_shorter_than_oac1 ... ok
+test actuation::tests::oas1_roundtrip_and_parser_is_strict ... ok
+test actuation::tests::osb1_roundtrip_and_parser_is_strict ... ok
+test actuation::tests::parse_oac1_accepts_act_only ... ok
+test actuation::tests::stop_is_idempotent ... ok
+test actuation::tests::stop_is_not_blocked_by_anything_that_blocks_an_act ... ok
+test actuation::tests::stop_keeps_its_three_conditions ... ok
+test actuation::tests::stop_latches_and_only_a_local_action_clears_it ... ok
+test actuation::tests::stop_order_class_is_on_the_wire_and_signed_bytes_differ ... ok
+test actuation::tests::stopped_is_not_leaked_to_an_untrusted_sender ... ok
+test actuation::tests::supervision_is_an_explicit_choice_not_a_silent_default ... ok
+test actuation::timeview::tests::tv_a_new_boot_replaces_the_view_and_a_replay_does_not ... ok
+test actuation::timeview::tests::tv_estimation_errors_only_ever_refuse ... ok
+test actuation::timeview::tests::tv_order_stamped_from_a_view_is_accepted_and_a_stale_boot_is_not ... ok
+test actuation::timeview::tests::tv_otm1_roundtrip_feeds_a_view ... ok
+test actuation::timeview::tests::tv_refuses_a_local_clock_that_went_backwards ... ok
+test actuation::timeview::tests::tv_refuses_a_stale_view ... ok
+test actuation::timeview::tests::tv_refuses_a_validity_the_gate_would_refuse ... ok
+test actuation::timeview::tests::tv_stamps_in_the_actuator_clock ... ok
+test actions::tests::bench_action_envelope_construction ... ok
+test audio::tests::loud_signal_has_high_energy ... ok
+test audio::tests::noise_has_high_spectral_entropy ... ok
+test audio::tests::low_freq_outside_voice_band ... ok
+test audio::tests::pitch_finds_dominant_frequency ... ok
+test audio::tests::onset_detection_fires_on_change ... ok
+test audio::tests::projection_fills_correct_dims ... ok
+test audio::tests::silence_has_zero_energy ... ok
+test authority::tests::pq_acvp_mldsa44_sigver_official_vectors ... ok
+test authority::tests::pq_downgrade_refused_before_signature_check ... ok
+test audio::tests::voice_band_detected_for_speech_freq ... ok
+test audio::tests::pure_tone_has_lower_entropy_than_noise ... ok
+test authority::tests::pq_hybrid_requires_both_signatures ... ok
+test authority::tests::pq_hybrid_revocation_applies_through_existing_rules ... ok
+test authority::tests::pq_hybrid_valid_accepted ... ok
+test authority::tests::pq_mldsa44_matches_libcrux_byte_for_byte ... ok
+test authority::tests::pq_parse_never_panics_on_prefixes_and_garbage ... ok
+test authority::tests::pq_policy_monotone_and_persisted ... ok
+test authority::tests::pq_policy_two_slots_merge_to_the_strongest ... ok
+test authority::tests::pq_policy_update_message_is_hybrid_only ... ok
+test authority::tests::pq_precheck_refuses_unknown_kind_and_suite ... ok
+test authority::tests::pq_sizes_match_spec ... ok
+test authority::tests::pq_suite_relabel_in_transit_refused ... ok
+test authority::tests::pq_unknown_and_reserved_suites_refused ... ok
+test branching::tests::branches_produce_different_scores ... ok
+test branching::tests::goal_biases_toward_goal ... ok
+test authority::tests::pq_wrong_network_refused ... ok
+test branching::tests::invariant_all_fitness_scores_in_unit_interval ... ok
+test branching::tests::invariant_best_direction_is_from_hypothesis_set ... ok
+test branching::tests::invariant_best_fitness_is_true_argmax ... ok
+test branching::tests::invariant_branching_is_deterministic ... ok
+test branching::tests::invariant_fitness_never_negative_or_nan ... ok
+test branching::tests::more_branches_better_or_equal_fitness ... ok
+test branching::tests::pressure_repels ... ok
+test dreams::tests::counterfactual_imagination ... ok
+test dreams::tests::dream_strengthens_on_positive ... ok
+test dreams::tests::dream_weakens_on_negative ... ok
+test dreams::tests::invariant_dreams_fire_at_sustained_high_entropy ... ok
+test dreams::tests::evicts_weakest_when_full ... ok
+test dreams::tests::invariant_ema_tracks_stable_entropy ... ok
+test dreams::tests::invariant_force_trigger_updates_last_dream_tick ... ok
+test dreams::tests::invariant_min_interval_rate_limits_opportunistic ... ok
+test dreams::tests::records_experiences ... ok
+test dreams::tests::invariant_opportunistic_triggers_on_entropy_drop ... ok
+test efference::tests::dysmorphia_on_catastrophic_error ... ok
+test efference::tests::invariant_pain_always_bounded_0_to_5 ... ok
+test efference::tests::invariant_pain_converges_to_fixed_point ... ok
+test efference::tests::invariant_pain_decays_exponentially_when_nominal ... ok
+test efference::tests::invariant_responsivity_learning_converges_toward_truth ... ok
+test efference::tests::invariant_severity_monotonic_in_magnitude ... ok
+test efference::tests::multiple_drivers_independent ... ok
+test efference::tests::no_result_without_prediction ... ok
+test efference::tests::nominal_when_prediction_matches ... ok
+test efference::tests::pain_accumulates_and_decays ... ok
+test efference::tests::resistance_on_moderate_error ... ok
+test emotion::tests::curiosity_in_moderate_entropy ... ok
+test emotion::tests::fear_near_pain ... ok
+test emotion::tests::fear_saturates_at_5x ... ok
+test emotion::tests::fear_suppresses_curiosity ... ok
+test emotion::tests::no_std_config_pattern_works ... ok
+test emotion::tests::pain_memory_roundtrip ... ok
+test emotion::tests::starts_calm ... ok
+test emotion::tests::pain_rejects_corrupt ... ok
+test enrollment::tests::enr_parse_never_panics ... ok
+test enrollment::tests::enr_parse_roundtrip_and_rejects ... ok
+test enrollment::tests::enr_record_roundtrip_corruption_and_slots ... ok
+test enrollment::tests::enr_transition_rules ... ok
+test enrollment::tests::enr_signed_attestation_end_to_end ... ok
+test enrollment::tests::enr_registry_full ... ok
+test federation::tests::digest_deduplication ... ok
+test federation::tests::ed25519_rejects_tampered ... ok
+test federation::tests::ed25519_signing_roundtrip ... ok
+test federation::tests::load_dedup_and_corrupt ... ok
+test federation::tests::merge_foreign_attenuates ... ok
+test federation::tests::save_empty_and_sparse ... ok
+test federation::tests::save_load_roundtrip ... ok
+test federation::tests::signed_rejects_tampered ... ok
+test federation::tests::trust_gating_and_bounds ... ok
+test federation::tests::signed_roundtrip_same_key ... ok
+test federation::tests::transport_roundtrip_in_memory ... ok
+test firmware::tests::fw_codec_and_header ... ok
+test firmware::tests::fw_install_rule_each_refusal ... ok
+test fragment::tests::frag_in_order_roundtrip ... ok
+test fragment::tests::frag_inconsistent_header_cancels_slot ... ok
+test fragment::tests::frag_limits ... ok
+test fragment::tests::frag_missing_fragment_never_completes_and_times_out ... ok
+test fragment::tests::frag_new_message_from_same_origin_replaces_old ... ok
+test fragment::tests::frag_out_of_order_and_duplicates ... ok
+test fragment::tests::frag_parse_rejects_bad_headers ... ok
+test fragment::tests::frag_push_never_panics_on_garbage ... ok
+test fragment::tests::frag_tampered_chunk_fails_hash ... ok
+test fragment::tests::frag_third_origin_gets_no_slot ... ok
+test fragment::tests::frag_two_origins_interleaved ... ok
+test hal::tests::clamp_caps_force ... ok
+test hal::tests::clamp_caps_velocity ... ok
+test hal::tests::clamp_fails_closed_on_non_finite_input ... ok
+test hal::tests::encode_clamps_to_limits ... ok
+test hal::tests::encode_decode_locomotion ... ok
+test hal::tests::geofence_breach_zeros_all ... ok
+test hal::tests::inside_geofence_no_breach ... ok
+test hal::tests::kill_switch_idempotent ... ok
+test hal::tests::kill_switch_one_way ... ok
+test hal::tests::negative_force_clamps_correctly ... ok
+test hyper_state::tests::agent_at_anchor_has_zero_entropy ... ok
+test hyper_state::tests::agent_between_anchors_has_high_entropy ... ok
+test hyper_state::tests::collapse_finds_nearest_anchor ... ok
+test federation::tests::unsigned_loads_when_no_key ... ok
+test hyper_state::tests::damping_reduces_momentum ... ok
+test hyper_state::tests::entropy_bounded_0_1 ... ok
+test hyper_state::tests::evolve_changes_position ... ok
+test hyper_state::tests::evolve_conserves_with_zero_force ... ok
+test hyper_state::tests::inject_sensory_raises_entropy_with_novelty ... ok
+test hyper_state::tests::inject_sensory_recovers_at_rest ... ok
+test hyper_state::tests::isolated_anchor_has_low_entropy ... ok
+test hyper_state::tests::r14_blocks_high_entropy ... ok
+test hyper_state::tests::r14_boundary_strict ... ok
+test hyper_state::tests::r14_deterministic ... ok
+test hyper_state::tests::r14_monotonic_in_threshold ... ok
+test hyper_state::tests::sensory_entropy_responds_to_novelty ... ok
+test identity::tests::id_conditioning_and_rekey_are_deterministic_and_input_bound ... ok
+test identity::tests::id_health_accepts_balanced_and_refuses_stuck_or_biased ... ok
+test identity::tests::id_entropy_statistics ... ok
+test identity::tests::id_record_roundtrip_and_corruption ... ok
+test journal::tests::jrn_a_change_entry_still_enforces_the_reserved_bytes ... ok
+test journal::tests::jrn_a_change_entry_with_a_class_byte_is_not_canonical_and_is_refused ... ok
+test journal::tests::jrn_a_refused_change_is_recorded_and_distinguishable ... ok
+test journal::tests::jrn_an_unknown_change_kind_is_refused_not_defaulted ... ok
+test journal::tests::jrn_chain_is_bound_to_the_boot_id ... ok
+test identity::tests::id_proof_of_possession ... ok
+test journal::tests::jrn_chain_of_100_verifies ... ok
+test journal::tests::jrn_changes_and_decisions_share_one_intact_chain ... ok
+test journal::tests::jrn_deleted_entry_shows_a_seq_gap ... ok
+test journal::tests::jrn_empty_journal_is_intact ... ok
+test journal::tests::jrn_entry_roundtrip_and_parser_is_strict ... ok
+test journal::tests::jrn_every_decision_encodes_distinctly ... ok
+test journal::tests::jrn_inserted_entry_is_detected ... ok
+test journal::tests::jrn_every_byte_of_an_entry_is_chained ... ok
+test journal::tests::jrn_modified_entry_is_detected ... ok
+test journal::tests::jrn_power_cut_leaves_one_unconfirmed_entry ... ok
+test firmware::tests::fw_end_to_end_signed_manifests ... ok
+test journal::tests::jrn_records_refusals_as_well_as_acceptances ... ok
+test journal::tests::jrn_the_three_decision_regions_are_disjoint_over_the_whole_byte_space ... ok
+test journal::tests::jrn_truncated_journal_is_detected ... ok
+test mavlink_min::tests::accumulator_fires_on_px4_stream ... ok
+test mavlink_min::tests::accumulator_produces_valid_oasis_json ... ok
+test mavlink_min::tests::allowlist_boundary_link_ids ... ok
+test mavlink_min::tests::allowlist_rejects_disallowed_link ... ok
+test mavlink_min::tests::command_long_arm_encodes_correctly ... ok
+test mavlink_min::tests::crc_known_vector ... ok
+test mavlink_min::tests::encode_decode_roundtrip_set_position ... ok
+test mavlink_min::tests::encode_position_setpoint_roundtrip ... ok
+test mavlink_min::tests::encode_set_position_target_shape ... ok
+test mavlink_min::tests::heartbeat_roundtrip ... ok
+test mavlink_min::tests::param_set_encodes_correctly ... ok
+test mavlink_min::tests::param_value_parses_px4_response ... ok
+test mavlink_min::tests::parse_attitude_frame ... ok
+test mavlink_min::tests::parse_attitude_quaternion_identity ... ok
+test mavlink_min::tests::atomic_save_leaves_no_tmp_on_success ... ok
+test mavlink_min::tests::parse_command_ack ... ok
+test mavlink_min::tests::parse_local_position_ned ... ok
+test mavlink_min::tests::parse_rejects_bad_crc ... ok
+test mavlink_min::tests::parse_vfr_hud ... ok
+test mavlink_min::tests::replay_protection_accepts_fresh ... ok
+test mavlink_min::tests::replay_protection_isolates_link_ids ... ok
+test mavlink_min::tests::replay_protection_rejects_replay ... ok
+test mavlink_min::tests::require_signed_rejects_unsigned ... ok
+test mavlink_min::tests::replay_state_persistence_no_allowlist ... ok
+test mavlink_min::tests::set_mode_offboard_encodes_correctly ... ok
+test mavlink_min::tests::signing_roundtrip ... ok
+test mavlink_min::tests::signing_with_env_var ... ok
+test mavlink_min::tests::sys_status_decodes_health_flags ... ok
+test mavlink_min::tests::vfr_hud_does_not_override_local_alt ... ok
+test mavlink_order::tests::mo_b1_a_valid_order_arms ... ok
+test mavlink_order::tests::mo_class_byte_is_signed ... ok
+test mavlink_order::tests::mo_disarm_is_the_same_gate ... ok
+test mavlink_order::tests::mo_no_arm_frame_without_act ... ok
+test mavlink_order::tests::mo_survives_mavlink2_zero_truncation ... ok
+test mavlink_order::tests::mo_v2_extension_roundtrip_and_sizes ... ok
+test mavlink_min::tests::replay_state_persistence_roundtrip ... ok
+test mavlink_order::tests::mo_b1_forged_replayed_and_revoked_do_not_arm ... ok
+test mbtcp_conf::tests::a_scalar_key_given_twice_is_refused ... ok
+test mbtcp_conf::tests::an_unknown_key_is_refused_with_its_line_number ... ok
+test mbtcp_conf::tests::peer_pk_refuses_a_key_that_is_not_32_bytes ... ok
+test mbtcp_conf::tests::an_unreadable_timeout_or_gateway_id_is_refused_by_name ... ok
+test mbtcp_conf::tests::peer_pk_without_a_permission_grants_nothing ... ok
+test mbtcp_net::tests::a_zero_length_frame_is_refused ... ok
+test mbtcp_net::tests::an_oversized_length_prefix_is_refused_without_allocating ... ok
+test mbtcp_net::tests::an_oversized_payload_is_refused_before_sending ... ok
+test mbtcp_net::tests::frame_roundtrip_over_a_real_socket ... ok
+test mbtcp_conf::tests::peer_pk_is_equivalent_to_peer_without_the_private_seed ... ok
+test mbtcp_pilot::journal_sink::tests::a_first_start_moves_nothing ... ok
+test mbtcp_pilot::journal_sink::tests::a_head_cannot_steer_where_the_rename_lands ... ok
+test mbtcp_pilot::journal_sink::tests::a_restart_keeps_the_previous_boots_chain_byte_for_byte ... ok
+test mbtcp_pilot::journal_sink::tests::an_archive_is_never_overwritten ... ok
+test mbtcp_net::tests::modbus_exchange_reads_exactly_one_response ... ok
+test mbtcp_pilot::journal_sink::tests::retention_leaves_other_prefixes_and_other_files_alone ... ok
+test mbtcp_pilot::tests::exception_for_answers_even_a_truncated_frame ... ok
+test mbtcp_pilot::tests::seq_store_claims_on_disk_before_returning_and_never_repeats ... ok
+test mbtcp_pilot::tests::seq_store_refuses_a_corrupt_file ... ok
+test mbtcp_pilot::tests::seq_store_writes_once_per_lease_not_once_per_order ... ok
+test mesh::prefilter::tests::budget_backwards_clock_is_safe ... ok
+test mesh::prefilter::tests::budget_burst_then_sustained ... ok
+test mesh::prefilter::tests::budget_flood_is_capped ... ok
+test mesh::prefilter::tests::hmac_sha256_rfc4231_case2 ... ok
+test mesh::prefilter::tests::link_key_differs_per_peer_and_is_order_independent ... ok
+test mesh::prefilter::tests::link_key_is_symmetric ... ok
+test mesh::prefilter::tests::link_key_rejects_bad_peer_key ... ok
+test mesh::prefilter::tests::link_keys_derive_once_per_peer ... ok
+test mesh::prefilter::tests::tag_is_hop_invariant_preimage_key_variant ... ok
+test mesh::prefilter::tests::tag_roundtrip_and_tamper ... ok
+test mesh::prefilter::tests::v0c_budget_caps_before_ed25519 ... ok
+test mesh::prefilter::tests::v0c_insider_valid_tag_bad_signature_is_capped_by_the_budget ... ok
+test mesh::prefilter::tests::v0c_outsider_bad_tag_never_reaches_ed25519 ... ok
+test mesh::prefilter::tests::v0c_refuses_downgrade_to_v0b ... ok
+test mesh::prefilter::tests::v0c_relay_chain_a_b_c ... ok
+test mesh::prefilter::tests::v0c_replay_refused ... ok
+test mesh::tests::bloom_auto_reset_default_off ... ok
+test mesh::tests::bloom_auto_reset_fires_at_threshold ... ok
+test mesh::tests::bloom_auto_reset_preserves_short_term_dedup ... ok
+test mesh::tests::bloom_blocks_replay_beyond_dedup_cap ... ok
+test mesh::tests::bloom_capacity_estimate_matches_feature_flag ... ok
+test mesh::tests::bloom_health_snapshot_after_auto_reset ... ok
+test mesh::tests::bloom_health_snapshot_alert_fires_at_80pct ... ok
+test mesh::tests::bloom_health_snapshot_initial_state ... ok
+test mesh::tests::bloom_health_snapshot_tracks_inserts ... ok
+test mesh::tests::bloom_reset_clears_long_memory ... ok
+test mesh::tests::bloom_reset_count_monotonic ... ok
+test mesh::tests::bloom_snapshot_deserialize_rejects_bad_magic ... ok
+test mesh::tests::bloom_snapshot_deserialize_rejects_nonzero_reserved ... ok
+test mesh::tests::bloom_snapshot_deserialize_rejects_wrong_version ... ok
+test mesh::tests::bloom_snapshot_serialize_none_threshold_encodes_zero ... ok
+test mesh::tests::bloom_snapshot_serialize_roundtrip_preserves_fields ... ok
+test mesh::tests::bloom_snapshot_serialize_size_is_36 ... ok
+test mesh::tests::bloom_words_matches_feature_flag ... ok
+test mesh::tests::dedup_cache_evicts_oldest ... ok
+test mesh::tests::different_origins_produce_different_msg_ids ... ok
+test mesh::tests::hmac_sha256_8_matches_rfc_2104_shape ... ok
+test mesh::tests::inner_slice_zero_copy_view ... ok
+test mesh::tests::invariant_duplicate_msg_id_dropped ... ok
+test mesh::tests::invariant_forward_decrements_ttl_and_increments_hops ... ok
+test mesh::tests::invariant_hops_increase_along_chain ... ok
+test mesh::tests::invariant_inner_preserved_through_hops ... ok
+test mesh::tests::invariant_own_echo_dropped ... ok
+test mesh::tests::invariant_ttl_zero_is_terminal ... ok
+test mesh::tests::malformed_envelopes_drop_cleanly ... ok
+test mesh::tests::msg_id_unique_across_distinct_broadcasts ... ok
+test mesh::tests::origin_wrap_parse_roundtrip ... ok
+test mesh::tests::origin_wrap_with_matches_origin_wrap_byte_for_byte ... ok
+test mesh::tests::origin_wrap_with_returns_none_on_signed_router ... ok
+test mesh::tests::process_owned_fast_path_no_double_copy ... ok
+test mesh::tests::tx_counter_restore_prevents_origin_counter_reuse ... ok
+test mesh::tests::tx_counter_roundtrip_through_persistence ... ok
+test mesh::tests::tx_counter_without_restore_collides ... ok
+test mesh::tests::v0b_allow_legacy_is_explicit_opt_in ... ok
+test mbtcp_pilot::journal_sink::tests::retention_keeps_the_newest_archives_and_never_the_live_pair ... ok
+test mesh::tests::v0b_content_swap_rejected_real_still_passes ... ok
+test mesh::tests::v0b_foreign_network_rejected ... ok
+test mesh::tests::v0b_forged_origin_rejected ... ok
+test mesh::tests::v0b_immediate_replay_rejected ... ok
+test mesh::tests::v0b_invalid_then_valid_accepted ... ok
+test mesh::tests::v0b_reorder_within_window_accept_once ... ok
+test mesh::tests::v0b_replay_after_bloom_reset_rejected ... ok
+test mesh::tests::v0b_replay_after_reboot_rejected ... ok
+test mesh::tests::v0b_revoked_origin_rejected ... ok
+test mesh::tests::v0b_strict_router_rejects_legacy_downgrade ... ok
+test mesh::tests::v0b_ttl_inflation_bounded ... ok
+test mesh::tests::v10_inner_slice_zero_copy_view ... ok
+test mesh::tests::v10_pubkey_from_seed_matches_ed25519_compact ... ok
+test mesh::tests::v10_router_rejects_v8 ... ok
+test mesh::tests::v10_router_rejects_v9 ... ok
+test mesh::tests::v10_sig_tampering_rejected ... ok
+test mesh::tests::v10_signed_roundtrip_origin_to_hop ... ok
+test mesh::tests::v10_spoofed_origin_fp_rejected ... ok
+test mesh::tests::v10_unknown_sender_rejected ... ok
+test mesh::tests::v10_unsigned_router_rejects_v10 ... ok
+test mesh::tests::v10_wrong_pubkey_in_registry_rejected ... ok
+test mesh::tests::v9_inner_slice_zero_copy_view ... ok
+test mesh::tests::v9_origin_fp_spoofing_rejected ... ok
+test mesh::tests::v9_signed_roundtrip_origin_to_hop ... ok
+test mesh::tests::v9_signed_router_rejects_unsigned_v8 ... ok
+test mesh::tests::v9_tag_tampering_rejected ... ok
+test mesh::tests::v9_ttl_decrement_preserves_mac_through_chain ... ok
+test mesh::tests::v9_unsigned_router_rejects_v9 ... ok
+test mesh::tests::v9_wrong_key_rejected ... ok
+test mesh_revocation::tests::rev_blob_store_orders_orv1_and_oau1_by_epoch ... ok
+test mesh_revocation::tests::rev_counter_revocation_by_revoked_node_rejected ... ok
+test mesh_revocation::tests::rev_disconnected_relay_catches_up ... ok
+test mesh_revocation::tests::rev_oep1_roundtrip ... ok
+test mesh_revocation::tests::rev_old_epoch_rejected ... ok
+test mesh_revocation::tests::rev_parse_rejects_noncanonical ... ok
+test mesh_revocation::tests::rev_persisted_across_reboot ... ok
+test mesh_revocation::tests::rev_shrinking_list_rejected ... ok
+test mesh::tests::v0b_bitflip_each_signed_byte_rejected ... ok
+test mesh_revocation::tests::rev_then_revoked_origin_dropped_before_signature ... ok
+test mesh_revocation::tests::rev_torn_blob_write_keeps_previous_list ... ok
+test mesh_revocation::tests::rev_valid_list_applied ... ok
+test mesh_revocation::tests::rev_wrong_key_rejected_state_unchanged ... ok
+test mesh_revocation::tests::rev_wrong_network_rejected ... ok
+test modbus_gateway::tests::mb_a_span_must_lie_entirely_in_the_origin_map ... ok
+test modbus_gateway::tests::mb_adding_a_rule_for_one_origin_does_not_widen_another ... ok
+test modbus_gateway::tests::mb_an_origin_without_its_own_map_falls_back_to_the_shared_one ... ok
+test modbus_gateway::tests::mb_crc_catalogue_check_value ... ok
+test modbus_gateway::tests::mb_dead_supervision_refuses_and_emits_no_frame ... ok
+test modbus_gateway::tests::mb_device_exception_reported ... ok
+test modbus_gateway::tests::mb_each_gate_condition_blocks_the_frame ... ok
+test modbus_gateway::tests::mb_each_origin_is_confined_to_its_own_registers ... ok
+test modbus_gateway::tests::mb_end_to_end_over_v0b ... ok
+test modbus_gateway::tests::mb_frames_applied_by_rmodbus ... ok
+test modbus_gateway::tests::mb_gateway_replay_and_counters ... ok
+test modbus_gateway::tests::mb_latched_stop_refuses_and_emits_no_frame ... ok
+test modbus_gateway::tests::mb_omb1_rejects_malformed ... ok
+test modbus_gateway::tests::mb_omb1_roundtrip ... ok
+test modbus_gateway::tests::mb_register_rules ... ok
+test modbus_gateway::tests::mb_response_checks ... ok
+test modbus_gateway::tests::mb_the_range_is_per_origin_as_well_as_the_address ... ok
+test modbus_read::tests::rd_a_listed_span_is_allowed_and_frames_exactly_it ... ok
+test modbus_read::tests::rd_a_span_wrapping_the_address_space_is_refused ... ok
+test modbus_read::tests::rd_an_unlisted_register_refuses_the_whole_span_and_frames_nothing ... ok
+test modbus_read::tests::rd_check_read_response_rejects_a_mismatched_or_short_answer ... ok
+test modbus_read::tests::rd_hmi_read_response_echoes_the_transaction_and_the_values ... ok
+test modbus_read::tests::rd_omq1_roundtrips_and_the_parser_is_total ... ok
+test modbus_read::tests::rd_omv1_roundtrips_and_refuses_a_count_that_lies ... ok
+test modbus_read::tests::rd_parse_tcp_read_accepts_fc03_and_fc04_and_nothing_else ... ok
+test modbus_read::tests::rd_wrong_gateway_unit_fc_and_count_are_each_refused_by_name ... ok
+test modbus_tcp::tests::mbtcp_each_refusal_builds_no_frame ... ok
+test modbus_tcp::tests::mbtcp_end_to_end_hmi_agent_gateway_plc ... ok
+test modbus_tcp::tests::mbtcp_frames_applied_by_rmodbus ... ok
+test modbus_tcp::tests::mbtcp_hmi_responses ... ok
+test modbus_tcp::tests::mbtcp_parse_hmi_writes ... ok
+test modbus_tcp::tests::mbtcp_parse_rejects_malformed ... ok
+test modbus_tcp::tests::mbtcp_response_checks ... ok
+test morpho::tests::differentiates_scout_in_unknown ... ok
+test morpho::tests::differentiates_under_threat ... ok
+test morpho::tests::invariant_agent_count_conserved ... ok
+test morpho::tests::invariant_churn_rate_decreases_under_constant_pressure ... ok
+test morpho::tests::invariant_commitment_bounded_0_to_1 ... ok
+test morpho::tests::invariant_diversity_grows_with_mixed_needs ... ok
+test morpho::tests::invariant_stem_is_terminal_once_left ... ok
+test morpho::tests::no_stem_after_differentiation ... ok
+test morpho::tests::redifferentiation_on_poor_performance ... ok
+test morpho::tests::role_diversity_with_mixed_needs ... ok
+test morpho::tests::starts_as_stem ... ok
+test mesh_revocation::tests::rev_tampered_byte_rejected ... ok
+test nav::tests::empty_plan_returns_start ... ok
+test nav::tests::goal_convergence ... ok
+test nav::tests::instantaneous_control_points_toward_goal ... ok
+test nav::tests::instantaneous_control_zero_at_no_goal ... ok
+test nav::tests::multiple_obstacles_compose ... ok
+test nav::tests::obstacle_avoidance ... ok
+test nerve::tests::afferent_lifecycle ... ok
+test nerve::tests::cmd_clamps ... ok
+test nerve::tests::dimension_map_no_overlap ... ok
+test nerve::tests::efferent_cooldown_and_threshold ... ok
+test nerve::tests::nervous_system_entropy ... ok
+test nerve::tests::parse_gps_full ... ok
+test nerve::tests::parse_imu_roundtrip ... ok
+test nerve::tests::parse_mag_and_steps ... ok
+test ownership::tests::own_acceptance_without_offer_and_forged_offers ... ok
+test ownership::tests::own_codec_roundtrip_and_sizes ... ok
+test ownership::tests::own_needs_resign_before_a_second_transfer ... ok
+test ownership::tests::own_record_roundtrip_corruption_and_slots ... ok
+test mbtcp_net::tests::a_silent_peer_times_out ... ok
+test ownership::tests::own_transfer_needs_both_owners ... ok
+test parameters::tests::bool_and_string_and_bytes_roundtrip ... ok
+test parameters::tests::declare_clamps_initial_value ... ok
+test parameters::tests::declare_then_get_roundtrip ... ok
+test parameters::tests::declare_twice_fails ... ok
+test parameters::tests::float_clamps_to_descriptor_bounds ... ok
+test parameters::tests::int_clamps_to_descriptor_bounds ... ok
+test parameters::tests::list_keys_is_sorted ... ok
+test parameters::tests::set_type_mismatch_rejects_and_keeps_version ... ok
+test parameters::tests::set_unknown_key_rejected ... ok
+test parameters::tests::set_updates_value_and_bumps_version ... ok
+test quorum::tests::q_end_to_end_two_of_three ... ok
+test quorum::tests::q_gate_refuses_without_a_quorum_and_says_why ... ok
+test quorum::tests::q_quorum_does_not_override_the_rest ... ok
+test quorum::tests::q_quorum_is_bound_to_the_network ... ok
+test quorum::tests::q_quorum_is_not_leaked_to_an_untrusted_sender ... ok
+test quorum::tests::q_roundtrip_and_parser_is_strict ... ok
+test quorum::tests::q_signatures_are_bound_to_the_order ... ok
+test quorum::tests::q_sizes_do_not_fit_one_radio_frame ... ok
+test parameters::tests::bench_get_float_latency ... ok
+test reflex::tests::calibration_sets_threshold ... ok
+test reflex::tests::higher_sigma_less_sensitive ... ok
+test reflex::tests::not_calibrated_never_fires ... ok
+test sealed::tests::a_blob_for_another_node_is_refused ... ok
+test sealed::tests::a_ciphertext_cannot_be_moved_to_another_envelope ... ok
+test sealed::tests::a_relay_cannot_open_it ... ok
+test sealed::tests::seal_key_agrees_from_both_sides ... ok
+test quorum::tests::q_two_of_three_needs_two_distinct_operators ... ok
+test sealed::tests::seal_key_differs_from_the_link_key ... ok
+test sealed::tests::seal_roundtrip_yields_the_original_order ... ok
+test sealed::tests::sealed_sizes_still_fit_one_radio_frame ... ok
+test sealed::tests::tamper_and_junk_are_refused ... ok
+test services::tests::different_request_ids_preserved ... ok
+test services::tests::parse_request_rejects_bad_magic ... ok
+test services::tests::parse_response_rejects_bad_magic ... ok
+test services::tests::parse_truncated_rejected ... ok
+test services::tests::request_envelope_roundtrip ... ok
+test services::tests::response_envelope_roundtrip ... ok
+test services::tests::server_echo_service ... ok
+test services::tests::server_multiple_services ... ok
+test services::tests::service_introspection ... ok
+test services::tests::status_byte_roundtrip ... ok
+test services::tests::unknown_service_returns_not_found ... ok
+test spinal::tests::assign_dims_returns_err_when_zone_full ... ok
+test spinal::tests::auto_assign_dims_no_collision ... ok
+test spinal::tests::body_entropy_scales_with_dead ... ok
+test spinal::tests::classify_iio_sensors ... ok
+test spinal::tests::empty_body ... ok
+test spinal::tests::mixed_scan_and_static ... ok
+test spinal::tests::register_static_rtos ... ok
+test spinal::tests::scan_all_no_crash ... ok
+test spinal::tests::unknown_device_lands_in_zone_unknown ... ok
+test spinal::tests::zone_assignment_semantic ... ok
+test spore::tests::base64_empty ... ok
+test spore::tests::base64_padding ... ok
+test spore::tests::base64_roundtrip ... ok
+test services::tests::bench_service_dispatch_latency ... ok
+test spore::tests::downgrade_rejected_when_key_set ... ok
+test spore::tests::broadcast_creates_valid_packet ... ok
+test spore::tests::encrypted_qr_rejects_wrong_key ... ok
+test spore::tests::encrypted_qr_roundtrip ... ok
+test spore::tests::encrypted_received_without_key_rejected ... ok
+test spore::tests::fec_cannot_recover_two_lost_chunks ... ok
+test spore::tests::fec_recovers_one_lost_chunk_via_xor_parity ... ok
+test spore::tests::fragment_v2_round_trip_large_message ... ok
+test spore::tests::fragment_v2_round_trip_small_message ... ok
+test spore::tests::listen_nonblocking_returns_zero ... ok
+test spore::tests::listener_ingests_revocation_envelope ... ok
+test spore::tests::listener_ingests_v7_envelope_end_to_end ... ok
+test spore::tests::listener_no_op_pubkey_rejects_revocation ... ok
+test spore::tests::listener_passes_through_non_v6_envelopes ... ok
+test spore::tests::listener_rejects_revocation_with_wrong_operator_key ... ok
+test spore::tests::mesh_drop_own_broadcast_when_echoed ... ok
+test spore::tests::mesh_wrap_then_process_extracts_inner ... ok
+test spore::tests::parse_chunk_v2_rejects_garbage ... ok
+test spore::tests::qr_encode_decode_roundtrip ... ok
+test spore::tests::rate_limiter_allows_under_burst ... ok
+test spore::tests::rate_limiter_evicts_oldest_when_full ... ok
+test spore::tests::rate_limiter_global_bucket_refills ... ok
+test spore::tests::rate_limiter_global_bucket_stops_ip_spoof_flood ... ok
+test spore::tests::rate_limiter_per_ip_isolation ... ok
+test spore::tests::rate_limiter_refills_over_time ... ok
+test spore::tests::rate_limiter_rejects_over_burst ... ok
+test spore::tests::replay_of_encrypted_envelope_rejected ... ok
+test spore_crypto::tests::bad_magic_rejects ... ok
+test spore_crypto::tests::counter_tracker_is_stale_query ... ok
+test spore::tests::listener_v7_rejects_unknown_sender_fp ... ok
+test spore_crypto::tests::counter_tracker_lru_eviction ... ok
+test spore_crypto::tests::counter_tracker_per_sender_isolation ... ok
+test spore_crypto::tests::counter_tracker_rejects_exact_replay ... ok
+test spore_crypto::tests::counter_tracker_rejects_stale_outside_window ... ok
+test spore_crypto::tests::counter_tracker_tolerates_in_window_reorder ... ok
+test spore_crypto::tests::counter_tracker_window_tolerates_100_position_reorder ... ok
+test spore_crypto::tests::encrypt_with_different_nonces_yields_different_ciphertexts ... ok
+test spore_crypto::tests::encrypt_with_nonce_and_encrypt_envelope_produce_compatible_envelopes ... ok
+test spore_crypto::tests::encrypt_with_nonce_is_deterministic ... ok
+test spore_crypto::tests::encrypt_with_nonce_roundtrip ... ok
+test spore_crypto::tests::envelope_nonce_extraction ... ok
+test spore_crypto::tests::hkdf_is_deterministic ... ok
+test spore_crypto::tests::key_derivation_is_deterministic_and_domain_separated ... ok
+test spore_crypto::tests::parse_key_hex_roundtrip ... ok
+test spore_crypto::tests::parse_revocation_envelope_rejects_bad_inputs ... ok
+test spore_crypto::tests::random_nonce_is_not_constant_and_has_reasonable_spread ... ok
+test spore_crypto::tests::replay_integration_captures_literal_resend ... ok
+test spore_crypto::tests::counter_tracker_persistence ... ok
+test spore_crypto::tests::replay_window_duplicate_rejected ... ok
+test spore_crypto::tests::replay_window_evicts_fifo_when_full ... ok
+test spore_crypto::tests::replay_persistence_survives_restart_attack ... ok
+test spore_crypto::tests::replay_window_fresh_nonce_accepted ... ok
+test spore_crypto::tests::replay_window_persistence_roundtrip ... ok
+test spore_crypto::tests::replay_window_rejects_corrupt_persistence ... ok
+test spore_crypto::tests::revocation_envelope_merge_adds_new_entries ... ok
+test spore_crypto::tests::revocation_envelope_merge_idempotent ... ok
+test spore_crypto::tests::revocation_envelope_merge_rejects_wrong_operator ... ok
+test spore_crypto::tests::revocation_envelope_wrap_parse_roundtrip ... ok
+test spore_crypto::tests::replay_window_file_persistence ... ok
+test spore_crypto::tests::revocation_list_basic_add_and_check ... ok
+test spore_crypto::tests::revocation_list_empty_signs_verifies ... ok
+test spore_crypto::tests::revocation_list_rejects_tampered ... ok
+test spore_crypto::tests::revocation_list_rejects_wrong_op_pubkey ... ok
+test spore_crypto::tests::revocation_list_sign_verify_roundtrip ... ok
+test spore_crypto::tests::revocation_size_cap_rejects_oversized_list ... ok
+test spore_crypto::tests::rfc_8439_test_vector_sanity ... ok
+test spore_crypto::tests::roundtrip_preserves_plaintext ... ok
+test spore_crypto::tests::revocation_file_roundtrip ... ok
+test spore_crypto::tests::sender_fingerprint_is_deterministic_and_pub_dependent ... ok
+test spore_crypto::tests::tampered_aad_rejects ... ok
+test spore_crypto::tests::tampered_ciphertext_rejects ... ok
+test spore_crypto::tests::tampered_tag_rejects ... ok
+test spore_crypto::tests::truncated_envelope_rejects_cleanly ... ok
+test spore_crypto::tests::v4_forward_secrecy_compromise_simulation ... ok
+test spore_crypto::tests::two_encrypts_of_same_plaintext_produce_different_ciphertexts ... ok
+test spore_crypto::tests::v4_rejects_wrong_psk ... ok
+test spore_crypto::tests::v4_rejects_wrong_recipient_privkey ... ok
+test spore_crypto::tests::v4_roundtrip ... ok
+test spore_crypto::tests::v4_tampered_ephemeral_rejected ... ok
+test spore_crypto::tests::v4_two_encrypts_produce_different_ephemerals ... ok
+test spore_crypto::tests::v4_with_material_different_eph_yields_different_envelope ... ok
+test spore_crypto::tests::v4_with_material_is_deterministic_given_same_material ... ok
+test spore_crypto::tests::v4_with_material_matches_auto_path_given_same_material ... ok
+test spore_crypto::tests::v4_with_material_roundtrip ... ok
+test spore_crypto::tests::v5_decrypt_checked_accepts_non_revoked_sender ... ok
+test spore_crypto::tests::v5_decrypt_checked_rejects_revoked_sender ... ok
+test spore_crypto::tests::v5_ephemeral_freshness_preserves_forward_secrecy ... ok
+test spore_crypto::tests::v5_fingerprint_lookup_flow ... ok
+test spore_crypto::tests::v5_rejects_unknown_sender_via_bad_fingerprint ... ok
+test spore_crypto::tests::v5_impersonation_rejected_attacker_has_psk_and_recipient_pub_only ... ok
+test spore_crypto::tests::v5_rejects_wrong_psk ... ok
+test spore_crypto::tests::v5_rejects_wrong_recipient_priv ... ok
+test spore_crypto::tests::v5_roundtrip_with_authenticated_sender ... ok
+test spore_crypto::tests::v5_tampered_ephemeral_rejected ... ok
+test spore_crypto::tests::v5_with_material_deterministic_given_same_material ... ok
+test spore_crypto::tests::v5_with_material_roundtrip ... ok
+test spore_crypto::tests::v5_with_material_sender_auth_holds ... ok
+test spore_crypto::tests::v5_with_material_wraps_cleanly_via_auto_path_decrypt ... ok
+test spore_crypto::tests::v7_checked_decrypt_does_not_update_tracker_on_crypto_failure ... ok
+test spore_crypto::tests::v7_checked_decrypt_rejects_revoked_sender ... ok
+test spore_crypto::tests::v7_checked_decrypt_rejects_replay_unbounded ... ok
+test spore_crypto::tests::v7_roundtrip_with_counter ... ok
+test spore_crypto::tests::v7_tampered_counter_rejected ... ok
+test spore_crypto::tests::v7_with_material_counter_in_aad_is_authenticated ... ok
+test spore_crypto::tests::v7_checked_decrypt_tolerates_udp_reordering ... ok
+test spore_crypto::tests::v7_with_material_deterministic_given_same_material_and_counter ... ok
+test spore_crypto::tests::v7_with_material_different_counters_yield_different_envelopes ... ok
+test spore_crypto::tests::wrong_key_rejects ... ok
+test spore_crypto::tests::v7_with_material_roundtrip ... ok
+test spore_crypto::tests::x25519_keypair_generation_and_pub_recovery ... ok
+test synapse::tests::eligibility_decays ... ok
+test synapse::tests::formation_above_threshold ... ok
+test synapse::tests::inhibitory_synapse_from_opposite_momentum ... ok
+test synapse::tests::multiple_synapses_form_with_4_agents ... ok
+test synapse::tests::no_formation_below_threshold ... ok
+test synapse::tests::potentiation_increases_weight ... ok
+test synapse::tests::pruning_removes_inactive ... ok
+test synapse::tests::reward_modifies_weight ... ok
+test synapse::tests::stdp_causal_direction ... ok
+test tension::tests::constructive_interference ... ok
+test tension::tests::destructive_interference_ratio ... ok
+test tension::tests::empty_field_returns_zero ... ok
+test tension::tests::field_overflow_protection ... ok
+test tension::tests::intensity_scales_force ... ok
+test tension::tests::multidimensional_superposition ... ok
+test tension::tests::opposite_tensions_cancel ... ok
+test tension::tests::single_tension_passes_through ... ok
+test tension::tests::tick_ttl_helper_matches_inline_logic ... ok
+test tension::tests::ttl_expires ... ok
+test timers::tests::fire_count_accumulates ... ok
+test timers::tests::next_fire_ms_none_when_empty ... ok
+test timers::tests::next_fire_ms_returns_minimum ... ok
+test timers::tests::register_rejects_zero_period ... ok
+test timers::tests::register_returns_id_and_length_grows ... ok
+test timers::tests::stable_order_across_ticks ... ok
+test timers::tests::tick_backwards_is_noop ... ok
+test timers::tests::tick_coalesces_missed_periods ... ok
+test timers::tests::tick_fires_due_timers ... ok
+test timers::tests::bench_tick_latency ... ok
+test timers::tests::unregister_removes_timer ... ok
+test topics::tests::bench_dispatch_latency ... ok
+test topics::tests::envelope_roundtrip ... ok
+test topics::tests::hash_topic_deterministic ... ok
+test topics::tests::introspection_list_topics ... ok
+test topics::tests::counter_handler_survives_a_poisoned_mutex ... ok
+test topics::tests::parse_rejects_bad_magic ... ok
+test topics::tests::parse_rejects_truncated ... ok
+test topics::tests::subscribe_and_dispatch ... ok
+test topics::tests::topic_router_is_thread_safe_wrapped ... ok
+test topics::tests::unknown_topic_dispatches_zero ... ok
+test topics::tests::invariant_hashes_collision_resistant_across_10k_names ... ok
+test transforms::tests::compose_identity_left ... ok
+test transforms::tests::compose_identity_right ... ok
+test transforms::tests::double_inverse_roundtrip ... ok
+test transforms::tests::identity_basic ... ok
+test transforms::tests::inverse_composition_gives_identity ... ok
+test transforms::tests::inverse_of_translation ... ok
+test transforms::tests::rotation_90deg ... ok
+test transforms::tests::translation_only ... ok
+test transforms::tests::tree_chained_lookup ... ok
+test transforms::tests::tree_self_lookup_is_identity ... ok
+test transforms::tests::tree_siblings_via_lca ... ok
+test transforms::tests::tree_single_frame_lookup ... ok
+test transforms::tests::tree_unknown_frame_returns_none ... ok
+test transforms::tests::wrap_angle_bounded ... ok
+test transport::tests::file_transport_roundtrip ... ok
+test transport::tests::in_memory_roundtrip ... ok
+test transport::tests::in_memory_shared_handle_sees_peer_writes ... ok
+test transport::tests::lora_pack_parse_roundtrip ... ok
+test transport::tests::lora_rejects_bad_header_crc ... ok
+test transport::tests::lora_rejects_bad_magic ... ok
+test transport::tests::lora_rejects_oversize_payload ... ok
+test transport::tests::lora_transport_writes_to_buffer ... ok
+test tx_lease::tests::lease_ensure_with_router_owned_counter ... ok
+test tx_lease::tests::lease_failed_store_issues_nothing ... ok
+test tx_lease::tests::lease_fresh_device_starts_at_one ... ok
+test tx_lease::tests::lease_no_counter_reuse_over_10000_random_reboots ... ok
+test tx_lease::tests::lease_one_durable_write_per_block ... ok
+test tx_lease::tests::lease_record_rejects_corruption ... ok
+test tx_lease::tests::lease_refuses_to_wrap_at_u64_max ... ok
+test tx_lease::tests::lease_resumes_strictly_above_everything_issued ... ok
+test tx_lease::tests::lease_torn_ceiling_write_keeps_old_ceiling_valid ... ok
+test vec::tests::add_sub_inverse ... ok
+test vec::tests::cosine_identical ... ok
+test vec::tests::cosine_opposite ... ok
+test vec::tests::cosine_orthogonal ... ok
+test vec::tests::distance_symmetric ... ok
+test vec::tests::norm_unit ... ok
+test vec::tests::normalize_preserves_direction ... ok
+test vec::tests::zero_vector ... ok
+test vitality::tests::all_alive_is_healthy ... ok
+test vitality::tests::critical_timeout_causes_death ... ok
+test vitality::tests::one_vital_dead_is_degraded ... ok
+test vitality::tests::optional_death_stays_healthy ... ok
+test vitality::tests::recovery_from_critical ... ok
+test vitality::tests::three_vital_dead_is_critical ... ok
+test world_model::tests::attractive_zone_pulls_toward ... ok
+test world_model::tests::entropy_zone_radiates_uncertainty ... ok
+test world_model::tests::far_zones_have_no_effect ... ok
+test world_model::tests::invariant_attractive_gradient_points_toward ... ok
+test world_model::tests::invariant_field_superposition_linear ... ok
+test world_model::tests::invariant_gradient_descent_converges_to_goal ... ok
+test world_model::tests::invariant_navigation_avoids_obstacle_by_margin ... ok
+test world_model::tests::invariant_pressure_decays_exponentially ... ok
+test world_model::tests::invariant_repulsive_gradient_points_away ... ok
+test world_model::tests::navigate_avoids_obstacle ... ok
+test world_model::tests::repulsion_and_attraction_superpose ... ok
+test world_model::tests::repulsive_zone_pushes_away ... ok
+test world_model::tests::zone_count_tracks ... ok
+test transforms::tests::bench_lookup_chained ... ok
+test nav::tests::bench_plan_latency ... ok
+test authority::tests::pq_every_single_bit_flip_refused ... ok
+
+test result: ok. 681 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.81s
+
+     Running unittests src\bin\bench_full_stack.rs (target\release\deps\bench_full_stack-8bae1a6efdc16afb.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\bench_mbtcp_concurrency.rs (target\release\deps\bench_mbtcp_concurrency-6a530687c9ee4fab.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\bench_mbtcp_pilot.rs (target\release\deps\bench_mbtcp_pilot-8ff5960a3fd32115.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\bench_mechanisms_soak.rs (target\release\deps\bench_mechanisms_soak-63656cfde0917d02.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\bench_mesh.rs (target\release\deps\bench_mesh-c6d00f8734c9cee7.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\bench_mesh_signed.rs (target\release\deps\bench_mesh_signed-f4cc219a1a14362b.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\bench_mesh_v0b.rs (target\release\deps\bench_mesh_v0b-e36c653851b492a0.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\bench_payload_sweep.rs (target\release\deps\bench_payload_sweep-0d3f9c5c11629ec4.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\bench_quorum_cost.rs (target\release\deps\bench_quorum_cost-7159f90c1b372769.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\bench_r14_latency.rs (target\release\deps\bench_r14_latency-ecae67b04aff7714.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\bench_spore_loss.rs (target\release\deps\bench_spore_loss-72eff55ca73a32d1.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\drone_bridge.rs (target\release\deps\drone_bridge-43dc019f895bef4d.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\mavlink_adapter.rs (target\release\deps\mavlink_adapter-92f47130f563329d.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\main.rs (target\release\deps\oasis_rt-5a9d2cf8cd654ad2.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\oasis_autodetect.rs (target\release\deps\oasis_autodetect-27a6ca5a8674ed45.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\oasis_fingerprint.rs (target\release\deps\oasis_fingerprint-4c078cec8fdad73d.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\oasis_journal_verify.rs (target\release\deps\oasis_journal_verify-91c6a8319b5d75fb.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\oasis_keygen.rs (target\release\deps\oasis_keygen-0d3452197a8e5f21.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\oasis_mbtcp_agent.rs (target\release\deps\oasis_mbtcp_agent-7627910b240fcbf5.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\oasis_mbtcp_gateway.rs (target\release\deps\oasis_mbtcp_gateway-fbd63aa5ebb38f2f.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\oasis_mbtcp_order.rs (target\release\deps\oasis_mbtcp_order-8104d56b649b9afa.exe)
+
+running 5 tests
+test tests::a_device_exception_is_the_device_speaking_not_a_gateway_refusal ... ok
+test tests::no_answer_reads_as_unconfirmed_and_never_as_refused ... ok
+test tests::a_not_authorized_refusal_is_not_printed_as_out_of_limits ... ok
+test tests::an_act_is_the_only_exit_zero ... ok
+test tests::register_and_value_refusals_keep_their_own_codes_and_invent_no_numbers ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\oasis_mbtcp_revoke.rs (target\release\deps\oasis_mbtcp_revoke-54cd5cbe7d3b9266.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\oasis_sma_probe.rs (target\release\deps\oasis_sma_probe-b9bdb4fbca8ca038.exe)
+
+running 8 tests
+test tests::fc03_request_is_well_formed ... ok
+test tests::serial_masks_the_last_four ... ok
+test tests::ascii_trims_and_keeps_printable ... ok
+test tests::fc03_response_parsed_and_exceptions_rejected ... ok
+test tests::stops_at_the_end_marker_not_past_it ... ok
+test tests::walker_is_total_on_a_truncated_chain ... ok
+test tests::walker_is_total_on_garbage ... ok
+test tests::walks_the_chain_and_reports_real_register_addresses ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\px4_order_arm.rs (target\release\deps\px4_order_arm-14ff0458a1535d2a.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\sim_200_drones.rs (target\release\deps\sim_200_drones-f329c42afff61662.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\sim_scenarios.rs (target\release\deps\sim_scenarios-e73882d1f5c2cd29.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\spore_recv_v2.rs (target\release\deps\spore_recv_v2-c797653c3ab54c8a.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\spore_revoke.rs (target\release\deps\spore_revoke-ffb19a884b5c8bd9.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\spore_send.rs (target\release\deps\spore_send-4289e9017f1949aa.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\udp_loss_proxy.rs (target\release\deps\udp_loss_proxy-2540945d519235fb.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\mbtcp_pilot_sockets.rs (target\release\deps\mbtcp_pilot_sockets-1b18e11d641933d9.exe)
+
+running 5 tests
+test concurrent_hmis_are_never_refused_and_the_journal_stays_ordered ... ok
+test an_idle_connection_does_not_block_another ... ok
+test reads_are_served_through_the_gateway_and_bounded_by_the_map ... ok
+test hmi_agent_gateway_plc_over_real_sockets ... ok
+test a_dead_gateway_still_answers_the_hmi ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.63s
+
+     Running tests\trl6_crosscheck.rs (target\release\deps\trl6_crosscheck-fb63a7b67b3f246a.exe)
+
+running 9 tests
+test mcu_primitive_1_mesh_ttl ... ok
+test mcu_primitive_10_m5_emotion_post_refactor ... ok
+test mcu_primitive_2_tension_tick_ttl ... ok
+test mcu_primitive_11_m7_synapse_post_refactor ... ok
+test mcu_primitive_3_bloom_bit_index ... ok
+test mcu_primitive_4_hmac_sha256_8 ... ok
+test mcu_primitive_5_reflex_adaptive ... ok
+test mcu_primitive_8_m1_tension_field ... ok
+test mcu_primitive_9_m2_hyperstate_r14 ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\lib.rs (target\release\deps\oasis_secure_element-4db03958676a20ec.exe)
+
+running 5 tests
+test sim::tests::wipe_makes_all_operations_fail ... ok
+test sim::tests::pubkey_matches_oasis_rt_helper ... ok
+test sim::tests::provision_then_sign_then_pubkey_consistent ... ok
+test tests::sign_helper_signs_canonical_22_bytes ... ok
+test sim::tests::se_signed_envelope_verifies_via_standard_meshrouter ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\main.rs (target\release\deps\oasis_test_plc-4e92d1e3b8b52f70.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\lib.rs (target\release\deps\oasis_trl_harness-4169881b2881d5b8.exe)
+
+running 12 tests
+test hardware_noise::tests::corrupt_envelope_changes_bytes ... ok
+test hardware_noise::tests::corrupt_envelope_empty_is_safe ... ok
+test hardware_noise::tests::counters_increment_on_events ... ok
+test hardware_noise::tests::harsh_environment_higher_rates ... ok
+test hardware_noise::tests::disabled_model_never_fires ... ok
+test hardware_noise::tests::realistic_drone_defaults_are_nonzero ... ok
+test tests::adversary_rate_limited ... ok
+test tests::operator_alarm_threshold_works ... ok
+test tests::rng_deterministic ... ok
+test tests::network_channel_loss_rate_in_band ... ok
+test tests::sensor_noise_within_3sigma_most_of_the_time ... ok
+test hardware_noise::tests::realistic_drone_rates_within_band ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests oasis_operator_key
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests oasis_rt
+
+running 5 tests
+test oasis-rt\src\fmath.rs - fmath (line 11) ... ignored
+test oasis-rt\src\mesh.rs - mesh::MeshRouter::origin_wrap_with (line 1079) ... ignored
+test oasis-rt\src\transforms.rs - transforms (line 10) - compile ... ok
+test oasis-rt\src\nav.rs - nav (line 8) - compile ... ok
+test oasis-rt\src\transport.rs - transport (line 13) - compile ... ok
+
+test result: ok. 3 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+   Doc-tests oasis_secure_element
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests oasis_trl_harness
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

@@ -8,6 +8,28 @@ configuration, serial number or real network address is in this repository.
 
 Licence of this corpus: **CC BY 4.0** (see `RELICENSING.md`).
 
+## Re-run on 2026-10-13: the essentials, on one PC
+
+`evidence/rerun/2026-10-13/README.md` takes each essential claim in turn. For each one it shows what
+was re-run that day, what is formally proven and what was shown on silicon, and it says what none of
+it covers. All of it is at commit `53a64d7` of the code repository:
+
+- **Tests:** 738 pass and 0 fail, on Linux (WSL2 Ubuntu 26.04, Rust 1.99.0) and on Windows 11 (Rust
+  1.95.0).
+- **Cryptography against official vectors:**
+  - ChaCha20-Poly1305 against RFC 8439 §2.8.2;
+  - HMAC-SHA256 against RFC 4231;
+  - ML-DSA-44 against 15 NIST ACVP vectors, on two independent implementations.
+
+  Of 20 072 single-bit flips, none is accepted. `cargo audit` finds 0 vulnerabilities.
+- **Pilot campaign:** 72 of 72 cases pass. The shipped binaries, built for Linux, run against an
+  independent Modbus device.
+- **Kani:** 189 of the 189 non-heavy harnesses are verified, 0 refuted
+  (`evidence/kani/2026-10-13/sweep/`). 83 of them are on the safety path. The 7 heavy ones were not
+  attempted.
+- **Silicon:** the 14 RP2040 campaigns, 970 files in all, match their manifests byte for byte. They
+  were not re-run, because the boards were not connected.
+
 ## How to read it
 
 - `evidence/real/2026-10-10/twohost-campaign-3/REPORT.md` — reference run: two physical

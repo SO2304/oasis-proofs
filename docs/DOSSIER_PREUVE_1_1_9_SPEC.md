@@ -72,7 +72,7 @@ l'a pas fourni.
 ```
 DOSSIER DE PREUVE 1.1.9 — RÉSUMÉ            Réf. OASIS-DP-<AAAA-MM-JJ>-<client>   Rév. n
 Produit : passerelle OASIS Modbus TCP/RTU            Version : <tag git>   Empreinte : <sha>
-Fabricant du logiciel : <société>                    Licence : <AGPL/EUPL + commerciale>
+Fabricant du logiciel : <société>                    Licence : <commerciale ; code accessible sous NDA, séquestre possible>
 Référentiel : Règlement (UE) 2023/1230, annexe III 1.1.9 et 1.2.1 (consolidé 02023R1230-20260727)
 État de l'art consulté : FprEN 50742:2026 (non harmonisée), IEC 62443-4-2 (SL2 visé, non certifié)
 Nature : autorité de commande logicielle. NI fonction de sûreté (pas de PL/SIL), NI composant de sécurité art. 3(3).
@@ -106,11 +106,11 @@ Signataire : <nom, date>. Ce résumé n'est pas un certificat et n'emporte aucun
 | Secure boot | « Le RP2040 n'offre ni secure boot ni stockage de clé protégé ; la clé est lisible en flash ; le bootloader n'est ni signé ni mis à jour. » |
 | Rétention cinq ans | « Le mécanisme de conservation entre redémarrages est prouvé ; la rétention de cinq ans après chaque téléversement relève d'une procédure d'exploitation définie avec le fabricant de la machine. » |
 | Horodatage absolu | « Les entrées sont ordonnées par identifiant de démarrage et compteur monotone ; l'horodatage absolu, s'il est exigé, est celui de l'hôte passerelle. » |
-| Support et fin de vie | « Fournisseur unipersonnel : aucun engagement 24/7 ni durée de maintenance contractuelle ; le code source est accessible sous licence libre indépendamment du fournisseur. » |
+| Support et fin de vie | « Fournisseur unipersonnel : aucun engagement 24/7 ni durée de maintenance contractuelle ; le code source est accessible au client sous NDA et peut être mis sous séquestre indépendamment du fournisseur. » |
 
 ## 6. Paquet à envoyer à un prospect (avant tout devis)
 
-Un dossier zippé, ou le dépôt public `oasis-proofs` quand il existera, contenant uniquement :
+Un dossier zippé, ou le dépôt public `oasis-proofs` (<https://github.com/SO2304/oasis-proofs>, publié le 11 octobre 2026), contenant uniquement :
 
 - `evidence/real/2026-10-10/twohost-campaign-3/REPORT.md` et son `SHA256SUMS` (la campagne de référence, 98/98) ;
 - `evidence/real/2026-10-09/sma/REPORT.md` (le seul équipement commercial, avec ses limites) ;

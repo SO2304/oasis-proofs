@@ -150,7 +150,7 @@ with SIGPIPE before the replies arrived — the boards were fine.
 
 ## 5. What this run does not show
 
-- **S8, the power cut, was not run.** So the claim "at most one unconfirmed entry across a
+- **S8, the power cut, was not run** *(⚠️ erratum 2026-10-11: it was — §1 row S8 and §7 of this same report record it, with the cable pulled by the operator; this bullet predates that run and was never struck)*. So the claim "at most one unconfirmed entry across a
   power cut" is **designed and unit-tested, not demonstrated on silicon**. It is the one
   test in §4 that needs a hand on the cable.
 - **A revoked origin refusing a stop** was not run. It is the single documented exception

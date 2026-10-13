@@ -41,7 +41,7 @@ verifier (the same method as the 2026-10-04 v0A "Phase 4").
 | 2 | **0** | 49 |
 | 3 | **0** | 49 |
 
-**0 of 150** corrupted packets were accepted, against **12 of 50 accepted under
+**0 of 147 logged** corrupted packets were accepted (⚠️ erratum 2026-10-11: §6.1 of this report already says 0/147, not 0/150 — three frames were not logged; this headline kept 150), against **12 of 50 accepted under
 v0A**, because v0A signed only `magic‖msg_id‖origin_fp` and left the payload
 unauthenticated. Drop reasons seen across runs: `bad mesh signature` (the bulk),
 `foreign network`, `unknown sender`, `ttl/hops out of range`, `bad mesh magic`,

@@ -10,7 +10,7 @@ bash tools/pilot_campaign.sh /tmp/camp
 | | |
 |---|---|
 | Résultat | **69/69**, trois fois ([`run1.log`](run1.log), [`run2.log`](run2.log), [`run3.log`](run3.log)) |
-| Écritures appliquées par l'appareil | 208 par exécution, comptées **par l'appareil** |
+| Écritures appliquées par l'appareil | 210 par exécution (208 avant les cinq cas par origine ; cette ligne disait 208 jusqu'au 2026-10-11), comptées **par l'appareil** |
 | Latence bout en bout | **849 / 609 / 725 µs** médiane, ±**18 / 31 / 23 %** (K=10 × 20, une socket tenue) — lus dans [`run1.log`](run1.log), [`run2.log`](run2.log), [`run3.log`](run3.log) |
 | Journal | **intact, exit 0**, et un refus réécrit en acceptation → **exit 1** |
 
@@ -49,7 +49,7 @@ Python sans aucun import. Quand l'appareil applique une trame, OASIS ne se donne
 | C8 | le journal est **sur disque** et vérifie avec le vérificateur indépendant | `exit 0`, acceptations **et** refus nommés |
 | C9 | un **refus réécrit en acceptation** est détecté | `exit 1` |
 | C10 | un redémarrage de passerelle change le `boot_id` et ouvre une chaîne neuve, intacte | deux `JRN_BOOT` différents, deux `exit 0` |
-| C11 | la latence à travers les **vrais binaires** | 711–951 µs, ±15–23 % |
+| C11 | la latence à travers les **vrais binaires** | 609–849 µs, ±18–31 % (les trois journaux : 849 / 609 / 725 ; « 711–951 » jusqu'au 2026-10-11) |
 | C23 | l'agent écrit **son** registre | accepté, l'appareil compte une écriture |
 | C24 | l'agent **ne peut pas** écrire le registre de l'autre, bien qu'il soit dans la carte de la passerelle | `RegisterNotAllowed(12)`, appareil intact |
 | C25 | la **plage** est par origine : 500 refusé à hmi2 (plafond 9), autorisé à l'agent (plafond 1000) sur le **même** registre | `ValueOutOfRange(10, 500)` |
@@ -58,7 +58,7 @@ Python sans aucun import. Quand l'appareil applique une trame, OASIS ne se donne
 | C19 | un `ORV1` signé par **deux opérateurs distincts** satisfait k=2 de n=3 | `REVOCATION Applied`, `Change(Revocation) flags=0x10` |
 | C20 | **une** signature ne satisfait pas k=2 | `Reject(BadOperatorSig)`, journalisé non appliqué |
 | C21 | **le même opérateur deux fois** ne fait pas deux voix | `Reject(BadOperatorSig)` |
-| C22 | le coût du quorum, K=10 | 110 µs (une clé), 234 µs (k=2), 318 µs (k=3) |
+| C22 | le coût du quorum, K=10 | 102–112 µs (une clé), 206–220 µs (k=2), 308–329 µs (k=3) — les trois journaux ; « 110 / 234 / 318 » jusqu'au 2026-10-11, 234 ne correspondant à aucun journal |
 | C15 | un `ORV1` **signé** arrive sur le lien, est appliqué, et **le changement est journalisé** | `Change(Revocation)`, `flags=0x10`, `origin=bb00` |
 | C16 | une époque non supérieure est refusée, **et le refus est journalisé aussi** | `Change(Revocation)`, `flags=0x00` |
 | C17 | une liste signée par un opérateur non approuvé est refusée et journalisée | `Reject(BadOperatorSig)`, `flags=0x00` |
@@ -253,7 +253,7 @@ Trouvés par un audit externe, vérifiés ici contre l'arbre, et tous deux de mo
    `git rev-parse HEAD`, qui pointait sur le commit précédent. Une preuve qui nomme un
    commit ne contenant pas ce qu'elle a mesuré n'est pas une preuve. La règle en est
    simple : **commiter d'abord, mesurer ensuite**. Les journaux portent maintenant
-   `tree=97a4441`, qui contient bien les 47 cas.
+   `tree=97a4441`, qui contient bien les 47 cas (⚠️ erratum 2026-10-11 : les trois journaux portent `tree=f391ed7` et 69 cas ; cette phrase vient d'une exécution antérieure).
 
 ## 4ter. Un cycle de dépendances coûtait une capacité entière
 

@@ -12,7 +12,7 @@ the signed manifests and image hashes.
 Firmware installed through the **signed update path** (o2 hybrid manifests) at every
 step: v6 → v7 (quiet mode) → v8 (link-key cache) → v9 (pre-signed legitimate frames) →
 v10 (`@Y` legit rate) → v11 (insider model) → v12 (`@D` run-time budget) → v13
-(interrupt-driven receive ring) → **v14, stamp `caef852`, which produced the results
+(interrupt-driven receive ring) → **v14, stamp `caef852` for the availability runs (⚠️ the forged-only runs `31_*`/`32_*` are stamped `0baec61`, as `CLAUDE.md` says; noted 2026-10-11), which produced the results
 below**. Earlier runs are kept and named `VOID_*` or superseded; §5 says why.
 
 ## 1. What a forged frame costs the relay
@@ -20,7 +20,7 @@ below**. Earlier runs are kept and named `VOID_*` or superseded; §5 says why.
 The C1 attack: anyone listening to the link can fabricate envelopes that pass every
 cheap check (network, known origin, ttl, fresh counter) and force a full Ed25519
 verification. Forged-only runs (`@Y<rate>,<secs>,0`) give an unambiguous per-frame cost:
-30 s, no legitimate traffic, nothing lost on the wire (`crc_fails=0`).
+30 s, no legitimate traffic (⚠️ erratum 2026-10-11: `32_v0c` logs `crc_fails=1` and 58 of 60 frames, so « nothing lost, crc_fails=0 » holds for `32_v0b` only).
 
 | Mode | rate | frames | total busy | **per forged frame** | max |
 | --- | ---: | ---: | ---: | ---: | ---: |

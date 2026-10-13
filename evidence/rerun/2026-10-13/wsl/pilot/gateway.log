@@ -1,0 +1,251 @@
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY journal=/home/pc/rerun-essentials/pilot/jrn.entries + /home/pc/rerun-essentials/pilot/jrn.head
+GATEWAY authority=single key=ed54a59fb1ac3a51 rev_store=/home/pc/rerun-essentials/pilot/jrn.rev
+GATEWAY listen=127.0.0.1:15021 plc=127.0.0.1:15020 unit=0x11 boot_id=1791916606274 registers=1
+GATEWAY 127.0.0.1:53586 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:53598 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:53608 CLOCK boot_id=1791916606274
+GATEWAY 127.0.0.1:53608 seq=1 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:53608 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:53612 CLOCK boot_id=1791916606274
+GATEWAY 127.0.0.1:53612 seq=2 Reject(OutOfLimits) outcome=Refused(OutOfLimits, RegisterNotAllowed(17)) plc_written=false
+GATEWAY 127.0.0.1:53612 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:53628 CLOCK boot_id=1791916606274
+GATEWAY 127.0.0.1:53628 seq=3 Reject(OutOfLimits) outcome=Refused(OutOfLimits, ValueOutOfRange(10, 5000)) plc_written=false
+GATEWAY 127.0.0.1:53628 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:53642 READ Ok served=true (never writes)
+GATEWAY 127.0.0.1:53642 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:53650 READ RegisterNotAllowed(17) served=false (never writes)
+GATEWAY 127.0.0.1:53650 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:53666 conn_end err=InvalidData
+GATEWAY 127.0.0.1:53668 CLOCK boot_id=1791916606274
+GATEWAY 127.0.0.1:53668 seq=65 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:53668 conn_end err=UnexpectedEof
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY journal=/home/pc/rerun-essentials/pilot/jrn.entries + /home/pc/rerun-essentials/pilot/jrn.head
+GATEWAY previous journal kept as /home/pc/rerun-essentials/pilot/jrn.1791916606274.entries + /home/pc/rerun-essentials/pilot/jrn.1791916606274.head
+GATEWAY authority=single key=ed54a59fb1ac3a51 rev_store=/home/pc/rerun-essentials/pilot/jrn.rev
+GATEWAY listen=127.0.0.1:15021 plc=127.0.0.1:15020 unit=0x11 boot_id=1791916612112 registers=1
+GATEWAY 127.0.0.1:45468 CLOCK boot_id=1791916612112
+GATEWAY 127.0.0.1:45468 seq=66 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45468 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:45482 CLOCK boot_id=1791916612112
+GATEWAY 127.0.0.1:45482 seq=67 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=68 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=69 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=70 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=71 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=72 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=73 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=74 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=75 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=76 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=77 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=78 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=79 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=80 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=81 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=82 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=83 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=84 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=85 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=86 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=87 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=88 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=89 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=90 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=91 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=92 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=93 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=94 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=95 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=96 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=97 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=98 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=99 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=100 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=101 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=102 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=103 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=104 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=105 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=106 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=107 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=108 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=109 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=110 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=111 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=112 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=113 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=114 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=115 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=116 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=117 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=118 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=119 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=120 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=121 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=122 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=123 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=124 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=125 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=126 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=127 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=128 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=129 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=130 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=131 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=132 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=133 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=134 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=135 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=136 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=137 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=138 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=139 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=140 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=141 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=142 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=143 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=144 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=145 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=146 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=147 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=148 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=149 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=150 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=151 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=152 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=153 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=154 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=155 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=156 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=157 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=158 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=159 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=160 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=161 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=162 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=163 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=164 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=165 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=166 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=167 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=168 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=169 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=170 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=171 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=172 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=173 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=174 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=175 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=176 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=177 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=178 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=179 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=180 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=181 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=182 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=183 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=184 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=185 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=186 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=187 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=188 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=189 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=190 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=191 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=192 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=193 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=194 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=195 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=196 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=197 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=198 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=199 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=200 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=201 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=202 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=203 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=204 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=205 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=206 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=207 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=208 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=209 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=210 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=211 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=212 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=213 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=214 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=215 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=216 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=217 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=218 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=219 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=220 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=221 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=222 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=223 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=224 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=225 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=226 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=227 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=228 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=229 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=230 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=231 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=232 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=233 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=234 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=235 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=236 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=237 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=238 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=239 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=240 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=241 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=242 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=243 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=244 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=245 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=246 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=247 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=248 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=249 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=250 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=251 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=252 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=253 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=254 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=255 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=256 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=257 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=258 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=259 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=260 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=261 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=262 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=263 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=264 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=265 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=266 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=267 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=268 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=269 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=270 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 seq=271 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:45482 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:45492 REVOCATION Applied epoch=1
+GATEWAY 127.0.0.1:45492 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:45500 REVOCATION Duplicate epoch=1
+GATEWAY 127.0.0.1:45500 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:45514 REVOCATION Reject(BadOperatorSig) epoch=1
+GATEWAY 127.0.0.1:45514 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:45530 CLOCK boot_id=1791916612112
+GATEWAY 127.0.0.1:45530 seq=321 Reject(NotAuthorized) outcome=Refused(NotAuthorized, Ok) plc_written=false
+GATEWAY 127.0.0.1:45530 conn_end err=UnexpectedEof

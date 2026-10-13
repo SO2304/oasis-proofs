@@ -211,7 +211,7 @@ un avantage net pour les nœuds. Ne pas tenter d'ordre par saut post-quantique s
 |---|---|---|
 | **Agilité cryptographique dans l'enveloppe** | ✅ | Octet de suite **signé** dans `OAU1` ; suite minimale par type de message, **jamais abaissée**, persistée en deux emplacements flash ; déclassement refusé **avant toute vérification de signature**. Correction de `POSITIONING_GAPS.md` A6, qui disait « pas d'agilité cryptographique » : c'est vrai de `SPORE\x0B`, faux des messages d'autorité |
 | **Signature hybride Ed25519 + ML-DSA-44** | ✅ | `libcrux-ml-dsa` 0.0.10 sur l'appareil ; oracle indépendant RustCrypto `ml-dsa` 0.1.1 ; ACVP NIST sigVer **15/15** sur les deux ; concordance octet pour octet sur 8 graines ; **20 072 inversions d'un bit, 0 acceptée**. Sur RP2040 : porte hybride complète **377 ms**, pile **48,7 Ko**, flash **+125 Ko**. Silicium A→B→C avec coupure de courant réelle (`evidence/silicon/2026-10-06/pq/REPORT.md`) |
-| **Plan de migration écrit** | 🟡 | `docs/specs/PQ_AUTHORITY_SPEC.md` couvre les messages d'autorité. ❌ Rien pour `SPORE\x0B` : le magic fige l'algorithme par saut |
+| **Plan de migration écrit** | 🟡 | `docs/specs/PQ_AUTHORITY_SPEC.md` couvre les messages d'autorité. 🟡 `docs/CRYPTO_MIGRATION.md` (2026-10-08) couvre le saut par allocation de magic ; le magic fige l'algorithme par saut (« rien pour SPORE\x0B » jusqu'au 2026-10-11) |
 | **Aucun KEM post-quantique** | ❌ | L'échange de clés reste X25519 ; aucun ML-KEM. C'est l'écart réel avec Veridify (`partners/OASIS_VS_VERIDIFY.md`) |
 | **Conformité BSI** | ❌ | ML-DSA-44 est de catégorie 2 ; le BSI exige la catégorie 3. Passer à ML-DSA-65 coûte +889 o par signature et n'a pas été mesuré sur RP2040 |
 

@@ -18,7 +18,7 @@ tableau **exigence → ce qu'OASIS couvre → preuve → ce qui manque**.
 | [`MACHINERY_REGULATION_2023_1230.md`](MACHINERY_REGULATION_2023_1230.md) | Règlement Machines (UE) 2023/1230 | **20/01/2027** | **Le déclencheur d'achat.** Annexe III 1.1.9 et 1.2.1 verbatim ; périmètre (drones, AMR, composants de sécurité) ; pourquoi OASIS se vend comme fournisseur de preuve, pas comme composant certifié |
 | [`CRA.md`](CRA.md) | Cyber Resilience Act (UE) 2024/2847 | art. 14 **depuis le 11/09/2026** ; reste **11/12/2027** | OASIS est **hors champ tant qu'il n'est pas monétisé** ; le statut d'intendant lui est juridiquement fermé ; le CRA crée la **demande** pour son dossier de preuves |
 | [`EN_18031.md`](EN_18031.md) | RED 2014/53/UE + règlement délégué (UE) 2022/30 + EN 18031 | **depuis le 01/08/2025**, **abrogé au 11/12/2027** | Un nœud LoRa est dans le champ, mais la fenêtre se referme : **le travail utile est le CRA**. Grille de lecture technique des 11 mécanismes |
-| [`IEC_62443_4_2.md`](IEC_62443_4_2.md) | IEC 62443-4-2 et -4-1 | volontaire | SL 2 en capacité visé, **non certifié** ; la grappe « journal » (6 exigences) est le plus gros bloc manquant ; 3 absences tiennent au matériel |
+| [`IEC_62443_4_2.md`](IEC_62443_4_2.md) | IEC 62443-4-2 et -4-1 | volontaire | SL 2 en capacité visé, **non certifié** ; la grappe « journal » (6 exigences) était le plus gros bloc manquant ; CR 2.8 et 2.12 sont couverts par la partie I depuis le 2026-10-07 (relu 2026-10-11) ; 3 absences tiennent au matériel |
 | [`IEC_TS_63074.md`](IEC_TS_63074.md) | IEC TS 63074:2023 | volontaire | **La frontière sûreté / sécurité.** La règle de bascule d'ISO 13849-1 qui rend C2 bloquant ; le vocabulaire à employer devant un ingénieur sûreté |
 | [`MAVLINK_SIGNING_GAP.md`](MAVLINK_SIGNING_GAP.md) | Signature MAVLink 2 (spec, PX4, ArduPilot) | — | **9 limites documentées, 9 réponses prouvées** — et la 10ᵉ démonstration, l'intégration PX4, qui manque et sans laquelle rien ne se vend côté drones |
 | [`PQC.md`](PQC.md) | Feuille de route PQC de l'UE, FIPS 204/205, RFC 8554/8391, LoRa EU868 | **31/12/2030** | Les tailles réelles contre 36 s d'émission par heure : une signature ML-DSA-65 à SF12 coûte **5 h** de budget légal. Options réalistes classées |
@@ -27,7 +27,7 @@ tableau **exigence → ce qu'OASIS couvre → preuve → ce qui manque**.
 ## Ce qui ressort de l'ensemble
 
 **Un seul chantier est exigé par quatre textes** : la trace des ordres acceptés et refusés
-(`POSITIONING_GAPS.md` **C5**).
+(`POSITIONING_GAPS.md` **C5**) — **fait** : partie I, 2026-10-07, prouvée sur silicium le 2026-10-08 et sur le chemin TCP le 2026-10-09 (cette phrase se lisait comme un chantier ouvert jusqu'au 2026-10-11).
 
 | Texte | Où |
 |---|---|

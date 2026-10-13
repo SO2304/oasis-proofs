@@ -56,7 +56,7 @@ Donc **une bibliothèque est bien un « produit comportant des éléments numér
 > **Considérant 20** — « Le seul fait d'héberger des produits comportant des éléments numériques
 > sur des dépôts ouverts […] ne constitue pas en soi la mise à disposition sur le marché […]. »
 
-**Conclusion pour OASIS aujourd'hui — licence libre (AGPL-3.0-or-later depuis le 11 octobre 2026), une personne, aucune monétisation :
+**Conclusion pour OASIS aujourd'hui — code propriétaire et dépôt privé depuis le 11 octobre 2026 (libre avant cette date), une personne, aucune mise sur le marché :
 hors du champ.** Publier sur un dépôt ouvert n'est pas une mise sur le marché.
 
 **Le statut d'« intendant de logiciels ouverts » est juridiquement fermé**, et c'est une
@@ -76,7 +76,7 @@ ouverts** », pas « steward ».
 
 | Scénario | Statut CRA | Obligations |
 |---|---|---|
-| Aujourd’hui : AGPL-3.0-or-later, non monétisé, dépôt public | **hors champ** (cons. 18 et 20) | aucune |
+| Aujourd’hui : propriétaire, dépôt privé, aucune mise sur le marché | **hors champ** tant qu'aucun exemplaire n'est mis à disposition sur le marché (art. 2 § 1) ; l'exemption « logiciel libre non monétisé » (cons. 18 et 20) ne s'applique **plus** depuis la fermeture du 11 octobre 2026 | aucune — la première vente fait entrer dans le champ |
 | Support payant, licence commerciale, module vendu | **fabricant** (art. 3, point 13 : « à titre onéreux, monétisé ou gratuit ») d'un produit comportant des éléments numériques | **annexe I entière**, art. 13, art. 14, marquage CE, documentation annexe VII, à partir du 11/12/2027 |
 | Constitution d'une personne morale qui soutient le développement d'un OASIS intégré à des produits monétisés par d'autres | **intendant** (art. 3, point 14) | régime allégé : art. 24 + art. 14 §1, §3, §8 ; pas de marquage CE ; pas d'amendes |
 
@@ -172,7 +172,7 @@ le journal (C5) et l'effacement des secrets.
 |---|---|---|---|
 | 1) | **nomenclature des logiciels (SBOM)** dans un format couramment utilisé et lisible par machine, couvrant au moins les dépendances de niveau supérieur | ✅ | 9 SBOM CycloneDX, un par paquet (`evidence/supply-chain/2026-10-07/sbom/*.cdx.json`) |
 | 2) | gérer et corriger **sans retard**, mises à jour de sécurité séparées des fonctionnalités | 🟡 | Aucune version publiée, donc aucun canal de correctif ; la séparation sécurité/fonctionnalité n'existe pas |
-| 3) | **tests et examens de sécurité efficaces et réguliers** | ✅ | 608 tests, 152 harnais Kani dont **130 vérifiés, 0 contre-exemple** (`evidence/kani/2026-10-07/full/`), 1,5 × 10⁹ exécutions de fuzzing, campagnes silicium datées |
+| 3) | **tests et examens de sécurité efficaces et réguliers** | ✅ | 681 tests de bibliothèque (738 workspace), 196 harnais Kani dont **175 des 182 d'alors vérifiés un à un** (`evidence/kani/2026-10-08/sweep/`), deux contre-exemples réels corrigés sur `main` — cette case disait « 608 tests, 152 harnais, 130 vérifiés, 0 contre-exemple » jusqu'au 2026-10-11 —, 1,5 × 10⁹ exécutions de fuzzing, campagnes silicium datées |
 | 4) | **publier** une description des vulnérabilités corrigées | ❌ | Aucun avis publié à ce jour. ⚠️ Des défauts de mes propres mesures sont publiés dans les rapports, ce qui est différent |
 | 5) | **politique de divulgation coordonnée** | ✅ | `SECURITY.md` (contact, délais, divulgation coordonnée) |
 | 6) | faciliter le partage d'informations, **adresse de contact** | ✅ | `SECURITY.md` §Reporting a vulnerability |
@@ -229,9 +229,9 @@ citer dans un document d'acheteur.
 3. **Le CRA est un générateur de demande, pas une contrainte** : l'article 13 §5 oblige chaque
    intégrateur à instruire ses composants tiers. Le dossier de preuves de ce dépôt est
    précisément ce qu'il doit produire.
-4. **Le journal (C5) est exigé une troisième fois** ici, à l'annexe I-I-2 l), après les deux
+4. *(Relu 2026-10-11 : le journal existe depuis le 2026-10-07 — partie I, persisté par la passerelle TCP, vérifié par `oasis_journal_verify`, inviolable à distance seulement ; ce point et la ligne l) ci-dessus le disaient absent.)* **Le journal (C5) est exigé une troisième fois** ici, à l'annexe I-I-2 l), après les deux
    occurrences du Règlement Machines. Quatre textes, un seul chantier.
-5. **À dire sans détour : v0B et v0C ne chiffrent pas.** L'annexe I-I-2 e) demande la
+5. **À dire sans détour : v0B et v0C ne chiffrent pas** — et `OSE1` (C13, 2026-10-08) scelle la charge utile en bibliothèque, sans qu'aucun firmware ne l'emploie (précisé 2026-10-11). L'annexe I-I-2 e) demande la
    confidentialité « le cas échéant » ; si un acheteur en a besoin sur le mesh, c'est un
    développement, pas une option de configuration.
 

@@ -54,7 +54,7 @@ configuration du commutateur ou un filtrage sur l'hôte de la passerelle.
 | Système | Linux avec systemd | Les unités fournies sont dans [`deploy/`](../deploy/) |
 
 ⚠️ **Non testé sur automate du commerce.** Tous les chiffres de ce dépôt viennent d'un
-simulateur bâti sur `rmodbus` qui ne dépend pas d'OASIS, sur un seul hôte en boucle
+simulateur bâti sur `rmodbus` qui ne dépend pas d'OASIS, sur un seul hôte en boucle locale pour la campagne pilote — et, depuis le 2026-10-10, sur **deux machines** reliées par un câble et par un LAN domestique (`evidence/real/2026-10-10/twohost-campaign-3/`, 98 contrôles sur 98 ; câble 1,89–2,01 ms, Wi-Fi 3,9–7,2 ms par écriture) ; ce paragraphe ne parlait que d'un hôte
 locale. Le protocole et le chemin d'autorisation sont réels ; la machine ne l'est pas, et
 les latences sont un **plancher**. Votre première mise en service est donc aussi le
 premier essai sur un automate réel : prévoyez-la en atelier, pas en production.
@@ -179,7 +179,7 @@ Faites-la dans cet ordre, en atelier, automate **débranché de la machine**.
 
 | | Essai | Attendu |
 |---|---|---|
-| 1 | `systemctl start oasis-mbtcp-gateway` puis `status` | actif ; toute erreur de configuration est dans le journal avec son numéro de ligne |
+| 1 | `systemctl start oasis-mbtcp-gateway` puis `status` | actif ; une ligne malformée est refusée avec son numéro. ⚠️ Relu 2026-10-11 : jusqu'à ce jour un `timeout_ms` ou un `gateway_id` illisible retombait **sans avertissement** sur 2000 ms et 1, et une clé inconnue ou mal orthographiée était **ignorée** (un `revoked` mal écrit ne révoquait rien). Les deux sont **refusés depuis**, la clé inconnue avec son numéro de ligne, la clé scalaire donnée deux fois aussi. Restent : une valeur fautive dans `register`, `peer` ou `peer_pk` est refusée mais sans numéro de ligne, et `unit` est toujours lu en hexadécimal (`17` vaut 0x17). Relisez le journal de démarrage, qui imprime chaque pair et ses permissions |
 | 2 | `oasis_mbtcp_order --config /etc/oasis/operator.conf --reg 10 --value 700` | **sortie 0**, et l'automate porte 700 |
 | 3 | Le même ordre, `--value 5000`, hors plage | **sortie 1**, exception **0x03**, automate **inchangé** |
 | 4 | Le même ordre sur un registre absent de la carte | **sortie 1**, exception **0x02**, automate **inchangé** |
@@ -249,7 +249,7 @@ et, plus tard, depuis la machine d'exploitation, rapatriez la paire et comparez-
 copie de l'ancrage :
 
 ```bash
-scp <passerelle>:/var/lib/oasis/jrn.{head,entries} ./ \
+scp '<passerelle>:/var/lib/oasis/jrn.*' ./ \   # la paire vive ET les archives : après un redémarrage, la chaîne ancrée est archivée, et `check` répondrait MISSING sans elles
   && tools/journal_witness.sh check ./jrn ~/oasis-witness.log
 ```
 
