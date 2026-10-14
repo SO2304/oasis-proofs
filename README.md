@@ -1,4 +1,58 @@
-# oasis-proofs — the public evidence corpus of OASIS
+# oasis-proofs
+
+I'm Souhayb. I'm building OASIS on my own, in Belgium, and this repository holds the evidence
+for it. The code is private for now (I can open it under NDA if you need to look), but the proofs
+are here so anyone can check them without having to take my word for anything.
+
+## What OASIS is for
+
+Most PLCs still speak Modbus, and Modbus has no authentication at all. Anything that can reach a
+PLC on the network can write to it. Secure versions of these protocols have existed for about
+twenty years, but hardly anyone uses them, mostly because you have to replace or reprogram the PLC.
+
+OASIS goes another way. It's a small gateway that sits in front of the PLC, and the HMI and the
+PLC stay exactly as they are. Every write is signed on the operator side by an identity that was
+enrolled beforehand, and the gateway checks nine things before passing it on: is the signature
+valid, is this identity allowed to write, has its key been revoked, is the order still fresh, is
+the value inside the range set for that register, and so on. If one check fails, nothing reaches
+the PLC. Every decision, accepted or refused, goes into a hash-chained log that someone else can
+verify on their own.
+
+## Why now
+
+From 20 January 2027, the EU Machinery Regulation (2023/1230, Annex III, point 1.1.9) requires new
+machines to be protected against corruption and to collect evidence of interventions, legitimate
+or not. There is no harmonised standard for it yet (EN 50742 is still a draft), so machine
+builders have to prove it their own way. OASIS is meant to give them that evidence for the
+command path.
+
+It is not a safety function and it never sits in the emergency-stop chain.
+
+## Where to start
+
+If you read only one file, make it `evidence/rerun/2026-10-13/README.md`. On 13 October 2026 I
+re-ran everything on one PC (tests, the pilot campaign against a test PLC, the formal proofs), and
+it says what each piece shows and what it doesn't.
+
+After that, depending on what you care about:
+
+- `evidence/real/2026-10-10/twohost-campaign-3/`: two real machines, over a cable and then a LAN.
+- `evidence/silicon/2026-10-07/modbus/`: three RP2040 boards, one of them playing an old Modbus
+  device. Only the authorised writes ever reached it.
+- `docs/DOSSIER_PREUVE_1_1_9_SPEC.md`: how all this maps onto Annex III 1.1.9 (in French, sorry).
+
+## What isn't done yet
+
+I haven't tested it on a commercial PLC. The "PLC" in these campaigns is a simulator built on
+rmodbus. I did point it at a real SMA inverter once, but its Modbus server was switched off, so no
+write ever landed. Nothing has run for longer than a few minutes, there has been no external
+security audit, and the LoRa radio side only exists in simulation.
+
+If you build machines or look after PLCs and would like to try it on one machine, I'd really like
+to hear from you. The easiest way is to open an issue here, or you can find me on GitHub as
+[SO2304](https://github.com/SO2304).
+
+## About this repository
 
 This repository holds **proofs, not code**: campaign reports, their `SHA256SUMS`, journal
 verdicts, Kani logs, fuzzing logs, SBOMs, and the specifications they refer to. The code lives
