@@ -1,0 +1,7 @@
+OASIS|C|UART|WHOAMI|fp=a7089677a10b7fb0,mixed=true,owner_seq=1,owner_ed=5b8649c0cfcdbe78,previous_owner=true,pending_offer=0,peers=3,epoch=2,rev_signer=Current|mesh|a39d5fe
+OASIS|C|UART|PEER|fp=822460d254200275,role=2,perms=1,seq=1|mesh|a39d5fe
+OASIS|C|UART|PEER|fp=f6bd34440030a136,role=2,perms=1,seq=3|mesh|a39d5fe
+OASIS|C|UART|PEER|fp=a7089677a10b7fb0,role=4,perms=0,seq=1|mesh|a39d5fe
+OASIS|C|UART|MB_GW_STATUS|boot_id=21232,now_ms=153031,executed=0,rejects=0/0/0/0/0/0/0,sent=0,ack=0,exception=0,timeout=0,bad=0,rx_errors=0,last_seq=None|mesh|a39d5fe
+OASIS|A|MODBUS|MB_DEV_STATUS|rx_bytes=0,rx_errors=0,overflow=0,frames=0,parse_errors=0,writes=0,local_frames=0|device|a39d5fe
+OASIS|A|MODBUS|MB_DEV_REGS|r10=0,r11=0,r12=0,r20=0|device|a39d5fe

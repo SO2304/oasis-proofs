@@ -1,0 +1,11 @@
+filtered 7 of 13 entries to boot_id=50908
+boot_id=50908 entries=7 head_seq=Some(6) overwritten=0
+  [0] seq=0 origin=f6bd cmd_seq=1003 class=Act decision=Reject(Expired) flags=0x07
+  [1] seq=1 origin=f6bd cmd_seq=1004 class=Act decision=Act flags=0x07
+  [2] seq=2 origin=f6bd cmd_seq=1005 class=Act decision=Act flags=0x07
+  [3] seq=3 origin=f6bd cmd_seq=2001 class=Act decision=Act flags=0x07
+  [4] seq=4 origin=f6bd cmd_seq=2002 class=Act decision=Reject(Expired) flags=0x07
+  [5] seq=5 origin=f6bd cmd_seq=3001 class=Stop decision=Stop flags=0x0f
+  [6] seq=6 origin=f6bd cmd_seq=2003 class=Act decision=Reject(Stopped) flags=0x0f
+VERDICT intact entries=7
+exit=0

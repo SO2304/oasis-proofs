@@ -1,0 +1,20 @@
+# upload 345072 bytes from uart_mesh_C_v28.bin at 2026-10-09T11:02:46Z
+OASIS|C|UART|DFU_PROGRESS|written_to=65536|mesh|ad8f24a
+OASIS|C|UART|DFU_PROGRESS|written_to=131072|mesh|ad8f24a
+OASIS|C|UART|DFU_PROGRESS|written_to=196608|mesh|ad8f24a
+OASIS|C|UART|DFU_PROGRESS|written_to=262144|mesh|ad8f24a
+OASIS|C|UART|DFU_PROGRESS|written_to=327680|mesh|ad8f24a
+OASIS|C|UART|DFU_PROGRESS|written_to=345072|mesh|ad8f24a
+# upload sent in 29 s
+OASIS|C|UART|STAGE|len=0|mesh|ad8f24a
+OASIS|C|UART|STAGE|len=280|mesh|ad8f24a
+OASIS|C|UART|STAGE|len=560|mesh|ad8f24a
+OASIS|C|UART|STAGE|len=840|mesh|ad8f24a
+OASIS|C|UART|STAGE|len=1120|mesh|ad8f24a
+OASIS|C|UART|STAGE|len=1400|mesh|ad8f24a
+OASIS|C|UART|STAGE|len=1680|mesh|ad8f24a
+OASIS|C|UART|STAGE|len=1960|mesh|ad8f24a
+OASIS|C|UART|STAGE|len=2240|mesh|ad8f24a
+OASIS|C|UART|STAGE|len=2520|mesh|ad8f24a
+OASIS|C|UART|STAGE|len=2548|mesh|ad8f24a
+OASIS|C|UART|FW_INSTALL|accepted,version=28,running=26,floor=26,check_us=759812,resetting_for_swap|mesh|ad8f24a

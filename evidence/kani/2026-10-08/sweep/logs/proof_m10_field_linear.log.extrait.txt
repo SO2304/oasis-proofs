@@ -1,0 +1,14 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 10161 octets, SHA-256 d24803397f056d4f94f96f75c06299263855017bd1f225a3cbc8e9b6d6780a59
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_m10_field_linear
+VERIFICATION RESULT:
+ ** 0 of 9 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 105.298805s
+Complete - 1 successfully verified harnesses, 0 failures, 1 total.

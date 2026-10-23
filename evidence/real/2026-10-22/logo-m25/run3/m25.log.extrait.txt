@@ -1,0 +1,79 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 5763 octets, SHA-256 debb1c0f61fa75c894c2ff69b9c0be1c436747dcf09dccead39ea5100a53994c
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+logo_1119 2026-10-22T15:24:31Z  arbre=d7a03a1
+referentiel GS-IFA-M25 (DGUV Test / IFA, Stand 07-2026) — annexe III 1.1.9, reglement (UE) 2023/1230
+automate = Siemens LOGO! 230RCE @ 192.168.0.3:510, registre 100, aucun relais commande
+
+== Schutzmassnahmen / Nachverfolgbarkeit ==
+  T31 = J   moyens numeriques de tracabilite des interventions : journal chaine par hachage
+  T37 = J   lieu de stockage documente : fichiers .entries et .head sur l'hote de la passerelle, annonces au demarrage
+
+== T35 : la collecte est-elle automatique, sans intervention de l'utilisateur ? (Eingriffsversuch) ==
+  entrees avant la tentative : 0
+  entrees apres la tentative : 1   (aucune action d'operateur entre les deux)
+  T35 = J   une tentative d'intervention cree une entree, sans aucune action de l'utilisateur
+
+== T38 : au moins la derniere entree POUR CHAQUE TYPE d'intervention ==
+  T38a = J   intervention legitime executee, valeur portee par l'automate
+  T38:Act = J   au moins une entree de ce type
+  T38:Reject(OutOfLimits) = J   au moins une entree de ce type
+  T38:Reject(NotAuthorized) = J   au moins une entree de ce type
+  T38:Reject(NotVerified) = J   au moins une entree de ce type
+  ⚠️ Le type Change(...) — revocation, enrolement, firmware — n'est pas produit ici ;
+     il est demontre ailleurs (evidence/pilot/2026-10-09, C15-C17). Declare E pour cet essai.
+  T38:Change = E   entrees de changement de configuration, demontrees hors de cet essai (sans objet ici)
+
+== T33 et T47 : les preuves numeriques sont-elles lisibles et accessibles ? (Zugriffsversuch) ==
+    boot_id=5642199901263549017 entries=4 head_seq=Some(3) overwritten=0
+      [0] seq=0 origin=0000 cmd_seq=0 class=Act decision=Reject(NotVerified) flags=0x00
+      [1] seq=1 origin=aa00 cmd_seq=1 class=Act decision=Act flags=0x00
+      [2] seq=2 origin=aa00 cmd_seq=65 class=Act decision=Reject(OutOfLimits) flags=0x00
+  T33 = J   un outil independant lit les preuves et rend un verdict
+  T47 = J   les informations sont lisibles par un humain : une ligne par decision, en clair
+
+== T45 : chaque entree porte-t-elle le minimum exige ? ==
+      [0] seq=0 origin=0000 cmd_seq=0 class=Act decision=Reject(NotVerified) flags=0x00
+  T45:Art = J   Art des Eingriffs : classe de l'ordre et decision prise
+  T45:Nr = J   laufende Nummer : numero d'ordre strictement croissant, trou detecte (SeqGap)
+  T45:Boot = J   Boot-Zaehler : boot_id, ce qui separe deux demarrages
+  T45:Version = N   l'entree ne porte NI version logicielle NI configuration : la correlation est possible, l'identification du logiciel ne l'est pas depuis le journal seul   <<< ECHEC ASSUME, a declarer au dossier
+  T45:Zeit = E   pas d'horodatage en temps systeme dans l'entree ; T45 cite le numero d'ordre et le compteur de demarrage comme moyens de correlation suffisants, tous deux presents — a confirmer avec l'organisme (sans objet ici)
+
+== T42 : les journaux sont-ils proteges contre une manipulation CIBLEE ? (Versuch der Manipulation) ==
+  un refus est reecrit en acceptation (l'octet de decision passe a 00)
+    VERDICT broken at=3  (code 1)
+  T42 = J   une manipulation ciblee d'une entree est detectee : la verification echoue
+  ⚠️ Protection contre un attaquant DISTANT. Un acces local au fichier reecrit entrees et tete
+     ensemble ; la parade documentee est le temoin hors hote ([outil d essai]).
+
+== T36 : la collecte est-elle protegee contre la DESACTIVATION ? ==
+  passerelle lancee SANS --journal : vivante = oui, ecoute etablie = 1
+  ce qu'elle dit : GATEWAY warning: no --journal <prefix>, decisions are kept in RAM only and lost on exit
+  T36 = N   la collecte N'EST PAS protegee contre la desactivation : omettre --journal demarre la passerelle, qui ECOUTE et SERT avec les decisions en RAM seulement, perdues a l'arret. Elle avertit sur la sortie d'erreur, et c'est tout. Un examinateur qui tente la desactivation reussit   <<< ECHEC ASSUME, a declarer au dossier
+
+== T44 : un effacement des donnees de journal cree-t-il une entree sur cet effacement ? ==
+  chaines archivees presentes : 0
+  ce que la purge annonce : GATEWAY journal retention: keep 0 archived chains, removed 1
+  entrees mentionnant un effacement dans la nouvelle chaine : 0
+  T44 = N   un effacement NE cree PAS d'entree : [identifiant interne] supprime les fichiers et compte sur la sortie standard, rien n'entre dans la chaine. ChangeKind n'a aucune variante pour l'effacement d'un journal   <<< ECHEC ASSUME, a declarer au dossier
+
+== T46 : le produit fournit-il version logicielle et configuration sur demande ? ==
+    GATEWAY journal=[chemin retire] + [chemin retire]
+GATEWAY listen=127.0.0.1:15560 plc=192.168.0.3:510 unit=0x01 boot_id=5642199901263549017 registers=1
+  T46:Konfig = J   la configuration est annoncee au demarrage : cible, unite, nombre de registres, lieu du journal
+  T46:Version = N   AUCUNE version logicielle n'est annoncee par le binaire. Elle n'existe que hors produit, dans l'empreinte git et les SHA256SUMS du depot — ce qui ne repond ni a T46 ni a T03 (identification du logiciel par un condense)   <<< ECHEC ASSUME, a declarer au dossier
+
+  T48 = E   algorithmes : Ed25519, SHA-256, ChaCha20-Poly1305, HKDF-SHA256. La conformite a BSI TR-02102-1 version 2026-01 est une verification DOCUMENTAIRE, pas un essai de banc : a confronter au texte (sans objet ici)
+
+les 22 criteres attendus ont tous un verdict
+
+=== 15 critere(s) en J, 4 en N (echecs assumes), 0 controle(s) imprevus ===
+verdicts : [chemin retire]
+
+Les 4 verdict(s) en N sont a declarer au dossier technique, ce que le referentiel prevoit
+(T27, T28, T30, T34 demandent de documenter ce qui n'a pas pu etre fait, et pourquoi).

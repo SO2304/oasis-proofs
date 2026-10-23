@@ -1,0 +1,15 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 11244 octets, SHA-256 1dc56afe0721889b7fc6f1156f4439fed3a94cd9a6354084a24b25973d8b54b9
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_mb_no_frame_outside_the_origin_map
+VERIFICATION RESULT:
+ ** 1 of 339 failed (1 unreachable)
+Failed Checks: "a register was allowed that is not in this origin's own map"
+VERIFICATION:- FAILED
+Verification Time: 202.64642s
+Complete - 0 successfully verified harnesses, 1 failures, 1 total.

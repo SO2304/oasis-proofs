@@ -1,0 +1,5 @@
+OASIS|C|UART|WHOAMI|fp=a7089677a10b7fb0,mixed=true,owner_seq=1,owner_ed=5b8649c0cfcdbe78,previous_owner=true,pending_offer=2,peers=3,epoch=2,rev_signer=Current|mesh|4713703
+OASIS|C|UART|PEER|fp=822460d254200275,role=2,perms=1,seq=1|mesh|4713703
+OASIS|C|UART|PEER|fp=f6bd34440030a136,role=2,perms=0,seq=2|mesh|4713703
+OASIS|C|UART|PEER|fp=a7089677a10b7fb0,role=4,perms=0,seq=1|mesh|4713703
+OASIS|C|UART|EF_STATUS|boot_id=2558,now_ms=627668,epoch=2,revoked=1,sensor_lost=false,pin25=1,executed=1,rejects=0/1/0/1/0/0/0|mesh|4713703

@@ -1,0 +1,15 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 21539 octets, SHA-256 b61fda99cf933e9cc509576c945e3aa20db2f3a97d225d14ff44209409c11514
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_oas1_parse_total
+VERIFICATION RESULT:
+ ** 1 of 123 failed (4 unreachable)
+Failed Checks: "a parsed stop has a zero reserved byte"
+VERIFICATION:- FAILED
+Verification Time: 1.0345454s
+Complete - 0 successfully verified harnesses, 1 failures, 1 total.

@@ -1,0 +1,15 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 10786 octets, SHA-256 ee614a0d24d5dfe1c9c46e25e6a27f17b7847e8de297a380fc840d3fea13f4e5
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_mbtcp_frame_iff_act_and_matches_order
+VERIFICATION RESULT:
+ ** 1 of 1398 failed (175 unreachable)
+Failed Checks: assertion failed: u16_be(b, 0) == tid
+VERIFICATION:- FAILED
+Verification Time: 16.435402s
+Complete - 0 successfully verified harnesses, 1 failures, 1 total.

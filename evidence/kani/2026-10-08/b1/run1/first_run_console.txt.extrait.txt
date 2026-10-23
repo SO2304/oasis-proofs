@@ -1,0 +1,31 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 1044 octets, SHA-256 f0441ce905df20e1bc8f59e87cc78ddfa725ef4c1133d2ea973db0ac93d87959
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+
+thread 'main' (507) panicked at /rustc/8925ea358a0f265ca61026aadc7ecc506c545cbe/library/std/[chemin retire]:
+failed printing to stdout: Broken pipe (os error 32)
+[2026-10-08T12:15:46Z] ref=positioning-alignment stamp=fe8cad9, Kani Rust Verifier 0.68.0 (cargo plugin)
+=== proof_no_arm_frame_without_act (12:15:46Z)
+  *** FAILED (counterexample) ***
+    Failed Checks: unwinding assertion loop 0
+     File: [chemin retire], line 229, in crc_over
+
+    VERIFICATION:- FAILED
+=== proof_arm_implies_every_condition (12:16:06Z)
+  *** FAILED (counterexample) ***
+    Failed Checks: unwinding assertion loop 0
+     File: [chemin retire], line 229, in crc_over
+
+    VERIFICATION:- FAILED
+=== proof_stop_class_never_arms (12:16:25Z)
+  SUCCESSFUL
+=== proof_action_is_total_and_binary (12:16:34Z)
+  SUCCESSFUL
+
+[2026-10-08T12:16:39Z] stamp=fe8cad9  verified=2  refuted=2  undetermined=0
+
+[exited with code 0]

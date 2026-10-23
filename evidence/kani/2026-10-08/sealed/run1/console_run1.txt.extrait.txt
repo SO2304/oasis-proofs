@@ -1,0 +1,30 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 1166 octets, SHA-256 a165ce75da96a2460b3f50fb99e45a1ceb7d6c0154d553066a53c6248d2a0e83
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+To https://github.com/SO2304/oasis.git
+   ef6adb5..dd993b5  b1-px4-sitl -> b1-px4-sitl
+[2026-10-08T16:57:11Z] stamp=dd993b5  Kani Rust Verifier 0.68.0 (cargo plugin)
+== arbre tel quel : les 4 doivent passer ==
+  FAILED       proof_sealed_dest_total
+  FAILED       proof_ose1_len_is_sane
+  SUCCESSFUL   proof_nonce_is_injective_in_the_counter
+  SUCCESSFUL   proof_open_refuses_another_destination_without_crypto
+== controle negatif A : sealed_dest accepte un blob trop court ==
+  mutant A applique: la borne de longueur tombe a 4
+  FAILED       proof_sealed_dest_total
+== controle negatif B : le nonce ignore les 4 octets hauts du compteur ==
+  mutant B applique: deux compteurs peuvent partager un nonce
+  FAILED       proof_nonce_is_injective_in_the_counter
+
+[2026-10-08T16:58:13Z] stamp=dd993b5
+preuves :
+      2 VERIFICATION:- FAILED
+      2 VERIFICATION:- SUCCESSFUL
+controles negatifs (doivent echouer) :
+      2 VERIFICATION:- FAILED
+
+[exited with code 0]

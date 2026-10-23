@@ -1,0 +1,23 @@
+===== 11_B_journal.log =====
+  slot=0   seq=0   boot=33445  fp=0000000000000000 valeur/cmd_seq=27     classe=0  Change(FirmwareInstalled) applique=False
+  slot=1   seq=1   boot=33445  fp=785fdbfb257ee0f6 valeur/cmd_seq=28     classe=0  Change(FirmwareInstalled) applique=True
+  JRN_BOOT  boot_id=34724
+  JRN_HEAD  seq=none hash=367505217c93530136ce6651af74fd9271afd84a0dd9ec57c6cd5a745c2c9f5c overwritten=0
+  JRN_END   entries=2,capacity=64,restored=false,prev_boot=Some(33445)
+===== 10_C_journal.log =====
+  slot=0   seq=0   boot=49629  fp=f6bd34440030a136 valeur/cmd_seq=400    classe=1  Reject(NotAuthorized)
+  slot=1   seq=1   boot=49629  fp=f6bd34440030a136 valeur/cmd_seq=401    classe=1  Stop
+  slot=2   seq=2   boot=49629  fp=f6bd34440030a136 valeur/cmd_seq=402    classe=1  Stop
+  slot=3   seq=3   boot=49629  fp=f6bd34440030a136 valeur/cmd_seq=403    classe=1  Stop
+  slot=4   seq=4   boot=49629  fp=f6bd34440030a136 valeur/cmd_seq=1001   classe=0  Act
+  slot=5   seq=5   boot=49629  fp=f6bd34440030a136 valeur/cmd_seq=1002   classe=0  Act
+  slot=6   seq=0   boot=50908  fp=f6bd34440030a136 valeur/cmd_seq=1003   classe=0  Reject(Expired)
+  slot=7   seq=1   boot=50908  fp=f6bd34440030a136 valeur/cmd_seq=1004   classe=0  Act
+  slot=8   seq=2   boot=50908  fp=f6bd34440030a136 valeur/cmd_seq=1005   classe=0  Act
+  slot=9   seq=3   boot=50908  fp=f6bd34440030a136 valeur/cmd_seq=2001   classe=0  Act
+  slot=10  seq=4   boot=50908  fp=f6bd34440030a136 valeur/cmd_seq=2002   classe=0  Reject(Expired)
+  slot=11  seq=5   boot=50908  fp=f6bd34440030a136 valeur/cmd_seq=3001   classe=1  Stop
+  slot=12  seq=6   boot=50908  fp=f6bd34440030a136 valeur/cmd_seq=2003   classe=0  Reject(Stopped)
+  JRN_BOOT  boot_id=53466
+  JRN_HEAD  seq=none hash=0e9687fb975f40c344a0832ca189057ff24924123ce0f542ffca67e56c597531 overwritten=0
+  JRN_END   entries=13,capacity=64,restored=false,prev_boot=Some(50908)

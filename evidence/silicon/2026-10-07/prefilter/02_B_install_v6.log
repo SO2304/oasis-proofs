@@ -1,0 +1,26 @@
+# upload 300852 bytes from B_v6.bin at 2026-10-07T10:10:40Z
+OASIS|B|UART|DFU_PROGRESS|written_to=65536|mesh|bbee4cf
+OASIS|B|UART|DFU_PROGRESS|written_to=131072|mesh|bbee4cf
+OASIS|B|UART|DFU_PROGRESS|written_to=196608|mesh|bbee4cf
+OASIS|B|UART|DFU_PROGRESS|written_to=262144|mesh|bbee4cf
+OASIS|B|UART|DFU_PROGRESS|written_to=300852|mesh|bbee4cf
+# upload sent in 22 s
+OASIS|B|UART|STAGE|len=0|mesh|bbee4cf
+OASIS|B|UART|STAGE|len=280|mesh|bbee4cf
+OASIS|B|UART|STAGE|len=560|mesh|bbee4cf
+OASIS|B|UART|STAGE|len=840|mesh|bbee4cf
+OASIS|B|UART|STAGE|len=1120|mesh|bbee4cf
+OASIS|B|UART|STAGE|len=1400|mesh|bbee4cf
+OASIS|B|UART|STAGE|len=1680|mesh|bbee4cf
+OASIS|B|UART|STAGE|len=1960|mesh|bbee4cf
+OASIS|B|UART|STAGE|len=2240|mesh|bbee4cf
+OASIS|B|UART|STAGE|len=2520|mesh|bbee4cf
+OASIS|B|UART|STAGE|len=2548|mesh|bbee4cf
+OASIS|B|UART|FW_INSTALL|accepted,version=6,running=5,floor=5,check_us=701598,resetting_for_swap|mesh|bbee4cf
+# port transitions
+2026-10-07T10:10:39.951Z /dev/ttyS9 present
+2026-10-07T10:11:04.191Z /dev/ttyS9 absent
+2026-10-07T10:11:21.121Z /dev/ttyS9 present
+# @V
+OASIS|B|UART|LEASE_PERSIST|ceiling=11511,writes_since_boot=2|mesh|4c84401
+OASIS|B|UART|FW_STATUS|version=6,floor=6,boot=ConfirmedAfterSwap,bootloader_state=Boot,fp=f6bd34440030a136,guard_failed_before=0|mesh|4c84401

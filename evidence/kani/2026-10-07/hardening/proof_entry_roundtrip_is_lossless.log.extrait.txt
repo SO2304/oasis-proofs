@@ -1,0 +1,14 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 9698 octets, SHA-256 2b4b0dfe3c33d50404330f54fc935b1c21090046a576e6bb18e4b4f6fbbac75b
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_entry_roundtrip_is_lossless
+VERIFICATION RESULT:
+ ** 0 of 363 failed (4 unreachable)
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.379882s
+Complete - 1 successfully verified harnesses, 0 failures, 1 total.

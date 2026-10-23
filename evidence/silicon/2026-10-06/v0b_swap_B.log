@@ -1,0 +1,3 @@
+OASIS|B|UART|DROP|bad mesh signature|mesh|d285ef4
+OASIS|B|UART|ARRIVED|msg_id=14412014626722181781,hops=0,sig=verified,forward=true|mesh|d285ef4
+OASIS|B|UART|RELAYED|msg_id=14412014626722181781,hops=0|mesh|d285ef4

@@ -1,0 +1,5 @@
+OASIS|B|UART|LEASE_PERSIST|ceiling=3837,writes_since_boot=2|mesh|4713703
+OASIS|B|UART|WHOAMI|fp=f6bd34440030a136,mixed=true,owner_seq=0,owner_ed=0beef5a9e679e6a3,previous_owner=false,pending_offer=0,peers=1,epoch=0,rev_signer=None|mesh|4713703
+OASIS|B|UART|PEER|fp=822460d254200275,role=2,perms=1,seq=1|mesh|4713703
+OASIS|B|UART|MODE|strict_v0b=true|mesh|4713703
+OASIS|B|UART|V0B_TIMING|v0a_sign_us=176421,v0b_sign_us=178059,v0a_verify_us=182385,v0b_verify_us=184767|mesh|4713703

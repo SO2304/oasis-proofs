@@ -1,0 +1,15 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 502 octets, SHA-256 f6d454d3fb01f7af13cdba6637e6ca1eeb73b45dedc947eae2a49839af059d78
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+# T5 port transitions ([outil d essai], 100 ms sampling): reset for swap, v3hang enumerates, watchdog reset, v2 after revert
+2026-10-06T22:58:14.820Z /dev/ttyS10 present
+2026-10-06T22:58:39.919Z /dev/ttyS10 absent
+2026-10-06T22:58:57.633Z /dev/ttyS10 present
+2026-10-06T22:59:05.161Z /dev/ttyS10 absent
+2026-10-06T22:59:24.523Z /dev/ttyS10 present
+# @V after the revert
+OASIS|C|UART|FW_STATUS|version=2,floor=2,boot=Reverted,bootloader_state=Revert,fp=a7089677a10b7fb0,guard_failed_before=1|mesh|200d96b

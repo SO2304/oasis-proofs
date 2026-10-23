@@ -1,0 +1,4 @@
+OASIS|C|UART|RXF|n=6,len=110,ctr=30913,seq=???|mesh|ad8f24a
+OASIS|C|UART|ARRIVED|msg_id=1266434933854772220,hops=0,sig=verified,forward=true|mesh|ad8f24a
+OASIS|C|UART|STOP|fmt=OAS1,decision=Stop,seq=3001,actuator_id=1,origin=f6,stopped_led=true,stopped_gw=false,pin25=0,jseq=Some(5)|mesh|ad8f24a
+OASIS|C|UART|EF_STATUS|boot_id=50908,now_ms=9491143,epoch=2,revoked=1,sensor_lost=false,pin25=0,executed=3,stopped=true,stops=1,sup_required=false,sup_until=None,jseq=Some(5),rejects=0/0/0/2/0/0/0/0/0|mesh|ad8f24a

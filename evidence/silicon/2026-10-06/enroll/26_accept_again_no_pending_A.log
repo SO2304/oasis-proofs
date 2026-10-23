@@ -1,0 +1,13 @@
+OASIS|A|UART|STAGE|len=0|mesh|4713703
+OASIS|A|UART|STAGE|len=280|mesh|4713703
+OASIS|A|UART|STAGE|len=560|mesh|4713703
+OASIS|A|UART|STAGE|len=840|mesh|4713703
+OASIS|A|UART|STAGE|len=1120|mesh|4713703
+OASIS|A|UART|STAGE|len=1400|mesh|4713703
+OASIS|A|UART|STAGE|len=1680|mesh|4713703
+OASIS|A|UART|STAGE|len=1960|mesh|4713703
+OASIS|A|UART|STAGE|len=2240|mesh|4713703
+OASIS|A|UART|STAGE|len=2520|mesh|4713703
+OASIS|A|UART|STAGE|len=2537|mesh|4713703
+OASIS|A|UART|AUTH|kind=4,suite=3,len=2537,decision=Own(Reject(NoPendingOffer)),verify_us=0,stack=0,forward=false|mesh|4713703
+OASIS|A|UART|STATE|owner_seq=1,owner_ed=5b8649c0cfcdbe78,pending_offer=0,peers=2,rev_signer=Previous|mesh|4713703

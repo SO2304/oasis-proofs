@@ -1,0 +1,4 @@
+OASIS|B|UART|LEASE_PERSIST|ceiling=1279,writes_since_boot=2|mesh|1a9b461
+OASIS|B|UART|MODE|strict_v0b=true|mesh|1a9b461
+OASIS|B|UART|EF_STATUS|boot_id=0,now_ms=18385,epoch=0,revoked=0,sensor_lost=false,pin25=0,executed=0,rejects=0/0/0/0/0/0/0|mesh|1a9b461
+OASIS|B|UART|PQ_STATUS|min_suite_revocation=1,legacy_orv1_allowed=true,epoch=0,revoked=0,reasm_in_use=0,stage_len=0|mesh|1a9b461

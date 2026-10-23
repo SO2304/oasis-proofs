@@ -1,0 +1,36 @@
+21:58:14.145 logo_relay_a  arbre=7a68abf  automate=192.168.0.3:510
+21:58:14.195 trames : FC05_ON=00010000000601052000ff00 FC05_OFF=000100000006010520000000 FC15_ON=000100000008010f200000010101
+21:58:15.803 passerelle 127.0.0.1:15550 et agent 127.0.0.1:15551 en route (pids windows: 6432 2748)
+21:58:15.852 --- A0 : etat de depart ---
+21:58:16.615   OK    Q1 au depart : 0
+21:58:16.672 --- A1 : TEMOIN, FC05 brut DIRECTEMENT a l'automate ---
+21:58:17.238   reponse de l'automate : 00010000000601052000ff00
+21:58:19.084   OK    Q1 apres un FC05 brut non authentifie (le relais doit claquer) : 1
+21:58:19.640   reponse au FC05 off : 000100000006010520000000
+21:58:21.429   OK    Q1 apres le FC05 off : 0
+21:58:21.477 --- A2 : le meme FC05, au port de la PASSERELLE ---
+21:58:21.973   la passerelle a repondu : NO-ANSWER
+21:58:23.808   OK    Q1 apres un FC05 a la passerelle : 0
+21:58:23.861   OK    la passerelle n'a pas renvoye l'echo d'une ecriture executee
+21:58:23.925 --- A3 : le meme FC05, envoye par une IHM a l'AGENT (chemin livre) ---
+21:58:24.382   l'agent a repondu : 00010000000301850a
+21:58:24.428   OK    code de fonction de la reponse (0x85 = exception sur FC05) : 85
+21:58:26.263   OK    Q1 apres un FC05 a l'agent : 0
+21:58:26.363 --- A4 : FC15, ecriture de bobines multiples, a l'AGENT ---
+21:58:26.966   l'agent a repondu : 000100000003018f0a
+21:58:27.064   OK    code de fonction de la reponse (0x8f = exception sur FC15) : 8f
+21:58:28.826   OK    Q1 apres un FC15 a l'agent : 0
+21:58:28.870 --- A5 : une ecriture de registre LEGITIME par l'agent ---
+21:58:29.700   registre 100 = 290, cible 860, trame 00010000000601060064035c
+21:58:30.195   l'agent a repondu : 00010000000601060064035c
+21:58:30.244   OK    echo de l'ecriture acceptee : 00010000000601060064035c
+21:58:32.118   OK    registre 100 relu dans l'automate : 860
+21:58:33.009   OK    Q1 apres une ecriture de registre : 0
+21:58:33.091 --- A6 : journal de la passerelle ---
+  boot_id=14041452140578930717 entries=1 head_seq=Some(0) overwritten=0
+    [0] seq=0 origin=aa00 cmd_seq=1 class=Act decision=Act flags=0x00
+  VERDICT intact entries=1
+21:58:33.382   OK    verification du journal (code) : 0
+21:58:33.502   OK    entrees au journal (seule A5 atteint la passerelle) : 1
+21:58:33.566 
+21:58:33.633 === 14 controles sur 14 ===

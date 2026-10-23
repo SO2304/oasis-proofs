@@ -1,0 +1,7 @@
+boot_id=1791655439803 entries=4 head_seq=Some(3) overwritten=0
+  [0] seq=0 origin=ab00 cmd_seq=1 class=Act decision=Act flags=0x00
+  [1] seq=1 origin=ab00 cmd_seq=2 class=Act decision=Reject(OutOfLimits) flags=0x00
+  [2] seq=2 origin=ab00 cmd_seq=3 class=Act decision=Reject(OutOfLimits) flags=0x00
+  [3] seq=3 origin=ab00 cmd_seq=65 class=Act decision=Act flags=0x00
+VERDICT intact entries=4
+exit=0

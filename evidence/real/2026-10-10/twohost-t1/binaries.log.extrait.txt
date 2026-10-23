@@ -1,0 +1,19 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 1261 octets, SHA-256 548619e90df9f863096c60a54d7dd96817ed41dc8071a9d566a0153e75b7bcd0
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+# Binaries of the A.6/T1 two-machine run 1, 2026-10-10. sha256, build time, source.
+source: HEAD 19e9d83; no commit touched [chemin retire], [chemin retire], oasis-test-plc or Cargo.lock after the gateway build
+PC1 (Windows 11 Pro, x86-64) - gateway side
+  oasis_mbtcp_gateway.exe   33660f4bddb1d1e571220df13460fcd48833a1e8906f1ee1f0632fb32a79a78c  built 2026-10-09 17:14:11
+  oasis_test_plc.exe        af62dd9a5b18225630d3e811d68171583e586d94d4bb9e0c2f2b8d5d404410a7  built 2026-10-09 01:03:14
+  oasis_journal_verify.exe  f6eb8d1210e4037771dd091a6343b81fb0bffd8d878c5acb6896f883c7af123d  relinked 2026-10-10 18:55:04, same source; both verdict logs here were produced with it
+PC2 (Ubuntu, Dell OptiPlex 7080, x86-64) - order side
+  oasis_mbtcp_order  x86_64-unknown-linux-musl, static-pie
+                     957180ef8d7601370b06a0c8b1973e9a78a1cb04d425e11ba8e13eaa01304f1d
+                     built in WSL (Ubuntu 26.04.1, rustc 1.99.0) 2026-10-10 16:16 UTC from the clean tree at 19e9d83
+                     the same hash printed by sha256sum ON PC2 immediately before the run (pc2_run1.log, line 2)
+after the run, not used for it: oasis_mbtcp_order with the reporting fix of this report, 460f25a81be48d485300a22d1541899bf01e5841b30ae2d5cc2a57f4a6c87e3a

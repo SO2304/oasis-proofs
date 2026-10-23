@@ -1,0 +1,17 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 804 octets, SHA-256 6f4a703d531d90be46fa100fc57a099e9ef2ca91c0234700325114033e20a52b
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY refusing to serve: the sealed chain of boot 1298968162432598125 is GONE (sealed up to seq Some(0)): neither live nor archived.
+GATEWAY  The journal was removed or rewritten outside the documented process.
+GATEWAY  --keep-journals N only removes ARCHIVES and records what it removed, so it
+GATEWAY  never produces this. Annex III 1.1.9 para 5 asks for evidence of a legitimate
+GATEWAY  OR illegitimate intervention; serving on from here would collect it over a hole.
+GATEWAY  Investigate against your off-host anchor ([outil d essai] check), then
+GATEWAY  pass --accept-journal-loss to start a new chain, which records the loss in it.

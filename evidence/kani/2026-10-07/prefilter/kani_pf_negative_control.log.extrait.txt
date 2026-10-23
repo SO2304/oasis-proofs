@@ -1,0 +1,34 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 19148 octets, SHA-256 55752126479955ee27cf8332d102a146f77a2c8177dc6e27a0b44e6933a224d6
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_v0c_parse_total
+VERIFICATION RESULT:
+ ** 6 of 138 failed
+Failed Checks: index out of bounds: the length is less than or equal to the given index
+Failed Checks: index out of bounds: the length is less than or equal to the given index
+Failed Checks: index out of bounds: the length is less than or equal to the given index
+Failed Checks: index out of bounds: the length is less than or equal to the given index
+Failed Checks: index out of bounds: the length is less than or equal to the given index
+Failed Checks: This is a placeholder message; Kani doesn't support message formatted at runtime
+VERIFICATION:- FAILED
+Verification Time: 3.6768763s
+harnais : proof_budget_refill_capped
+VERIFICATION RESULT:
+ ** 2 of 67 failed
+Failed Checks: attempt to subtract with overflow
+Failed Checks: assertion failed: b.tokens() <= burst
+VERIFICATION:- FAILED
+Verification Time: 2.3840423s
+harnais : proof_budget_never_exceeds_burst
+VERIFICATION RESULT:
+ ** 2 of 62 failed
+Failed Checks: attempt to subtract with overflow
+Failed Checks: assertion failed: granted == burst
+VERIFICATION:- FAILED
+Verification Time: 5.532056s
+Complete - 0 successfully verified harnesses, 3 failures, 3 total.

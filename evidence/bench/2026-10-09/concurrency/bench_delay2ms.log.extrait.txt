@@ -1,0 +1,23 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 27170 octets, SHA-256 807e8b51f0209da0f90e3f05b7804f625e23845b316feb46b7cd887cdeafabca
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+bench_mbtcp_concurrency  rounds=10 writes/HMI=10 plc_delay=2000 us
+  plc=127.0.0.1:63630  gateway=127.0.0.1:63631  agent=127.0.0.1:63632
+
+   N   throughput (ack/s)      latency median        slowest/fastest HMI    refusals
+   1        307 +/-   7%            3100 us +/-  9%         1.00x              none
+   2        320 +/-   7%            6156 us +/-  6%         1.02x              none
+   5        324 +/-   2%           15368 us +/-  3%         1.02x              none
+  10        321 +/-   2%           30505 us +/-  3%         1.03x              none
+
+  N 1 -> 10: throughput 307 -> 321 ack/s, latency 3100 -> 30505 us
+  Peak throughput 324 ack/s at N=5; within 10 % of it from N=1 on.
+  So the path saturates at N=1 and does not improve to N=10: the gateway's
+  state lock spans the PLC round trip and the agent serialises emission, so
+  concurrent HMIs queue. Latency is then ~9x at N=10 against N=1 — queueing,
+  not work. Capacity above this needs **distinct origins**, one enrolled identity
+  per HMI, which the per-origin map and per-origin sequence (A.1) allow.

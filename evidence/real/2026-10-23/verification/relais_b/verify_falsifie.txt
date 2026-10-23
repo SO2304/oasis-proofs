@@ -1,0 +1,7 @@
+boot_id=9000406622112464185 entries=5 head_seq=Some(4) overwritten=0
+  [0] seq=0 origin=afd7 cmd_seq=1792737155 class=Act decision=Change(SoftwareIdentity) flags=0x10
+  [1] seq=1 origin=aa00 cmd_seq=1 class=Act decision=Act flags=0x00
+  [2] seq=2 origin=aa00 cmd_seq=65 class=Act decision=Act flags=0x00
+  [3] seq=3 origin=aa00 cmd_seq=129 class=Act decision=Act flags=0x00
+  [4] seq=4 origin=bb00 cmd_seq=1 class=Act decision=Reject(NotAuthorized) flags=0x00
+VERDICT broken at=4

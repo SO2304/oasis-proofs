@@ -1,0 +1,4 @@
+OASIS|C|UART|PF_MODE|v0c=false,next_hop=-,tokens=24|mesh|1199aba
+OASIS|C|UART|PF_QUIET|quiet=true|mesh|1199aba
+OASIS|C|UART|PF_STATUS|v0c=false,accepted=60,drop_tag=0,drop_budget=0,drop_sig=60,drop_other=0,busy_us=17047853,max_us=181891,tokens=24,rx_bytes=16459,frames=151,crc_fails=0|mesh|1199aba
+OASIS|C|UART|PF_QUIET|quiet=false|mesh|1199aba

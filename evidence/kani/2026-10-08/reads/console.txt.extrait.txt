@@ -1,0 +1,29 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 1374 octets, SHA-256 888c3660a6e01caf09a1b74d746836e60a582b2393883c064d7b9b5026e0875d
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+
+thread 'main' (32533) panicked at /rustc/8925ea358a0f265ca61026aadc7ecc506c545cbe/library/std/[chemin retire]:
+failed printing to stdout: Broken pipe (os error 32)
+[2026-10-08T20:43:36Z] stamp=92b2f84  Kani Rust Verifier 0.68.0 (cargo plugin)
+== arbre tel quel : les 5 doivent passer ==
+  SUCCESSFUL   proof_omq1_parse_is_total
+  SUCCESSFUL   proof_omv1_parse_is_total_and_count_matches_length
+  SUCCESSFUL   proof_no_read_frame_without_ok
+  SUCCESSFUL   proof_read_frame_is_exactly_the_query
+  SUCCESSFUL   proof_parse_tcp_read_never_accepts_a_write
+== controle negatif A : le span n'est verifie que sur son premier registre ==
+  mutant A applique: span_allowed ne verifie plus que le premier registre
+  FAILED       proof_no_read_frame_without_ok
+== controle negatif B : parse_omv1 accepte un count qui ment ==
+  mutant B applique: la longueur declaree n est plus liee aux octets portes
+  FAILED       proof_omv1_parse_is_total_and_count_matches_length
+
+[2026-10-08T20:44:38Z] stamp=92b2f84
+preuves :
+      5 VERIFICATION:- SUCCESSFUL
+controles negatifs (doivent echouer) :
+      2 VERIFICATION:- FAILED

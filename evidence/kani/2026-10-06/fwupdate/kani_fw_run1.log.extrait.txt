@@ -1,0 +1,24 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 5141 octets, SHA-256 b30466f4e0984ef70672d201056055893e2374846811f62458ac7610155c91b9
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.67.0 (cargo plugin)
+harnais : proof_fw_parsers_total
+VERIFICATION RESULT:
+ ** 0 of 161 failed (4 unreachable)
+VERIFICATION:- SUCCESSFUL
+Verification Time: 5.168082s
+harnais : proof_fw_floor_never_lowers
+VERIFICATION RESULT:
+ ** 0 of 13 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.10020016s
+harnais : proof_fw_install_requires_all_conditions
+VERIFICATION RESULT:
+ ** 0 of 103 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.6518226s
+Complete - 3 successfully verified harnesses, 0 failures, 3 total.

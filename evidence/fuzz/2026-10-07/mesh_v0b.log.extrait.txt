@@ -1,0 +1,17 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 60920 octets, SHA-256 22f503e559404deadf4582e8beaed96d4adfe969cd2396cbadb321a28ab0ab10
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 2563120294
+INFO: -max_len is not provided; libFuzzer will not generate inputs larger than 4096 bytes
+#2465784	DONE   cov: 1009 ft: 1585 corp: 75/5195b lim: 4096 exec/s: 684 rss: 329Mb
+Done 2465784 runs in 3601 second(s)
+stat::number_of_executed_units: 2465784
+stat::average_exec_per_sec:     684
+stat::new_units_added:          124
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              329

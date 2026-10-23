@@ -1,0 +1,15 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 9683 octets, SHA-256 4ab19c265ffc9c389e598d99b9e04d24b138b8a8853d6c64da08814a42f6703b
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_timeview_window_is_bounded
+VERIFICATION RESULT:
+ ** 1 of 33 failed
+Failed Checks: assertion failed: deadline - now <= MAX_VALIDITY_MS
+VERIFICATION:- FAILED
+Verification Time: 0.49426237s
+Complete - 0 successfully verified harnesses, 1 failures, 1 total.

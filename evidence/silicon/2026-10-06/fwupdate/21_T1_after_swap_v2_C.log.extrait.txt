@@ -1,0 +1,14 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 428 octets, SHA-256 518d2eb7c3d028412e11e1612ec23d5442232430ae743eaeae2b6caf0cafd828
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+# port transitions ([outil d essai], 100 ms sampling)
+2026-10-06T22:54:44.068Z /dev/ttyS10 present
+2026-10-06T22:55:09.543Z /dev/ttyS10 absent
+2026-10-06T22:55:27.251Z /dev/ttyS10 present
+# @V after re-enumeration
+OASIS|C|UART|LEASE_PERSIST|ceiling=16883,writes_since_boot=2|mesh|200d96b
+OASIS|C|UART|FW_STATUS|version=2,floor=2,boot=ConfirmedAfterSwap,bootloader_state=Boot,fp=a7089677a10b7fb0,guard_failed_before=0|mesh|200d96b

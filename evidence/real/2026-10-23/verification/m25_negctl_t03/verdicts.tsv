@@ -1,0 +1,37 @@
+critere	verdict	intitule	preuve
+T31	J	moyens numeriques de tracabilite des interventions : journal chaine par hachage	gateway.log, jrn.entries
+T37	J	lieu de stockage documente : fichiers .entries et .head sur l'hote de la passerelle, annonces au demarrage	gateway.log ligne GATEWAY journal=
+T35	J	une tentative d'intervention cree une entree, sans aucune action de l'utilisateur	t35_tentative.txt, journal.txt
+T38a	J	intervention legitime executee, valeur portee par l'automate	t38_act.txt
+T38:Act	J	au moins une entree de ce type	journal.txt
+T38:Reject(OutOfLimits)	J	au moins une entree de ce type	journal.txt
+T38:Reject(NotAuthorized)	J	au moins une entree de ce type	journal.txt
+T38:Reject(NotVerified)	J	au moins une entree de ce type	journal.txt
+T38:Change(SoftwareIdentity)	J	au moins une entree de ce type, ecrite au demarrage	journal.txt
+T38:Change(autres)	E	revocation, enrolement et firmware, demontres hors de cet essai	evidence/pilot/2026-10-09
+T31:actionneur	J	une consigne signee commande un ACTIONNEUR PHYSIQUE : le relais Q1 ferme a 600 et ouvre a 300, releve par un client Modbus independant, et les deux decisions sont au journal	relais_ferme.txt, relais_ouvre.txt
+T35:actionneur	J	une intervention refusee (identite sans permission d'actionner) laisse le relais immobile, et l'entree est quand meme au journal	relais_refus.txt
+T33	J	un outil independant lit les preuves et rend un verdict	t33_lecture.txt
+T47	J	les informations sont lisibles par un humain : une ligne par decision, en clair	t33_lecture.txt
+T45:Art	J	Art des Eingriffs : classe de l'ordre et decision prise	t33_lecture.txt
+T45:Nr	J	laufende Nummer : numero d'ordre strictement croissant, trou detecte (SeqGap)	t33_lecture.txt
+T45:Boot	J	Boot-Zaehler : boot_id, ce qui separe deux demarrages	t33_lecture.txt
+T45:Version	J	l'identite du logiciel et de la configuration est la PREMIERE entree de la chaine (empreinte de version, compilation et configuration dans origin_fp), donc chainee a toutes les suivantes	t33_lecture.txt
+T45:Zeit	J	ancre en temps systeme : l'entree d'identite porte 2026-10-23T06:35:58Z, et le numero d'ordre plus le compteur de demarrage situent chaque entree par rapport a elle	t33_lecture.txt
+T42:gezielt	J	cinq formes de manipulation deliberee, toutes detectees : refus reecrit en acceptation, troncature, suppression au milieu, permutation, duplication	t42/formes.tsv
+T42:troncature	J	la troncature est detectee, la tete nommant le dernier numero d'ordre — la litterature la donne indetectable pour une chaine seule	t42/troncature.out
+T42:zufaellig	J	balayage exhaustif : chaque chiffre de chaque entree retourne, 320 mutations, aucune acceptee	t42/sweep/
+T43:temoin_intact	J	le temoin reconnait la chaine qu'il a ancree	t42/check_ok.out
+T43:temoin_divergence	J	la parade de T43 Exklusiv est EPROUVEE et pas seulement nommee : le temoin rend « WITNESS DIVERGENCE » sur une chaine reecrite, parce qu'il compare a ce qui a deja quitte l'hote. ⚠️ ici l'ancre reste sur le meme disque : la mecanique est demontree, la separation non	t42/check_bad.out
+T36	J	la passerelle REFUSE de servir sans journal, et le dit : « a gateway that decides without recording collects no evidence ». La desactivation par omission n'est plus possible ; il faut la demander par son nom, --no-journal	t36_sans_journal.txt
+T40	J	il n'existe aucun etat ou le produit sert sans journal : le refus de T36 rend l'activation non pas recommandee mais inevitable	t36_sans_journal.txt, gateway.log
+T43:Prozess	J	docs/PILOT_INSTALL.md decrit --keep-journals N, applique au demarrage, et dit que la duree de conservation est la decision de l'exploitant ; depuis le 2026-10-22 l'effacement laisse lui-meme une entree (T44)	docs/PILOT_INSTALL.md
+T43:Exklusiv	J	aucune autre voie ne donne un effacement utilisable : la passerelle sert au premier demarrage et au redemarrage normal, et REFUSE de servir quand la chaine scellee a disparu ou quand le sceau a ete efface ; le processus decrit (--keep-journals) ne declenche jamais ce refus	t43/
+T43:perte_journalisee	J	reprendre apres une perte exige --accept-journal-loss, et la perte entre dans la nouvelle chaine comme Change(TamperSignal)	t43/jrn.txt
+T43:residuel	E	qui supprime la chaine, le sceau ET chaque archive ne laisse plus rien sur l hote : a ce point seul l ancrage hors hote temoigne encore. Le sceau ne rend pas l effacement impossible, il le rend inutilisable et visible	docs/PILOT_INSTALL.md
+T44	J	un effacement est lui-meme journalise : une entree Change(JournalPruned) dans la NOUVELLE chaine dit combien de chaines archivees ont disparu	t44_apres.txt
+T38:Change(JournalPruned)	J	au moins une entree de ce type, produite par la purge	t44_apres.txt
+T46:Konfig	J	la configuration est annoncee au demarrage : cible, unite, nombre de registres, lieu du journal	gateway.log
+T46:Version	J	la version logicielle, l'empreinte du commit et l'empreinte de configuration sont annoncees au demarrage : version=0.3.0 build=632b906f84dc-dirty config_id=0a8286335f01568b	gateway.log
+T03	N	le binaire essaye n'est attribuable a AUCUN commit : il annonce « 632b906f84dc-dirty ». Un passage fait ainsi prouve un comportement, pas la version qui l'a eu	gateway.log
+T48	E	algorithmes : Ed25519, SHA-256, ChaCha20-Poly1305, HKDF-SHA256. La conformite a BSI TR-02102-1 version 2026-01 est une verification DOCUMENTAIRE, pas un essai de banc : a confronter au texte	docs/compliance/

@@ -1,0 +1,9 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 17042 octets, SHA-256 befe739b2d881264f3dc8c654133a296fad20f3285a95a900bbbdfe562a61d8a
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+advisories ok, bans ok, licenses ok, sources ok
+erreurs : 0, avertissements : 9

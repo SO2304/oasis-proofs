@@ -1,0 +1,30 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 2946 octets, SHA-256 3ceedac1ec954d303bd1e614c4990c1fe29060dfacc47dde315d3ad360935ae3
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+critere	verdict	intitule	preuve
+T31	J	moyens numeriques de tracabilite des interventions : journal chaine par hachage	gateway.log, jrn.entries
+T37	J	lieu de stockage documente : fichiers .entries et .head sur l'hote de la passerelle, annonces au demarrage	gateway.log ligne GATEWAY journal=
+T35	J	une tentative d'intervention cree une entree, sans aucune action de l'utilisateur	t35_tentative.txt, journal.txt
+T38a	J	intervention legitime executee, valeur portee par l'automate	t38_act.txt
+T38:Act	J	au moins une entree de ce type	journal.txt
+T38:Reject(OutOfLimits)	J	au moins une entree de ce type	journal.txt
+T38:Reject(NotAuthorized)	J	au moins une entree de ce type	journal.txt
+T38:Reject(NotVerified)	J	au moins une entree de ce type	journal.txt
+T38:Change	E	entrees de changement de configuration, demontrees hors de cet essai	evidence/pilot/2026-10-09
+T33	J	un outil independant lit les preuves et rend un verdict	t33_lecture.txt
+T47	J	les informations sont lisibles par un humain : une ligne par decision, en clair	t33_lecture.txt
+T45:Art	J	Art des Eingriffs : classe de l'ordre et decision prise	t33_lecture.txt
+T45:Nr	J	laufende Nummer : numero d'ordre strictement croissant, trou detecte (SeqGap)	t33_lecture.txt
+T45:Boot	J	Boot-Zaehler : boot_id, ce qui separe deux demarrages	t33_lecture.txt
+T45:Version	N	l'entree ne porte NI version logicielle NI configuration : la correlation est possible, l'identification du logiciel ne l'est pas depuis le journal seul	t33_lecture.txt
+T45:Zeit	E	pas d'horodatage en temps systeme dans l'entree ; T45 cite le numero d'ordre et le compteur de demarrage comme moyens de correlation suffisants, tous deux presents — a confirmer avec l'organisme	t33_lecture.txt
+T42	J	une manipulation ciblee d'une entree est detectee : la verification echoue	t42_falsifie.txt, t42_verdict.txt
+T36	N	la collecte N'EST PAS protegee contre la desactivation : omettre --journal demarre la passerelle, qui ECOUTE et SERT avec les decisions en RAM seulement, perdues a l'arret. Elle avertit sur la sortie d'erreur, et c'est tout. Un examinateur qui tente la desactivation reussit	t36_sans_journal.txt
+T44	N	un effacement NE cree PAS d'entree : [identifiant interne] supprime les fichiers et compte sur la sortie standard, rien n'entre dans la chaine. ChangeKind n'a aucune variante pour l'effacement d'un journal	t44_purge.txt, t44_apres.txt
+T46:Konfig	J	la configuration est annoncee au demarrage : cible, unite, nombre de registres, lieu du journal	gateway.log
+T46:Version	N	AUCUNE version logicielle n'est annoncee par le binaire. Elle n'existe que hors produit, dans l'empreinte git et les SHA256SUMS du depot — ce qui ne repond ni a T46 ni a T03 (identification du logiciel par un condense)	gateway.log
+T48	E	algorithmes : Ed25519, SHA-256, ChaCha20-Poly1305, HKDF-SHA256. La conformite a BSI TR-02102-1 version 2026-01 est une verification DOCUMENTAIRE, pas un essai de banc : a confronter au texte	docs/compliance/

@@ -1,0 +1,3 @@
+OASIS|C|UART|RXF|n=15,len=114,ctr=13,seq=llo|mesh|6daa0bc
+OASIS|C|UART|ARRIVED|msg_id=12108334277997147332,hops=1,sig=verified,forward=true|mesh|6daa0bc
+OASIS|C|UART|RELAYED|msg_id=12108334277997147332,hops=1|mesh|6daa0bc

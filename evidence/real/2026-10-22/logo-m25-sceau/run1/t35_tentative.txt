@@ -1,0 +1,1 @@
+ORDER unconfirmed reg=100 value=500 cmd_seq=1 (no confirmed outcome: dropped before the gate, or the device did not confirm the write; the gateway log says which)

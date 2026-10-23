@@ -1,0 +1,14 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 10499 octets, SHA-256 7e3462b53ad3a125a98eb23d9b8c19ba17fef1a1618e8efaac39701ebd769845
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_no_arm_frame_without_act
+VERIFICATION RESULT:
+ ** 0 of 696 failed (7 unreachable)
+VERIFICATION:- SUCCESSFUL
+Verification Time: 10.274044s
+Complete - 1 successfully verified harnesses, 0 failures, 1 total.

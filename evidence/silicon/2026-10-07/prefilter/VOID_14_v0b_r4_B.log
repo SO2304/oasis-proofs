@@ -1,0 +1,6 @@
+OASIS|B|UART|LEASE_PERSIST|ceiling=13121,writes_since_boot=3|mesh|1199aba
+OASIS|B|UART|PF_MODE|v0c=false,next_hop=-,tokens=24|mesh|1199aba
+OASIS|B|UART|PF_QUIET|quiet=true|mesh|1199aba
+# flood mode=v0b rate=4 secs=60 start=2026-10-07T10:19:15Z
+OASIS|B|UART|PF_FLOOD|start,rate=4,secs=60,v0c=false|mesh|1199aba
+OASIS|B|UART|PF_FLOOD_DONE|forged=223,legit=61,secs=60|mesh|1199aba

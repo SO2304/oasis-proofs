@@ -1,0 +1,3 @@
+735389928f883a59a61ff1ae9dfeb634a3e1b468
+Kani Rust Verifier 0.68.0 (cargo plugin)
+CBMC 6.11.0

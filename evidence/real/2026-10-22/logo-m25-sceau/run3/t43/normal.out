@@ -1,0 +1,9 @@
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY journal continuity: the sealed chain is where it was left
+GATEWAY journal=C:/dev/oasis-eval/logo-test/m25_h3/t43/jrn.entries + C:/dev/oasis-eval/logo-test/m25_h3/t43/jrn.head
+GATEWAY previous journal kept as C:/dev/oasis-eval/logo-test/m25_h3/t43/jrn.18444163737249494119.entries + C:/dev/oasis-eval/logo-test/m25_h3/t43/jrn.18444163737249494119.head
+GATEWAY no authority configured: every ORV1 over the link is refused
+GATEWAY version=0.3.0 build=b90c6d780ec4 config_id=a1fcea330dc25114
+GATEWAY listen=127.0.0.1:15567 plc=192.168.0.3:510 unit=0x01 boot_id=1298968162432598125 registers=2

@@ -1,0 +1,50 @@
+
+______  __   __    ___ 
+| ___ \ \ \ / /   /   |
+| |_/ /  \ V /   / /| |
+|  __/   /   \  / /_| |
+| |     / /^\ \ \___  |
+\_|     \/   \/     |_/
+
+px4 starting.
+
+INFO  [px4] startup script: /bin/sh etc/init.d-posix/rcS 0
+env SYS_AUTOSTART: 10040
+INFO  [param] selected parameter default file fs/parameters.bson
+INFO  [param] selected parameter backup file fs/parameters_backup.bson
+  SYS_AUTOCONFIG: curr: 0 -> new: 1
+  SYS_AUTOSTART: curr: 0 -> new: 10040
+INFO  [dataman] data manager file './fs/dataman' size is 1208528 bytes
+INFO  [init] SIH simulator
+INFO  [simulator_sih] Simulation loop with 250 Hz (4000 us sim time interval)
+INFO  [simulator_sih] Simulation with 1.0x speedup. Loop with (4000 us wall time interval)
+INFO  [lockstep_scheduler] setting initial absolute time to 4000 us
+INFO  [commander] LED: open /dev/led0 failed (22)
+INFO  [vision_target_estimator] VTE for static target init
+INFO  [uxrce_dds_client] init UDP agent IP:127.0.0.1, port:8888
+INFO  [mavlink] mode: Normal, data rate: 4000000 B/s on udp port 18570 remote port 14550
+INFO  [mavlink] mode: Onboard, data rate: 4000000 B/s on udp port 14580 remote port 14540
+INFO  [mavlink] mode: Onboard, data rate: 4000 B/s on udp port 14280 remote port 14030
+INFO  [mavlink] mode: Gimbal, data rate: 400000 B/s on udp port 13030 remote port 13280
+INFO  [mavlink] mode: Custom, data rate: 400000 B/s on udp port 19450 remote port 19410
+INFO  [logger] logger started (mode=all)
+INFO  [logger] Max log file size: 1024 MiB
+INFO  [logger] Start file log (type: full)
+INFO  [logger] [logger] ./fs/log/2026-10-08/15_06_51.ulg	
+INFO  [logger] Opened full log file: ./fs/log/2026-10-08/15_06_51.ulg
+INFO  [mavlink] MAVLink only on localhost (set param MAV_{i}_BROADCAST = 1 to enable network)
+INFO  [mavlink] MAVLink only on localhost (set param MAV_{i}_BROADCAST = 1 to enable network)
+INFO  [mavlink] MAVLink only on localhost (set param MAV_{i}_BROADCAST = 1 to enable network)
+INFO  [px4] Startup script returned successfully
+INFO  [tone_alarm] home set
+WARN  [health_and_arming_checks] Preflight Fail: no heading reference
+INFO  [commander] [32mReady for takeoff![0m
+INFO  [mavlink] partner IP: 127.0.0.1
+INFO  [commander] Armed by external command	
+INFO  [tone_alarm] arming warning
+INFO  [commander] Disarmed by auto preflight disarming	
+INFO  [tone_alarm] notify neutral
+INFO  [logger] closed logfile, bytes written: 4154617
+
+PX4 Exiting...
+Exiting NOW.

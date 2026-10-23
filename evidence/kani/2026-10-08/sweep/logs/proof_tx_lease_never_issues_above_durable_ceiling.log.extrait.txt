@@ -1,0 +1,14 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 10186 octets, SHA-256 a743d0435983beb101ee1de055199ea31805917433353d064d087721985111d2
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_tx_lease_never_issues_above_durable_ceiling
+VERIFICATION RESULT:
+ ** 0 of 67 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.12828843s
+Complete - 1 successfully verified harnesses, 0 failures, 1 total.

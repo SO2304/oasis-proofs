@@ -1,0 +1,33 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 1338 octets, SHA-256 73ee30e8c220fe8a43cd287a51285bf10b425ee24c830c5f4aa2c4da0ea4c0d0
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+# upload 287264 bytes from B_v3.bin at 2026-10-06T23:20:55Z
+OASIS|B|UART|DFU_PROGRESS|written_to=65536|mesh|200d96b
+OASIS|B|UART|DFU_PROGRESS|written_to=131072|mesh|200d96b
+OASIS|B|UART|DFU_PROGRESS|written_to=196608|mesh|200d96b
+OASIS|B|UART|DFU_PROGRESS|written_to=262144|mesh|200d96b
+OASIS|B|UART|DFU_PROGRESS|written_to=287264|mesh|200d96b
+# upload sent in 21 s
+OASIS|B|UART|STAGE|len=0|mesh|200d96b
+OASIS|B|UART|STAGE|len=280|mesh|200d96b
+OASIS|B|UART|STAGE|len=560|mesh|200d96b
+OASIS|B|UART|STAGE|len=840|mesh|200d96b
+OASIS|B|UART|STAGE|len=1120|mesh|200d96b
+OASIS|B|UART|STAGE|len=1400|mesh|200d96b
+OASIS|B|UART|STAGE|len=1680|mesh|200d96b
+OASIS|B|UART|STAGE|len=1960|mesh|200d96b
+OASIS|B|UART|STAGE|len=2240|mesh|200d96b
+OASIS|B|UART|STAGE|len=2520|mesh|200d96b
+OASIS|B|UART|STAGE|len=2548|mesh|200d96b
+OASIS|B|UART|FW_INSTALL|accepted,version=3,running=1,floor=1,check_us=687992,resetting_for_swap|mesh|200d96b
+# port transitions ([outil d essai], 100 ms sampling)
+2026-10-06T23:20:55.083Z /dev/ttyS9 present
+2026-10-06T23:21:18.411Z /dev/ttyS9 absent
+2026-10-06T23:21:35.232Z /dev/ttyS9 present
+# @V after the swap
+OASIS|B|UART|LEASE_PERSIST|ceiling=7674,writes_since_boot=2|mesh|200d96b
+OASIS|B|UART|FW_STATUS|version=3,floor=3,boot=ConfirmedAfterSwap,bootloader_state=Boot,fp=f6bd34440030a136,guard_failed_before=0|mesh|200d96b

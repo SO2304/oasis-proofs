@@ -1,0 +1,2 @@
+OASIS|C|UART|STOP_CLEAR|was_stopped_led=true,was_stopped_gw=false,now_led=false,now_gw=false|mesh|ad8f24a
+OASIS|C|UART|EF_STATUS|boot_id=50908,now_ms=9612484,epoch=2,revoked=1,sensor_lost=false,pin25=0,executed=3,stopped=false,stops=1,sup_required=false,sup_until=None,jseq=Some(6),rejects=0/0/0/2/0/0/0/1/0|mesh|ad8f24a

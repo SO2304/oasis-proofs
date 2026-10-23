@@ -1,0 +1,10 @@
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY journal=C:/dev/oasis-eval/logo-test/relay_a1/jrn.entries + C:/dev/oasis-eval/logo-test/relay_a1/jrn.head
+GATEWAY no authority configured: every ORV1 over the link is refused
+GATEWAY listen=127.0.0.1:15550 plc=192.168.0.3:510 unit=0x01 boot_id=14041452140578930717 registers=1
+GATEWAY 127.0.0.1:57098 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:57118 conn_end err=InvalidData
+GATEWAY 127.0.0.1:57138 CLOCK boot_id=14041452140578930717
+GATEWAY 127.0.0.1:57138 seq=1 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:57138 conn_end err=UnexpectedEof

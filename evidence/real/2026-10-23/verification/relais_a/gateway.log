@@ -1,0 +1,12 @@
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY journal continuity: first run on this prefix
+GATEWAY journal=C:/dev/oasis-eval/logo-test/verif_2026-10-23/relais_a/jrn.entries + C:/dev/oasis-eval/logo-test/verif_2026-10-23/relais_a/jrn.head
+GATEWAY no authority configured: every ORV1 over the link is refused
+GATEWAY version=0.3.0 build=d1674874e0df config_id=9017547e10559b2a
+GATEWAY listen=127.0.0.1:15550 plc=192.168.0.3:510 unit=0x01 boot_id=4777943906039228797 registers=1
+GATEWAY 127.0.0.1:56846 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:64828 conn_end err=InvalidData
+GATEWAY 127.0.0.1:64837 CLOCK boot_id=4777943906039228797
+GATEWAY 127.0.0.1:64837 seq=1 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:64837 conn_end err=UnexpectedEof

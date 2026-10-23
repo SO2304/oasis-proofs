@@ -1,0 +1,3 @@
+extrait_public	sha256_de_l_original	octets	nature
+kani_fw_negative_control.log.extrait.txt	c1eaf729364fd180d3ca434900ac808e7535dc328e0ffb6eac95c366a204cf50	5955	kani
+kani_fw_run1.log.extrait.txt	b30466f4e0984ef70672d201056055893e2374846811f62458ac7610155c91b9	5141	kani

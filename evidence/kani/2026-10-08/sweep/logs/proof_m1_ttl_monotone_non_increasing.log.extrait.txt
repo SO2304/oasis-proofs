@@ -1,0 +1,14 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 10172 octets, SHA-256 37451b363698b8b03ed6184e20424aa6568f9834a3ad3e8b5c1b411c5a76d9ff
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_m1_ttl_monotone_non_increasing
+VERIFICATION RESULT:
+ ** 0 of 1 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.040467545s
+Complete - 1 successfully verified harnesses, 0 failures, 1 total.

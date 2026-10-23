@@ -1,0 +1,2 @@
+OASIS|A|MODBUS|MB_DEV_RX|n=6,len=8,hex=1106001000f08adb,result=write_applied|device|a39d5fe
+OASIS|A|MODBUS|MB_DEV_REGS|r10=240,r11=0,r12=0,r20=0|device|a39d5fe

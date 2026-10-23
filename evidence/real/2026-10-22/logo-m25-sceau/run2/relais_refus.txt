@@ -1,0 +1,1 @@
+ORDER refused reg=101 value=600 cmd_seq=65 exception=0x0a (refused for a reason the reply does not carry; the gateway journal names it)

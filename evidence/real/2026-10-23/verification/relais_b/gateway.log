@@ -1,0 +1,27 @@
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY journal continuity: first run on this prefix
+GATEWAY journal=C:/dev/oasis-eval/logo-test/verif_2026-10-23/relais_b/jrn.entries + C:/dev/oasis-eval/logo-test/verif_2026-10-23/relais_b/jrn.head
+GATEWAY no authority configured: every ORV1 over the link is refused
+GATEWAY version=0.3.0 build=d1674874e0df config_id=afd7598eae2f55a4
+GATEWAY listen=127.0.0.1:15530 plc=192.168.0.3:510 unit=0x01 boot_id=9000406622112464185 registers=1
+GATEWAY 127.0.0.1:64850 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:64851 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:64853 CLOCK boot_id=9000406622112464185
+GATEWAY 127.0.0.1:64853 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:64854 seq=1 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:64854 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:64857 CLOCK boot_id=9000406622112464185
+GATEWAY 127.0.0.1:64857 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:64858 seq=65 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:64858 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:64861 CLOCK boot_id=9000406622112464185
+GATEWAY 127.0.0.1:64861 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:64862 seq=129 Reject(OutOfLimits) outcome=Refused(OutOfLimits, ValueOutOfRange(101, 5000)) plc_written=false
+GATEWAY 127.0.0.1:64862 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:64864 CLOCK boot_id=9000406622112464185
+GATEWAY 127.0.0.1:64864 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:64865 seq=1 Reject(NotAuthorized) outcome=Refused(NotAuthorized, Ok) plc_written=false
+GATEWAY 127.0.0.1:64865 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:64870 conn_end err=InvalidData

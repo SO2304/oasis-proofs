@@ -1,0 +1,89 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 8113 octets, SHA-256 2be8e70dbe315ed5816debf8e44b7fa980435ed3ef753ebfba31409b742ca61d
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.67.0 (cargo plugin)
+harnais : proof_decision_total_and_deterministic
+VERIFICATION RESULT:
+ ** 0 of 137 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.33007535s
+harnais : proof_r14_unsafe_never_acts
+VERIFICATION RESULT:
+ ** 0 of 137 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.15118693s
+harnais : proof_act_requires_all_conditions
+VERIFICATION RESULT:
+ ** 0 of 147 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.50093156s
+harnais : proof_v0b_preimage_domain_separated_and_consistent
+VERIFICATION RESULT:
+ ** 0 of 56 failed (4 unreachable)
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.4735035s
+harnais : proof_v0b_preimage_binds_network
+VERIFICATION RESULT:
+ ** 0 of 46 failed (4 unreachable)
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.7002187s
+harnais : proof_v0b_preimage_binds_counter
+VERIFICATION RESULT:
+ ** 0 of 46 failed (4 unreachable)
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.7070374s
+harnais : proof_v0b_preimage_binds_payload_digest
+VERIFICATION RESULT:
+ ** 0 of 46 failed (4 unreachable)
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.2690628s
+harnais : proof_v0b_parse_never_panics_with_payload
+VERIFICATION RESULT:
+ ** 0 of 99 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.5616672s
+harnais : proof_v0b_parse_never_panics_short
+VERIFICATION RESULT:
+ ** 0 of 106 failed (1 unreachable)
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.49045348s
+harnais : proof_v0b_parse_never_panics_full
+VERIFICATION RESULT:
+ ** 0 of 99 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.6614177s
+harnais : proof_rev_applied_is_superset
+VERIFICATION RESULT:
+ ** 0 of 507 failed (6 unreachable)
+VERIFICATION:- SUCCESSFUL
+Verification Time: 7.99288s
+harnais : proof_rev_rejected_leaves_state_unchanged
+VERIFICATION RESULT:
+ ** 0 of 511 failed (6 unreachable)
+VERIFICATION:- SUCCESSFUL
+Verification Time: 5.1582174s
+harnais : proof_rev_epoch_never_decreases
+VERIFICATION RESULT:
+ ** 0 of 497 failed (6 unreachable)
+VERIFICATION:- SUCCESSFUL
+Verification Time: 4.2110987s
+harnais : proof_tx_lease_failed_store_issues_nothing
+VERIFICATION RESULT:
+ ** 0 of 149 failed (1 unreachable)
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.20421633s
+harnais : proof_tx_lease_never_issues_above_durable_ceiling
+VERIFICATION RESULT:
+ ** 0 of 66 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.21866976s
+harnais : proof_tx_lease_resume_strictly_above_issued
+VERIFICATION RESULT:
+ ** 0 of 83 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.29385906s
+Complete - 16 successfully verified harnesses, 0 failures, 16 total.

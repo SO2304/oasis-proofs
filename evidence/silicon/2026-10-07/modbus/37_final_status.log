@@ -1,0 +1,4 @@
+# Phase 1.4 final accounting 2026-10-07T00:50:09Z
+OASIS|C|UART|MB_GW_STATUS|boot_id=22511,now_ms=212642,executed=1,rejects=0/1/0/2/0/0/0,sent=1,ack=1,exception=0,timeout=0,bad=0,rx_errors=0,last_seq=Some(4)|mesh|a39d5fe
+OASIS|A|MODBUS|MB_DEV_STATUS|rx_bytes=33,rx_errors=0,overflow=0,frames=5,parse_errors=0,writes=4,local_frames=1|device|a39d5fe
+OASIS|A|MODBUS|MB_DEV_REGS|r10=240,r11=0,r12=0,r20=0|device|a39d5fe

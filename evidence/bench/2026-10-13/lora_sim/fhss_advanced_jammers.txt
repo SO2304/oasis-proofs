@@ -1,0 +1,16 @@
+OASIS Gap 2 round 2 — sweep + follower jammers vs FHSS (8 ch, 80 pkts/trial)
+packet_duration_ms = 100 (approximates SX1262 SF8 BW125 125B payload)
+
+── SWEEP JAMMER ──
+FHSS 8ch, sweep P=800 ms (one dwell per packet)                 K=10  min=0.812 med=0.900 max=0.963  mean=0.886  ±0.075
+FHSS 8ch, sweep P=80 ms (fast — sub-packet dwell)               K=10  min=0.812 med=0.887 max=0.925  mean=0.886  ±0.056
+FHSS 8ch, sweep P=8000 ms (slow — many packets per dwell)       K=10  min=0.812 med=0.863 max=0.900  mean=0.860  ±0.044
+
+── FOLLOWER JAMMER ──
+FHSS 8ch, follower latency=10 ms (very fast)                    K=10  min=0.000 med=0.000 max=0.000  mean=0.000  ±0.000
+FHSS 8ch, follower latency=50 ms (half packet)                  K=10  min=0.000 med=0.000 max=0.000  mean=0.000  ±0.000
+FHSS 8ch, follower latency=85 ms (near-packet, below threshold)  K=10  min=1.000 med=1.000 max=1.000  mean=1.000  ±0.000
+FHSS 8ch, follower latency=120 ms (slower than packet)          K=10  min=1.000 med=1.000 max=1.000  mean=1.000  ±0.000
+
+── COMBINED: FOLLOWER + SHORTER PACKET BEATS IT ──
+FHSS 8ch, short-packet 10ms + follower lat=20ms                 K=10  min=1.000 med=1.000 max=1.000  mean=1.000  ±0.000

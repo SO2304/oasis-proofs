@@ -1,0 +1,14 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 10170 octets, SHA-256 7d3941265ece9715405cbfb9a4b8335968bd9fa0d5cbe43850fbcc181009a801
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_m6_stem_start_is_always_valid
+VERIFICATION RESULT:
+ ** 0 of 13 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.04247316s
+Complete - 1 successfully verified harnesses, 0 failures, 1 total.

@@ -1,0 +1,4 @@
+OASIS|A|UART|LEASE_PERSIST|ceiling=2558,writes_since_boot=1|mesh|3a67e6e
+OASIS|A|UART|STATUS|rx_bytes=0,frames=0,crc_fails=0,tx=1279,lease_ceiling=2558,lease_writes=1,a_last_seen=0|mesh|3a67e6e
+OASIS|A|UART|MODE|strict_v0b=true|mesh|3a67e6e
+OASIS|A|UART|V0B_ORIGINATED|counter=1280,len=114|mesh|3a67e6e

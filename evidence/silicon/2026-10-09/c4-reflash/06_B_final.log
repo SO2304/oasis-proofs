@@ -1,0 +1,5 @@
+OASIS|B|UART|LEASE_PERSIST|ceiling=36003,writes_since_boot=2|mesh|758ed59
+OASIS|B|UART|FW_STATUS|version=28,floor=28,boot=ConfirmedAfterSwap,bootloader_state=Boot,fp=f6bd34440030a136,guard_failed_before=0|mesh|758ed59
+OASIS|B|UART|WHOAMI|fp=f6bd34440030a136,mixed=true,owner_seq=1,owner_ed=5b8649c0cfcdbe78,previous_owner=true,pending_offer=0,peers=3,epoch=2,rev_signer=Current|mesh|758ed59
+OASIS|B|UART|PEER|fp=822460d254200275,role=2,perms=1,seq=1|mesh|758ed59
+OASIS|B|UART|PEER|fp=a7089677a10b7fb0,role=4,perms=0,seq=1|mesh|758ed59

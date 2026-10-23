@@ -1,0 +1,27 @@
+logo_relay 2026-10-21T20:48:23Z  arbre=62130ec
+automate = Siemens LOGO! 230RCE @ 192.168.0.3:510  registre=101 seuil=500 bobine Q1=8192
+Q1 au depart : 0
+--- garde-fou : le programme repond-il ? (ecriture DIRECTE, hors OASIS) ---
+  adresse 101 : direct 600 -> Q1=1    direct 300 -> Q1=0
+  mesure : la consigne du relais est a l'adresse 101 sur le fil ; une ecriture brute ferme Q1.
+--- R1 : un ordre signe au-dessus du seuil FERME le relais ---
+  OK    Q1 apres un ordre legitime a 600 : 1
+--- R2 : un ordre signe sous le seuil OUVRE le relais ---
+  OK    Q1 apres un ordre legitime a 300 : 0
+--- R3 : une valeur hors plage est refusee, le relais ne bouge pas ---
+  OK    Q1 apres une valeur hors plage : 0
+--- R4 : une identite sans ACTUATE est refusee, le relais ne bouge pas ---
+  OK    Q1 apres un ordre sans permission : 0
+--- R5 : une trame Modbus brute sur le port de la passerelle ne passe pas ---
+  la passerelle a repondu : COUPE
+  OK    Q1 apres une trame brute : 0
+--- R6 : le journal porte les decisions, refus compris ---
+  VERDICT intact entries=4  (code 0)
+  OK    verification du journal : 0
+  OK    nombre d'entrees : 4
+--- R7 : un refus reecrit en acceptation casse la chaine ---
+  VERDICT broken at=3  (code 1)
+  OK    la falsification est detectee
+
+=== 8 controles sur 8 ===
+Q1 : depart 0, ferme 1, ouvert 0

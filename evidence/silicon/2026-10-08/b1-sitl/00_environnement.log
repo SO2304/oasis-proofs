@@ -1,0 +1,23 @@
+date_utc        = 2026-10-08T15:06:59Z
+kernel          = Linux 6.18.40.1-microsoft-standard-WSL2 x86_64
+distro          = Ubuntu 26.04.1 LTS
+ram_mb          = 3381
+cores           = 4
+
+px4_path        = /home/pc/PX4-Autopilot
+px4_head        = df387bdec2
+px4_describe    = v1.18.0-beta1-985-gdf387bdec2
+px4_submodules  = 34 declares
+px4_binary      = 53771744 octets, 2026-10-08 16:58:22.947645355 +0200
+px4_airframe    = 10040_sihsim_quadx (SIH: physique dans PX4, ni Java ni Gazebo)
+
+cmake           = cmake version 4.4.4
+ninja           = 1.13.2.git.kitware.jobserver-pipe-1
+python          = Python 3.14.4
+pip             = pip 26.2.1
+sudo_utilise    = non (venv + roues pip, aucun apt)
+
+oasis_bin       = /home/pc/oasis-kani/target/release/px4_order_arm
+oasis_bin_size  = 575152 octets
+oasis_commit    = b442b46
+rustc           = rustc 1.99.0 (b940084d7 2026-09-28)

@@ -1,0 +1,25 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 18647 octets, SHA-256 15e90d790e4547fa8fd15220891dce85de104831be18499daf5bfe715c45751a
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+[2026-10-07T13:08:27Z] host: 6.18.40.1-microsoft-standard-WSL2, 3381 MB RAM, Kani Rust Verifier 0.68.0 (cargo plugin)
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_v0c_parse_total
+VERIFICATION RESULT:
+ ** 0 of 138 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.666963s
+harnais : proof_budget_refill_capped
+VERIFICATION RESULT:
+ ** 0 of 91 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 4.9901724s
+harnais : proof_budget_never_exceeds_burst
+VERIFICATION RESULT:
+ ** 0 of 86 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 7.709505s
+Complete - 3 successfully verified harnesses, 0 failures, 3 total.

@@ -1,0 +1,928 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 61772 octets, SHA-256 3eb6e635b8f5b134f27f0a3a92ec2b0fc51c54369e850b64d6eeec28f1605b10
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+pilot_campaign 2026-10-09T05:08:23Z  tree=f391ed7
+PLC=127.0.0.1:15020  gateway=127.0.0.1:15021  agent=127.0.0.1:15022
+device=oasis_test_plc (rmodbus 0.12.2, no oasis-rt dependency)   HMI=[outil d essai] (python, no imports)
+all three processes are listening
+
+== C1 a legitimate write reaches the device, and the device holds the value ==
+  PASS  C1 ack  -> OK fc=6 reg=10 value=500
+  PASS  C1 device applied exactly one write  (1)
+  PASS  C1 device holds 500  -> [   1955506 us] PLC APPLIED_WRITE writes=1 reg=10 value=500
+
+== C2 an unlisted register: refused, and the device is never asked ==
+  PASS  C2 exception 0x02  -> EXC fc=0x86 code=0x02
+  PASS  C2 no write reached the device  (1)
+
+== C3 a value outside the configured range: refused the same way ==
+  PASS  C3 exception 0x03  -> EXC fc=0x86 code=0x03
+  PASS  C3 still no write  (1)
+
+== C4 a read goes THROUGH the gateway and returns what the device holds ==
+  PASS  C4 read served  -> OK fc=3 count=1 values=500
+  PASS  C4 read value  -> OK fc=3 count=1 values=500
+
+== C5 an unlisted read is refused and the device is not asked ==
+  PASS  C5 read exception 0x02  -> EXC fc=0x83 code=0x02
+
+== C6 plain Modbus straight at the GATEWAY port must not reach the device ==
+  PASS  C6 no usable answer from the gateway port  -> NOANSWER ConnectionResetError
+  PASS  C6 device untouched  (1)
+
+== C7 the agent's sequence survives a restart and is never reused ==
+  PASS  C7 write after restart acknowledged  -> OK fc=6 reg=10 value=501
+  seq file before=64 after=128
+  PASS  C7 the claimed sequence rose across the restart
+
+== C8 the journal is on disk and verifies with the independent verifier ==
+  journal carries 4 entries
+  oasis_journal_verify -> rc=0
+  PASS  C8 verifier exit code  (0)
+  PASS  C8 verdict  -> boot_id=1791522503481 entries=4 head_seq=some(3) overwritten=0
+  [0] seq=0 origin=aa00 cmd_seq=1 class=act decision=act flags=0x00
+  [1] seq=1 origin=aa00 cmd_seq=2 class=act decision=reject(outoflimits) flags=0x00
+  [2] seq=2 origin=aa00 cmd_seq=3 class=act decision=reject(outoflimits) flags=0x00
+  [3] seq=3 origin=aa00 cmd_seq=65 class=act decision=act flags=0x00
+verdict intact entries=4
+  chain carries 2 acceptance(s) and 2 refusal(s)
+  PASS  C8 acceptances AND refusals are both recorded (1.1.9 para 5: legitimate or illegitimate)
+  PASS  C8 the out-of-limits refusals are named  -> boot_id=1791522503481 entries=4 head_seq=Some(3) overwritten=0
+  [0] seq=0 origin=aa00 cmd_seq=1 class=Act decision=Act flags=0x00
+  [1] seq=1 origin=aa00 cmd_seq=2 class=Act decision=Reject(OutOfLimits) flags=0x00
+  [2] seq=2 origin=aa00 cmd_seq=3 class=Act decision=Reject(OutOfLimits) flags=0x00
+  [3] seq=3 origin=aa00 cmd_seq=65 class=Act decision=Act flags=0x00
+VERDICT intact entries=4
+  PASS  C8 no read was journalled, by design
+  NOTE  C8 limit: the plain-Modbus injection left no journal entry -- refused by framing, before it could become a decision
+
+== C9 one flipped hex digit in the journal must be detected ==
+entry 3 decision byte 15 -> 00 (a refusal rewritten as Act)
+  oasis_journal_verify (tampered) -> rc=1  boot_id=1791522503481 entries=4 head_seq=Some(3) overwritten=0
+  [0] seq=0 origin=aa00 cmd_seq=1 class=Act decision=Act flags=0x00
+  [1] seq=1 origin=aa00 cmd_seq=2 class=Act decision=Act flags=0x00
+  [2] seq=2 origin=aa00 cmd_seq=3 class=Act decision=Reject(OutOfLimits) flags=0x00
+  [3] seq=3 origin=aa00 cmd_seq=65 class=Act decision=Act flags=0x00
+VERDICT broken at=3
+  PASS  C9 tampering detected (rc=1)
+
+== C10 a gateway restart changes boot_id, so the journal starts a new chain ==
+  write after gateway restart: OK fc=6 reg=10 value=502
+  boot before=[JRN_BOOT boot_id=1791522503481] after=[JRN_BOOT boot_id=1791522515128]
+  PASS  C10 boot_id changed across the restart
+  new chain verify -> rc=0  boot_id=1791522515128 entries=1 head_seq=Some(0) overwritten=0
+  [0] seq=0 origin=aa00 cmd_seq=66 class=Act decision=Act flags=0x00
+VERDICT intact entries=1
+  PASS  C10 the new chain is intact too  (0)
+
+== C11 latency through the real binaries, K=10 x 20 writes ==
+  PASS  C11 HMI -> agent -> gateway -> PLC: median 609 us, spread +/-31% (K=10 x 20, one held socket)
+        in-process equivalent for comparison: ~460 us (evidence/bench/2026-10-08/mbtcp/)
+
+== C15 a signed ORV1 over the link is applied, and the CHANGE is journalled ==
+  tool: REVOKE applied epoch=1 count=1 signatures=1 (rc=0)
+  PASS  C15 the gateway applied the list  (0)
+  PASS  C15 the gateway logged it  -> GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY journal=C:/Users/pc/AppData/Local/Temp/pz2/jrn.entries + C:/Users/pc/AppData/Local/Temp/pz2/jrn.head
+GATEWAY authority=single key=ed54a59fb1ac3a51 rev_store=C:/Users/pc/AppData/Local/Temp/pz2/jrn.rev
+GATEWAY listen=127.0.0.1:15021 plc=127.0.0.1:15020 unit=0x11 boot_id=1791522503481 registers=1
+GATEWAY 127.0.0.1:58187 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:58190 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:58193 CLOCK boot_id=1791522503481
+GATEWAY 127.0.0.1:58193 seq=1 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58193 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:58197 CLOCK boot_id=1791522503481
+GATEWAY 127.0.0.1:58197 seq=2 Reject(OutOfLimits) outcome=Refused(OutOfLimits, RegisterNotAllowed(17)) plc_written=false
+GATEWAY 127.0.0.1:58197 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:58199 CLOCK boot_id=1791522503481
+GATEWAY 127.0.0.1:58199 seq=3 Reject(OutOfLimits) outcome=Refused(OutOfLimits, ValueOutOfRange(10, 5000)) plc_written=false
+GATEWAY 127.0.0.1:58199 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:58201 READ Ok served=true (never writes)
+GATEWAY 127.0.0.1:58201 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:58203 READ RegisterNotAllowed(17) served=false (never writes)
+GATEWAY 127.0.0.1:58203 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:58204 conn_end err=InvalidData
+GATEWAY 127.0.0.1:58206 CLOCK boot_id=1791522503481
+GATEWAY 127.0.0.1:58206 seq=65 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58206 conn_end err=UnexpectedEof
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY journal=C:/Users/pc/AppData/Local/Temp/pz2/jrn.entries + C:/Users/pc/AppData/Local/Temp/pz2/jrn.head
+GATEWAY authority=single key=ed54a59fb1ac3a51 rev_store=C:/Users/pc/AppData/Local/Temp/pz2/jrn.rev
+GATEWAY listen=127.0.0.1:15021 plc=127.0.0.1:15020 unit=0x11 boot_id=1791522515128 registers=1
+GATEWAY 127.0.0.1:58209 CLOCK boot_id=1791522515128
+GATEWAY 127.0.0.1:58209 seq=66 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58209 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:58212 CLOCK boot_id=1791522515128
+GATEWAY 127.0.0.1:58212 seq=67 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=68 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=69 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=70 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=71 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=72 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=73 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=74 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=75 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=76 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=77 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=78 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=79 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=80 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=81 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=82 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=83 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=84 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=85 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=86 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=87 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=88 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=89 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=90 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=91 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=92 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=93 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=94 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=95 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=96 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=97 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=98 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=99 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=100 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=101 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=102 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=103 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=104 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=105 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=106 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=107 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=108 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=109 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=110 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=111 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=112 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=113 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=114 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=115 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=116 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=117 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=118 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=119 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=120 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=121 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=122 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=123 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=124 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=125 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=126 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=127 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=128 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=129 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=130 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=131 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=132 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=133 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=134 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=135 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=136 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=137 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=138 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=139 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=140 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=141 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=142 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=143 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=144 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=145 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=146 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=147 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=148 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=149 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=150 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=151 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=152 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=153 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=154 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=155 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=156 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=157 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=158 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=159 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=160 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=161 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=162 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=163 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=164 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=165 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=166 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=167 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=168 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=169 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=170 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=171 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=172 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=173 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=174 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=175 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=176 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=177 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=178 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=179 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=180 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=181 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=182 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=183 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=184 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=185 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=186 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=187 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=188 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=189 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=190 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=191 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=192 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=193 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=194 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=195 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=196 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=197 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=198 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=199 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=200 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=201 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=202 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=203 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=204 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=205 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=206 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=207 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=208 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=209 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=210 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=211 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=212 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=213 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=214 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=215 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=216 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=217 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=218 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=219 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=220 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=221 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=222 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=223 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=224 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=225 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=226 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=227 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=228 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=229 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=230 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=231 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=232 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=233 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=234 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=235 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=236 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=237 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=238 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=239 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=240 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=241 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=242 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=243 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=244 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=245 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=246 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=247 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=248 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=249 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=250 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=251 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=252 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=253 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=254 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=255 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=256 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=257 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=258 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=259 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=260 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=261 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=262 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=263 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=264 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=265 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=266 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=267 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=268 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=269 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=270 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=271 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:58213 REVOCATION Applied epoch=1
+GATEWAY 127.0.0.1:58213 conn_end err=UnexpectedEof
+  PASS  C15 journalled as a Revocation change  ->   [206] seq=206 origin=bb00 cmd_seq=1 class=Act decision=Change(Revocation) flags=0x10
+  PASS  C15 recorded as APPLIED (flag bit 4)  ->   [206] seq=206 origin=bb00 cmd_seq=1 class=Act decision=Change(Revocation) flags=0x10
+  PASS  C15 the chain is still intact  -> boot_id=1791522515128 entries=207 head_seq=Some(206) overwritten=0
+  [0] seq=0 origin=aa00 cmd_seq=66 class=Act decision=Act flags=0x00
+  [1] seq=1 origin=aa00 cmd_seq=67 class=Act decision=Act flags=0x00
+  [2] seq=2 origin=aa00 cmd_seq=68 class=Act decision=Act flags=0x00
+  [3] seq=3 origin=aa00 cmd_seq=69 class=Act decision=Act flags=0x00
+  [4] seq=4 origin=aa00 cmd_seq=70 class=Act decision=Act flags=0x00
+  [5] seq=5 origin=aa00 cmd_seq=71 class=Act decision=Act flags=0x00
+  [6] seq=6 origin=aa00 cmd_seq=72 class=Act decision=Act flags=0x00
+  [7] seq=7 origin=aa00 cmd_seq=73 class=Act decision=Act flags=0x00
+  [8] seq=8 origin=aa00 cmd_seq=74 class=Act decision=Act flags=0x00
+  [9] seq=9 origin=aa00 cmd_seq=75 class=Act decision=Act flags=0x00
+  [10] seq=10 origin=aa00 cmd_seq=76 class=Act decision=Act flags=0x00
+  [11] seq=11 origin=aa00 cmd_seq=77 class=Act decision=Act flags=0x00
+  [12] seq=12 origin=aa00 cmd_seq=78 class=Act decision=Act flags=0x00
+  [13] seq=13 origin=aa00 cmd_seq=79 class=Act decision=Act flags=0x00
+  [14] seq=14 origin=aa00 cmd_seq=80 class=Act decision=Act flags=0x00
+  [15] seq=15 origin=aa00 cmd_seq=81 class=Act decision=Act flags=0x00
+  [16] seq=16 origin=aa00 cmd_seq=82 class=Act decision=Act flags=0x00
+  [17] seq=17 origin=aa00 cmd_seq=83 class=Act decision=Act flags=0x00
+  [18] seq=18 origin=aa00 cmd_seq=84 class=Act decision=Act flags=0x00
+  [19] seq=19 origin=aa00 cmd_seq=85 class=Act decision=Act flags=0x00
+  [20] seq=20 origin=aa00 cmd_seq=86 class=Act decision=Act flags=0x00
+  [21] seq=21 origin=aa00 cmd_seq=87 class=Act decision=Act flags=0x00
+  [22] seq=22 origin=aa00 cmd_seq=88 class=Act decision=Act flags=0x00
+  [23] seq=23 origin=aa00 cmd_seq=89 class=Act decision=Act flags=0x00
+  [24] seq=24 origin=aa00 cmd_seq=90 class=Act decision=Act flags=0x00
+  [25] seq=25 origin=aa00 cmd_seq=91 class=Act decision=Act flags=0x00
+  [26] seq=26 origin=aa00 cmd_seq=92 class=Act decision=Act flags=0x00
+  [27] seq=27 origin=aa00 cmd_seq=93 class=Act decision=Act flags=0x00
+  [28] seq=28 origin=aa00 cmd_seq=94 class=Act decision=Act flags=0x00
+  [29] seq=29 origin=aa00 cmd_seq=95 class=Act decision=Act flags=0x00
+  [30] seq=30 origin=aa00 cmd_seq=96 class=Act decision=Act flags=0x00
+  [31] seq=31 origin=aa00 cmd_seq=97 class=Act decision=Act flags=0x00
+  [32] seq=32 origin=aa00 cmd_seq=98 class=Act decision=Act flags=0x00
+  [33] seq=33 origin=aa00 cmd_seq=99 class=Act decision=Act flags=0x00
+  [34] seq=34 origin=aa00 cmd_seq=100 class=Act decision=Act flags=0x00
+  [35] seq=35 origin=aa00 cmd_seq=101 class=Act decision=Act flags=0x00
+  [36] seq=36 origin=aa00 cmd_seq=102 class=Act decision=Act flags=0x00
+  [37] seq=37 origin=aa00 cmd_seq=103 class=Act decision=Act flags=0x00
+  [38] seq=38 origin=aa00 cmd_seq=104 class=Act decision=Act flags=0x00
+  [39] seq=39 origin=aa00 cmd_seq=105 class=Act decision=Act flags=0x00
+  [40] seq=40 origin=aa00 cmd_seq=106 class=Act decision=Act flags=0x00
+  [41] seq=41 origin=aa00 cmd_seq=107 class=Act decision=Act flags=0x00
+  [42] seq=42 origin=aa00 cmd_seq=108 class=Act decision=Act flags=0x00
+  [43] seq=43 origin=aa00 cmd_seq=109 class=Act decision=Act flags=0x00
+  [44] seq=44 origin=aa00 cmd_seq=110 class=Act decision=Act flags=0x00
+  [45] seq=45 origin=aa00 cmd_seq=111 class=Act decision=Act flags=0x00
+  [46] seq=46 origin=aa00 cmd_seq=112 class=Act decision=Act flags=0x00
+  [47] seq=47 origin=aa00 cmd_seq=113 class=Act decision=Act flags=0x00
+  [48] seq=48 origin=aa00 cmd_seq=114 class=Act decision=Act flags=0x00
+  [49] seq=49 origin=aa00 cmd_seq=115 class=Act decision=Act flags=0x00
+  [50] seq=50 origin=aa00 cmd_seq=116 class=Act decision=Act flags=0x00
+  [51] seq=51 origin=aa00 cmd_seq=117 class=Act decision=Act flags=0x00
+  [52] seq=52 origin=aa00 cmd_seq=118 class=Act decision=Act flags=0x00
+  [53] seq=53 origin=aa00 cmd_seq=119 class=Act decision=Act flags=0x00
+  [54] seq=54 origin=aa00 cmd_seq=120 class=Act decision=Act flags=0x00
+  [55] seq=55 origin=aa00 cmd_seq=121 class=Act decision=Act flags=0x00
+  [56] seq=56 origin=aa00 cmd_seq=122 class=Act decision=Act flags=0x00
+  [57] seq=57 origin=aa00 cmd_seq=123 class=Act decision=Act flags=0x00
+  [58] seq=58 origin=aa00 cmd_seq=124 class=Act decision=Act flags=0x00
+  [59] seq=59 origin=aa00 cmd_seq=125 class=Act decision=Act flags=0x00
+  [60] seq=60 origin=aa00 cmd_seq=126 class=Act decision=Act flags=0x00
+  [61] seq=61 origin=aa00 cmd_seq=127 class=Act decision=Act flags=0x00
+  [62] seq=62 origin=aa00 cmd_seq=128 class=Act decision=Act flags=0x00
+  [63] seq=63 origin=aa00 cmd_seq=129 class=Act decision=Act flags=0x00
+  [64] seq=64 origin=aa00 cmd_seq=130 class=Act decision=Act flags=0x00
+  [65] seq=65 origin=aa00 cmd_seq=131 class=Act decision=Act flags=0x00
+  [66] seq=66 origin=aa00 cmd_seq=132 class=Act decision=Act flags=0x00
+  [67] seq=67 origin=aa00 cmd_seq=133 class=Act decision=Act flags=0x00
+  [68] seq=68 origin=aa00 cmd_seq=134 class=Act decision=Act flags=0x00
+  [69] seq=69 origin=aa00 cmd_seq=135 class=Act decision=Act flags=0x00
+  [70] seq=70 origin=aa00 cmd_seq=136 class=Act decision=Act flags=0x00
+  [71] seq=71 origin=aa00 cmd_seq=137 class=Act decision=Act flags=0x00
+  [72] seq=72 origin=aa00 cmd_seq=138 class=Act decision=Act flags=0x00
+  [73] seq=73 origin=aa00 cmd_seq=139 class=Act decision=Act flags=0x00
+  [74] seq=74 origin=aa00 cmd_seq=140 class=Act decision=Act flags=0x00
+  [75] seq=75 origin=aa00 cmd_seq=141 class=Act decision=Act flags=0x00
+  [76] seq=76 origin=aa00 cmd_seq=142 class=Act decision=Act flags=0x00
+  [77] seq=77 origin=aa00 cmd_seq=143 class=Act decision=Act flags=0x00
+  [78] seq=78 origin=aa00 cmd_seq=144 class=Act decision=Act flags=0x00
+  [79] seq=79 origin=aa00 cmd_seq=145 class=Act decision=Act flags=0x00
+  [80] seq=80 origin=aa00 cmd_seq=146 class=Act decision=Act flags=0x00
+  [81] seq=81 origin=aa00 cmd_seq=147 class=Act decision=Act flags=0x00
+  [82] seq=82 origin=aa00 cmd_seq=148 class=Act decision=Act flags=0x00
+  [83] seq=83 origin=aa00 cmd_seq=149 class=Act decision=Act flags=0x00
+  [84] seq=84 origin=aa00 cmd_seq=150 class=Act decision=Act flags=0x00
+  [85] seq=85 origin=aa00 cmd_seq=151 class=Act decision=Act flags=0x00
+  [86] seq=86 origin=aa00 cmd_seq=152 class=Act decision=Act flags=0x00
+  [87] seq=87 origin=aa00 cmd_seq=153 class=Act decision=Act flags=0x00
+  [88] seq=88 origin=aa00 cmd_seq=154 class=Act decision=Act flags=0x00
+  [89] seq=89 origin=aa00 cmd_seq=155 class=Act decision=Act flags=0x00
+  [90] seq=90 origin=aa00 cmd_seq=156 class=Act decision=Act flags=0x00
+  [91] seq=91 origin=aa00 cmd_seq=157 class=Act decision=Act flags=0x00
+  [92] seq=92 origin=aa00 cmd_seq=158 class=Act decision=Act flags=0x00
+  [93] seq=93 origin=aa00 cmd_seq=159 class=Act decision=Act flags=0x00
+  [94] seq=94 origin=aa00 cmd_seq=160 class=Act decision=Act flags=0x00
+  [95] seq=95 origin=aa00 cmd_seq=161 class=Act decision=Act flags=0x00
+  [96] seq=96 origin=aa00 cmd_seq=162 class=Act decision=Act flags=0x00
+  [97] seq=97 origin=aa00 cmd_seq=163 class=Act decision=Act flags=0x00
+  [98] seq=98 origin=aa00 cmd_seq=164 class=Act decision=Act flags=0x00
+  [99] seq=99 origin=aa00 cmd_seq=165 class=Act decision=Act flags=0x00
+  [100] seq=100 origin=aa00 cmd_seq=166 class=Act decision=Act flags=0x00
+  [101] seq=101 origin=aa00 cmd_seq=167 class=Act decision=Act flags=0x00
+  [102] seq=102 origin=aa00 cmd_seq=168 class=Act decision=Act flags=0x00
+  [103] seq=103 origin=aa00 cmd_seq=169 class=Act decision=Act flags=0x00
+  [104] seq=104 origin=aa00 cmd_seq=170 class=Act decision=Act flags=0x00
+  [105] seq=105 origin=aa00 cmd_seq=171 class=Act decision=Act flags=0x00
+  [106] seq=106 origin=aa00 cmd_seq=172 class=Act decision=Act flags=0x00
+  [107] seq=107 origin=aa00 cmd_seq=173 class=Act decision=Act flags=0x00
+  [108] seq=108 origin=aa00 cmd_seq=174 class=Act decision=Act flags=0x00
+  [109] seq=109 origin=aa00 cmd_seq=175 class=Act decision=Act flags=0x00
+  [110] seq=110 origin=aa00 cmd_seq=176 class=Act decision=Act flags=0x00
+  [111] seq=111 origin=aa00 cmd_seq=177 class=Act decision=Act flags=0x00
+  [112] seq=112 origin=aa00 cmd_seq=178 class=Act decision=Act flags=0x00
+  [113] seq=113 origin=aa00 cmd_seq=179 class=Act decision=Act flags=0x00
+  [114] seq=114 origin=aa00 cmd_seq=180 class=Act decision=Act flags=0x00
+  [115] seq=115 origin=aa00 cmd_seq=181 class=Act decision=Act flags=0x00
+  [116] seq=116 origin=aa00 cmd_seq=182 class=Act decision=Act flags=0x00
+  [117] seq=117 origin=aa00 cmd_seq=183 class=Act decision=Act flags=0x00
+  [118] seq=118 origin=aa00 cmd_seq=184 class=Act decision=Act flags=0x00
+  [119] seq=119 origin=aa00 cmd_seq=185 class=Act decision=Act flags=0x00
+  [120] seq=120 origin=aa00 cmd_seq=186 class=Act decision=Act flags=0x00
+  [121] seq=121 origin=aa00 cmd_seq=187 class=Act decision=Act flags=0x00
+  [122] seq=122 origin=aa00 cmd_seq=188 class=Act decision=Act flags=0x00
+  [123] seq=123 origin=aa00 cmd_seq=189 class=Act decision=Act flags=0x00
+  [124] seq=124 origin=aa00 cmd_seq=190 class=Act decision=Act flags=0x00
+  [125] seq=125 origin=aa00 cmd_seq=191 class=Act decision=Act flags=0x00
+  [126] seq=126 origin=aa00 cmd_seq=192 class=Act decision=Act flags=0x00
+  [127] seq=127 origin=aa00 cmd_seq=193 class=Act decision=Act flags=0x00
+  [128] seq=128 origin=aa00 cmd_seq=194 class=Act decision=Act flags=0x00
+  [129] seq=129 origin=aa00 cmd_seq=195 class=Act decision=Act flags=0x00
+  [130] seq=130 origin=aa00 cmd_seq=196 class=Act decision=Act flags=0x00
+  [131] seq=131 origin=aa00 cmd_seq=197 class=Act decision=Act flags=0x00
+  [132] seq=132 origin=aa00 cmd_seq=198 class=Act decision=Act flags=0x00
+  [133] seq=133 origin=aa00 cmd_seq=199 class=Act decision=Act flags=0x00
+  [134] seq=134 origin=aa00 cmd_seq=200 class=Act decision=Act flags=0x00
+  [135] seq=135 origin=aa00 cmd_seq=201 class=Act decision=Act flags=0x00
+  [136] seq=136 origin=aa00 cmd_seq=202 class=Act decision=Act flags=0x00
+  [137] seq=137 origin=aa00 cmd_seq=203 class=Act decision=Act flags=0x00
+  [138] seq=138 origin=aa00 cmd_seq=204 class=Act decision=Act flags=0x00
+  [139] seq=139 origin=aa00 cmd_seq=205 class=Act decision=Act flags=0x00
+  [140] seq=140 origin=aa00 cmd_seq=206 class=Act decision=Act flags=0x00
+  [141] seq=141 origin=aa00 cmd_seq=207 class=Act decision=Act flags=0x00
+  [142] seq=142 origin=aa00 cmd_seq=208 class=Act decision=Act flags=0x00
+  [143] seq=143 origin=aa00 cmd_seq=209 class=Act decision=Act flags=0x00
+  [144] seq=144 origin=aa00 cmd_seq=210 class=Act decision=Act flags=0x00
+  [145] seq=145 origin=aa00 cmd_seq=211 class=Act decision=Act flags=0x00
+  [146] seq=146 origin=aa00 cmd_seq=212 class=Act decision=Act flags=0x00
+  [147] seq=147 origin=aa00 cmd_seq=213 class=Act decision=Act flags=0x00
+  [148] seq=148 origin=aa00 cmd_seq=214 class=Act decision=Act flags=0x00
+  [149] seq=149 origin=aa00 cmd_seq=215 class=Act decision=Act flags=0x00
+  [150] seq=150 origin=aa00 cmd_seq=216 class=Act decision=Act flags=0x00
+  [151] seq=151 origin=aa00 cmd_seq=217 class=Act decision=Act flags=0x00
+  [152] seq=152 origin=aa00 cmd_seq=218 class=Act decision=Act flags=0x00
+  [153] seq=153 origin=aa00 cmd_seq=219 class=Act decision=Act flags=0x00
+  [154] seq=154 origin=aa00 cmd_seq=220 class=Act decision=Act flags=0x00
+  [155] seq=155 origin=aa00 cmd_seq=221 class=Act decision=Act flags=0x00
+  [156] seq=156 origin=aa00 cmd_seq=222 class=Act decision=Act flags=0x00
+  [157] seq=157 origin=aa00 cmd_seq=223 class=Act decision=Act flags=0x00
+  [158] seq=158 origin=aa00 cmd_seq=224 class=Act decision=Act flags=0x00
+  [159] seq=159 origin=aa00 cmd_seq=225 class=Act decision=Act flags=0x00
+  [160] seq=160 origin=aa00 cmd_seq=226 class=Act decision=Act flags=0x00
+  [161] seq=161 origin=aa00 cmd_seq=227 class=Act decision=Act flags=0x00
+  [162] seq=162 origin=aa00 cmd_seq=228 class=Act decision=Act flags=0x00
+  [163] seq=163 origin=aa00 cmd_seq=229 class=Act decision=Act flags=0x00
+  [164] seq=164 origin=aa00 cmd_seq=230 class=Act decision=Act flags=0x00
+  [165] seq=165 origin=aa00 cmd_seq=231 class=Act decision=Act flags=0x00
+  [166] seq=166 origin=aa00 cmd_seq=232 class=Act decision=Act flags=0x00
+  [167] seq=167 origin=aa00 cmd_seq=233 class=Act decision=Act flags=0x00
+  [168] seq=168 origin=aa00 cmd_seq=234 class=Act decision=Act flags=0x00
+  [169] seq=169 origin=aa00 cmd_seq=235 class=Act decision=Act flags=0x00
+  [170] seq=170 origin=aa00 cmd_seq=236 class=Act decision=Act flags=0x00
+  [171] seq=171 origin=aa00 cmd_seq=237 class=Act decision=Act flags=0x00
+  [172] seq=172 origin=aa00 cmd_seq=238 class=Act decision=Act flags=0x00
+  [173] seq=173 origin=aa00 cmd_seq=239 class=Act decision=Act flags=0x00
+  [174] seq=174 origin=aa00 cmd_seq=240 class=Act decision=Act flags=0x00
+  [175] seq=175 origin=aa00 cmd_seq=241 class=Act decision=Act flags=0x00
+  [176] seq=176 origin=aa00 cmd_seq=242 class=Act decision=Act flags=0x00
+  [177] seq=177 origin=aa00 cmd_seq=243 class=Act decision=Act flags=0x00
+  [178] seq=178 origin=aa00 cmd_seq=244 class=Act decision=Act flags=0x00
+  [179] seq=179 origin=aa00 cmd_seq=245 class=Act decision=Act flags=0x00
+  [180] seq=180 origin=aa00 cmd_seq=246 class=Act decision=Act flags=0x00
+  [181] seq=181 origin=aa00 cmd_seq=247 class=Act decision=Act flags=0x00
+  [182] seq=182 origin=aa00 cmd_seq=248 class=Act decision=Act flags=0x00
+  [183] seq=183 origin=aa00 cmd_seq=249 class=Act decision=Act flags=0x00
+  [184] seq=184 origin=aa00 cmd_seq=250 class=Act decision=Act flags=0x00
+  [185] seq=185 origin=aa00 cmd_seq=251 class=Act decision=Act flags=0x00
+  [186] seq=186 origin=aa00 cmd_seq=252 class=Act decision=Act flags=0x00
+  [187] seq=187 origin=aa00 cmd_seq=253 class=Act decision=Act flags=0x00
+  [188] seq=188 origin=aa00 cmd_seq=254 class=Act decision=Act flags=0x00
+  [189] seq=189 origin=aa00 cmd_seq=255 class=Act decision=Act flags=0x00
+  [190] seq=190 origin=aa00 cmd_seq=256 class=Act decision=Act flags=0x00
+  [191] seq=191 origin=aa00 cmd_seq=257 class=Act decision=Act flags=0x00
+  [192] seq=192 origin=aa00 cmd_seq=258 class=Act decision=Act flags=0x00
+  [193] seq=193 origin=aa00 cmd_seq=259 class=Act decision=Act flags=0x00
+  [194] seq=194 origin=aa00 cmd_seq=260 class=Act decision=Act flags=0x00
+  [195] seq=195 origin=aa00 cmd_seq=261 class=Act decision=Act flags=0x00
+  [196] seq=196 origin=aa00 cmd_seq=262 class=Act decision=Act flags=0x00
+  [197] seq=197 origin=aa00 cmd_seq=263 class=Act decision=Act flags=0x00
+  [198] seq=198 origin=aa00 cmd_seq=264 class=Act decision=Act flags=0x00
+  [199] seq=199 origin=aa00 cmd_seq=265 class=Act decision=Act flags=0x00
+  [200] seq=200 origin=aa00 cmd_seq=266 class=Act decision=Act flags=0x00
+  [201] seq=201 origin=aa00 cmd_seq=267 class=Act decision=Act flags=0x00
+  [202] seq=202 origin=aa00 cmd_seq=268 class=Act decision=Act flags=0x00
+  [203] seq=203 origin=aa00 cmd_seq=269 class=Act decision=Act flags=0x00
+  [204] seq=204 origin=aa00 cmd_seq=270 class=Act decision=Act flags=0x00
+  [205] seq=205 origin=aa00 cmd_seq=271 class=Act decision=Act flags=0x00
+  [206] seq=206 origin=bb00 cmd_seq=1 class=Act decision=Change(Revocation) flags=0x10
+VERDICT intact entries=207
+
+== C16 a lower epoch is refused as a rollback, and the refusal is journalled too ==
+  tool: REVOKE refused epoch=1 signatures=1 outcome=NoAnswer (rc=1)
+  PASS  C16 the same epoch is refused (rc=1)
+  PASS  C16 the refused change is journalled  ->   [207] seq=207 origin=bb00 cmd_seq=1 class=Act decision=Change(Revocation) flags=0x00
+  PASS  C16 recorded as NOT applied  ->   [207] seq=207 origin=bb00 cmd_seq=1 class=Act decision=Change(Revocation) flags=0x00
+
+== C17 a list signed by an operator the gateway does not trust is refused ==
+  tool: REVOKE refused epoch=9 signatures=1 outcome=NoAnswer (rc=1)
+  PASS  C17 refused (rc=1)
+  PASS  C17 the attempt is journalled, not applied  ->   [208] seq=208 origin=bb00 cmd_seq=1 class=Act decision=Change(Revocation) flags=0x00
+
+== C12 an order addressed to ANOTHER gateway_id is refused ==
+  PASS  C12 refused  -> EXC fc=0x86 code=0x0a
+  PASS  C12 the device was not touched  (208)
+  PASS  C12 journalled as NotAuthorized  ->   [209] seq=209 origin=aa00 cmd_seq=321 class=Act decision=Reject(NotAuthorized) flags=0x00
+
+== C13 a REVOKED origin is refused, and revocation now has an effect at all ==
+  PASS  C13 the gateway says it revoked the fingerprint  -> GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY revoked fp=aa00000000000000
+GATEWAY journal=C:/Users/pc/AppData/Local/Temp/pz2/jrnrev.entries + C:/Users/pc/AppData/Local/Temp/pz2/jrnrev.head
+GATEWAY authority=single key=ed54a59fb1ac3a51 rev_store=C:/Users/pc/AppData/Local/Temp/pz2/jrnrev.rev
+GATEWAY listen=127.0.0.1:15021 plc=127.0.0.1:15020 unit=0x11 boot_id=1791522523111 registers=1
+GATEWAY 127.0.0.1:64279 conn_end err=UnexpectedEof
+  PASS  C13 refused  -> EXC fc=0x86 code=0x0b
+  PASS  C13 the device was not touched  (208)
+  PASS  C13 refused at the mesh layer, before the gate  ->   [0] seq=0 origin=0000 cmd_seq=0 class=Act decision=Reject(NotVerified) flags=0x00
+  NOTE  C13 revocation bites one layer ABOVE the gate (v0B, first hop); ctx.revoked is defence in depth
+  PASS  C13 the gateway logged the mesh drop  -> GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY revoked fp=aa00000000000000
+GATEWAY journal=C:/Users/pc/AppData/Local/Temp/pz2/jrnrev.entries + C:/Users/pc/AppData/Local/Temp/pz2/jrnrev.head
+GATEWAY authority=single key=ed54a59fb1ac3a51 rev_store=C:/Users/pc/AppData/Local/Temp/pz2/jrnrev.rev
+GATEWAY listen=127.0.0.1:15021 plc=127.0.0.1:15020 unit=0x11 boot_id=1791522523111 registers=1
+GATEWAY 127.0.0.1:64279 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:64283 CLOCK boot_id=1791522523111
+GATEWAY 127.0.0.1:64283 MESH_DROP why="origin revoked" -> no PLC write
+GATEWAY 127.0.0.1:64283 conn_end err=UnexpectedEof
+
+== C14 the journal attributes the decision to an origin, not to eight zero bytes ==
+  the gate's refusal carries origin=aa00 (agent fp starts aa00)
+  and C13's mesh drop carries origin=0000 -- unverified, so not recorded as fact
+  PASS  C14 the decision is attributed to origin=aa00
+
+== C18 a peer WITHOUT the ACTUATE permission cannot command, though its key is known ==
+  PASS  C18 the gateway printed the operator node with no permission  -> GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY journal=C:/Users/pc/AppData/Local/Temp/pz2/jrn.entries + C:/Users/pc/AppData/Local/Temp/pz2/jrn.head
+GATEWAY authority=single key=ed54a59fb1ac3a51 rev_store=C:/Users/pc/AppData/Local/Temp/pz2/jrn.rev
+GATEWAY listen=127.0.0.1:15021 plc=127.0.0.1:15020 unit=0x11 boot_id=1791522503481 registers=1
+GATEWAY 127.0.0.1:58187 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:58190 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:58193 CLOCK boot_id=1791522503481
+GATEWAY 127.0.0.1:58193 seq=1 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58193 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:58197 CLOCK boot_id=1791522503481
+GATEWAY 127.0.0.1:58197 seq=2 Reject(OutOfLimits) outcome=Refused(OutOfLimits, RegisterNotAllowed(17)) plc_written=false
+GATEWAY 127.0.0.1:58197 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:58199 CLOCK boot_id=1791522503481
+GATEWAY 127.0.0.1:58199 seq=3 Reject(OutOfLimits) outcome=Refused(OutOfLimits, ValueOutOfRange(10, 5000)) plc_written=false
+GATEWAY 127.0.0.1:58199 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:58201 READ Ok served=true (never writes)
+GATEWAY 127.0.0.1:58201 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:58203 READ RegisterNotAllowed(17) served=false (never writes)
+GATEWAY 127.0.0.1:58203 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:58204 conn_end err=InvalidData
+GATEWAY 127.0.0.1:58206 CLOCK boot_id=1791522503481
+GATEWAY 127.0.0.1:58206 seq=65 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58206 conn_end err=UnexpectedEof
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY journal=C:/Users/pc/AppData/Local/Temp/pz2/jrn.entries + C:/Users/pc/AppData/Local/Temp/pz2/jrn.head
+GATEWAY authority=single key=ed54a59fb1ac3a51 rev_store=C:/Users/pc/AppData/Local/Temp/pz2/jrn.rev
+GATEWAY listen=127.0.0.1:15021 plc=127.0.0.1:15020 unit=0x11 boot_id=1791522515128 registers=1
+GATEWAY 127.0.0.1:58209 CLOCK boot_id=1791522515128
+GATEWAY 127.0.0.1:58209 seq=66 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58209 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:58212 CLOCK boot_id=1791522515128
+GATEWAY 127.0.0.1:58212 seq=67 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=68 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=69 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=70 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=71 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=72 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=73 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=74 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=75 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=76 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=77 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=78 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=79 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=80 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=81 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=82 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=83 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=84 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=85 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=86 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=87 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=88 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=89 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=90 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=91 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=92 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=93 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=94 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=95 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=96 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=97 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=98 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=99 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=100 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=101 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=102 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=103 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=104 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=105 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=106 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=107 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=108 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=109 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=110 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=111 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=112 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=113 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=114 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=115 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=116 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=117 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=118 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=119 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=120 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=121 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=122 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=123 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=124 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=125 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=126 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=127 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=128 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=129 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=130 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=131 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=132 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=133 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=134 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=135 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=136 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=137 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=138 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=139 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=140 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=141 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=142 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=143 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=144 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=145 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=146 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=147 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=148 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=149 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=150 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=151 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=152 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=153 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=154 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=155 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=156 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=157 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=158 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=159 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=160 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=161 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=162 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=163 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=164 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=165 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=166 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=167 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=168 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=169 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=170 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=171 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=172 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=173 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=174 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=175 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=176 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=177 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=178 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=179 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=180 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=181 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=182 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=183 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=184 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=185 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=186 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=187 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=188 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=189 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=190 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=191 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=192 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=193 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=194 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=195 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=196 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=197 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=198 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=199 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=200 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=201 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=202 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=203 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=204 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=205 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=206 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=207 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=208 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=209 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=210 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=211 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=212 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=213 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=214 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=215 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=216 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=217 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=218 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=219 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=220 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=221 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=222 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=223 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=224 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=225 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=226 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=227 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=228 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=229 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=230 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=231 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=232 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=233 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=234 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=235 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=236 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=237 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=238 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=239 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=240 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=241 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=242 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=243 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=244 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=245 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=246 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=247 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=248 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=249 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=250 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=251 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=252 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=253 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=254 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=255 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=256 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=257 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=258 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=259 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=260 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=261 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=262 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=263 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=264 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=265 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=266 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=267 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=268 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=269 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=270 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 seq=271 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:58212 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:58213 REVOCATION Applied epoch=1
+GATEWAY 127.0.0.1:58213 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:58214 REVOCATION Duplicate epoch=1
+GATEWAY 127.0.0.1:58214 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:58215 REVOCATION Reject(BadOperatorSig) epoch=1
+GATEWAY 127.0.0.1:58215 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:58218 CLOCK boot_id=1791522515128
+GATEWAY 127.0.0.1:58218 seq=321 Reject(NotAuthorized) outcome=Refused(NotAuthorized, Ok) plc_written=false
+GATEWAY 127.0.0.1:58218 conn_end err=UnexpectedEof
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY revoked fp=aa00000000000000
+GATEWAY journal=C:/Users/pc/AppData/Local/Temp/pz2/jrnrev.entries + C:/Users/pc/AppData/Local/Temp/pz2/jrnrev.head
+GATEWAY authority=single key=ed54a59fb1ac3a51 rev_store=C:/Users/pc/AppData/Local/Temp/pz2/jrnrev.rev
+GATEWAY listen=127.0.0.1:15021 plc=127.0.0.1:15020 unit=0x11 boot_id=1791522523111 registers=1
+GATEWAY 127.0.0.1:64279 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:64283 CLOCK boot_id=1791522523111
+GATEWAY 127.0.0.1:64283 MESH_DROP why="origin revoked" -> no PLC write
+GATEWAY 127.0.0.1:64283 conn_end err=UnexpectedEof
+  tool: ORDER refused reg=10 value=700 cmd_seq=1 outcome=Refused(OutOfLimits, Ok) (rc=1)
+  PASS  C18 refused (rc=1)
+  PASS  C18 the device was not touched  (208)
+  PASS  C18 journalled as NotAuthorized, attributed to the operator node  ->   [1] seq=1 origin=bb00 cmd_seq=1 class=Act decision=Reject(NotAuthorized) flags=0x00
+  PASS  C18 and named as a permission refusal  ->   [1] seq=1 origin=bb00 cmd_seq=1 class=Act decision=Reject(NotAuthorized) flags=0x00
+
+== C19-C22 quorum k parmi n sur le lien ==
+  PASS  C19 the gateway printed the quorum it will enforce  -> GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY journal=C:/Users/pc/AppData/Local/Temp/pz2/jrnq.entries + C:/Users/pc/AppData/Local/Temp/pz2/jrnq.head
+GATEWAY authority=quorum k=2 of n=3 keys=[ed54a59f,e7f162a1,6c28fd05] rev_store=C:/Users/pc/AppData/Local/Temp/pz2/jrnq.rev
+GATEWAY listen=127.0.0.1:15031 plc=127.0.0.1:15020 unit=0x11 boot_id=1791522527691 registers=1
+GATEWAY 127.0.0.1:64287 conn_end err=UnexpectedEof
+  tool: REVOKE applied epoch=1 count=1 signatures=2 (rc=0)
+  PASS  C19 two distinct operators meet k=2  (0)
+  PASS  C19 the gateway applied it  -> GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY journal=C:/Users/pc/AppData/Local/Temp/pz2/jrnq.entries + C:/Users/pc/AppData/Local/Temp/pz2/jrnq.head
+GATEWAY authority=quorum k=2 of n=3 keys=[ed54a59f,e7f162a1,6c28fd05] rev_store=C:/Users/pc/AppData/Local/Temp/pz2/jrnq.rev
+GATEWAY listen=127.0.0.1:15031 plc=127.0.0.1:15020 unit=0x11 boot_id=1791522527691 registers=1
+GATEWAY 127.0.0.1:64287 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:64288 REVOCATION Applied epoch=1
+GATEWAY 127.0.0.1:64288 conn_end err=UnexpectedEof
+  tool: REVOKE refused epoch=2 signatures=1 outcome=NoAnswer (rc=1)
+  PASS  C20 one signature does not meet k=2 (rc=1)
+  tool: REVOKE refused epoch=3 signatures=2 outcome=NoAnswer (rc=1)
+  PASS  C21 the same operator twice is one vote, not two (rc=1)
+  journal: 1 changement(s) appliqué(s), 2 refusé(s)
+  PASS  C19-C21 les trois décisions de quorum sont au journal, appliquée et refusées
+  PASS  C19-C21 la chaîne reste intacte  -> boot_id=1791522527691 entries=3 head_seq=Some(2) overwritten=0
+  [0] seq=0 origin=bb00 cmd_seq=1 class=Act decision=Change(Revocation) flags=0x10
+  [1] seq=1 origin=bb00 cmd_seq=1 class=Act decision=Change(Revocation) flags=0x00
+  [2] seq=2 origin=bb00 cmd_seq=1 class=Act decision=Change(Revocation) flags=0x00
+VERDICT intact entries=3
+
+== C22 le coût d'un quorum contre une signature unique, K=10 ==
+    single, 1 signature                 102283 ns  +/-12%   verdict=accepte
+    k=2/n=3, 2 distinct signatures      205558 ns  +/-13%   verdict=accepte
+    k=2/n=3, 1 signature (refused)      103342 ns  +/-17%   verdict=refuse
+    k=2/n=3, same key twice (refused)   109336 ns  +/-14%   verdict=refuse
+    k=3/n=3, 3 distinct signatures      308213 ns  +/-15%   verdict=accepte
+  PASS  C22 coût mesuré, K=10
+
+== C23-C26 une carte de registres par origine ==
+  agent sur son registre: ORDER acted reg=10 value=500 cmd_seq=1 (rc=0)
+  PASS  C23 l'agent ecrit son propre registre  (0)
+  PASS  C23 l'appareil a bien recu une ecriture  (209)
+  agent sur le registre de l'autre: ORDER refused reg=12 value=3 cmd_seq=65 outcome=Refused(OutOfLimits, RegisterNotAllowed(0)) (rc=1)
+  PASS  C24 refuse: le registre est dans la carte de la passerelle mais pas dans celle de l'agent (rc=1)
+  PASS  C24 l'appareil n'a rien recu  (209)
+  hmi2 a 5 (plafond 9): ORDER acted reg=10 value=5 cmd_seq=1 (rc=0)
+  hmi2 a 500 (plafond 9): ORDER refused reg=10 value=500 cmd_seq=65 outcome=Refused(OutOfLimits, ValueOutOfRange(0, 0)) (rc=1)
+  PASS  C25 hmi2 sous son plafond est accepte  (0)
+  PASS  C25 la plage est par origine: 500 refuse a hmi2, autorise a l'agent (rc=1)
+  PASS  C25 une seule ecriture a atteint l'appareil  (210)
+  PASS  C26 la chaine reste intacte  -> boot_id=1791522531630 entries=4 head_seq=Some(3) overwritten=0
+  [0] seq=0 origin=aa00 cmd_seq=1 class=Act decision=Act flags=0x00
+  [1] seq=1 origin=aa00 cmd_seq=65 class=Act decision=Reject(OutOfLimits) flags=0x00
+  [2] seq=2 origin=ee00 cmd_seq=1 class=Act decision=Act flags=0x00
+  [3] seq=3 origin=ee00 cmd_seq=65 class=Act decision=Reject(OutOfLimits) flags=0x00
+VERDICT intact entries=4
+  PASS  C26 un refus hors carte est attribue a l'agent  ->   [1] seq=1 origin=aa00 cmd_seq=65 class=Act decision=Reject(OutOfLimits) flags=0x00
+  PASS  C26 un refus de plage est attribue a hmi2  ->   [3] seq=3 origin=ee00 cmd_seq=65 class=Act decision=Reject(OutOfLimits) flags=0x00
+
+== C27 compter par origine n'affaiblit pas l'anti-rejeu de cette origine ==
+  hmi2 rejoue son propre cmd_seq: ORDER refused reg=10 value=4 cmd_seq=1 outcome=Refused(OutOfLimits, Ok) (rc=1)
+  PASS  C27 le rejeu de son propre numero est refuse (rc=1)
+  PASS  C27 l'appareil n'a rien recu  (210)
+  PASS  C27 journalise comme rejeu, attribue a hmi2  ->   [4] seq=4 origin=ee00 cmd_seq=1 class=Act decision=Reject(StaleOrReplayed) flags=0x00
+  PASS  C27 et bien a hmi2  ->   [4] seq=4 origin=ee00 cmd_seq=1 class=Act decision=Reject(StaleOrReplayed) flags=0x00
+
+== summary ==
+  PLC: 210 applied writes, 211 frames received
+  cases: 69 passed, 0 failed
+CAMPAIGN PASS

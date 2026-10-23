@@ -1,0 +1,8 @@
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY journal continuity: first run on this prefix
+GATEWAY journal=C:/dev/oasis-eval/logo-test/m25_h1/t43/jrn.entries + C:/dev/oasis-eval/logo-test/m25_h1/t43/jrn.head
+GATEWAY no authority configured: every ORV1 over the link is refused
+GATEWAY version=0.3.0 build=b90c6d780ec4 config_id=a1fcea330dc25114
+GATEWAY listen=127.0.0.1:15567 plc=192.168.0.3:510 unit=0x01 boot_id=12687049851342283154 registers=2

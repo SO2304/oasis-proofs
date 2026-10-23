@@ -1,0 +1,3 @@
+COMMANDER case=replay seq=1 boot_id=4242 send#1 266 bytes -> 127.0.0.1:14560
+COMMANDER case=replay seq=1 boot_id=4242 send#2 266 bytes -> 127.0.0.1:14560
+COMMANDER done (envelope 153 B, frame 266 B)

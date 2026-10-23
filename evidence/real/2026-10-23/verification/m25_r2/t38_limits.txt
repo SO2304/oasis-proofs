@@ -1,0 +1,1 @@
+ORDER refused reg=100 value=5000 cmd_seq=65 exception=0x03 (value outside the register's range)

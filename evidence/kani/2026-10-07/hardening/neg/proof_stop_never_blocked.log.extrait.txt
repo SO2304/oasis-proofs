@@ -1,0 +1,15 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 21234 octets, SHA-256 d88e9456569a3eb7148056ed74a8392150bfce62137a682ce941d084b026cf30
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_stop_never_blocked
+VERIFICATION RESULT:
+ ** 1 of 81 failed
+Failed Checks: assertion failed: stop_decision(&i) == StopDecision::Stop
+VERIFICATION:- FAILED
+Verification Time: 0.07535187s
+Complete - 0 successfully verified harnesses, 1 failures, 1 total.

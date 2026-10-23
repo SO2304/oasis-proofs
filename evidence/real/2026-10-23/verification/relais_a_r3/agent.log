@@ -1,0 +1,9 @@
+AGENT tx_counter restored_to=0 (next send 1)
+AGENT listen=127.0.0.1:15551 gateway=127.0.0.1:15550 unit=0x01 next_seq=1
+AGENT hmi=127.0.0.1:53042 end err=UnexpectedEof
+AGENT hmi=127.0.0.1:53043 end err=UnexpectedEof
+AGENT hmi=127.0.0.1:53052 NOT_FORWARDED fc=0x05 (write single coil) unit=0x01 addr=8193 -> exception 0x01
+AGENT hmi=127.0.0.1:53052 end err=UnexpectedEof
+AGENT hmi=127.0.0.1:63502 NOT_FORWARDED fc=0x0f (write multiple coils) unit=0x01 addr=8193 -> exception 0x01
+AGENT hmi=127.0.0.1:63502 end err=UnexpectedEof
+AGENT hmi=127.0.0.1:63506 end err=UnexpectedEof

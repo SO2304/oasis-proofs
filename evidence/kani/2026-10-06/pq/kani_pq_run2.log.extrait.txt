@@ -1,0 +1,39 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 5556 octets, SHA-256 c8e70fe45c0583a078c757956361370cf9e9c1006f73ee755e4f4935ce307134
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.67.0 (cargo plugin)
+harnais : proof_auth_precheck_no_downgrade
+VERIFICATION RESULT:
+ ** 0 of 65 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.2642401s
+harnais : proof_auth_parse_total
+VERIFICATION RESULT:
+ ** 0 of 112 failed (5 unreachable)
+VERIFICATION:- SUCCESSFUL
+Verification Time: 3.3342848s
+harnais : proof_auth_policy_never_lowers
+VERIFICATION RESULT:
+ ** 0 of 112 failed (1 unreachable)
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.41923514s
+harnais : proof_auth_hybrid_requires_both
+VERIFICATION RESULT:
+ ** 0 of 2 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.04199984s
+harnais : proof_frag_completion_mask
+VERIFICATION RESULT:
+ ** 0 of 5 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.057610832s
+harnais : proof_frag_parse_in_bounds
+VERIFICATION RESULT:
+ ** 0 of 116 failed (4 unreachable)
+VERIFICATION:- SUCCESSFUL
+Verification Time: 5.8714056s
+Complete - 6 successfully verified harnesses, 0 failures, 6 total.

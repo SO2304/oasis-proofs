@@ -1,0 +1,14 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 10502 octets, SHA-256 545a63d2117fc797fc973f004d869f861c7109fc0ce66d758f8ca06b4be34c43
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_rev_epoch_never_decreases
+VERIFICATION RESULT:
+ ** 0 of 462 failed (5 unreachable)
+VERIFICATION:- SUCCESSFUL
+Verification Time: 2.6603155s
+Complete - 1 successfully verified harnesses, 0 failures, 1 total.

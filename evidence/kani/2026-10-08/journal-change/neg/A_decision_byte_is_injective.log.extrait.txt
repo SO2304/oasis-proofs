@@ -1,0 +1,15 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 10476 octets, SHA-256 549fda231e2ec3cca5f06c814cfac48d0c0e269eab35dc8a1af3099fff867f55
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_decision_byte_is_injective
+VERIFICATION RESULT:
+ ** 1 of 142 failed (3 unreachable)
+Failed Checks: assertion failed: DEC_REJECT_BASE as usize + REASON_COUNT <= DEC_CHANGE_BASE as usize
+VERIFICATION:- FAILED
+Verification Time: 0.3346047s
+Complete - 0 successfully verified harnesses, 1 failures, 1 total.

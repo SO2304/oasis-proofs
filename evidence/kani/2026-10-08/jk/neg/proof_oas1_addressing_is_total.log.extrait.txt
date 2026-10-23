@@ -1,0 +1,15 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 9618 octets, SHA-256 2802d925fd68358c421fc22c619fcaf8ff529a437c5c8094bd11ef0e1cf4ac6d
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_oas1_addressing_is_total
+VERIFICATION RESULT:
+ ** 1 of 8 failed
+Failed Checks: "0 must address every actuator"
+VERIFICATION:- FAILED
+Verification Time: 0.04729821s
+Complete - 0 successfully verified harnesses, 1 failures, 1 total.

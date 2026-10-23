@@ -1,0 +1,14 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 10593 octets, SHA-256 f2246ae3537e2bc3aa2bb3cc330dc7a17db51aa853388cb8be729514105157e4
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_synapse_prune_symmetric
+VERIFICATION RESULT:
+ ** 0 of 1 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.08008901s
+Complete - 1 successfully verified harnesses, 0 failures, 1 total.

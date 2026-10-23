@@ -1,0 +1,285 @@
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=ab00000000000000 permissions=ACTUATE
+GATEWAY peer fp=7800000000000000 permissions=none
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY journal=C:/dev/oasis/twohost/run-20261010-200037/jrnA.entries + C:/dev/oasis/twohost/run-20261010-200037/jrnA.head
+GATEWAY no authority configured: every ORV1 over the link is refused
+GATEWAY listen=[fe80::1601:70df:35b:73c0%19]:15711 plc=127.0.0.1:15720 unit=0x7e boot_id=1791655246298 registers=1
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:55044 CLOCK boot_id=1791655246298
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:55044 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:55058 seq=1 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:55058 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:55064 CLOCK boot_id=1791655246298
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:55064 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:55072 seq=65 Reject(OutOfLimits) outcome=Refused(OutOfLimits, ValueOutOfRange(10, 40)) plc_written=false
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:55072 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:55082 CLOCK boot_id=1791655246298
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:55082 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:55098 seq=129 Reject(OutOfLimits) outcome=Refused(OutOfLimits, RegisterNotAllowed(99)) plc_written=false
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:55098 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:55110 CLOCK boot_id=1791655246298
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:55110 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:55126 MESH_DROP why="unknown sender" -> no PLC write
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:55126 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:55132 CLOCK boot_id=1791655246298
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:55132 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:55144 seq=1 Reject(NotAuthorized) outcome=Refused(NotAuthorized, Ok) plc_written=false
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:55144 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:57656 CLOCK boot_id=1791655246298
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:57656 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:57658 seq=193 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:57658 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:57666 CLOCK boot_id=1791655246298
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:57666 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:57670 seq=257 Reject(OutOfLimits) outcome=Refused(OutOfLimits, ValueOutOfRange(10, 40)) plc_written=false
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:57670 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:57674 CLOCK boot_id=1791655246298
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:57674 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:57680 seq=321 Reject(OutOfLimits) outcome=Refused(OutOfLimits, RegisterNotAllowed(99)) plc_written=false
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:57680 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:57696 CLOCK boot_id=1791655246298
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:57696 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:57706 MESH_DROP why="unknown sender" -> no PLC write
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:57706 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:57712 CLOCK boot_id=1791655246298
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:57712 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:57714 seq=65 Reject(NotAuthorized) outcome=Refused(NotAuthorized, Ok) plc_written=false
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:57714 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:51582 CLOCK boot_id=1791655246298
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:51582 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:51584 seq=385 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:51584 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:51590 CLOCK boot_id=1791655246298
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:51590 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:51602 seq=449 Reject(OutOfLimits) outcome=Refused(OutOfLimits, ValueOutOfRange(10, 40)) plc_written=false
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:51602 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:51612 CLOCK boot_id=1791655246298
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:51612 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:51624 seq=513 Reject(OutOfLimits) outcome=Refused(OutOfLimits, RegisterNotAllowed(99)) plc_written=false
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:51624 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:51628 CLOCK boot_id=1791655246298
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:51628 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:51638 MESH_DROP why="unknown sender" -> no PLC write
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:51638 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:54972 CLOCK boot_id=1791655246298
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:54972 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:54976 seq=129 Reject(NotAuthorized) outcome=Refused(NotAuthorized, Ok) plc_written=false
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:54976 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:48998 CLOCK boot_id=1791655246298
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:48998 seq=1 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:48998 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49012 CLOCK boot_id=1791655246298
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49012 seq=2 Reject(OutOfLimits) outcome=Refused(OutOfLimits, RegisterNotAllowed(99)) plc_written=false
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49012 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49022 CLOCK boot_id=1791655246298
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49022 seq=3 Reject(OutOfLimits) outcome=Refused(OutOfLimits, ValueOutOfRange(10, 40)) plc_written=false
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49022 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49028 READ Ok served=true (never writes)
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49028 conn_end err=UnexpectedEof
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 CLOCK boot_id=1791655246298
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=4 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=5 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=6 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=7 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=8 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=9 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=10 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=11 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=12 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=13 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=14 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=15 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=16 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=17 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=18 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=19 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=20 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=21 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=22 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=23 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=24 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=25 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=26 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=27 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=28 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=29 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=30 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=31 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=32 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=33 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=34 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=35 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=36 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=37 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=38 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=39 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=40 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=41 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=42 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=43 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=44 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=45 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=46 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=47 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=48 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=49 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=50 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=51 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=52 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=53 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=54 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=55 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=56 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=57 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=58 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=59 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=60 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=61 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=62 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=63 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=64 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=65 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=66 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=67 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=68 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=69 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=70 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=71 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=72 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=73 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=74 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=75 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=76 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=77 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=78 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=79 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=80 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=81 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=82 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=83 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=84 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=85 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=86 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=87 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=88 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=89 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=90 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=91 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=92 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=93 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=94 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=95 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=96 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=97 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=98 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=99 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=100 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=101 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=102 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=103 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=104 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=105 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=106 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=107 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=108 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=109 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=110 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=111 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=112 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=113 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=114 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=115 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=116 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=117 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=118 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=119 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=120 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=121 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=122 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=123 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=124 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=125 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=126 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=127 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=128 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=129 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=130 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=131 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=132 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=133 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=134 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=135 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=136 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=137 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=138 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=139 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=140 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=141 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=142 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=143 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=144 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=145 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=146 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=147 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=148 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=149 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=150 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=151 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=152 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=153 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=154 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=155 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=156 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=157 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=158 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=159 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=160 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=161 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=162 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=163 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=164 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=165 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=166 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=167 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=168 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=169 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=170 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=171 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=172 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=173 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=174 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=175 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=176 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=177 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=178 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=179 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=180 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=181 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=182 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=183 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=184 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=185 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=186 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=187 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=188 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=189 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=190 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=191 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=192 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=193 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=194 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=195 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=196 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=197 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=198 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=199 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=200 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=201 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=202 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=203 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=204 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=205 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=206 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=207 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 seq=208 Act outcome=Done plc_written=true
+GATEWAY [fe80::abea:xxxx:xxxx:xxxx%19]:49042 conn_end err=UnexpectedEof

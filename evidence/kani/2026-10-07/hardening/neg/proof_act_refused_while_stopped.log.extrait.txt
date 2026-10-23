@@ -1,0 +1,15 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 9658 octets, SHA-256 48c2e40f1545c67226a4181d8a468e8945aadcca8f2b64a29c1048ed28702874
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_act_refused_while_stopped
+VERIFICATION RESULT:
+ ** 1 of 143 failed
+Failed Checks: assertion failed: actuation_decision_ctx(&ctx, &i) != Decision::Act
+VERIFICATION:- FAILED
+Verification Time: 0.14150836s
+Complete - 0 successfully verified harnesses, 1 failures, 1 total.

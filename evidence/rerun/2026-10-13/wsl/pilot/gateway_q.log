@@ -1,0 +1,13 @@
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY journal=/home/pc/rerun-essentials/pilot/jrnq.entries + /home/pc/rerun-essentials/pilot/jrnq.head
+GATEWAY authority=quorum k=2 of n=3 keys=[ed54a59f,e7f162a1,6c28fd05] rev_store=/home/pc/rerun-essentials/pilot/jrnq.rev
+GATEWAY listen=127.0.0.1:15031 plc=127.0.0.1:15020 unit=0x11 boot_id=1791916621090 registers=1
+GATEWAY 127.0.0.1:50154 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:50168 REVOCATION Applied epoch=1
+GATEWAY 127.0.0.1:50168 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:50182 REVOCATION Reject(BadOperatorSig) epoch=1
+GATEWAY 127.0.0.1:50182 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:46236 REVOCATION Reject(BadOperatorSig) epoch=1
+GATEWAY 127.0.0.1:46236 conn_end err=UnexpectedEof

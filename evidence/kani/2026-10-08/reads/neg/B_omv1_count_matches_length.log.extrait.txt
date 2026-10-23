@@ -1,0 +1,17 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 11118 octets, SHA-256 e0ac1cfde414580a945420c6b2718572a8e10d307e0fa53907f947dfdd5b563f
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_omv1_parse_is_total_and_count_matches_length
+VERIFICATION RESULT:
+ ** 3 of 68 failed
+Failed Checks: index out of bounds: the length is less than or equal to the given index
+Failed Checks: index out of bounds: the length is less than or equal to the given index
+Failed Checks: "a count that lies is refused"
+VERIFICATION:- FAILED
+Verification Time: 0.9770051s
+Complete - 0 successfully verified harnesses, 1 failures, 1 total.

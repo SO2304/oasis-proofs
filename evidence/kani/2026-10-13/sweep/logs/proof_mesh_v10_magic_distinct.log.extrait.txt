@@ -1,0 +1,14 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 10591 octets, SHA-256 d895e43dac7a479eaa5a67baf1c1d8210de6073ed25eaa2aaac971a4e5114ded
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_mesh_v10_magic_distinct
+VERIFICATION RESULT:
+ ** 0 of 30 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.07537419s
+Complete - 1 successfully verified harnesses, 0 failures, 1 total.

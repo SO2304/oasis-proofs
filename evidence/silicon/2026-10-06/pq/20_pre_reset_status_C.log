@@ -1,0 +1,2 @@
+OASIS|C|UART|LEASE_PERSIST|ceiling=5116,writes_since_boot=2|mesh|1a9b461
+OASIS|C|UART|EF_STATUS|boot_id=3837,now_ms=23289,epoch=2,revoked=2,sensor_lost=false,pin25=0,executed=0,rejects=0/0/0/0/0/0/0|mesh|1a9b461

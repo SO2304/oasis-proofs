@@ -1,0 +1,213 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 10316 octets, SHA-256 60b2045580368ee6b481fb4ea2166488dcd9a19e00bdff44c4eaf62e7b554ff1
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+twohost_campaign 2026-10-10T19:16:43Z  tree=4fea1b5
+PC1 cable=fe80::1601:70df:35b:73c0%19  PC1 LAN=192.168.129.236   PC2 LAN=192.168.129.116   PC2 dir=~/oasis-tc-20261010-211643
+
+== 0 prepare: binaries, keys born on PC2, public keys only come back ==
+  PC1 oasis_test_plc.exe af62dd9a5b18225630d3e811d68171583e586d94d4bb9e0c2f2b8d5d404410a7
+  PC1 oasis_mbtcp_gateway.exe 789169ac0045a0611cb1eae7e88de4256ef157f43ded33c8a6c4f91ae54bdf4c
+  PC1 oasis_journal_verify.exe a0b8e98bb2e9895dc5180dd7ce652a748bbfdfacefcfccff5ddf99e4e40bfbeb
+  PC1 oasis_mbtcp_revoke.exe 6d36e74c0c657b70bf0a4131bc87e64d4723178842f0d11576256489fbbebba1
+        | 460f25a81be48d485300a22d1541899bf01e5841b30ae2d5cc2a57f4a6c87e3a  oasis_mbtcp_order
+        | 8789b5033d4e82fa6ac0a2b69c0b015830291e7def518cbcd10f16483c6edf0e  oasis_mbtcp_agent
+        | e895cf4ad29257a749fa09067f7c61d955afb967474b10726ddc8fa84f9b7e51  oasis_mbtcp_revoke
+        | 9dc7339a974e6da74e5179b246d8ded48fee1d7b5ce8b06c0aca183d264a4b1f  [outil d essai]
+  PASS  0 PC2 runs the oasis_mbtcp_order built here  (460f25a81be48d485300a22d1541899bf01e5841b30ae2d5cc2a57f4a6c87e3a)
+  PASS  0 PC2 runs the oasis_mbtcp_agent built here  (8789b5033d4e82fa6ac0a2b69c0b015830291e7def518cbcd10f16483c6edf0e)
+        | order 0ffd225840c9d7cb89b521eea6e09ae0b98f450e0d887fa6b83947d19113662f
+        | agent 3e079f0e9e371b24eeba43b4e5f5db8ec9c9e9c47e6eea2692f7b56925f161b0
+        | noact 9fb44c11c9d92ce0569518eca02191aedd9bcf9d788e072ea07d0926de285eb8
+        | forged b0d291e029a7c2c3120b328e8a53f5a324650c8b4e602e1a6c7544b341a1c17b
+  gateway key born on PC1, pub=669b29ee6ed9562775cbf60363d4ade7c92dc483d120a74c92999f086b58817b; the forged key is enrolled nowhere
+
+== A cable, order tool: 1 runs x 5 orders ==
+  run 1: window eno2 2 fe80::abea:xxxx:xxxx:xxxx
+        | ORDER acted reg=10 value=60 cmd_seq=1
+        | rc=0
+        | ORDER refused reg=10 value=40 cmd_seq=65 exception=0x03 (value outside the register's range)
+        | rc=1
+        | ORDER refused reg=99 value=60 cmd_seq=129 exception=0x02 (register not in the gateway's map)
+        | rc=1
+        | ORDER unconfirmed reg=10 value=60 cmd_seq=1 (no confirmed outcome: dropped before the gate, or the device did not confirm the write; the gateway log says which)
+        | rc=1
+        | ORDER refused reg=10 value=60 cmd_seq=1 exception=0x0a (refused for a reason the reply does not carry; the gateway journal names it)
+        | rc=1
+  PASS  A.r1.1 legitimate order acted
+  PASS  A.r1.2 40 under a floor of 50: exception 0x03
+  PASS  A.r1.3 register 99: exception 0x02
+  PASS  A.r1.4 unknown key: no confirmed outcome
+  PASS  A.r1.5 key without ACTUATE: exception 0x0a
+  PASS  A.r1.5 and not reported as out of limits
+  PASS  A.r1 device applied exactly one write  (1)
+
+== A2 cable, shipped path: HMI -> agent on PC2 -> gateway on PC1 (3 runs) ==
+        | agent up pid=69992 port=15722
+  run 1: window eno2 2 fe80::abea:xxxx:xxxx:xxxx
+        | OK fc=6 reg=10 value=61
+        | rc=0
+        | EXC fc=0x86 code=0x02
+        | rc=1
+        | EXC fc=0x86 code=0x03
+        | rc=1
+        | OK fc=3 count=1 values=61
+        | rc=0
+        | 1946 17 205
+  PASS  A2.r1.1 HMI write acknowledged
+  PASS  A2.r1.2 unlisted register: 0x02
+  PASS  A2.r1.3 out of range: 0x03
+  PASS  A2.r1.4 read through the gateway
+  PASS  A2.r1.5 cable latency HMI->agent->gateway->device: median 1946 us, spread +/-17 % (K=10 x 20, 205 writes)
+  PASS  A2.r1 device writes = 1 + latency writes  (207)
+        | agent up pid=73370 port=15722
+  run 2: window eno2 2 fe80::abea:xxxx:xxxx:xxxx
+        | OK fc=6 reg=10 value=62
+        | rc=0
+        | EXC fc=0x86 code=0x02
+        | rc=1
+        | EXC fc=0x86 code=0x03
+        | rc=1
+        | OK fc=3 count=1 values=62
+        | rc=0
+        | 1886 18 205
+  PASS  A2.r2.1 HMI write acknowledged
+  PASS  A2.r2.2 unlisted register: 0x02
+  PASS  A2.r2.3 out of range: 0x03
+  PASS  A2.r2.4 read through the gateway
+  PASS  A2.r2.5 cable latency HMI->agent->gateway->device: median 1886 us, spread +/-18 % (K=10 x 20, 205 writes)
+  PASS  A2.r2 device writes = 1 + latency writes  (413)
+        | agent up pid=76948 port=15722
+  run 3: window eno2 2 fe80::abea:xxxx:xxxx:xxxx
+        | OK fc=6 reg=10 value=63
+        | rc=0
+        | EXC fc=0x86 code=0x02
+        | rc=1
+        | EXC fc=0x86 code=0x03
+        | rc=1
+        | OK fc=3 count=1 values=63
+        | rc=0
+        | 1914 11 205
+  PASS  A2.r3.1 HMI write acknowledged
+  PASS  A2.r3.2 unlisted register: 0x02
+  PASS  A2.r3.3 out of range: 0x03
+  PASS  A2.r3.4 read through the gateway
+  PASS  A2.r3.5 cable latency HMI->agent->gateway->device: median 1914 us, spread +/-11 % (K=10 x 20, 205 writes)
+  PASS  A2.r3 device writes = 1 + latency writes  (619)
+        | [fe80::abea:xxxx:xxxx:xxxx%19]
+  PASS  A every connection to gateway A came from PC2's cable address  ([fe80::abea:xxxx:xxxx:xxxx%19])
+
+== B LAN (IPv4 through the router), shipped path ==
+        | agent up pid=80578 port=15723
+        | OK fc=6 reg=10 value=71
+        | rc=0
+  PASS  B1.r1 (C1) legitimate write acknowledged
+  PASS  B1.r1 device applied exactly one write  (620)
+  PASS  B1.r1 device holds 71
+        | EXC fc=0x86 code=0x02
+        | rc=1
+  PASS  B2.r1 (C2) unlisted register: 0x02
+        | EXC fc=0x86 code=0x03
+        | rc=1
+  PASS  B3.r1 (C3) out of range: 0x03
+  PASS  B2-B3.r1 the device was not touched  (620)
+        | OK fc=6 reg=10 value=72
+        | rc=0
+  PASS  B1.r2 (C1) legitimate write acknowledged
+  PASS  B1.r2 device applied exactly one write  (621)
+  PASS  B1.r2 device holds 72
+        | EXC fc=0x86 code=0x02
+        | rc=1
+  PASS  B2.r2 (C2) unlisted register: 0x02
+        | EXC fc=0x86 code=0x03
+        | rc=1
+  PASS  B3.r2 (C3) out of range: 0x03
+  PASS  B2-B3.r2 the device was not touched  (621)
+        | OK fc=6 reg=10 value=73
+        | rc=0
+  PASS  B1.r3 (C1) legitimate write acknowledged
+  PASS  B1.r3 device applied exactly one write  (622)
+  PASS  B1.r3 device holds 73
+        | EXC fc=0x86 code=0x02
+        | rc=1
+  PASS  B2.r3 (C2) unlisted register: 0x02
+        | EXC fc=0x86 code=0x03
+        | rc=1
+  PASS  B3.r3 (C3) out of range: 0x03
+  PASS  B2-B3.r3 the device was not touched  (622)
+        | OK fc=3 count=1 values=73
+        | rc=0
+  PASS  B4 (C4) read returns what the device holds
+        | EXC fc=0x83 code=0x02
+        | rc=1
+  PASS  B5 (C5) unlisted read: 0x02
+        | NOANSWER ConnectionResetError
+        | rc=2
+  PASS  B6 (C6) raw Modbus from PC2 at the gateway port: no answer
+  PASS  B2-B6 the device was not touched  (622)
+  PASS  B7 PC2 cannot reach the device port directly
+  PASS  B7 nor a Modbus port on PC1
+        | FIRST: ORDER acted reg=10 value=63 cmd_seq=1 rc=0
+        | SECOND: ORDER acted reg=10 value=63 cmd_seq=65 rc=0
+        | REUSE: ORDER unconfirmed reg=10 value=63 cmd_seq=65 (no confirmed outcome: dropped before the gate, or the device did not confirm the write; the gateway log says which) rc=1
+  PASS  B7b a fresh order from PC2's order tool over the LAN is acted
+  PASS  B7b a second fresh order is acted
+  PASS  B7b the same counter and sequence again: not confirmed
+  PASS  B7b refused at the mesh layer, before the gate
+  PASS  B7b the device moved for the two real orders only  (624)
+        | agent up pid=81727 port=15723
+        | OK fc=6 reg=10 value=71
+        | rc=0
+  PASS  B8 (C7) write after an agent restart on PC2
+  PASS  B8 the agent's sequence rose across the restart (64 -> 128)
+        | OK fc=6 reg=10 value=72
+        | rc=0
+  PASS  B9 (C10) write after a gateway restart on PC1
+  PASS  B9 boot_id changed across the restart
+        | 5128 63 205
+  PASS  B10.r1 LAN latency HMI->agent->gateway->device: median 5128 us, spread +/-63 % (K=10 x 20, 205 writes)
+  PASS  B10.r1 every acknowledged write landed once  (831)
+        | 5452 29 205
+  PASS  B10.r2 LAN latency HMI->agent->gateway->device: median 5452 us, spread +/-29 % (K=10 x 20, 205 writes)
+  PASS  B10.r2 every acknowledged write landed once  (1036)
+        | 7189 83 205
+  PASS  B10.r3 LAN latency HMI->agent->gateway->device: median 7189 us, spread +/-83 % (K=10 x 20, 205 writes)
+  PASS  B10.r3 every acknowledged write landed once  (1241)
+        | 192.168.129.116
+  PASS  B every connection to gateway B came from PC2's LAN address  (192.168.129.116)
+
+== C journals: every chain kept, each verified, and Act decisions == device writes ==
+  chains on disk: jrnA jrnB.1791660239432 jrnB
+        | jrnA: VERDICT intact entries=629 exit=0
+  PASS  C jrnA verifies intact
+  PASS  C jrnA verifier exit 0
+        | jrnB.1791660239432: VERDICT intact entries=13 exit=0
+  PASS  C jrnB.1791660239432 verifies intact
+  PASS  C jrnB.1791660239432 verifier exit 0
+        | jrnB: VERDICT intact entries=616 exit=0
+  PASS  C jrnB verifies intact
+  PASS  C jrnB verifier exit 0
+  PASS  C phase B left one chain per gateway boot  (2)
+  PASS  C the restart said where it kept the previous chain
+  PASS  C phase A: Act decisions == device writes  (619)
+  PASS  C phase B: Act decisions over both boots == device writes  (622)
+  journal A: 619 Act, 10 refusals   journal B (both boots): 622 Act, 7 refusals
+  tamper target: jrnB.1791660239432
+  PASS  C tamper control changes exactly one entry  (1)
+        | VERDICT broken at=12
+        | exit=1
+  PASS  C a refusal rewritten as Act breaks the chain
+  PASS  C and the verifier exits 1
+        | ANCHORED 2026-10-10T19:24:48Z boot_id=1791660239432 seq=12 head=727d91d50c9e7ccb552dfe0f3be2fdbd5c0305e8b3481036af7dbaebbca00b7e entries_prefix=379a35230ec04c1449d916f7b85f366d6d0aab1448fd1412f8942df2bb3daa94 n=13
+  PASS  C the anchor landed on PC2 byte for byte  (2026-10-10T19:24:48Z boot_id=1791660239432 seq=12 head=727d91d50c9e7ccb552dfe0f3be2fdbd5c0305e8b3481036af7dbaebbca00b7e entries_prefix=379a35230ec04c1449d916f7b85f366d6d0aab1448fd1412f8942df2bb3daa94 n=13)
+        | WITNESS ok boot_id=1791660239432 anchored seq=12, now seq=12, anchored entries unchanged (/c/dev/oasis/twohost/run-20261010-211642/jrnB.1791660239432)
+  PASS  C the archived chain matches the anchor PC2 holds
+        | WITNESS DIVERGENCE boot_id=1791660239432 an entry at or before seq=12 differs from the anchor
+  PASS  C the rewritten copy diverges from the anchor PC2 holds
+
+== result ==
+PASS=84 FAIL=0   device writes: phase A 619, phase B 622
+CAMPAIGN PASSED

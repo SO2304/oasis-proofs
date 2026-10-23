@@ -1,0 +1,3 @@
+extrait_public	sha256_de_l_original	octets	nature
+A_sealed_dest_total.log.extrait.txt	38c134eff2043699ac508cbab000c046cd9bbb4eb420df33250e2dcfde8b0e5c	11008	kani
+B_nonce_injective.log.extrait.txt	6f46b919bb5cf993b33807254b1751ddcc3627d7b0e99957f2aa3e2f501bc70d	10756	kani

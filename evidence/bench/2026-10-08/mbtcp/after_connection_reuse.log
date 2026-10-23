@@ -1,0 +1,66 @@
+=== run 1 ===
+bench_mbtcp_pilot  K=10 rounds x 50 writes
+  plc=127.0.0.1:56387  null-relays=127.0.0.1:56389 -> 127.0.0.1:56388  gateway=127.0.0.1:56390  agent=127.0.0.1:56391
+(each round reports its own median; the band below is over the 10 round medians)
+
+  arm                                   median     spread
+  1 hop   HMI -> PLC                      45 us    +/-24%
+  3 hops  HMI -> 2 null relays -> PLC     176 us    +/-42%
+  3 hops  HMI -> agent -> gw -> PLC      468 us    +/-21%
+          sign+verify+gate, no sockets     258 us    +/-25%
+
+  vs a direct write:           423 us  (10.4x)
+  of which the two hops:       131 us  (what any two middleboxes cost here)
+  of which OASIS:              292 us  (2.7x the same shape without it)
+
+  cross-check: OASIS's share 292 us vs sign+verify+gate alone 258 us -> +34 us unaccounted
+  the accounting closes: OASIS's added latency is its crypto and its gate, not plumbing.
+
+  Connections are reused on all three links (agent->gateway, gateway->PLC) and the
+  clock is refreshed once per 1000 ms via part K's TimeView rather than per write.
+  Before that, this bench measured 3172 us +/-724%: a connect per write is not just
+  slower, it makes the latency unpredictable and burns ephemeral ports.
+=== run 2 ===
+bench_mbtcp_pilot  K=10 rounds x 50 writes
+  plc=127.0.0.1:56459  null-relays=127.0.0.1:56461 -> 127.0.0.1:56460  gateway=127.0.0.1:56462  agent=127.0.0.1:56463
+(each round reports its own median; the band below is over the 10 round medians)
+
+  arm                                   median     spread
+  1 hop   HMI -> PLC                      50 us    +/-20%
+  3 hops  HMI -> 2 null relays -> PLC     174 us    +/-24%
+  3 hops  HMI -> agent -> gw -> PLC      460 us    +/-25%
+          sign+verify+gate, no sockets     257 us    +/-25%
+
+  vs a direct write:           410 us  (9.2x)
+  of which the two hops:       124 us  (what any two middleboxes cost here)
+  of which OASIS:              286 us  (2.6x the same shape without it)
+
+  cross-check: OASIS's share 286 us vs sign+verify+gate alone 257 us -> +29 us unaccounted
+  the accounting closes: OASIS's added latency is its crypto and its gate, not plumbing.
+
+  Connections are reused on all three links (agent->gateway, gateway->PLC) and the
+  clock is refreshed once per 1000 ms via part K's TimeView rather than per write.
+  Before that, this bench measured 3172 us +/-724%: a connect per write is not just
+  slower, it makes the latency unpredictable and burns ephemeral ports.
+=== run 3 ===
+bench_mbtcp_pilot  K=10 rounds x 50 writes
+  plc=127.0.0.1:56531  null-relays=127.0.0.1:56533 -> 127.0.0.1:56532  gateway=127.0.0.1:56534  agent=127.0.0.1:56535
+(each round reports its own median; the band below is over the 10 round medians)
+
+  arm                                   median     spread
+  1 hop   HMI -> PLC                      47 us    +/-15%
+  3 hops  HMI -> 2 null relays -> PLC     142 us    +/-21%
+  3 hops  HMI -> agent -> gw -> PLC      459 us    +/-18%
+          sign+verify+gate, no sockets     278 us    +/-23%
+
+  vs a direct write:           412 us  (9.8x)
+  of which the two hops:        95 us  (what any two middleboxes cost here)
+  of which OASIS:              317 us  (3.2x the same shape without it)
+
+  cross-check: OASIS's share 317 us vs sign+verify+gate alone 278 us -> +39 us unaccounted
+  the accounting closes: OASIS's added latency is its crypto and its gate, not plumbing.
+
+  Connections are reused on all three links (agent->gateway, gateway->PLC) and the
+  clock is refreshed once per 1000 ms via part K's TimeView rather than per write.
+  Before that, this bench measured 3172 us +/-724%: a connect per write is not just
+  slower, it makes the latency unpredictable and burns ephemeral ports.

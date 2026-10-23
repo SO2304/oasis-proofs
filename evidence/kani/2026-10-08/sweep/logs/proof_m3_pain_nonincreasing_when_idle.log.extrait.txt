@@ -1,0 +1,14 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 10173 octets, SHA-256 056a109bb1a8fa1fd9d577cd9102ac3fce5ad5d8c02463617a079e0ea84c4ab6
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_m3_pain_nonincreasing_when_idle
+VERIFICATION RESULT:
+ ** 0 of 4 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.3869656s
+Complete - 1 successfully verified harnesses, 0 failures, 1 total.

@@ -1,0 +1,4 @@
+workspace_tests exit=0
+lora_tests_std exit=101
+build_bins exit=0
+pilot_campaign exit=0

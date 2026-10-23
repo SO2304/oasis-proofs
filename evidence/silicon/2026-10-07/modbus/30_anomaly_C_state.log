@@ -1,0 +1,4 @@
+OASIS|C|UART|LEASE_PERSIST|ceiling=23790,writes_since_boot=2|mesh|a39d5fe
+OASIS|C|UART|MB_GW_STATUS|boot_id=22511,now_ms=60041,executed=0,rejects=0/0/0/0/0/0/0,sent=0,ack=0,exception=0,timeout=0,bad=0,rx_errors=0,last_seq=None|mesh|a39d5fe
+OASIS|C|UART|FW_STATUS|version=4,floor=4,boot=Normal,bootloader_state=Boot,fp=a7089677a10b7fb0,guard_failed_before=0|mesh|a39d5fe
+OASIS|C|UART|STATUS|rx_bytes=0,frames=0,crc_fails=0,tx=22511,lease_ceiling=23790,lease_writes=2,fp=a7089677a10b7fb0,peers=3|mesh|a39d5fe

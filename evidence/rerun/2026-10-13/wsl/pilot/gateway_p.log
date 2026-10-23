@@ -1,0 +1,28 @@
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY peer fp=ee00000000000000 permissions=ACTUATE
+GATEWAY journal=/home/pc/rerun-essentials/pilot/jrnp.entries + /home/pc/rerun-essentials/pilot/jrnp.head
+GATEWAY authority=single key=ed54a59fb1ac3a51 rev_store=/home/pc/rerun-essentials/pilot/jrnp.rev
+GATEWAY listen=127.0.0.1:15041 plc=127.0.0.1:15020 unit=0x11 boot_id=1791916624157 registers=2
+GATEWAY 127.0.0.1:35166 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:35176 CLOCK boot_id=1791916624157
+GATEWAY 127.0.0.1:35176 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:35184 seq=1 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:35184 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:35198 CLOCK boot_id=1791916624157
+GATEWAY 127.0.0.1:35198 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:35212 seq=65 Reject(OutOfLimits) outcome=Refused(OutOfLimits, RegisterNotAllowed(12)) plc_written=false
+GATEWAY 127.0.0.1:35212 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:35220 CLOCK boot_id=1791916624157
+GATEWAY 127.0.0.1:35220 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:35226 seq=1 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:35226 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:35242 CLOCK boot_id=1791916624157
+GATEWAY 127.0.0.1:35242 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:35250 seq=65 Reject(OutOfLimits) outcome=Refused(OutOfLimits, ValueOutOfRange(10, 500)) plc_written=false
+GATEWAY 127.0.0.1:35250 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:35262 CLOCK boot_id=1791916624157
+GATEWAY 127.0.0.1:35262 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:35268 seq=1 Reject(StaleOrReplayed) outcome=Refused(StaleOrReplayed, Ok) plc_written=false
+GATEWAY 127.0.0.1:35268 conn_end err=UnexpectedEof

@@ -1,0 +1,61 @@
+sma_campaign 2026-10-09T15:07:12Z  tree=2eb7e3d  inverter=169.254.12.3:502  unit=0x7e
+# PARTIAL: proves the refusal asymmetry against a real SMA inverter; writes NOTHING to it.
+
+== inverter Modbus port before ==
+  169.254.12.3:502  CLOSED
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=7800000000000000 permissions=none
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY journal=C:/Users/pc/AppData/Local/Temp/tmp.ogh3IWhMaY/jrn.entries + C:/Users/pc/AppData/Local/Temp/tmp.ogh3IWhMaY/jrn.head
+GATEWAY no authority configured: every ORV1 over the link is refused
+GATEWAY listen=127.0.0.1:15531 plc=169.254.12.3:502 unit=0x7e boot_id=1791558439480 registers=1
+GATEWAY 127.0.0.1:61832 CLOCK boot_id=1791558439480
+GATEWAY 127.0.0.1:61832 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:61833 seq=1 Act outcome=NoAnswer plc_written=false
+GATEWAY 127.0.0.1:61833 conn_end err=ConnectionAborted
+GATEWAY 127.0.0.1:61836 CLOCK boot_id=1791558439480
+GATEWAY 127.0.0.1:61836 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:61837 seq=65 Reject(OutOfLimits) outcome=Refused(OutOfLimits, ValueOutOfRange(40236, 40)) plc_written=false
+GATEWAY 127.0.0.1:61837 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:61838 CLOCK boot_id=1791558439480
+GATEWAY 127.0.0.1:61838 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:61839 seq=129 Reject(OutOfLimits) outcome=Refused(OutOfLimits, RegisterNotAllowed(40999)) plc_written=false
+GATEWAY 127.0.0.1:61839 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:61840 CLOCK boot_id=1791558439480
+GATEWAY 127.0.0.1:61840 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:61841 MESH_DROP why="unknown sender" -> no PLC write
+GATEWAY 127.0.0.1:61841 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:61842 CLOCK boot_id=1791558439480
+GATEWAY 127.0.0.1:61842 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:61843 seq=1 Reject(NotAuthorized) outcome=Refused(NotAuthorized, Ok) plc_written=false
+GATEWAY 127.0.0.1:61843 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:61844 conn_end err=InvalidData
+ome=Refused(OutOfLimits, Ok)   (exit 1)
+
+== attack: raw Modbus FC06 straight to the gateway's port ==
+  no usable reply — the non-v0B frame was refused by framing; nothing reached the inverter
+
+== inverter Modbus port after ==
+  169.254.12.3:502  CLOSED
+
+== the gateway's decision journal (the authoritative record) ==
+boot_id=1791558439480 entries=5 head_seq=Some(4) overwritten=0
+  [0] seq=0 origin=aa00 cmd_seq=1 class=Act decision=Act flags=0x00
+  [1] seq=1 origin=aa00 cmd_seq=65 class=Act decision=Reject(OutOfLimits) flags=0x00
+  [2] seq=2 origin=aa00 cmd_seq=129 class=Act decision=Reject(OutOfLimits) flags=0x00
+  [3] seq=3 origin=0000 cmd_seq=0 class=Act decision=Reject(NotVerified) flags=0x00
+  [4] seq=4 origin=7800 cmd_seq=1 class=Act decision=Reject(NotAuthorized) flags=0x00
+VERDICT intact entries=5
+  journal_verify exit above (0 = intact)
+
+== tamper control: rewrite the last refusal as an acceptance, verify must now fail ==
+boot_id=1791558439480 entries=5 head_seq=Some(4) overwritten=0
+  [0] seq=0 origin=aa00 cmd_seq=1 class=Act decision=Act flags=0x00
+  [1] seq=1 origin=aa00 cmd_seq=65 class=Act decision=Reject(OutOfLimits) flags=0x00
+  [2] seq=2 origin=aa00 cmd_seq=129 class=Act decision=Reject(OutOfLimits) flags=0x00
+  [3] seq=3 origin=0000 cmd_seq=0 class=Act decision=Reject(NotVerified) flags=0x00
+  [4] seq=4 origin=7800 cmd_seq=1 class=Act decision=Act flags=0x00
+VERDICT broken at=4
+  tampered journal_verify exit=1 (1 = broken chain detected)
+
+tree=2eb7e3d  done

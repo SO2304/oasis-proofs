@@ -1,0 +1,3 @@
+OASIS|C|UART|RXF|n=10,len=132,ctr=8957,seq=???|mesh|a39d5fe
+OASIS|C|UART|ARRIVED|msg_id=11174004268256698247,hops=0,sig=verified,forward=true|mesh|a39d5fe
+OASIS|C|UART|MB_GW|decision=Reject(OutOfLimits),rules=RegisterNotAllowed(32),v0b_drop=-,seq=3,origin=f6,unit=0x11,fc=6,start=0x0020,count=1,v0=1,entropy=0.361|mesh|a39d5fe

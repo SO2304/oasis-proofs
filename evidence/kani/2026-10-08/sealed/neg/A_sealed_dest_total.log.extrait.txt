@@ -1,0 +1,16 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 11008 octets, SHA-256 38c134eff2043699ac508cbab000c046cd9bbb4eb420df33250e2dcfde8b0e5c
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_sealed_dest_total
+VERIFICATION RESULT:
+ ** 2 of 66 failed (4 unreachable)
+Failed Checks: assertion failed: len >= ose1_len(0)
+Failed Checks: This is a placeholder message; Kani doesn't support message formatted at runtime
+VERIFICATION:- FAILED
+Verification Time: 1.0559124s
+Complete - 0 successfully verified harnesses, 1 failures, 1 total.

@@ -1,0 +1,15 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 11150 octets, SHA-256 b8a35588bbd51057730b9f515bf8b7f01abe50ef7caff34aed84447931432714
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_change_record_preserves_what_an_auditor_reads
+VERIFICATION RESULT:
+ ** 1 of 432 failed (5 unreachable)
+Failed Checks: assertion failed: (e.flags & FLAG_CHANGE_APPLIED != 0) == applied
+VERIFICATION:- FAILED
+Verification Time: 10.265166s
+Complete - 0 successfully verified harnesses, 1 failures, 1 total.

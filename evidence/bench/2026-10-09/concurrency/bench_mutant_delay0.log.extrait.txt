@@ -1,0 +1,28 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 27333 octets, SHA-256 0cdd40c37dd9db8f0a9cd438c64554a714c73235b99f718588ee90e64e15b4b1
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+bench_mbtcp_concurrency  rounds=10 writes/HMI=10 plc_delay=0 us
+  plc=127.0.0.1:61054  gateway=127.0.0.1:61055  agent=127.0.0.1:61056
+
+   N   throughput (ack/s)      latency median        slowest/fastest HMI    refusals
+   1       1740 +/-  25%             488 us +/- 13%         1.00x              none
+   2       3253 +/-  12%             498 us +/-  7%         1.03x              none
+   5       3975 +/-   9%            1078 us +/- 10%         1.17x              0x0Ax4
+  10       3783 +/-   9%            2165 us +/-  5%         1.28x              0x0Ax28
+
+  N 1 -> 10: throughput 1740 -> 3783 ack/s, latency 488 -> 2165 us
+  Peak throughput 3975 ack/s at N=5; within 10 % of it from N=5 on.
+  So the path saturates at N=5 and does not improve to N=10: the gateway's
+  state lock spans the PLC round trip and the agent serialises emission, so
+  concurrent HMIs queue. Latency is then ~4x at N=10 against N=1 — queueing,
+  not work. Capacity above this needs **distinct origins**, one enrolled identity
+  per HMI, which the per-origin map and per-origin sequence (A.1) allow.
+
+  32 write(s) refused or dropped across all N.
+  The gateway's own record of every non-Act decision, 32 in all:
+      32  Reject(StaleOrReplayed)
+  Acts: 1768

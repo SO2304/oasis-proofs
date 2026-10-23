@@ -1,0 +1,6 @@
+boot_id=5307532874932060412 entries=4 head_seq=Some(3) overwritten=0
+  [0] seq=0 origin=aa00 cmd_seq=1 class=Act decision=Act flags=0x00
+  [1] seq=1 origin=aa00 cmd_seq=65 class=Act decision=Act flags=0x00
+  [2] seq=2 origin=aa00 cmd_seq=129 class=Act decision=Act flags=0x00
+  [3] seq=3 origin=bb00 cmd_seq=1 class=Act decision=Reject(NotAuthorized) flags=0x00
+VERDICT broken at=3

@@ -1,0 +1,3 @@
+OASIS|B|UART|PAYLOAD_HELD|kind=OMB1,counter=8954,len=132|mesh|bbee4cf
+OASIS|B|UART|INJECT|flipped,pos=130,len=132|mesh|bbee4cf
+OASIS|B|UART|V0B_T8_REPLAY|len=132|mesh|bbee4cf

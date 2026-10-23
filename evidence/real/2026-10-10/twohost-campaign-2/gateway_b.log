@@ -1,0 +1,693 @@
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=ab00000000000000 permissions=ACTUATE
+GATEWAY peer fp=7800000000000000 permissions=none
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY journal=C:/dev/oasis/twohost/run-20261010-211642/jrnB.entries + C:/dev/oasis/twohost/run-20261010-211642/jrnB.head
+GATEWAY no authority configured: every ORV1 over the link is refused
+GATEWAY listen=192.168.129.236:15712 plc=127.0.0.1:15720 unit=0x7e boot_id=1791660239432 registers=1
+GATEWAY 192.168.129.116:50394 CLOCK boot_id=1791660239432
+GATEWAY 192.168.129.116:50394 seq=1 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:50394 conn_end err=UnexpectedEof
+GATEWAY 192.168.129.116:50408 CLOCK boot_id=1791660239432
+GATEWAY 192.168.129.116:50408 seq=2 Reject(OutOfLimits) outcome=Refused(OutOfLimits, RegisterNotAllowed(99)) plc_written=false
+GATEWAY 192.168.129.116:50408 conn_end err=UnexpectedEof
+GATEWAY 192.168.129.116:50424 CLOCK boot_id=1791660239432
+GATEWAY 192.168.129.116:50424 seq=3 Reject(OutOfLimits) outcome=Refused(OutOfLimits, ValueOutOfRange(10, 40)) plc_written=false
+GATEWAY 192.168.129.116:50424 conn_end err=UnexpectedEof
+GATEWAY 192.168.129.116:50432 CLOCK boot_id=1791660239432
+GATEWAY 192.168.129.116:50432 seq=4 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:50432 conn_end err=UnexpectedEof
+GATEWAY 192.168.129.116:50442 CLOCK boot_id=1791660239432
+GATEWAY 192.168.129.116:50442 seq=5 Reject(OutOfLimits) outcome=Refused(OutOfLimits, RegisterNotAllowed(99)) plc_written=false
+GATEWAY 192.168.129.116:50442 conn_end err=UnexpectedEof
+GATEWAY 192.168.129.116:50444 CLOCK boot_id=1791660239432
+GATEWAY 192.168.129.116:50444 seq=6 Reject(OutOfLimits) outcome=Refused(OutOfLimits, ValueOutOfRange(10, 40)) plc_written=false
+GATEWAY 192.168.129.116:50444 conn_end err=UnexpectedEof
+GATEWAY 192.168.129.116:54022 CLOCK boot_id=1791660239432
+GATEWAY 192.168.129.116:54022 seq=7 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:54022 conn_end err=UnexpectedEof
+GATEWAY 192.168.129.116:54024 CLOCK boot_id=1791660239432
+GATEWAY 192.168.129.116:54024 seq=8 Reject(OutOfLimits) outcome=Refused(OutOfLimits, RegisterNotAllowed(99)) plc_written=false
+GATEWAY 192.168.129.116:54024 conn_end err=UnexpectedEof
+GATEWAY 192.168.129.116:54036 CLOCK boot_id=1791660239432
+GATEWAY 192.168.129.116:54036 seq=9 Reject(OutOfLimits) outcome=Refused(OutOfLimits, ValueOutOfRange(10, 40)) plc_written=false
+GATEWAY 192.168.129.116:54036 conn_end err=UnexpectedEof
+GATEWAY 192.168.129.116:54048 READ Ok served=true (never writes)
+GATEWAY 192.168.129.116:54048 conn_end err=UnexpectedEof
+GATEWAY 192.168.129.116:54052 READ RegisterNotAllowed(99) served=false (never writes)
+GATEWAY 192.168.129.116:54052 conn_end err=UnexpectedEof
+GATEWAY 192.168.129.116:54060 conn_end err=InvalidData
+GATEWAY 192.168.129.116:42984 CLOCK boot_id=1791660239432
+GATEWAY 192.168.129.116:42984 conn_end err=UnexpectedEof
+GATEWAY 192.168.129.116:42994 seq=1 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42994 conn_end err=UnexpectedEof
+GATEWAY 192.168.129.116:43000 CLOCK boot_id=1791660239432
+GATEWAY 192.168.129.116:43000 conn_end err=UnexpectedEof
+GATEWAY 192.168.129.116:43016 seq=65 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:43016 conn_end err=UnexpectedEof
+GATEWAY 192.168.129.116:43028 CLOCK boot_id=1791660239432
+GATEWAY 192.168.129.116:43028 conn_end err=UnexpectedEof
+GATEWAY 192.168.129.116:43036 MESH_DROP why="stale counter" -> no PLC write
+GATEWAY 192.168.129.116:43036 conn_end err=UnexpectedEof
+GATEWAY 192.168.129.116:43038 CLOCK boot_id=1791660239432
+GATEWAY 192.168.129.116:43038 seq=65 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:43038 conn_end err=UnexpectedEof
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=ab00000000000000 permissions=ACTUATE
+GATEWAY peer fp=7800000000000000 permissions=none
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY journal=C:/dev/oasis/twohost/run-20261010-211642/jrnB.entries + C:/dev/oasis/twohost/run-20261010-211642/jrnB.head
+GATEWAY previous journal kept as C:/dev/oasis/twohost/run-20261010-211642/jrnB.1791660239432.entries + C:/dev/oasis/twohost/run-20261010-211642/jrnB.1791660239432.head
+GATEWAY no authority configured: every ORV1 over the link is refused
+GATEWAY listen=192.168.129.236:15712 plc=127.0.0.1:15720 unit=0x7e boot_id=1791660265875 registers=1
+GATEWAY 192.168.129.116:42434 CLOCK boot_id=1791660265875
+GATEWAY 192.168.129.116:42434 seq=66 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42434 conn_end err=UnexpectedEof
+GATEWAY 192.168.129.116:42440 CLOCK boot_id=1791660265875
+GATEWAY 192.168.129.116:42440 seq=67 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=68 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=69 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=70 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=71 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=72 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=73 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=74 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=75 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=76 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=77 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=78 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=79 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=80 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=81 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=82 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=83 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=84 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=85 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=86 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=87 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=88 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=89 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=90 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=91 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=92 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=93 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=94 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=95 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=96 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=97 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=98 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=99 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=100 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=101 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=102 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=103 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=104 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=105 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=106 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=107 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=108 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=109 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=110 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=111 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=112 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=113 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=114 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=115 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=116 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=117 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=118 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=119 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=120 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=121 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=122 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=123 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=124 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=125 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=126 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=127 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=128 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=129 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=130 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=131 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=132 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=133 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=134 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=135 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=136 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=137 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=138 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=139 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=140 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=141 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=142 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=143 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=144 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=145 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=146 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=147 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=148 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=149 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=150 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=151 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=152 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=153 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=154 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=155 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=156 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=157 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=158 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=159 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=160 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=161 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=162 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=163 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=164 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=165 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=166 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=167 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=168 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=169 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=170 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=171 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=172 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=173 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=174 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=175 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=176 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=177 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=178 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=179 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=180 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=181 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=182 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=183 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=184 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=185 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=186 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=187 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=188 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=189 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=190 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=191 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=192 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 CLOCK boot_id=1791660265875
+GATEWAY 192.168.129.116:42440 seq=193 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=194 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=195 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=196 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=197 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=198 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=199 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=200 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=201 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=202 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=203 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=204 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=205 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=206 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=207 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=208 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=209 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=210 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=211 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=212 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=213 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=214 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=215 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=216 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=217 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=218 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=219 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=220 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=221 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=222 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=223 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=224 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=225 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=226 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=227 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=228 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=229 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=230 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=231 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=232 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=233 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=234 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=235 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=236 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=237 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=238 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=239 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=240 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=241 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=242 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=243 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=244 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=245 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=246 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=247 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 CLOCK boot_id=1791660265875
+GATEWAY 192.168.129.116:42440 seq=248 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=249 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=250 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=251 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=252 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=253 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=254 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=255 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=256 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=257 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=258 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=259 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=260 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=261 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=262 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=263 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=264 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=265 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=266 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=267 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=268 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=269 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=270 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 seq=271 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42440 conn_end err=UnexpectedEof
+GATEWAY 192.168.129.116:42448 CLOCK boot_id=1791660265875
+GATEWAY 192.168.129.116:42448 seq=272 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=273 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=274 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=275 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=276 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=277 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=278 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=279 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=280 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=281 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=282 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=283 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=284 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=285 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=286 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=287 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=288 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=289 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=290 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=291 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=292 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=293 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=294 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=295 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=296 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=297 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=298 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=299 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=300 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=301 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=302 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=303 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=304 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=305 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=306 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=307 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=308 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=309 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=310 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=311 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=312 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=313 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=314 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=315 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=316 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=317 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=318 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=319 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=320 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=321 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=322 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=323 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=324 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=325 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=326 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=327 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=328 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=329 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=330 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=331 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=332 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=333 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=334 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=335 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=336 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=337 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=338 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=339 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=340 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=341 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=342 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=343 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=344 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=345 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=346 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=347 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=348 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=349 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=350 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=351 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=352 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=353 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=354 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=355 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=356 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=357 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=358 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=359 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=360 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=361 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=362 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=363 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=364 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=365 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=366 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=367 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=368 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=369 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=370 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=371 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=372 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=373 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=374 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=375 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=376 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=377 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=378 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=379 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 CLOCK boot_id=1791660265875
+GATEWAY 192.168.129.116:42448 seq=380 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=381 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=382 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=383 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=384 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=385 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=386 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=387 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=388 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=389 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=390 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=391 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=392 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=393 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=394 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=395 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=396 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=397 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=398 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=399 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=400 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=401 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=402 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=403 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=404 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=405 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=406 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=407 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=408 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=409 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=410 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=411 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=412 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=413 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=414 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=415 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=416 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=417 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=418 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=419 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=420 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=421 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=422 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=423 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=424 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=425 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=426 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=427 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=428 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=429 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 CLOCK boot_id=1791660265875
+GATEWAY 192.168.129.116:42448 seq=430 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=431 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=432 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=433 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=434 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=435 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=436 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=437 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=438 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=439 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=440 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=441 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=442 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=443 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=444 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=445 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=446 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=447 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=448 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=449 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=450 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=451 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=452 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=453 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=454 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=455 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=456 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=457 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=458 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=459 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=460 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=461 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=462 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=463 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=464 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=465 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=466 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=467 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=468 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=469 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=470 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=471 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=472 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=473 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=474 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=475 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 seq=476 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42448 conn_end err=UnexpectedEof
+GATEWAY 192.168.129.116:42458 CLOCK boot_id=1791660265875
+GATEWAY 192.168.129.116:42458 seq=477 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=478 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=479 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=480 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=481 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=482 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=483 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=484 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=485 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=486 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=487 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=488 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=489 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=490 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=491 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=492 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=493 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=494 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=495 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=496 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=497 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=498 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=499 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=500 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=501 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=502 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=503 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=504 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=505 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=506 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=507 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=508 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=509 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=510 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=511 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=512 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=513 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=514 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=515 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=516 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=517 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=518 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=519 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=520 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=521 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=522 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=523 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=524 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=525 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=526 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=527 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=528 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=529 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=530 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=531 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=532 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=533 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=534 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=535 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 CLOCK boot_id=1791660265875
+GATEWAY 192.168.129.116:42458 seq=536 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=537 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=538 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=539 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=540 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=541 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=542 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=543 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=544 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=545 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=546 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=547 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=548 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=549 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=550 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=551 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=552 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=553 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=554 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=555 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=556 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=557 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=558 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=559 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=560 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=561 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=562 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=563 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=564 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=565 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=566 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=567 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=568 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=569 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=570 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=571 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=572 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=573 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=574 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=575 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=576 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=577 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=578 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=579 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=580 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=581 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=582 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=583 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=584 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=585 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=586 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=587 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=588 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=589 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=590 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=591 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=592 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=593 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=594 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=595 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=596 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=597 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=598 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=599 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=600 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=601 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=602 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=603 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 CLOCK boot_id=1791660265875
+GATEWAY 192.168.129.116:42458 seq=604 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=605 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=606 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=607 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=608 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=609 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=610 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=611 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=612 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=613 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=614 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=615 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=616 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=617 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=618 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=619 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=620 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=621 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=622 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=623 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=624 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=625 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=626 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=627 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=628 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=629 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=630 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=631 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=632 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=633 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=634 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=635 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=636 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=637 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=638 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=639 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=640 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=641 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=642 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=643 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=644 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=645 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=646 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=647 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=648 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=649 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=650 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=651 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=652 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=653 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=654 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=655 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=656 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=657 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=658 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=659 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=660 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=661 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 CLOCK boot_id=1791660265875
+GATEWAY 192.168.129.116:42458 seq=662 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=663 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=664 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=665 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=666 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=667 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=668 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=669 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=670 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=671 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=672 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=673 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=674 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=675 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=676 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=677 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=678 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=679 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=680 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 seq=681 Act outcome=Done plc_written=true
+GATEWAY 192.168.129.116:42458 conn_end err=UnexpectedEof

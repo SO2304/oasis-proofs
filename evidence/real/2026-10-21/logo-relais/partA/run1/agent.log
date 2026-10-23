@@ -1,0 +1,7 @@
+AGENT tx_counter restored_to=0 (next send 1)
+AGENT listen=127.0.0.1:15551 gateway=127.0.0.1:15550 unit=0x01 next_seq=1
+AGENT hmi=127.0.0.1:57100 end err=UnexpectedEof
+AGENT hmi=127.0.0.1:57101 end err=UnexpectedEof
+AGENT hmi=127.0.0.1:57123 end err=UnexpectedEof
+AGENT hmi=127.0.0.1:57129 end err=UnexpectedEof
+AGENT hmi=127.0.0.1:57137 end err=UnexpectedEof

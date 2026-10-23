@@ -1,0 +1,23 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 1301 octets, SHA-256 7753ac30f6d18767b8a69025c3d2b34bf271c1c12c6797e20916fc77f2756726
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY refusing to serve: the seal is GONE while 1 archived chain(s) remain: this gateway has run here before.
+GATEWAY  The journal was removed or rewritten outside the documented process.
+GATEWAY  --keep-journals N only removes ARCHIVES and records what it removed, so it
+GATEWAY  never produces this. Annex III 1.1.9 para 5 asks for evidence of a legitimate
+GATEWAY  OR illegitimate intervention; serving on from here would collect it over a hole.
+GATEWAY  Investigate against your off-host anchor ([outil d essai] check), then
+GATEWAY  pass --accept-journal-loss to start a new chain, which records the loss in it.
+GATEWAY warning: --accept-journal-loss was given; the loss is recorded in the new chain
+GATEWAY journal=[chemin retire] + [chemin retire]
+GATEWAY journalled the journal loss as Change(TamperSignal) in the new chain
+GATEWAY no authority configured: every ORV1 over the link is refused
+GATEWAY version=0.3.0 build=b90c6d780ec4 config_id=a1fcea330dc25114
+GATEWAY listen=127.0.0.1:15567 plc=192.168.0.3:510 unit=0x01 boot_id=4901392493499384157 registers=2

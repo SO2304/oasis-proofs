@@ -1,0 +1,14 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 10172 octets, SHA-256 25c72e8b98cc33a83b2418f93a0591b6fa5bf32a98f3bd0bf46a3c634d411d08
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_m10_attractive_points_toward
+VERIFICATION RESULT:
+ ** 0 of 7 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 10.375208s
+Complete - 1 successfully verified harnesses, 0 failures, 1 total.

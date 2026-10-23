@@ -1,0 +1,15 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 10756 octets, SHA-256 6f46b919bb5cf993b33807254b1751ddcc3627d7b0e99957f2aa3e2f501bc70d
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_nonce_is_injective_in_the_counter
+VERIFICATION RESULT:
+ ** 1 of 57 failed (4 unreachable)
+Failed Checks: "two counters must not share a nonce"
+VERIFICATION:- FAILED
+Verification Time: 0.50575054s
+Complete - 0 successfully verified harnesses, 1 failures, 1 total.

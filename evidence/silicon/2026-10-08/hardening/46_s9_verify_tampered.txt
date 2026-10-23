@@ -1,0 +1,12 @@
+boot_id=47071 entries=10 head_seq=Some(9) overwritten=0
+  [0] seq=0 origin=f6bd cmd_seq=10 class=Act decision=Act flags=0x07
+  [1] seq=1 origin=f6bd cmd_seq=1 class=Stop decision=Stop flags=0x0f
+  [2] seq=2 origin=f6bd cmd_seq=2 class=Stop decision=Stop flags=0x0f
+  [3] seq=3 origin=f6bd cmd_seq=2 class=Stop decision=Stop flags=0x0f
+  [4] seq=4 origin=f6bd cmd_seq=11 class=Act decision=Reject(Stopped) flags=0x0f
+  [5] seq=5 origin=f6bd cmd_seq=12 class=Act decision=Act flags=0x07
+  [6] seq=6 origin=f6bd cmd_seq=31 class=Stop decision=Reject(NotAuthorized) flags=0x07
+  [7] seq=7 origin=f6bd cmd_seq=40 class=Act decision=Reject(SupervisionLost) flags=0x03
+  [8] seq=8 origin=f6bd cmd_seq=41 class=Stop decision=Stop flags=0x0b
+  [9] seq=9 origin=f6bd cmd_seq=42 class=Act decision=Act flags=0x07
+VERDICT broken at=9

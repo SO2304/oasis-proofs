@@ -1,0 +1,21 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 5955 octets, SHA-256 c1eaf729364fd180d3ca434900ac808e7535dc328e0ffb6eac95c366a204cf50
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.67.0 (cargo plugin)
+harnais : proof_fw_floor_never_lowers
+VERIFICATION RESULT:
+ ** 1 of 1 failed
+Failed Checks: assertion failed: f >= floor && f >= v as u64
+VERIFICATION:- FAILED
+Verification Time: 0.10277586s
+harnais : proof_fw_install_requires_all_conditions
+VERIFICATION RESULT:
+ ** 1 of 91 failed
+Failed Checks: assertion failed: i.manifest_version as u64 >= i.floor
+VERIFICATION:- FAILED
+Verification Time: 0.286585s
+Complete - 0 successfully verified harnesses, 2 failures, 2 total.

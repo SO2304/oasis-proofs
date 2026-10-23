@@ -1,0 +1,21 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 6214 octets, SHA-256 d947b0bd993fa075541e72518ee03d05cb419d47e4be4b26c5218008086d2b81
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.67.0 (cargo plugin)
+harnais : proof_mb_frame_matches_rules
+VERIFICATION RESULT:
+ ** 1 of 1321 failed (163 unreachable)
+Failed Checks: assertion failed: o.values[i] >= r.min && o.values[i] <= r.max
+VERIFICATION:- FAILED
+Verification Time: 231.79301s
+harnais : proof_mb_no_frame_without_act
+VERIFICATION RESULT:
+ ** 1 of 1278 failed (163 unreachable)
+Failed Checks: assertion failed: d == Decision::Act
+VERIFICATION:- FAILED
+Verification Time: 84.037766s
+Complete - 0 successfully verified harnesses, 2 failures, 2 total.

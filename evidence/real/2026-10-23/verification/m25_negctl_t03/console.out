@@ -1,0 +1,117 @@
+logo_1119 2026-10-23T06:35:57Z  arbre=632b906
+referentiel GS-IFA-M25 (DGUV Test / IFA, Stand 07-2026) — annexe III 1.1.9, reglement (UE) 2023/1230
+automate = Siemens LOGO! 230RCE @ 192.168.0.3:510, registre 100, aucun relais commande
+
+== Schutzmassnahmen / Nachverfolgbarkeit ==
+  T31 = J   moyens numeriques de tracabilite des interventions : journal chaine par hachage
+  T37 = J   lieu de stockage documente : fichiers .entries et .head sur l'hote de la passerelle, annonces au demarrage
+
+== T35 : la collecte est-elle automatique, sans intervention de l'utilisateur ? (Eingriffsversuch) ==
+  entrees avant la tentative : 1
+  entrees apres la tentative : 2   (aucune action d'operateur entre les deux)
+  T35 = J   une tentative d'intervention cree une entree, sans aucune action de l'utilisateur
+
+== T38 : au moins la derniere entree POUR CHAQUE TYPE d'intervention ==
+  T38a = J   intervention legitime executee, valeur portee par l'automate
+  T38:Act = J   au moins une entree de ce type
+  T38:Reject(OutOfLimits) = J   au moins une entree de ce type
+  T38:Reject(NotAuthorized) = J   au moins une entree de ce type
+  T38:Reject(NotVerified) = J   au moins une entree de ce type
+  T38:Change(SoftwareIdentity) = J   au moins une entree de ce type, ecrite au demarrage
+  ⚠️ Change(JournalPruned) est verifie a la section T44, qui le produit.
+  ⚠️ Les natures Revocation, Enrolement et Firmware ne sont pas produites ici ;
+     elles sont demontrees ailleurs (evidence/pilot/2026-10-09 C15-C17, silicium 1.3 et 1.2).
+  T38:Change(autres) = E   revocation, enrolement et firmware, demontres hors de cet essai (sans objet ici)
+
+
+== Intervention sur un ACTIONNEUR PHYSIQUE : la chaine ne s'arrete plus a la memoire ==
+  Q1 au depart : 0
+  adresse 101 : direct 600 -> Q1=1, direct 300 -> Q1=0
+  mesure : la consigne du relais est a l'adresse 101 ; une ecriture brute ferme Q1 (temoin)
+  par OASIS : consigne 600 -> Q1=1, consigne 300 -> Q1=0
+  T31:actionneur = J   une consigne signee commande un ACTIONNEUR PHYSIQUE : le relais Q1 ferme a 600 et ouvre a 300, releve par un client Modbus independant, et les deux decisions sont au journal
+  T35:actionneur = J   une intervention refusee (identite sans permission d'actionner) laisse le relais immobile, et l'entree est quand meme au journal
+== T33 et T47 : les preuves numeriques sont-elles lisibles et accessibles ? (Zugriffsversuch) ==
+  T33 = J   un outil independant lit les preuves et rend un verdict
+  T47 = J   les informations sont lisibles par un humain : une ligne par decision, en clair
+
+== T45 : chaque entree porte-t-elle le minimum exige ? ==
+      [0] seq=0 origin=0a82 cmd_seq=1792737358 class=Act decision=Change(SoftwareIdentity) flags=0x10
+  T45:Art = J   Art des Eingriffs : classe de l'ordre et decision prise
+  T45:Nr = J   laufende Nummer : numero d'ordre strictement croissant, trou detecte (SeqGap)
+  T45:Boot = J   Boot-Zaehler : boot_id, ce qui separe deux demarrages
+      [0] seq=0 origin=0a82 cmd_seq=1792737358 class=Act decision=Change(SoftwareIdentity) flags=0x10
+  T45:Version = J   l'identite du logiciel et de la configuration est la PREMIERE entree de la chaine (empreinte de version, compilation et configuration dans origin_fp), donc chainee a toutes les suivantes
+  T45:Zeit = J   ancre en temps systeme : l'entree d'identite porte 2026-10-23T06:35:58Z, et le numero d'ordre plus le compteur de demarrage situent chaque entree par rapport a elle
+
+== T42 : proteges contre une manipulation ZUFAELLIGE ET GEZIELTE ? (Versuch der Manipulation) ==
+  journal de reference : 5 entrees
+    refus_en_acceptation : code 1 — VERDICT broken at=4
+    troncature : code 1 — VERDICT broken at=3
+    suppression : code 2 — VERDICT seq_gap expected=2 found=3
+    permutation : code 2 — VERDICT seq_gap expected=1 found=2
+    duplication : code 2 — VERDICT seq_gap expected=2 found=1
+  5 formes detectees sur 5, en 2 verdict(s) et 2 code(s) de sortie distincts
+  T42:gezielt = J   cinq formes de manipulation deliberee, toutes detectees : refus reecrit en acceptation, troncature, suppression au milieu, permutation, duplication
+  T42:troncature = J   la troncature est detectee, la tete nommant le dernier numero d'ordre — la litterature la donne indetectable pour une chaine seule
+
+  balayage exhaustif, pour la moitie ZUFAELLIG du critere :
+320
+    320 mutations d'un seul chiffre hexadecimal, 0 acceptee(s)
+  T42:zufaellig = J   balayage exhaustif : chaque chiffre de chaque entree retourne, 320 mutations, aucune acceptee
+
+== T43 Exklusiv : la parade, eprouvee et pas seulement nommee ==
+  ancrage : ANCHORED 2026-10-23T06:36:47Z boot_id=11205803412607263563 seq=7 head=718a6abc97f11147d1fad7c69fc79644e875118bd98faa2afd32772f012e0054 entries_prefix=a8218d337a9707c64ccd7e2cc3aaf2da9cc137b59ae9cd7a0f8117bdc14d83cb n=8
+  verification sur la chaine intacte : code 0 — 
+  T43:temoin_intact = J   le temoin reconnait la chaine qu'il a ancree
+  apres reecriture d'une entree : code 1 — WITNESS DIVERGENCE
+  T43:temoin_divergence = J   la parade de T43 Exklusiv est EPROUVEE et pas seulement nommee : le temoin rend « WITNESS DIVERGENCE » sur une chaine reecrite, parce qu'il compare a ce qui a deja quitte l'hote. ⚠️ ici l'ancre reste sur le meme disque : la mecanique est demontree, la separation non
+
+== T36 : la collecte est-elle protegee contre la DESACTIVATION ? ==
+  passerelle lancee SANS --journal : vivante = non, ecoute etablie = 0
+  ce qu'elle dit : 
+  refus explicite annonce : 1
+  T36 = J   la passerelle REFUSE de servir sans journal, et le dit : « a gateway that decides without recording collects no evidence ». La desactivation par omission n'est plus possible ; il faut la demander par son nom, --no-journal
+
+
+== T40 : le protocole de tracabilite est-il actif au plus tard apres la mise en service ? ==
+  T40 = J   il n'existe aucun etat ou le produit sert sans journal : le refus de T36 rend l'activation non pas recommandee mais inevitable
+
+== T43 : un processus d'effacement est-il decrit, et est-il le SEUL possible ? ==
+  T43:Prozess = J   docs/PILOT_INSTALL.md decrit --keep-journals N, applique au demarrage, et dit que la duree de conservation est la decision de l'exploitant ; depuis le 2026-10-22 l'effacement laisse lui-meme une entree (T44)
+  premier demarrage : sert=oui
+  redemarrage normal : sert=oui
+  chaine vivante supprimee : sert=non — refusing to serve: the sealed chain of boot 5316217179777784352 is GONE (sealed
+  sceau supprime, archives restantes : sert=non — refusing to serve: the seal is GONE while 1 archived chain(s) remain: this gate
+  acquittement explicite : sert=oui
+  la perte est-elle enregistree dans la nouvelle chaine : 1 entree(s) TamperSignal
+  T43:Exklusiv = J   aucune autre voie ne donne un effacement utilisable : la passerelle sert au premier demarrage et au redemarrage normal, et REFUSE de servir quand la chaine scellee a disparu ou quand le sceau a ete efface ; le processus decrit (--keep-journals) ne declenche jamais ce refus
+  T43:perte_journalisee = J   reprendre apres une perte exige --accept-journal-loss, et la perte entre dans la nouvelle chaine comme Change(TamperSignal)
+  T43:residuel = E   qui supprime la chaine, le sceau ET chaque archive ne laisse plus rien sur l hote : a ce point seul l ancrage hors hote temoigne encore. Le sceau ne rend pas l effacement impossible, il le rend inutilisable et visible (sans objet ici)
+== T44 : un effacement des donnees de journal cree-t-il une entree sur cet effacement ? ==
+  chaines archivees presentes : 0
+  ce que la purge annonce : GATEWAY journal retention: keep 0 archived chains, removed 1
+  entrees mentionnant un effacement dans la nouvelle chaine : 1
+  T44 = J   un effacement est lui-meme journalise : une entree Change(JournalPruned) dans la NOUVELLE chaine dit combien de chaines archivees ont disparu
+  T38:Change(JournalPruned) = J   au moins une entree de ce type, produite par la purge
+
+== T46 : le produit fournit-il version logicielle et configuration sur demande ? ==
+    GATEWAY journal=C:/dev/oasis-eval/logo-test/verif_2026-10-23/m25_negctl_t03/jrn.entries + C:/dev/oasis-eval/logo-test/verif_2026-10-23/m25_negctl_t03/jrn.head
+GATEWAY version=0.3.0 build=632b906f84dc-dirty config_id=0a8286335f01568b
+GATEWAY listen=127.0.0.1:15560 plc=192.168.0.3:510 unit=0x01 boot_id=11205803412607263563 registers=2
+  T46:Konfig = J   la configuration est annoncee au demarrage : cible, unite, nombre de registres, lieu du journal
+  T46:Version = J   la version logicielle, l'empreinte du commit et l'empreinte de configuration sont annoncees au demarrage : version=0.3.0 build=632b906f84dc-dirty config_id=0a8286335f01568b
+
+== T03 : le logiciel essaye est-il identifie de maniere unique par un condense ? ==
+  empreinte annoncee : 632b906f84dc-dirty | commit du depot : 632b906f84dc
+  T03 = N   le binaire essaye n'est attribuable a AUCUN commit : il annonce « 632b906f84dc-dirty ». Un passage fait ainsi prouve un comportement, pas la version qui l'a eu   <<< ECHEC ASSUME, a declarer au dossier
+
+  T48 = E   algorithmes : Ed25519, SHA-256, ChaCha20-Poly1305, HKDF-SHA256. La conformite a BSI TR-02102-1 version 2026-01 est une verification DOCUMENTAIRE, pas un essai de banc : a confronter au texte (sans objet ici)
+
+les 36 criteres attendus ont tous un verdict
+
+=== 32 critere(s) en J, 1 en N (echecs assumes), 0 controle(s) imprevus ===
+verdicts : /c/dev/oasis-eval/logo-test/verif_2026-10-23/m25_negctl_t03/verdicts.tsv
+
+Les 1 verdict(s) en N sont a declarer au dossier technique, ce que le referentiel prevoit
+(T27, T28, T30, T34 demandent de documenter ce qui n'a pas pu etre fait, et pourquoi).

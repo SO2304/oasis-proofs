@@ -1,0 +1,2 @@
+/c/dev/oasis-eval/logo-test/camp_v3.out:  12 réussis, 0 échoués
+/c/dev/oasis-eval/logo-test/relay_v3.out:=== 8 controles sur 8 ===

@@ -1,0 +1,2 @@
+OASIS|B|UART|EF_STATUS|boot_id=0,now_ms=395234,epoch=3,revoked=3,sensor_lost=false,pin25=0,executed=0,rejects=0/0/0/0/0/0/0|mesh|1a9b461
+OASIS|B|UART|PQ_STATUS|min_suite_revocation=3,legacy_orv1_allowed=false,epoch=3,revoked=3,reasm_in_use=0,stage_len=0|mesh|1a9b461

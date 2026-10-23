@@ -1,0 +1,15 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 10823 octets, SHA-256 8a6e6838c6dab04a0c58731a4130cd3ad1b01a2019af51d40c626c264ff28fca
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_mbtcp_parse_total
+VERIFICATION RESULT:
+ ** 1 of 168 failed (1 unreachable)
+Failed Checks: assertion failed: (w.fc == FC_WRITE_SINGLE && w.count == 1) ||
+VERIFICATION:- FAILED
+Verification Time: 14.59666s
+Complete - 0 successfully verified harnesses, 1 failures, 1 total.

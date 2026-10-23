@@ -1,0 +1,13 @@
+OASIS|B|T0|PASS|clk=125000000Hz,usb_serial=B|info|3833620
+OASIS|B|T1|BEGIN|-|mark|3833620
+OASIS|B|T1|PASS|rfc8439_cttag_match=true,decrypt_roundtrip=true|aead|3833620
+OASIS|B|T2|BEGIN|-|mark|3833620
+OASIS|B|T2|PASS|rfc7748_alice=true,bob=true|x25519|3833620
+OASIS|B|T3|BEGIN|-|mark|3833620
+OASIS|B|T3|PASS|kat_pub=true,kat_sig=true,verify=true,tamper_rejected=true|ed25519|3833620
+OASIS|B|T4|BEGIN|-|mark|3833620
+OASIS|B|T4|PROG|0|mark|3833620
+OASIS|B|T4|PROG|50|mark|3833620
+OASIS|B|T4|PROG|100|mark|3833620
+OASIS|B|T4|PROG|150|mark|3833620
+OASIS|B|T4|PASS|blocked=200/200,threshold=0.95|r14|3833620

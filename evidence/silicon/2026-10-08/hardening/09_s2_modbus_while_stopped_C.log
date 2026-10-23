@@ -1,0 +1,3 @@
+OASIS|C|UART|RXF|n=6,len=132,ctr=29614,seq=???|mesh|a09781e
+OASIS|C|UART|ARRIVED|msg_id=1307706728297502991,hops=0,sig=verified,forward=true|mesh|a09781e
+OASIS|C|UART|MB_GW|decision=Reject(Stopped),rules=Ok,v0b_drop=-,seq=20,origin=f6,unit=0x11,fc=6,start=0x0010,count=1,v0=231,entropy=0.361|mesh|a09781e

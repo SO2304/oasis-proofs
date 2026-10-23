@@ -1,0 +1,72 @@
+VEHICLE listen=127.0.0.1:14560 px4=127.0.0.1:18570 bind=0.0.0.0:14550 revoked=false boot_id=4242
+VEHICLE fp=0201..  trusts commander fp=0101..  network=[79, 65, 83, 73, 83, 110, 101, 116]
+RX 127.0.0.1:54736 MESH_DROP why="unknown sender" -> no ARM frame
+VEHICLE done: executed=0 rejects=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0] px4_heartbeats=0 armed=false
+--- px4 : armement ---
+
+############################################################ tamper
+PX4 ARMABLE apres 5s (Ready for takeoff)
+
+===== tamper =====
+--- commander ---
+COMMANDER case=tamper seq=1 boot_id=4242 send#1 266 bytes -> 127.0.0.1:14560
+COMMANDER done (envelope 153 B, frame 266 B)
+--- vehicle ---
+VEHICLE listen=127.0.0.1:14560 px4=127.0.0.1:18570 bind=0.0.0.0:14550 revoked=false boot_id=4242
+VEHICLE fp=0201..  trusts commander fp=0101..  network=[79, 65, 83, 73, 83, 110, 101, 116]
+RX 127.0.0.1:39572 MESH_DROP why="bad mesh signature" -> no ARM frame
+VEHICLE done: executed=0 rejects=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0] px4_heartbeats=0 armed=false
+--- px4 : armement ---
+
+############################################################ replay
+PX4 ARMABLE apres 5s (Ready for takeoff)
+
+===== replay =====
+--- commander ---
+COMMANDER case=replay seq=1 boot_id=4242 send#1 266 bytes -> 127.0.0.1:14560
+COMMANDER case=replay seq=1 boot_id=4242 send#2 266 bytes -> 127.0.0.1:14560
+COMMANDER done (envelope 153 B, frame 266 B)
+--- vehicle ---
+VEHICLE listen=127.0.0.1:14560 px4=127.0.0.1:18570 bind=0.0.0.0:14550 revoked=false boot_id=4242
+VEHICLE fp=0201..  trusts commander fp=0101..  network=[79, 65, 83, 73, 83, 110, 101, 116]
+GATE Act seq=1 action=Some(Arm) -> COMMAND_LONG(400) sent, 45 bytes
+RX 127.0.0.1:36873 MESH_DROP why="stale counter" -> no ARM frame
+VEHICLE done: executed=1 rejects=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0] px4_heartbeats=1 armed=false
+--- px4 : armement ---
+INFO  [commander] Armed by external command	
+INFO  [commander] Disarmed by auto preflight disarming	
+
+############################################################ revoked
+PX4 ARMABLE apres 5s (Ready for takeoff)
+
+===== revoked =====
+--- commander ---
+COMMANDER case=valid seq=1 boot_id=4242 send#1 266 bytes -> 127.0.0.1:14560
+COMMANDER done (envelope 153 B, frame 266 B)
+--- vehicle ---
+VEHICLE listen=127.0.0.1:14560 px4=127.0.0.1:18570 bind=0.0.0.0:14550 revoked=true boot_id=4242
+VEHICLE fp=0201..  trusts commander fp=0101..  network=[79, 65, 83, 73, 83, 110, 101, 116]
+GATE Reject(Revoked) seq=1 -> no ARM frame
+VEHICLE done: executed=0 rejects=[0, 0, 1, 0, 0, 0, 0, 0, 0, 0] px4_heartbeats=0 armed=false
+--- px4 : armement ---
+
+############################################################ RESUME
+CAS       DECISION OASIS               TRAME ARM              PX4
+valid     GATE Act;                    1 trame(s)             armed=1 vu_par_le_vehicule=0
+0
+forged    MESH_DROP why="unknown sender"; 0
+0 trame(s)           armed=0
+0 vu_par_le_vehicule=0
+0
+tamper    MESH_DROP why="bad mesh signature"; 0
+0 trame(s)           armed=0
+0 vu_par_le_vehicule=0
+0
+replay    GATE Act;MESH_DROP why="stale counter"; 1 trame(s)             armed=1 vu_par_le_vehicule=0
+0
+revoked   GATE Reject(Revoked);        0
+0 trame(s)           armed=0
+0 vu_par_le_vehicule=0
+0
+
+[exited with code 0]

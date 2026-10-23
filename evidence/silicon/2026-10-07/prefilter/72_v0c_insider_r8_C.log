@@ -1,0 +1,5 @@
+OASIS|C|UART|PF_MODE|v0c=true,next_hop=-,tokens=24|mesh|caef852
+OASIS|C|UART|PF_BUDGET|rate=2,burst=24,tokens=24|mesh|caef852
+OASIS|C|UART|PF_QUIET|quiet=true|mesh|caef852
+OASIS|C|UART|PF_STATUS|v0c=true,accepted=4,drop_tag=0,drop_budget=396,drop_sig=139,drop_other=0,busy_us=23903913,max_us=215650,tokens=0,rx_bytes=71687,frames=539,crc_fails=0,terminal=4,dh_derivations=1,ring_queued=0,ring_dropped=509,ring_errors=1|mesh|caef852
+OASIS|C|UART|PF_QUIET|quiet=false|mesh|caef852

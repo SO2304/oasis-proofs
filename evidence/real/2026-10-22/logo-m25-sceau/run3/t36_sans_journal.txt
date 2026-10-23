@@ -1,0 +1,8 @@
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY refusing to serve: no --journal <prefix> given.
+GATEWAY  a gateway that decides without recording collects no evidence, and
+GATEWAY  Annex III 1.1.9 para 5 asks for evidence of a legitimate OR illegitimate
+GATEWAY  intervention. Pass --journal <prefix>, or --no-journal to say out loud
+GATEWAY  that this run keeps nothing.

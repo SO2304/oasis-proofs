@@ -1,0 +1,5 @@
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY warning: no --journal <prefix>, decisions are kept in RAM only and lost on exit
+GATEWAY listen=127.0.0.1:15561 plc=192.168.0.3:510 unit=0x01 boot_id=14791813153663874179 registers=1

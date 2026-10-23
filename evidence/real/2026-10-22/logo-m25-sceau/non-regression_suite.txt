@@ -1,0 +1,6 @@
+Non-regression apres le sceau de continuite — resume de la suite complete.
+
+  43 suites, 762 tests passes, 0 echec(s)
+
+Le journal complet n'est pas publie : il nomme environ 700 tests par module, soit une carte
+des modules du code — l'architecture est hors de ce corpus, accessible sous NDA.

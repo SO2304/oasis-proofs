@@ -1,0 +1,27 @@
+PC2_HOST=<user>-OptiPlex-7080
+957180ef8d7601370b06a0c8b1973e9a78a1cb04d425e11ba8e13eaa01304f1d  oasis_mbtcp_order
+PC2_UTC=2026-10-10T16:43:03Z
+PC2 wired iface=eno2 (ifindex 2)  ->  gateway at [fe80::1601:70df:35b:73c0%2]:15711
+
+== legitimate Act 60% (should reach the device on the other PC) ==
+  ORDER acted reg=10 value=60 cmd_seq=1
+  exit=0
+
+== attack: value out of range 40% ==
+  ORDER refused reg=10 value=40 cmd_seq=65 outcome=Refused(OutOfLimits, ValueOutOfRange(0, 0))
+  exit=1
+
+== attack: register out of the map ==
+  ORDER refused reg=99 value=60 cmd_seq=129 outcome=Refused(OutOfLimits, RegisterNotAllowed(0))
+  exit=1
+
+== attack: forged origin (key the gateway does not know) ==
+  ORDER refused reg=10 value=60 cmd_seq=1 outcome=NoAnswer
+  exit=1
+
+== attack: enrolled key without ACTUATE ==
+  ORDER refused reg=10 value=60 cmd_seq=1 outcome=Refused(OutOfLimits, Ok)
+  exit=1
+
+Done. The gateway's journal on the other PC is the authoritative record.
+

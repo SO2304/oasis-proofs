@@ -1,0 +1,14 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 10159 octets, SHA-256 6b2f74a3fc64a1e428e8a37c2840c0b86b0434ecd4d96c54f13b2037ad1bf6f6
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_m5_fear_idempotent
+VERIFICATION RESULT:
+ ** 0 of 1 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.07252401s
+Complete - 1 successfully verified harnesses, 0 failures, 1 total.

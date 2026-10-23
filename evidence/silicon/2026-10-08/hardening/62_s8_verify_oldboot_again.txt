@@ -1,0 +1,7 @@
+filtered 4 of 5 entries to boot_id=47071
+boot_id=47071 entries=4 head_seq=Some(3) overwritten=0
+  [0] seq=0 origin=f6bd cmd_seq=50 class=Act decision=Act flags=0x07
+  [1] seq=1 origin=f6bd cmd_seq=51 class=Stop decision=Stop flags=0x0f
+  [2] seq=2 origin=f6bd cmd_seq=52 class=Act decision=Reject(Stopped) flags=0x0f
+  [3] seq=3 origin=f6bd cmd_seq=53 class=Act decision=Act flags=0x07
+VERDICT intact entries=4

@@ -1,0 +1,14 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 10932 octets, SHA-256 2c174b373f486eb3f00320798a5d231b700ebcfac8297ddae8ac74f6bda130c7
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_mesh_ttl_reaches_zero_in_bounded_hops
+VERIFICATION RESULT:
+ ** 0 of 32 failed (1 unreachable)
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.15490831s
+Complete - 1 successfully verified harnesses, 0 failures, 1 total.

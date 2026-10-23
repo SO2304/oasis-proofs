@@ -1,0 +1,28 @@
+OASIS|C|UART|RXF|n=1,len=297,ctr=1280,seq=?"?|mesh|5c4bd96
+OASIS|C|UART|DROP|unknown sender|mesh|5c4bd96
+OASIS|C|UART|RXF|n=2,len=297,ctr=1281,seq==?B|mesh|5c4bd96
+OASIS|C|UART|DROP|unknown sender|mesh|5c4bd96
+OASIS|C|UART|RXF|n=3,len=297,ctr=1282,seq=T??|mesh|5c4bd96
+OASIS|C|UART|DROP|unknown sender|mesh|5c4bd96
+OASIS|C|UART|RXF|n=4,len=297,ctr=1283,seq=??L|mesh|5c4bd96
+OASIS|C|UART|DROP|unknown sender|mesh|5c4bd96
+OASIS|C|UART|RXF|n=5,len=297,ctr=1284,seq=???|mesh|5c4bd96
+OASIS|C|UART|DROP|unknown sender|mesh|5c4bd96
+OASIS|C|UART|RXF|n=6,len=297,ctr=1285,seq=g?@|mesh|5c4bd96
+OASIS|C|UART|DROP|unknown sender|mesh|5c4bd96
+OASIS|C|UART|RXF|n=7,len=297,ctr=1286,seq=?[\|mesh|5c4bd96
+OASIS|C|UART|DROP|unknown sender|mesh|5c4bd96
+OASIS|C|UART|RXF|n=8,len=297,ctr=1287,seq=???|mesh|5c4bd96
+OASIS|C|UART|DROP|unknown sender|mesh|5c4bd96
+OASIS|C|UART|RXF|n=9,len=297,ctr=1288,seq=???|mesh|5c4bd96
+OASIS|C|UART|DROP|unknown sender|mesh|5c4bd96
+OASIS|C|UART|RXF|n=10,len=297,ctr=1289,seq=???|mesh|5c4bd96
+OASIS|C|UART|DROP|unknown sender|mesh|5c4bd96
+OASIS|C|UART|RXF|n=11,len=297,ctr=1290,seq=??8|mesh|5c4bd96
+OASIS|C|UART|DROP|unknown sender|mesh|5c4bd96
+OASIS|C|UART|RXF|n=12,len=297,ctr=1291,seq=?%?|mesh|5c4bd96
+OASIS|C|UART|DROP|unknown sender|mesh|5c4bd96
+OASIS|C|UART|RXF|n=13,len=297,ctr=1292,seq=x$?|mesh|5c4bd96
+OASIS|C|UART|DROP|unknown sender|mesh|5c4bd96
+OASIS|C|UART|RXF|n=14,len=291,ctr=1293,seq=?0B|mesh|5c4bd96
+OASIS|C|UART|DROP|unknown sender|mesh|5c4bd96

@@ -1,0 +1,14 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 10168 octets, SHA-256 a94ca3ad603c7dc2756f12faf42bc05192dd9f9583668c94e1538e4d9cf01410
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_m8_force_trigger_upper_bound
+VERIFICATION RESULT:
+ ** 0 of 3 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.17524067s
+Complete - 1 successfully verified harnesses, 0 failures, 1 total.

@@ -1,0 +1,4 @@
+# mesh check after all three boards updated to v3 under the bootloader (stamp 200d96b): A originates a v0B envelope (@P), B relays, C receives
+OASIS|C|UART|RXF|n=1,len=117,ctr=5117,seq=esh|mesh|200d96b
+OASIS|C|UART|ARRIVED|msg_id=16469432762291584462,hops=1,sig=verified,forward=true|mesh|200d96b
+OASIS|C|UART|RELAYED|msg_id=16469432762291584462,hops=1|mesh|200d96b

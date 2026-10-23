@@ -1,0 +1,5 @@
+OASIS|B|UART|PF_QUIET|quiet=true|mesh|8dc1822
+# flood mode=v0c rate=4 secs=20 start=2026-10-07T10:50:14Z
+OASIS|B|UART|PF_FLOOD|start,rate=4,secs=20,v0c=false|mesh|8dc1822
+OASIS|B|UART|PF_PRESIGN|legit_ready=20|mesh|8dc1822
+OASIS|B|UART|PF_FLOOD_DONE|forged=80,legit=20,secs=20|mesh|8dc1822

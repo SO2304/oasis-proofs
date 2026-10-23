@@ -1,0 +1,5 @@
+OASIS|B|UART|PF_MODE|v0c=true,next_hop=a7089677a10b7fb0,tokens=24|mesh|caef852
+OASIS|B|UART|PF_QUIET|quiet=true|mesh|caef852
+OASIS|B|UART|PF_FLOOD|start,rate=8,secs=60,v0c=true,legit_rate=1,insider=false|mesh|caef852
+OASIS|B|UART|PF_PRESIGN|legit_ready=60|mesh|caef852
+OASIS|B|UART|PF_FLOOD_DONE|forged=479,legit=60,secs=60|mesh|caef852

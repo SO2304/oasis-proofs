@@ -1,0 +1,10 @@
+OASIS Gap 2 — FHSS delivery ratios (packets per trial: 80)
+
+no jammer, 1 chan (baseline)                        K=10  min=1.000 med=1.000 max=1.000  mean=1.000  half-spread=±0.000
+no jammer, 8 chan FHSS                              K=10  min=1.000 med=1.000 max=1.000  mean=1.000  half-spread=±0.000
+JAM 1 of 1 chan (no FHSS possible)                  K=10  min=0.000 med=0.000 max=0.000  mean=0.000  half-spread=±0.000
+JAM 1 of 8 chan, FHSS                               K=10  min=0.850 med=0.900 max=0.912  mean=0.889  half-spread=±0.031
+JAM 2 of 8 chan, FHSS                               K=10  min=0.637 med=0.762 max=0.825  mean=0.748  half-spread=±0.094
+JAM 4 of 8 chan, FHSS                               K=10  min=0.400 med=0.450 max=0.537  mean=0.463  half-spread=±0.069
+JAM 1 of 16 chan, FHSS                              K=10  min=0.887 med=0.925 max=0.975  mean=0.926  half-spread=±0.044
+JAM 1 of 32 chan, FHSS                              K=10  min=0.900 med=0.963 max=1.000  mean=0.961  half-spread=±0.050

@@ -1,0 +1,100 @@
+OASIS|B|UART|RXF|n=101,len=114,ctr=101,seq=001|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=102,len=114,ctr=102,seq=002|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=103,len=114,ctr=103,seq=003|mesh|3a67e6e
+OASIS|B|UART|DROP|legacy envelope rejected by strict v0B router|mesh|3a67e6e
+OASIS|B|UART|RXF|n=104,len=114,ctr=104,seq=004|mesh|3a67e6e
+OASIS|B|UART|DROP|unknown sender|mesh|3a67e6e
+OASIS|B|UART|RXF|n=105,len=114,ctr=105,seq=005|mesh|3a67e6e
+OASIS|B|UART|DROP|unknown sender|mesh|3a67e6e
+OASIS|B|UART|RXF|n=106,len=114,ctr=106,seq=006|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=107,len=114,ctr=107,seq=007|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=108,len=114,ctr=108,seq=008|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=109,len=114,ctr=109,seq=009|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=110,len=114,ctr=110,seq=010|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=111,len=114,ctr=111,seq=011|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=112,len=114,ctr=112,seq=012|mesh|3a67e6e
+OASIS|B|UART|DROP|foreign network|mesh|3a67e6e
+OASIS|B|UART|RXF|n=113,len=114,ctr=113,seq=013|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=114,len=114,ctr=114,seq=014|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=115,len=114,ctr=115,seq=015|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=116,len=114,ctr=116,seq=016|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=117,len=114,ctr=117,seq=017|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=118,len=114,ctr=118,seq=018|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=119,len=114,ctr=119,seq=019|mesh|3a67e6e
+OASIS|B|UART|DROP|legacy envelope rejected by strict v0B router|mesh|3a67e6e
+OASIS|B|UART|RXF|n=120,len=114,ctr=120,seq=020|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=121,len=114,ctr=121,seq=021|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=122,len=114,ctr=122,seq=022|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=123,len=114,ctr=123,seq=023|mesh|3a67e6e
+OASIS|B|UART|DROP|foreign network|mesh|3a67e6e
+OASIS|B|UART|RXF|n=124,len=114,ctr=124,seq=024|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=125,len=114,ctr=125,seq=025|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=126,len=114,ctr=126,seq=026|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=127,len=114,ctr=127,seq=027|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=128,len=114,ctr=128,seq=028|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=129,len=114,ctr=129,seq=029|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=130,len=114,ctr=130,seq=030|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=131,len=114,ctr=131,seq=031|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=132,len=114,ctr=132,seq=032|mesh|3a67e6e
+OASIS|B|UART|DROP|unknown sender|mesh|3a67e6e
+OASIS|B|UART|RXF|n=133,len=114,ctr=133,seq=033|mesh|3a67e6e
+OASIS|B|UART|DROP|foreign network|mesh|3a67e6e
+OASIS|B|UART|RXF|n=134,len=114,ctr=134,seq=034|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=135,len=114,ctr=68719476871,seq=035|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=136,len=114,ctr=136,seq=036|mesh|3a67e6e
+OASIS|B|UART|DROP|ttl/hops out of range|mesh|3a67e6e
+OASIS|B|UART|RXF|n=137,len=114,ctr=137,seq=037|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=138,len=114,ctr=138,seq=038|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=139,len=114,ctr=139,seq=039|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=140,len=114,ctr=140,seq=040|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=141,len=114,ctr=141,seq=041|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=142,len=114,ctr=142,seq=042|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=143,len=114,ctr=143,seq=043|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=144,len=114,ctr=144,seq=044|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=145,len=114,ctr=145,seq=045|mesh|3a67e6e
+OASIS|B|UART|DROP|ttl/hops out of range|mesh|3a67e6e
+OASIS|B|UART|RXF|n=146,len=114,ctr=146,seq=046|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=147,len=114,ctr=147,seq=047|mesh|3a67e6e
+OASIS|B|UART|DROP|unknown sender|mesh|3a67e6e
+OASIS|B|UART|RXF|n=148,len=114,ctr=148,seq=048|mesh|3a67e6e
+OASIS|B|UART|DROP|unknown sender|mesh|3a67e6e
+OASIS|B|UART|RXF|n=149,len=114,ctr=149,seq=049|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e
+OASIS|B|UART|RXF|n=150,len=114,ctr=150,seq=050|mesh|3a67e6e
+OASIS|B|UART|DROP|bad mesh signature|mesh|3a67e6e

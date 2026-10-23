@@ -1,0 +1,21 @@
+OASIS|C|UART|EF_STATUS|boot_id=0,now_ms=76046,epoch=0,revoked=0,sensor_lost=false,pin25=0,executed=0,rejects=0/0/0/0/0/0/0|mesh|6daa0bc
+a_valid seq=1 deadline=80046 payload=4f4143310100010000000000000000000000ae380100000000000000803f0000003fcdcc4c3e00000000000000000000803f00000000
+OASIS|C|UART|EF_STATUS|boot_id=0,now_ms=109910,epoch=0,revoked=0,sensor_lost=false,pin25=0,executed=0,rejects=0/0/0/1/0/0/0|mesh|6daa0bc
+a_valid seq=2 boot_id=0 deadline=118910 (C now_ms=109910) payload=4f41433101000200000000000000000000007ed00100000000000000803f0000003fcdcc4c3e00000000000000000000803f00000000
+OASIS|C|UART|EF_STATUS|boot_id=0,now_ms=139828,epoch=0,revoked=0,sensor_lost=false,pin25=0,executed=1,rejects=0/0/0/1/0/0/0|mesh|6daa0bc
+b_unauthorized_from_B seq=3 deadline=148828 payload=4f41433101000300000000000000000000005c450200000000000000803f0000003fcdcc4c3e00000000000000000000803f00000000
+OASIS|C|UART|EF_STATUS|boot_id=0,now_ms=167176,epoch=0,revoked=0,sensor_lost=false,pin25=0,executed=1,rejects=0/1/0/1/0/0/0|mesh|6daa0bc
+c_expired seq=4 deadline=167175 (C now_ms=167176) payload=4f4143310100040000000000000000000000078d0200000000000000803f0000003fcdcc4c3e00000000000000000000803f00000000
+OASIS|C|UART|EF_STATUS|boot_id=0,now_ms=244353,epoch=0,revoked=0,sensor_lost=false,pin25=0,executed=1,rejects=0/1/0/2/0/0/0|mesh|6daa0bc
+d_setup_valid seq=5 deadline=254353 (C now_ms=244353) payload=4f414331010005000000000000000000000091e10300000000000000803f0000003fcdcc4c3e00000000000000000000803f00000000
+d_content_replay seq=5 same payload
+OASIS|C|UART|EF_STATUS|boot_id=0,now_ms=279657,epoch=0,revoked=0,sensor_lost=false,pin25=0,executed=2,rejects=0/1/0/3/0/0/0|mesh|6daa0bc
+d2_seq_guard seq=6 deadline=289657 (C now_ms=279657), sent twice back-to-back
+OASIS|C|UART|EF_STATUS|boot_id=0,now_ms=309533,epoch=0,revoked=0,sensor_lost=true,pin25=0,executed=3,rejects=0/1/0/3/0/0/1|mesh|6daa0bc
+e_r14 seq=7 deadline=318533 sensor_lost=true
+OASIS|C|UART|EF_STATUS|boot_id=0,now_ms=317519,epoch=0,revoked=0,sensor_lost=false,pin25=0,executed=3,rejects=0/1/0/3/1/0/1|mesh|6daa0bc
+f_out_of_limits seq=8 force=1000
+OASIS|C|UART|EF_STATUS|boot_id=0,now_ms=324036,epoch=0,revoked=0,sensor_lost=false,pin25=0,executed=3,rejects=0/1/0/3/1/1/1|mesh|6daa0bc
+g_nan seq=9 force=NaN
+OASIS|C|UART|EF_STATUS|boot_id=0,now_ms=345482,epoch=0,revoked=0,sensor_lost=false,pin25=0,executed=3,rejects=0/1/0/3/1/2/1|mesh|6daa0bc
+h_final_valid seq=10 deadline=354482

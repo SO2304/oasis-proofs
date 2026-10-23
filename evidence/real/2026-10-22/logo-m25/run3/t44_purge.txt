@@ -1,0 +1,8 @@
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY journal=C:/dev/oasis-eval/logo-test/m25_run3/jrn.entries + C:/dev/oasis-eval/logo-test/m25_run3/jrn.head
+GATEWAY previous journal kept as C:/dev/oasis-eval/logo-test/m25_run3/jrn.5642199901263549017.entries + C:/dev/oasis-eval/logo-test/m25_run3/jrn.5642199901263549017.head
+GATEWAY journal retention: keep 0 archived chains, removed 1
+GATEWAY no authority configured: every ORV1 over the link is refused
+bind 127.0.0.1:15560: Une seule utilisation de chaque adresse de socket (protocole/adresse réseau/port) est habituellement autorisée. (os error 10048)

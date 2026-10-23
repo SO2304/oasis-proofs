@@ -1,0 +1,5 @@
+refus_en_acceptation	1	VERDICT broken at=4
+troncature	1	VERDICT broken at=3
+suppression	2	VERDICT seq_gap expected=2 found=3
+permutation	2	VERDICT seq_gap expected=1 found=2
+duplication	2	VERDICT seq_gap expected=2 found=1

@@ -1,0 +1,11 @@
+OASIS|A|UART|V0B_ORIGINATED|counter=154,len=114|mesh|3a67e6e
+OASIS|A|UART|V0B_ORIGINATED|counter=155,len=114|mesh|3a67e6e
+OASIS|A|UART|V0B_ORIGINATED|counter=156,len=114|mesh|3a67e6e
+OASIS|A|UART|V0B_ORIGINATED|counter=157,len=114|mesh|3a67e6e
+OASIS|A|UART|V0B_ORIGINATED|counter=158,len=114|mesh|3a67e6e
+OASIS|A|UART|V0B_ORIGINATED|counter=159,len=114|mesh|3a67e6e
+OASIS|A|UART|V0B_ORIGINATED|counter=160,len=114|mesh|3a67e6e
+OASIS|A|UART|V0B_ORIGINATED|counter=161,len=114|mesh|3a67e6e
+OASIS|A|UART|V0B_ORIGINATED|counter=162,len=114|mesh|3a67e6e
+OASIS|A|UART|V0B_ORIGINATED|counter=163,len=114|mesh|3a67e6e
+OASIS|A|UART|STATUS|rx_bytes=0,frames=0,crc_fails=0,tx=163,lease_ceiling=1279,lease_writes=1,a_last_seen=0|mesh|3a67e6e

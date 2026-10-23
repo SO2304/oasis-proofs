@@ -1,0 +1,20 @@
+# upload 328272 bytes from C_v12.bin at 2026-10-07T13:46:24Z
+OASIS|C|UART|DFU_PROGRESS|written_to=65536|mesh|30dd63a
+OASIS|C|UART|DFU_PROGRESS|written_to=131072|mesh|30dd63a
+OASIS|C|UART|DFU_PROGRESS|written_to=196608|mesh|30dd63a
+OASIS|C|UART|DFU_PROGRESS|written_to=262144|mesh|30dd63a
+OASIS|C|UART|DFU_PROGRESS|written_to=327680|mesh|30dd63a
+OASIS|C|UART|DFU_PROGRESS|written_to=328272|mesh|30dd63a
+# upload sent in 26 s
+OASIS|C|UART|STAGE|len=0|mesh|30dd63a
+OASIS|C|UART|STAGE|len=280|mesh|30dd63a
+OASIS|C|UART|STAGE|len=560|mesh|30dd63a
+OASIS|C|UART|STAGE|len=840|mesh|30dd63a
+OASIS|C|UART|STAGE|len=1120|mesh|30dd63a
+OASIS|C|UART|STAGE|len=1400|mesh|30dd63a
+OASIS|C|UART|STAGE|len=1680|mesh|30dd63a
+OASIS|C|UART|STAGE|len=1960|mesh|30dd63a
+OASIS|C|UART|STAGE|len=2240|mesh|30dd63a
+OASIS|C|UART|STAGE|len=2520|mesh|30dd63a
+OASIS|C|UART|STAGE|len=2548|mesh|30dd63a
+OASIS|C|UART|FW_INSTALL|accepted,version=12,running=11,floor=11,check_us=740052,resetting_for_swap|mesh|30dd63a

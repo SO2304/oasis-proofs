@@ -1,0 +1,2 @@
+workspace test: 455 lib tests (444 existing + 11 v0b), 491 total, 0 failed — 2026-10-06
+test result: ok. 455 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.54s

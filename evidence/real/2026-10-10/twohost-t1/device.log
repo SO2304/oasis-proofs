@@ -1,0 +1,6 @@
+[      1709 us] PLC listen=127.0.0.1:15720 unit=0x7e impl=rmodbus-0.12.2 oasis_code=none
+[ 154504061 us] PLC conn_open peer=127.0.0.1:60455
+[ 154509416 us] PLC rx peer=127.0.0.1:60455 len=12 bytes=0001000000067e06000a003c
+[ 154510931 us] PLC APPLIED_WRITE writes=1 reg=10 value=60
+[ 154511922 us] PLC tx peer=127.0.0.1:60455 bytes=0001000000067e06000a003c
+[ 184519807 us] PLC conn_close peer=127.0.0.1:60455 frames=1 writes=1 reads=0 rejected=0

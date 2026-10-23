@@ -1,0 +1,3 @@
+=== clean post-cut capture: old counter from A -> B, then B window readback ===
+OASIS|B|UART|PERSIST_SAVED|ok=true,bytes=40,a_last_seen=165|mesh|d285ef4
+OASIS|B|UART|DROP|stale counter|mesh|d285ef4

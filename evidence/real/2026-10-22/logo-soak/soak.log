@@ -1,0 +1,125 @@
+22:58:45.122 soak_diag demarre  duree=480 min  arbre=2248266
+22:58:45.189 cible=192.168.0.3:510 unite=1  passerelle=127.0.0.1:15540  binaires=/c/tmp/oasis-count/release
+22:58:46.174 bobines au depart : '0'
+22:58:47.042 passerelle pid msys=37844 windows=8348
+23:05:33.474 cycle 50 : ecritures ok=40 ko=0 | refus ok=10 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=2836 cpu_s=0,19
+23:11:23.675 cycle 100 : ecritures ok=80 ko=0 | refus ok=20 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=2852 cpu_s=0,31
+23:17:18.291 cycle 150 : ecritures ok=120 ko=0 | refus ok=30 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=2844 cpu_s=0,42
+23:22:42.371 cycle 200 : ecritures ok=160 ko=0 | refus ok=40 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=2844 cpu_s=0,55
+23:27:48.898 cycle 250 : ecritures ok=200 ko=0 | refus ok=50 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=2844 cpu_s=0,63
+23:33:25.534 cycle 300 : ecritures ok=240 ko=0 | refus ok=60 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=2844 cpu_s=0,72
+23:39:10.368 cycle 350 : ecritures ok=280 ko=0 | refus ok=70 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=2844 cpu_s=0,81
+23:44:57.036 cycle 400 : ecritures ok=320 ko=0 | refus ok=80 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=2844 cpu_s=0,86
+23:50:40.641 cycle 450 : ecritures ok=360 ko=0 | refus ok=90 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=2844 cpu_s=1,02
+23:56:26.291 cycle 500 : ecritures ok=400 ko=0 | refus ok=100 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=2844 cpu_s=1,13
+00:02:24.698 cycle 550 : ecritures ok=440 ko=0 | refus ok=110 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=2844 cpu_s=1,28
+00:08:43.824 cycle 600 : ecritures ok=480 ko=0 | refus ok=120 ko=0 | bobines=0 | fils=2 handles=108 ws_ko=2896 cpu_s=1,44
+00:13:07.135 cycle 650 : ecritures ok=520 ko=0 | refus ok=130 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=2880 cpu_s=1,47
+00:17:36.885 cycle 700 : ecritures ok=560 ko=0 | refus ok=140 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=2880 cpu_s=1,52
+00:21:51.031 cycle 750 : ecritures ok=600 ko=0 | refus ok=150 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=2880 cpu_s=1,52
+00:25:53.356 cycle 800 : ecritures ok=640 ko=0 | refus ok=160 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=2880 cpu_s=1,55
+00:30:56.595 cycle 850 : ecritures ok=680 ko=0 | refus ok=170 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=2880 cpu_s=1,66
+00:35:40.298 cycle 900 : ecritures ok=720 ko=0 | refus ok=180 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=2880 cpu_s=1,70
+00:40:25.856 cycle 950 : ecritures ok=760 ko=0 | refus ok=190 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=2880 cpu_s=1,75
+00:45:37.866 cycle 1000 : ecritures ok=800 ko=0 | refus ok=200 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=1640 cpu_s=1,75
+00:49:39.510 cycle 1050 : ecritures ok=840 ko=0 | refus ok=210 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=1692 cpu_s=1,77
+00:53:41.026 cycle 1100 : ecritures ok=880 ko=0 | refus ok=220 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=1688 cpu_s=1,80
+00:58:22.578 cycle 1150 : ecritures ok=920 ko=0 | refus ok=230 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=1688 cpu_s=1,88
+01:03:42.874 cycle 1200 : ecritures ok=960 ko=0 | refus ok=240 ko=0 | bobines=0 | fils=1 handles=107 ws_ko=1660 cpu_s=1,98
+01:06:28.318 ANOMALIE cycle 1218 : attendu 369, lu 'ERR' (ordre rc=0 : ORDER acted reg=100 value=369 cmd_seq=77889 )
+01:07:11.459 ANOMALIE cycle 1225 : bobines '0' -> '1'
+01:09:25.743 cycle 1250 : ecritures ok=999 ko=1 | refus ok=250 ko=0 | bobines=1 | fils=2 handles=108 ws_ko=1720 cpu_s=2,00
+01:13:34.282 cycle 1300 : ecritures ok=1039 ko=1 | refus ok=260 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1688 cpu_s=2,05
+01:18:06.204 cycle 1350 : ecritures ok=1079 ko=1 | refus ok=270 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1700 cpu_s=2,05
+01:22:11.611 cycle 1400 : ecritures ok=1119 ko=1 | refus ok=280 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1688 cpu_s=2,08
+01:28:32.079 cycle 1450 : ecritures ok=1159 ko=1 | refus ok=290 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=2,16
+01:32:31.690 cycle 1500 : ecritures ok=1199 ko=1 | refus ok=300 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=2,19
+01:36:27.232 cycle 1550 : ecritures ok=1239 ko=1 | refus ok=310 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=2,20
+01:40:22.901 cycle 1600 : ecritures ok=1279 ko=1 | refus ok=320 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1460 cpu_s=2,20
+01:44:18.265 cycle 1650 : ecritures ok=1319 ko=1 | refus ok=330 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1460 cpu_s=2,20
+01:48:13.335 cycle 1700 : ecritures ok=1359 ko=1 | refus ok=340 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1460 cpu_s=2,20
+01:52:08.837 cycle 1750 : ecritures ok=1399 ko=1 | refus ok=350 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1456 cpu_s=2,22
+01:56:04.119 cycle 1800 : ecritures ok=1439 ko=1 | refus ok=360 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1460 cpu_s=2,23
+01:59:59.265 cycle 1850 : ecritures ok=1479 ko=1 | refus ok=370 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1460 cpu_s=2,25
+02:03:54.780 cycle 1900 : ecritures ok=1519 ko=1 | refus ok=380 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1460 cpu_s=2,33
+02:07:49.910 cycle 1950 : ecritures ok=1559 ko=1 | refus ok=390 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1460 cpu_s=2,33
+02:11:45.184 cycle 2000 : ecritures ok=1599 ko=1 | refus ok=400 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1460 cpu_s=2,39
+02:15:40.290 cycle 2050 : ecritures ok=1639 ko=1 | refus ok=410 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1460 cpu_s=2,39
+02:19:35.975 cycle 2100 : ecritures ok=1679 ko=1 | refus ok=420 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1460 cpu_s=2,44
+02:23:31.401 cycle 2150 : ecritures ok=1719 ko=1 | refus ok=430 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1460 cpu_s=2,44
+02:27:30.225 cycle 2200 : ecritures ok=1759 ko=1 | refus ok=440 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1460 cpu_s=2,44
+02:31:26.279 cycle 2250 : ecritures ok=1799 ko=1 | refus ok=450 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1460 cpu_s=2,45
+02:35:21.444 cycle 2300 : ecritures ok=1839 ko=1 | refus ok=460 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1460 cpu_s=2,45
+02:39:17.313 cycle 2350 : ecritures ok=1879 ko=1 | refus ok=470 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1460 cpu_s=2,48
+02:43:12.702 cycle 2400 : ecritures ok=1919 ko=1 | refus ok=480 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1460 cpu_s=2,50
+02:47:08.293 cycle 2450 : ecritures ok=1959 ko=1 | refus ok=490 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=2,55
+02:51:05.279 cycle 2500 : ecritures ok=1999 ko=1 | refus ok=500 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=2,56
+02:55:00.826 cycle 2550 : ecritures ok=2039 ko=1 | refus ok=510 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=2,56
+02:58:56.796 cycle 2600 : ecritures ok=2079 ko=1 | refus ok=520 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=2,58
+03:02:52.053 cycle 2650 : ecritures ok=2119 ko=1 | refus ok=530 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=2,59
+03:06:47.647 cycle 2700 : ecritures ok=2159 ko=1 | refus ok=540 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=2,63
+03:10:43.212 cycle 2750 : ecritures ok=2199 ko=1 | refus ok=550 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=2,64
+03:14:39.174 cycle 2800 : ecritures ok=2239 ko=1 | refus ok=560 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=2,67
+03:18:34.305 cycle 2850 : ecritures ok=2279 ko=1 | refus ok=570 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=2,70
+03:22:29.446 cycle 2900 : ecritures ok=2319 ko=1 | refus ok=580 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=2,72
+03:26:24.469 cycle 2950 : ecritures ok=2359 ko=1 | refus ok=590 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=2,75
+03:30:23.596 cycle 3000 : ecritures ok=2399 ko=1 | refus ok=600 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=2,81
+03:34:18.736 cycle 3050 : ecritures ok=2439 ko=1 | refus ok=610 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=2,88
+03:38:14.348 cycle 3100 : ecritures ok=2479 ko=1 | refus ok=620 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=2,88
+03:42:10.135 cycle 3150 : ecritures ok=2519 ko=1 | refus ok=630 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=2,89
+03:46:06.160 cycle 3200 : ecritures ok=2559 ko=1 | refus ok=640 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=2,89
+03:50:01.874 cycle 3250 : ecritures ok=2599 ko=1 | refus ok=650 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=2,91
+03:53:57.072 cycle 3300 : ecritures ok=2639 ko=1 | refus ok=660 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=2,94
+03:57:52.678 cycle 3350 : ecritures ok=2679 ko=1 | refus ok=670 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=2,97
+04:01:48.050 cycle 3400 : ecritures ok=2719 ko=1 | refus ok=680 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=3,03
+04:05:43.290 cycle 3450 : ecritures ok=2759 ko=1 | refus ok=690 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=3,03
+04:09:39.764 cycle 3500 : ecritures ok=2799 ko=1 | refus ok=700 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=3,03
+04:13:35.285 cycle 3550 : ecritures ok=2839 ko=1 | refus ok=710 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=3,06
+04:17:31.616 cycle 3600 : ecritures ok=2879 ko=1 | refus ok=720 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=3,11
+04:21:26.783 cycle 3650 : ecritures ok=2919 ko=1 | refus ok=730 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=3,14
+04:25:21.879 cycle 3700 : ecritures ok=2959 ko=1 | refus ok=740 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1336 cpu_s=3,14
+04:29:21.870 cycle 3750 : ecritures ok=2999 ko=1 | refus ok=750 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1276 cpu_s=3,16
+04:33:17.187 cycle 3800 : ecritures ok=3039 ko=1 | refus ok=760 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1276 cpu_s=3,19
+04:37:12.297 cycle 3850 : ecritures ok=3079 ko=1 | refus ok=770 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1276 cpu_s=3,19
+04:41:07.495 cycle 3900 : ecritures ok=3119 ko=1 | refus ok=780 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1276 cpu_s=3,19
+04:45:02.761 cycle 3950 : ecritures ok=3159 ko=1 | refus ok=790 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1276 cpu_s=3,19
+04:48:58.624 cycle 4000 : ecritures ok=3199 ko=1 | refus ok=800 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1276 cpu_s=3,20
+04:52:54.157 cycle 4050 : ecritures ok=3239 ko=1 | refus ok=810 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1276 cpu_s=3,22
+04:56:49.388 cycle 4100 : ecritures ok=3279 ko=1 | refus ok=820 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1276 cpu_s=3,22
+05:00:44.609 cycle 4150 : ecritures ok=3319 ko=1 | refus ok=830 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1276 cpu_s=3,27
+05:04:39.821 cycle 4200 : ecritures ok=3359 ko=1 | refus ok=840 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1276 cpu_s=3,30
+05:08:35.450 cycle 4250 : ecritures ok=3399 ko=1 | refus ok=850 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1276 cpu_s=3,34
+05:12:30.992 cycle 4300 : ecritures ok=3439 ko=1 | refus ok=860 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1276 cpu_s=3,36
+05:16:26.871 cycle 4350 : ecritures ok=3479 ko=1 | refus ok=870 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1276 cpu_s=3,38
+05:20:22.457 cycle 4400 : ecritures ok=3519 ko=1 | refus ok=880 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1276 cpu_s=3,39
+05:24:18.331 cycle 4450 : ecritures ok=3559 ko=1 | refus ok=890 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1276 cpu_s=3,44
+05:28:15.485 cycle 4500 : ecritures ok=3599 ko=1 | refus ok=900 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1276 cpu_s=3,44
+05:32:10.639 cycle 4550 : ecritures ok=3639 ko=1 | refus ok=910 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1276 cpu_s=3,44
+05:36:05.975 cycle 4600 : ecritures ok=3679 ko=1 | refus ok=920 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1276 cpu_s=3,44
+05:40:01.639 cycle 4650 : ecritures ok=3719 ko=1 | refus ok=930 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1276 cpu_s=3,45
+05:44:00.294 cycle 4700 : ecritures ok=3759 ko=1 | refus ok=940 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=3,52
+05:47:56.863 cycle 4750 : ecritures ok=3799 ko=1 | refus ok=950 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=3,55
+05:51:52.423 cycle 4800 : ecritures ok=3839 ko=1 | refus ok=960 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=3,55
+05:55:47.643 cycle 4850 : ecritures ok=3879 ko=1 | refus ok=970 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=3,59
+05:59:43.392 cycle 4900 : ecritures ok=3919 ko=1 | refus ok=980 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=3,61
+06:03:38.858 cycle 4950 : ecritures ok=3959 ko=1 | refus ok=990 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=3,61
+06:07:33.974 cycle 5000 : ecritures ok=3999 ko=1 | refus ok=1000 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=3,63
+06:11:29.445 cycle 5050 : ecritures ok=4039 ko=1 | refus ok=1010 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=3,64
+06:15:25.339 cycle 5100 : ecritures ok=4079 ko=1 | refus ok=1020 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=3,66
+06:19:21.153 cycle 5150 : ecritures ok=4119 ko=1 | refus ok=1030 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=3,66
+06:23:16.118 cycle 5200 : ecritures ok=4159 ko=1 | refus ok=1040 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=3,67
+06:27:12.789 cycle 5250 : ecritures ok=4199 ko=1 | refus ok=1050 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=3,67
+06:31:10.839 cycle 5300 : ecritures ok=4239 ko=1 | refus ok=1060 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=3,67
+06:35:05.944 cycle 5350 : ecritures ok=4279 ko=1 | refus ok=1070 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=3,72
+06:39:01.567 cycle 5400 : ecritures ok=4319 ko=1 | refus ok=1080 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=3,75
+06:42:57.648 cycle 5450 : ecritures ok=4359 ko=1 | refus ok=1090 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=3,78
+06:46:53.696 cycle 5500 : ecritures ok=4399 ko=1 | refus ok=1100 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=3,78
+06:50:49.026 cycle 5550 : ecritures ok=4439 ko=1 | refus ok=1110 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=3,78
+06:54:44.203 cycle 5600 : ecritures ok=4479 ko=1 | refus ok=1120 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=3,78
+06:58:39.670 cycle 5650 : ecritures ok=4519 ko=1 | refus ok=1130 ko=0 | bobines=1 | fils=1 handles=107 ws_ko=1448 cpu_s=3,81
+06:58:51.177 === fin apres 5652 cycles (duree atteinte) ===
+06:58:51.219 ecritures conformes : 4521   non conformes : 1
+06:58:51.261 refus respectes     : 1130   violes : 0
+06:58:51.306 bobines deplacees   : 1
+06:58:51.710 passerelle          : fils=1 handles=107 ws_ko=1448 cpu_s=3,81
+06:58:52.488 journal : 5652 entrees, VERDICT intact entries=5652, code 0

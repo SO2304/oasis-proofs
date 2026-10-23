@@ -1,0 +1,4 @@
+OASIS|C|UART|RXF|n=5,len=132,ctr=30892,seq=???|mesh|6d3429f
+OASIS|C|UART|ARRIVED|msg_id=12597021345343601292,hops=0,sig=verified,forward=true|mesh|6d3429f
+OASIS|C|UART|MB_GW|decision=Act,rules=Ok,v0b_drop=-,seq=41,origin=f6,unit=0x11,fc=6,start=0x0010,count=1,v0=236,entropy=0.361|mesh|6d3429f
+OASIS|C|UART|MB_GW_TX|len=8,hex=1106001000ec8b12,resp=Some(Ack),resp_hex=1106001000ec8b12,rtt_us=11294|mesh|6d3429f

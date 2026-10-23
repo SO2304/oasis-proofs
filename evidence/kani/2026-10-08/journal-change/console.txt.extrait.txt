@@ -1,0 +1,30 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 1406 octets, SHA-256 704a3b62e0b940e55604dd6094ba3b7d695a4f598835d51bfac8e5b906992e38
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+
+thread 'main' (33119) panicked at /rustc/8925ea358a0f265ca61026aadc7ecc506c545cbe/library/std/[chemin retire]:
+failed printing to stdout: Broken pipe (os error 32)
+[2026-10-08T21:59:38Z] stamp=f187527  Kani Rust Verifier 0.68.0 (cargo plugin)
+== arbre tel quel : les 6 doivent passer ==
+  SUCCESSFUL   proof_entry_roundtrip_is_lossless
+  SUCCESSFUL   proof_journal_seq_monotone
+  SUCCESSFUL   proof_journal_parse_total
+  SUCCESSFUL   proof_decision_byte_is_injective
+  SUCCESSFUL   proof_every_decision_is_logged
+  SUCCESSFUL   proof_change_record_preserves_what_an_auditor_reads
+== controle negatif A : la region des changements chevauche celle des refus ==
+  mutant A applique: DEC_CHANGE_BASE 64 -> 20, un refus lirait comme un changement
+  FAILED       proof_decision_byte_is_injective
+== controle negatif B : le drapeau applique/refuse est perdu ==
+  mutant B applique: un changement refuse est enregistre comme applique
+  FAILED       proof_change_record_preserves_what_an_auditor_reads
+
+[2026-10-08T22:01:27Z] stamp=f187527
+preuves :
+      6 VERIFICATION:- SUCCESSFUL
+controles negatifs (doivent echouer) :
+      2 VERIFICATION:- FAILED

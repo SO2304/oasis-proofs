@@ -1,0 +1,7 @@
+boot_id=3026041025184134353 entries=5 head_seq=Some(4) overwritten=0
+  [0] seq=0 origin=a1fc cmd_seq=1792691066 class=Act decision=Change(SoftwareIdentity) flags=0x10
+  [1] seq=2 origin=aa00 cmd_seq=1 class=Act decision=Act flags=0x00
+  [2] seq=1 origin=0000 cmd_seq=0 class=Act decision=Reject(NotVerified) flags=0x00
+  [3] seq=3 origin=aa00 cmd_seq=65 class=Act decision=Reject(OutOfLimits) flags=0x00
+  [4] seq=4 origin=bb00 cmd_seq=1 class=Act decision=Reject(NotAuthorized) flags=0x00
+VERDICT seq_gap expected=1 found=2

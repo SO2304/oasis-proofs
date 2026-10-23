@@ -1,0 +1,41 @@
+09:02:27.723 logo_relay_a  arbre=d528658  automate=192.168.0.3:510
+09:02:27.769 trames : FC05_ON=00010000000601052001ff00 FC05_OFF=000100000006010520010000 FC15_ON=000100000008010f200100010101
+09:02:29.309 passerelle 127.0.0.1:15550 et agent 127.0.0.1:15551 en route (pids windows: 19116 3524)
+09:02:29.354 --- A0 : etat de depart ---
+09:02:30.109   OK    Q2 au depart : 0
+09:02:30.161 --- A1 : TEMOIN, FC05 brut DIRECTEMENT a l'automate ---
+09:02:30.657   reponse de l'automate : 00010000000601052001ff00
+09:02:32.424   OK    Q2 apres un FC05 brut non authentifie (le relais doit claquer) : 1
+09:02:32.889   reponse au FC05 off : 000100000006010520010000
+09:02:34.676   OK    Q2 apres le FC05 off : 0
+09:02:34.727 --- A2 : le meme FC05, au port de la PASSERELLE ---
+09:02:35.225   la passerelle a repondu : NO-ANSWER
+09:02:37.005   OK    Q2 apres un FC05 a la passerelle : 0
+09:02:37.052   OK    la passerelle n'a pas renvoye l'echo d'une ecriture executee
+09:02:37.098 --- A3 : le meme FC05, envoye par une IHM a l'AGENT (chemin livre) ---
+09:02:37.595   l'agent a repondu : 000100000003018501
+09:02:37.644   OK    code de fonction de la reponse (0x85 = exception sur FC05) : 85
+09:02:37.694   OK    code d'exception (0x01 = fonction illegale, depuis 2026-10-22 ; 0x0A avant) : 01
+09:02:39.468   OK    Q2 apres un FC05 a l'agent : 0
+09:02:39.517 --- A4 : FC15, ecriture de bobines multiples, a l'AGENT ---
+09:02:39.963   l'agent a repondu : 000100000003018f01
+09:02:40.011   OK    code de fonction de la reponse (0x8f = exception sur FC15) : 8f
+09:02:40.058   OK    code d'exception (0x01 = fonction illegale, depuis 2026-10-22 ; 0x0A avant) : 01
+09:02:41.840   OK    Q2 apres un FC15 a l'agent : 0
+09:02:41.890 --- A5 : une ecriture de registre LEGITIME par l'agent ---
+09:02:42.744   registre 100 = 170, cible 213, trame 0001000000060106006400d5
+09:02:43.200   l'agent a repondu : 0001000000060106006400d5
+09:02:43.255   OK    echo de l'ecriture acceptee : 0001000000060106006400d5
+09:02:45.050   OK    registre 100 relu dans l'automate : 213
+09:02:45.800   OK    Q2 apres une ecriture de registre : 0
+09:02:45.855 --- A6 : journal de la passerelle ---
+  boot_id=169816726751371642 entries=2 head_seq=Some(1) overwritten=0
+    [0] seq=0 origin=9017 cmd_seq=1792738948 class=Act decision=Change(SoftwareIdentity) flags=0x10
+    [1] seq=1 origin=aa00 cmd_seq=1 class=Act decision=Act flags=0x00
+  VERDICT intact entries=2
+09:02:46.103   OK    verification du journal (code) : 0
+09:02:46.343   OK    decisions au journal (seule A5 atteint la passerelle) : 1
+09:02:46.463   OK    la seule decision est un Act (A5) : 1
+09:02:46.607   OK    la chaine commence par l'identite du logiciel : 1
+09:02:46.654 
+09:02:46.702 === 18 controles sur 18 ===

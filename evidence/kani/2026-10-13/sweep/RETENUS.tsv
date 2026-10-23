@@ -1,0 +1,5 @@
+extrait_public	sha256_de_l_original	octets	nature
+assignment.txt.extrait.txt	19f68789a895a8cc5d63630d814a13923dba8b8dfebd484ccdf596974c352001	14075	kani
+console.txt.extrait.txt	10882ab792909d407724c88a9fdf881241aed1000def794f62297c59162ac576	17383	kani
+results.tsv.extrait.txt	e5f2ffbb450b886b9e5c5010c8de5c50965d243602a45f34ee44f976d2dcf872	12947	kani
+todo.txt.extrait.txt	d9ef5c9fb22dc5dcb6581b7da89ce02535e7666900cca4700d0251119abf9e65	10868	kani

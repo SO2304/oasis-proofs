@@ -1,0 +1,60 @@
+logo_campaign 2026-10-23T06:59:24Z  arbre=d528658
+automate = Siemens LOGO! 230RCE 6ED1052-1FB08-0BA2 @ 192.168.0.3:510 (aucun code OASIS dedans)
+passerelle OASIS = /c/tmp/oasis-count/release/oasis_mbtcp_gateway
+
+== état initial de l'automate, lu directement ==
+  relais Q1..Q4 (bobines 8192+) : 0
+  registre 100 : 412
+  registre 200 : 0
+
+== démarrage de la passerelle OASIS ==
+  passerelle à l'écoute sur 127.0.0.1:15510
+
+== C1 — ordre signé légitime : écrire 921 dans le registre 100 (valeur avant : 412) ==
+  ORDER acted reg=100 value=921 cmd_seq=1
+  PASS  C1 l'automate porte la valeur commandée (921)
+  PASS  C1 l'outil annonce une exécution
+
+== C2 — même origine, valeur 5000 hors de la plage autorisée (0..1000) ==
+  ORDER refused reg=100 value=5000 cmd_seq=65 exception=0x03 (value outside the register's range)
+  PASS  C2 l'automate n'a pas bougé (921)
+  PASS  C2 refusé
+
+== C3 — registre 200, absent de la carte des registres ==
+  ORDER refused reg=200 value=42 cmd_seq=129 exception=0x02 (register not in the gateway's map)
+  PASS  C3 le registre non autorisé n'a pas bougé (0)
+  PASS  C3 refusé
+
+== C4 — identité connue de la passerelle mais SANS permission ACTUATE ==
+  ORDER refused reg=100 value=600 cmd_seq=1 exception=0x0a (refused for a reason the reply does not carry; the gateway journal names it)
+  PASS  C4 l'automate n'a pas bougé (921)
+
+== C5 — identité totalement inconnue de la passerelle ==
+  ORDER unconfirmed reg=100 value=600 cmd_seq=1 (no confirmed outcome: dropped before the gate, or the device did not confirm the write; the gateway log says which)
+  PASS  C5 l'automate n'a pas bougé (921)
+
+== C6 — écriture Modbus brute, non signée, envoyée droit sur le port de la passerelle ==
+  PASS  C6 l'automate n'a pas bougé (921)
+  réponse de la passerelle : 0 octet(s)
+
+== C7 — les relais n'ont jamais bougé de toute la campagne ==
+  PASS  C7 bobines Q identiques au départ (0)
+
+== C8 — le journal des décisions, vérifié par l'outil indépendant ==
+  6 décision(s) enregistrée(s)
+  VERDICT intact entries=6
+  PASS  C8 journal intact (code de sortie 0) (0)
+
+== C9 — un refus réécrit en acceptation doit être détecté ==
+  VERDICT broken at=5
+  PASS  C9 falsification détectée (code 1)
+
+== C10-C12 — controle negatif : l'automate seul accepte ce qu'OASIS a refuse ==
+  avant : registre 100 = 921, registre 200 = 0
+  PASS  C10 sans OASIS, l'automate accepte 5000 au registre 100 (refuse en C2) (5000)
+  PASS  C11 sans OASIS, l'automate accepte 42 au registre 200 (refuse en C3) (42)
+  PASS  C12 valeurs restaurees apres le controle negatif (921/0)
+
+== RÉSULTAT ==
+  15 réussis, 0 échoués
+  registre 100 final : 921   relais : 0

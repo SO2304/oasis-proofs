@@ -1,0 +1,29 @@
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY journal=C:/dev/oasis-eval/logo-test/camp_c8_2/jrn.entries + C:/dev/oasis-eval/logo-test/camp_c8_2/jrn.head
+GATEWAY no authority configured: every ORV1 over the link is refused
+GATEWAY listen=127.0.0.1:15510 plc=192.168.0.3:510 unit=0x01 boot_id=8904579343142336099 registers=1
+GATEWAY 127.0.0.1:54522 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:54523 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:54529 CLOCK boot_id=8904579343142336099
+GATEWAY 127.0.0.1:54529 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:54530 seq=1 Act outcome=Done plc_written=true
+GATEWAY 127.0.0.1:54530 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:60375 CLOCK boot_id=8904579343142336099
+GATEWAY 127.0.0.1:60375 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:60376 seq=65 Reject(OutOfLimits) outcome=Refused(OutOfLimits, ValueOutOfRange(100, 5000)) plc_written=false
+GATEWAY 127.0.0.1:60376 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:60384 CLOCK boot_id=8904579343142336099
+GATEWAY 127.0.0.1:60384 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:60385 seq=129 Reject(OutOfLimits) outcome=Refused(OutOfLimits, RegisterNotAllowed(200)) plc_written=false
+GATEWAY 127.0.0.1:60385 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:60391 CLOCK boot_id=8904579343142336099
+GATEWAY 127.0.0.1:60391 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:60392 seq=1 Reject(NotAuthorized) outcome=Refused(NotAuthorized, Ok) plc_written=false
+GATEWAY 127.0.0.1:60392 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:60402 CLOCK boot_id=8904579343142336099
+GATEWAY 127.0.0.1:60402 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:60403 MESH_DROP why="unknown sender" -> no PLC write
+GATEWAY 127.0.0.1:60403 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:60410 conn_end err=InvalidData

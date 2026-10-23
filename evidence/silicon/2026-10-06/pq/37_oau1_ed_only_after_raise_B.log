@@ -1,0 +1,4 @@
+OASIS|B|UART|RXF|n=59,len=237,ctr=59,seq=,+?|mesh|1a9b461
+OASIS|B|UART|ARRIVED|msg_id=12278558519797064715,hops=0,sig=verified,forward=true|mesh|1a9b461
+OASIS|B|UART|FRAG_RX|origin=aa,idx=0,count=1,outcome=complete|mesh|1a9b461
+OASIS|B|UART|AUTH|kind=1,suite=1,len=122,decision=Rejected(Downgrade),verify_us=4190,stack=38144,forward=false|mesh|1a9b461

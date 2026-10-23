@@ -1,0 +1,36 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 6026 octets, SHA-256 b710d590b9a9ab855119ad5790de3d42c3001f8dd8e849c01f14385a0dffa317
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.67.0 (cargo plugin)
+harnais : proof_enr_parse_total
+VERIFICATION RESULT:
+ ** 0 of 161 failed (4 unreachable)
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.5835309s
+harnais : proof_enr_seq_never_decreases
+VERIFICATION:- FAILED
+harnais : proof_enr_revoked_never_enrolled
+VERIFICATION RESULT:
+ ** 0 of 622 failed (6 unreachable)
+VERIFICATION:- SUCCESSFUL
+Verification Time: 32.07729s
+harnais : proof_own_accept_parse_total
+VERIFICATION RESULT:
+ ** 0 of 195 failed (11 unreachable)
+VERIFICATION:- SUCCESSFUL
+Verification Time: 1.5393366s
+harnais : proof_own_offer_rules
+VERIFICATION RESULT:
+ ** 0 of 122 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.48031366s
+harnais : proof_own_transfer_requires_both_signatures
+VERIFICATION RESULT:
+ ** 0 of 99 failed
+VERIFICATION:- SUCCESSFUL
+Verification Time: 0.73155737s
+Complete - 5 successfully verified harnesses, 1 failures, 6 total.

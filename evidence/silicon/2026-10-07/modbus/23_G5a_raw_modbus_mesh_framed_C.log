@@ -1,0 +1,2 @@
+OASIS|C|UART|RXF|n=13,len=8,ctr=0,seq=???|mesh|a39d5fe
+OASIS|C|UART|DROP|bad mesh magic|mesh|a39d5fe

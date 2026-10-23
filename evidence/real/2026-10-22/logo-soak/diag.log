@@ -1,0 +1,13 @@
+===== 01:06:28.536 diagnostic, cycle 1218 : ecriture absente
+passerelle : fils=1 handles=107 ws_ko=1668 cpu_s=1,98
+connexions sur le port 15540, par etat :
+  Listen       1
+connexions vers la cible 192.168.0.3:510, par etat :
+  TimeWait     43
+ouverture TCP vers la passerelle : code 0 en 156 ms
+ecriture + fsync de 512 octets : code 0 en 127 ms
+lignes du log de la passerelle : 4879
+dernieres lignes :
+  GATEWAY 127.0.0.1:57588 seq=77889 Act outcome=Done plc_written=true
+  GATEWAY 127.0.0.1:57588 conn_end err=UnexpectedEof
+  GATEWAY 127.0.0.1:59216 conn_end err=UnexpectedEof

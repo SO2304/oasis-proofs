@@ -1,0 +1,3 @@
+extrait_public	sha256_de_l_original	octets	nature
+A_decision_byte_is_injective.log.extrait.txt	549fda231e2ec3cca5f06c814cfac48d0c0e269eab35dc8a1af3099fff867f55	10476	kani
+B_change_record_preserves.log.extrait.txt	b8a35588bbd51057730b9f515bf8b7f01abe50ef7caff34aed84447931432714	11150	kani

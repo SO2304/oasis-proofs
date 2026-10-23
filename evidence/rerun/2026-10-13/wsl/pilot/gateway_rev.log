@@ -1,0 +1,15 @@
+GATEWAY peer fp=aa00000000000000 permissions=ACTUATE
+GATEWAY peer fp=cc00000000000000 permissions=none
+GATEWAY peer fp=bb00000000000000 permissions=none
+GATEWAY revoked fp=aa00000000000000
+GATEWAY journal=/home/pc/rerun-essentials/pilot/jrnrev.entries + /home/pc/rerun-essentials/pilot/jrnrev.head
+GATEWAY authority=single key=ed54a59fb1ac3a51 rev_store=/home/pc/rerun-essentials/pilot/jrnrev.rev
+GATEWAY listen=127.0.0.1:15021 plc=127.0.0.1:15020 unit=0x11 boot_id=1791916618346 registers=1
+GATEWAY 127.0.0.1:45554 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:45570 CLOCK boot_id=1791916618346
+GATEWAY 127.0.0.1:45570 MESH_DROP why="origin revoked" -> no PLC write
+GATEWAY 127.0.0.1:45570 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:45584 CLOCK boot_id=1791916618346
+GATEWAY 127.0.0.1:45584 conn_end err=UnexpectedEof
+GATEWAY 127.0.0.1:45586 seq=1 Reject(NotAuthorized) outcome=Refused(NotAuthorized, Ok) plc_written=false
+GATEWAY 127.0.0.1:45586 conn_end err=UnexpectedEof

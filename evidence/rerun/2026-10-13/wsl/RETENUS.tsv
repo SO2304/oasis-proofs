@@ -1,0 +1,4 @@
+extrait_public	sha256_de_l_original	octets	nature
+build_bins.txt.extrait.txt	e279b3c2c65545fda17050dfb3b05a0adaa9ad118101f8a2f55d8c2e9eeb96f6	28801	cargo
+lora_tests_std.txt.extrait.txt	4083c8d31c7e965e62d8942cb491c9e75a0b614a521316bb8eb6e5ee5edfdd79	31480	cargo
+workspace_tests.txt.extrait.txt	3751cb5bf484e421f7ba260847ba8c1aacc58a82e454ebcb592a37f41a181028	92539	cargo

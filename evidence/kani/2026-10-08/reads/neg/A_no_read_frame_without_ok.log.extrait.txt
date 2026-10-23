@@ -1,0 +1,16 @@
+EXTRAIT PUBLIC - l original n est pas publie.
+Original : 11197 octets, SHA-256 fd3ab29104605fde67966e5ee2a946f0a6f22ffa8caf724db6cd48d6952dfacb
+Retire : chemins de sources et de modules, code cite par le compilateur, liste des
+         dependances, noms des tests reussis. Conserve : chaque verdict tel qu il est sorti.
+L original est conserve dans le depot prive et peut etre produit sous accord de
+confidentialite ; son empreinte ci-dessus permet de verifier que c est bien lui.
+
+Kani Rust Verifier 0.68.0 (cargo plugin)
+harnais : proof_no_read_frame_without_ok
+VERIFICATION RESULT:
+ ** 2 of 146 failed (4 unreachable)
+Failed Checks: attempt to add with overflow
+Failed Checks: "register {addr} was framed but is not in the map"
+VERIFICATION:- FAILED
+Verification Time: 1.4860427s
+Complete - 0 successfully verified harnesses, 1 failures, 1 total.
