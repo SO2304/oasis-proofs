@@ -22,6 +22,7 @@ not carried over. The publications it held, in order:
 | 2026-10-23 | erratum — the build stamp of the logo-m25-sceau runs names the wrong commit |
 | 2026-10-23 | every test three times on the PLC, at an attributable build |
 | 2026-10-23 | **traces that reveal the code withheld; extracts and commitments published** |
+| 2026-10-28 | verdict summaries for the hybrid key exchange campaigns and the journal measurement; raw traces stay private |
 
 The corrections listed here are also dated inside the reports they correct, so they survive the
 restart of the history.
